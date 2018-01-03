@@ -1,0 +1,1860 @@
+@font-face {
+  font-family: 'prostoy';
+  src:  url('fonts/prostoy.eot?k6fn45');
+  src:  url('fonts/prostoy.eot?k6fn45#iefix') format('embedded-opentype'),
+    url('fonts/prostoy.ttf?k6fn45') format('truetype'),
+    url('fonts/prostoy.woff?k6fn45') format('woff'),
+    url('fonts/prostoy.svg?k6fn45#prostoy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'prostoy' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mnog_p:before {
+  content: "\e938";
+}
+.icon-comment_incoming:before {
+  content: "\e921";
+}
+.icon-orgblock_personal_org:before {
+  content: "\e922";
+}
+.icon-orgblock_private_org:before {
+  content: "\e923";
+}
+.icon-orgblock_prof_org:before {
+  content: "\e924";
+}
+.icon-orgblock_standart_org:before {
+  content: "\e925";
+}
+.icon-userblock_female:before {
+  content: "\e926";
+}
+.icon-userblock_male:before {
+  content: "\e927";
+}
+.icon-userblock_unknown:before {
+  content: "\e928";
+}
+.icon-arrow_down:before {
+  content: "\e929";
+}
+.icon-arrow_up:before {
+  content: "\e92a";
+}
+.icon-Видимость:before {
+  content: "\e92b";
+  color: #000;
+}
+.icon-obyaz_p-01:before {
+  content: "\e92c";
+}
+.icon-Аудиозапись:before {
+  content: "\e931";
+}
+.icon-Вернуть-последний-удаленный-комментарий:before {
+  content: "\e932";
+}
+.icon-ВК:before {
+  content: "\e933";
+}
+.icon-Включить-динамик:before {
+  content: "\e934";
+}
+.icon-Входящий:before {
+  content: "\e935";
+}
+.icon-Выбрать-номер-из-телефонной-книги:before {
+  content: "\e936";
+}
+.icon-Главное-меню:before {
+  content: "\e937";
+}
+.icon-Группа-контактов:before {
+  content: "\e93b";
+}
+.icon-Добавить-запись-в-таблицу-по-входящему-звонку:before {
+  content: "\e93c";
+}
+.icon-Добавить-собеседника:before {
+  content: "\e93d";
+}
+.icon-Задача-с-вложением:before {
+  content: "\e93e";
+}
+.icon-Заметки-к-делу:before {
+  content: "\e93f";
+}
+.icon-История3:before {
+  content: "\e940";
+}
+.icon-Исходящий:before {
+  content: "\e941";
+}
+.icon-Место-выполнения-дела:before {
+  content: "\e942";
+}
+.icon-Набрать-номер-на-клавиатуре---клавиши:before {
+  content: "\e943";
+}
+.icon-Назад:before {
+  content: "\e944";
+}
+.icon-Настройка-телефонии:before {
+  content: "\e945";
+}
+.icon-шлюзов:before {
+  content: "\e945";
+}
+.icon-Отключить-микрофон:before {
+  content: "\e946";
+}
+.icon-Отложить-дело:before {
+  content: "\e947";
+}
+.icon-Отобразить-дерево:before {
+  content: "\e948";
+}
+.icon-Очистить-ленту3:before {
+  content: "\e949";
+}
+.icon-Переадресовать-звонок:before {
+  content: "\e94a";
+}
+.icon-Перейти-к-анкете-пользователя .path1:before {
+  content: "\e94b";
+  color: rgb(35, 31, 32);
+}
+.icon-Перейти-к-анкете-пользователя .path2:before {
+  content: "\e94c";
+  margin-left: -0.9970703125em;
+  color: rgb(35, 31, 32);
+}
+.icon-Перейти-к-анкете-пользователя .path3:before {
+  content: "\e94d";
+  margin-left: -0.9970703125em;
+  color: rgb(35, 31, 32);
+}
+.icon-Перейти-к-анкете-пользователя .path4:before {
+  content: "\e94e";
+  margin-left: -0.9970703125em;
+  color: rgb(35, 31, 32);
+}
+.icon-Перейти-к-анкете-пользователя .path5:before {
+  content: "\e94f";
+  margin-left: -0.9970703125em;
+  color: rgb(35, 31, 32);
+}
+.icon-Перейти-к-анкете-пользователя .path6:before {
+  content: "\e950";
+  margin-left: -0.9970703125em;
+  color: rgb(35, 31, 32);
+}
+.icon-Перейти-к-анкете-пользователя .path7:before {
+  content: "\e951";
+  margin-left: -0.9970703125em;
+  color: rgb(0, 0, 0);
+}
+.icon-Пропущенный:before {
+  content: "\e952";
+}
+.icon-Свернуть-окно-телефонии:before {
+  content: "\e953";
+}
+.icon-Создать-новое-SMS--сообщение:before {
+  content: "\e954";
+}
+.icon-Сортировка-в-хронологич:before {
+  content: "\e955";
+}
+.icon-Сортировка-по-задачам:before {
+  content: "\e956";
+}
+.icon-Спасательный-круг:before {
+  content: "\e957";
+}
+.icon-Список:before {
+  content: "\e958";
+}
+.icon-Список-пользователей-для-фильтрации:before {
+  content: "\e959";
+}
+.icon-Список-проектов-для-фильтрации .path1:before {
+  content: "\e95a";
+  color: rgb(0, 0, 0);
+}
+.icon-Список-проектов-для-фильтрации .path2:before {
+  content: "\e95b";
+  margin-left: -0.9970703125em;
+  color: rgb(0, 0, 0);
+}
+.icon-Список-проектов-для-фильтрации .path3:before {
+  content: "\e95c";
+  margin-left: -0.9970703125em;
+  color: rgb(35, 31, 32);
+}
+.icon-Удерживать-звонок-на-линии---пауза:before {
+  content: "\e95d";
+}
+.icon-Фейсбук:before {
+  content: "\e95e";
+}
+.icon-Фото-с-камеры:before {
+  content: "\e95f";
+}
+.icon-Бонус:before {
+  content: "\e960";
+}
+.icon-Информация2:before {
+  content: "\e961";
+}
+.icon-Статистика2:before {
+  content: "\e962";
+}
+.icon-Чат4:before {
+  content: "\e963";
+}
+.icon-SMS-сообщения2:before {
+  content: "\e964";
+}
+.icon-SMS-шлюз-с-симкартой:before {
+  content: "\e965";
+}
+.icon-SMS-шлюзы:before {
+  content: "\e966";
+}
+.icon-SMS-сообщения-дополнительно:before {
+  content: "\e967";
+}
+.icon-База-клиентов:before {
+  content: "\e968";
+}
+.icon-Бухгалтерия:before {
+  content: "\e969";
+}
+.icon-Видео-уроки:before {
+  content: "\e96a";
+}
+.icon-входящее-письмо:before {
+  content: "\e96b";
+}
+.icon-Дисковое-пространство:before {
+  content: "\e96c";
+}
+.icon-Добавить-клиента:before {
+  content: "\e96d";
+}
+.icon-Добавить-услугу:before {
+  content: "\e96e";
+}
+.icon-Закрыть16:before {
+  content: "\e96f";
+}
+.icon-Исходящее-письмо:before {
+  content: "\e970";
+}
+.icon-Личный-счет:before {
+  content: "\e971";
+}
+.icon-Напоминание:before {
+  content: "\e972";
+}
+.icon-Обычная-организация:before {
+  content: "\e973";
+}
+.icon-Обычный-пользователь:before {
+  content: "\e974";
+}
+.icon-Передать:before {
+  content: "\e975";
+}
+.icon-Пользователи3:before {
+  content: "\e976";
+}
+.icon-Пополнить:before {
+  content: "\e977";
+}
+.icon-Пополнить_1:before {
+  content: "\e978";
+}
+.icon-Почтовые-шлюзы3 .path1:before {
+  content: "\e979";
+  color: rgb(2, 2, 2);
+}
+.icon-Почтовые-шлюзы3 .path2:before {
+  content: "\e97a";
+  margin-left: -0.998046875em;
+  color: rgb(2, 2, 2);
+}
+.icon-Почтовые-шлюзы3 .path3:before {
+  content: "\e97b";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Почтовые-шлюзы3 .path4:before {
+  content: "\e97c";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Почтовые-шлюзы3 .path5:before {
+  content: "\e97d";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Почтовые-шлюзы3 .path6:before {
+  content: "\e97e";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Почтовые-шлюзы3 .path7:before {
+  content: "\e97f";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Продление:before {
+  content: "\e980";
+}
+.icon-Продлить-профи:before {
+  content: "\e981";
+}
+.icon-Продлить-услугу:before {
+  content: "\e982";
+}
+.icon-Профи:before {
+  content: "\e983";
+}
+.icon-Сайт2:before {
+  content: "\e984";
+}
+.icon-Сдача-отчетности2:before {
+  content: "\e985";
+}
+.icon-Счет-организации:before {
+  content: "\e986";
+}
+.icon-Тарифы:before {
+  content: "\e987";
+}
+.icon-Телефония:before {
+  content: "\e988";
+}
+.icon-Телефонные-шлюзы:before {
+  content: "\e989";
+}
+.icon-Техподдержка:before {
+  content: "\e98a";
+}
+.icon-Универсальные-таблицы:before {
+  content: "\e98b";
+}
+.icon-Участники-видеоконферен:before {
+  content: "\e98c";
+}
+.icon-Всего-проведено-видеоконференций:before {
+  content: "\e98d";
+}
+.icon-Закрыть15:before {
+  content: "\e98e";
+}
+.icon-Копировать-ссылку3:before {
+  content: "\e98f";
+}
+.icon-Личные3:before {
+  content: "\e990";
+}
+.icon-Начать-конференцию:before {
+  content: "\e991";
+}
+.icon-Отправить-по-Email:before {
+  content: "\e992";
+}
+.icon-Пригласить-участника:before {
+  content: "\e993";
+}
+.icon-Продолжительность:before {
+  content: "\e994";
+}
+.icon-Создать5:before {
+  content: "\e995";
+}
+.icon-Участников:before {
+  content: "\e996";
+}
+.icon-Восстановить:before {
+  content: "\e997";
+}
+.icon-Все-объекты:before {
+  content: "\e998";
+}
+.icon-Задачи-и-комментарии:before {
+  content: "\e999";
+}
+.icon-Контакты5:before {
+  content: "\e99a";
+}
+.icon-Организации2:before {
+  content: "\e99b";
+}
+.icon-Проекты4:before {
+  content: "\e99c";
+}
+.icon-Сайты:before {
+  content: "\e99d";
+}
+.icon-Таблицы3:before {
+  content: "\e99e";
+}
+.icon-Баланс-общий-по-организациям:before {
+  content: "\e99f";
+}
+.icon-Баланс-пользователя:before {
+  content: "\e9a0";
+}
+.icon-Выход:before {
+  content: "\e9a1";
+}
+.icon-Добавить-заметку:before {
+  content: "\e9a2";
+}
+.icon-Избранное2:before {
+  content: "\e9a3";
+}
+.icon-Настройки3:before {
+  content: "\e9a4";
+}
+.icon-Отправить-SMS:before {
+  content: "\e9a5";
+}
+.icon-Партнерская-программа2:before {
+  content: "\e9a6";
+}
+.icon-Портфель-проектов:before {
+  content: "\e9a7";
+}
+.icon-Проверить-обновления2:before {
+  content: "\e9a8";
+}
+.icon-Справка:before {
+  content: "\e9a9";
+}
+.icon-E-mail:before {
+  content: "\e9aa";
+}
+.icon-SMS-сообщения:before {
+  content: "\e9ab";
+}
+.icon-Видеоконференции2:before {
+  content: "\e9ac";
+}
+.icon-Главная-страница .path1:before {
+  content: "\e9ad";
+  color: rgb(1, 1, 1);
+}
+.icon-Главная-страница .path2:before {
+  content: "\e9ae";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Главная-страница .path3:before {
+  content: "\e9af";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Главная-страница .path4:before {
+  content: "\e9b0";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Избранное:before {
+  content: "\e9b1";
+}
+.icon-Календарь2:before {
+  content: "\e9b2";
+}
+.icon-Контакты4:before {
+  content: "\e9b3";
+}
+.icon-настройки:before {
+  content: "\e9b4";
+}
+.icon-Новости3:before {
+  content: "\e9b5";
+}
+.icon-Оповещения2:before {
+  content: "\e9b6";
+}
+.icon-Организация2:before {
+  content: "\e9b7";
+}
+.icon-Персонал:before {
+  content: "\e9b8";
+}
+.icon-Позвонить:before {
+  content: "\e9b9";
+}
+.icon-Поиск8:before {
+  content: "\e9ba";
+}
+.icon-Проекты3:before {
+  content: "\e9bb";
+}
+.icon-Сдача-отчетности:before {
+  content: "\e9bc";
+}
+.icon-Создать-организацию:before {
+  content: "\e9bd";
+}
+.icon-Таблицы2:before {
+  content: "\e9be";
+}
+.icon-Телефония-и-смс2 .path1:before {
+  content: "\e9bf";
+  color: rgb(0, 0, 0);
+}
+.icon-Телефония-и-смс2 .path2:before {
+  content: "\e9c0";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Телефония-и-смс2 .path3:before {
+  content: "\e9c1";
+  margin-left: -1em;
+  color: rgb(1, 1, 1);
+}
+.icon-Файлы4:before {
+  content: "\e9c2";
+}
+.icon-Чат3:before {
+  content: "\e9c3";
+}
+.icon-Чаты2:before {
+  content: "\e9c4";
+}
+.icon-Важное-дело:before {
+  content: "\e9c5";
+}
+.icon-Время:before {
+  content: "\e9c6";
+}
+.icon-Выполненное-дело:before {
+  content: "\e9c7";
+  color: #4cb648;
+}
+.icon-Дата:before {
+  content: "\e9c8";
+}
+.icon-Дело-еще-не-просрочено:before {
+  content: "\e9c9";
+}
+.icon-Календарь-дел:before {
+  content: "\e9ca";
+}
+.icon-Ответственный2:before {
+  content: "\e9cb";
+}
+.icon-Плавающее-дело:before {
+  content: "\e9cc";
+}
+.icon-Просроченное-дело:before {
+  content: "\e9cd";
+}
+.icon-Создать-дело:before {
+  content: "\e9ce";
+}
+.icon-Аноним:before {
+  content: "\e9cf";
+}
+.icon-Друзья2:before {
+  content: "\e9d0";
+}
+.icon-Женщина:before {
+  content: "\e9d1";
+}
+.icon-Мужчина:before {
+  content: "\e9d2";
+}
+.icon-Поиск7:before {
+  content: "\e9d3";
+}
+.icon-База-знаний2:before {
+  content: "\e9d4";
+}
+.icon-В-избранное3:before {
+  content: "\e9d5";
+}
+.icon-Вложить-изображение-из-буфера-обмена2:before {
+  content: "\e9d6";
+}
+.icon-Дело-выполнено:before {
+  content: "\e9d7";
+}
+.icon-Дело-отменено:before {
+  content: "\e9d8";
+}
+.icon-Добавить-файлы3:before {
+  content: "\e9d9";
+}
+.icon-Документы:before {
+  content: "\e9da";
+}
+.icon-Доступ2:before {
+  content: "\e9db";
+}
+.icon-Завершена:before {
+  content: "\e9dc";
+}
+.icon-Закрыть14:before {
+  content: "\e9dd";
+}
+.icon-Заменить-файл2:before {
+  content: "\e9de";
+}
+.icon-Избранные-комментарии:before {
+  content: "\e9df";
+}
+.icon-Источник-RSS:before {
+  content: "\e9e0";
+}
+.icon-Картинка3:before {
+  content: "\e9e1";
+}
+.icon-Категория2:before {
+  content: "\e9e2";
+}
+.icon-Комментарий-преобразован-в-дело:before {
+  content: "\e9e3";
+}
+.icon-Копировать-ссылку2:before {
+  content: "\e9e4";
+}
+.icon-Копировать3:before {
+  content: "\e9e5";
+}
+.icon-Личные2:before {
+  content: "\e9e6";
+}
+.icon-Назначена:before {
+  content: "\e9e7";
+}
+.icon-Назначена_2:before {
+  content: "\e9e8";
+}
+.icon-Назначить3:before {
+  content: "\e9e9";
+}
+.icon-Не-нравится2:before {
+  content: "\e9ea";
+}
+.icon-Нравится2:before {
+  content: "\e9eb";
+}
+.icon-Отклик3:before {
+  content: "\e9ec";
+}
+.icon-Отложена:before {
+  content: "\e9ed";
+}
+.icon-Отменена:before {
+  content: "\e9ee";
+}
+.icon-Отправить4:before {
+  content: "\e9ef";
+}
+.icon-Отработана:before {
+  content: "\e9f0";
+}
+.icon-Переместить6:before {
+  content: "\e9f1";
+}
+.icon-Подтверждена:before {
+  content: "\e9f2";
+}
+.icon-Подтверждена_2:before {
+  content: "\e9f3";
+}
+.icon-Просмотреть2:before {
+  content: "\e9f4";
+}
+.icon-Свойства-задачи:before {
+  content: "\e9f5";
+}
+.icon-Свойства-файла3:before {
+  content: "\e9f6";
+}
+.icon-Сохранить7:before {
+  content: "\e9f7";
+}
+.icon-Статус-задачи2:before {
+  content: "\e9f8";
+}
+.icon-Таблица:before {
+  content: "\e9f9";
+}
+.icon-Удалить9:before {
+  content: "\e9fa";
+}
+.icon-Цитировать:before {
+  content: "\e9fb";
+}
+.icon-Microsoft-Word:before {
+  content: "\e9fc";
+}
+.icon-Добавить2:before {
+  content: "\e9fd";
+}
+.icon-Документ2:before {
+  content: "\e9fe";
+}
+.icon-Задачи3:before {
+  content: "\e9ff";
+}
+.icon-Комментировать4:before {
+  content: "\ea00";
+}
+.icon-Контакты3:before {
+  content: "\ea01";
+}
+.icon-Личные-проекты-друзей:before {
+  content: "\ea02";
+}
+.icon-Проекты2:before {
+  content: "\ea03";
+}
+.icon-Таблицы:before {
+  content: "\ea04";
+}
+.icon-Файлы3:before {
+  content: "\ea05";
+}
+.icon-История2:before {
+  content: "\ea06";
+}
+.icon-Обновить3:before {
+  content: "\ea07";
+}
+.icon-Вид3:before {
+  content: "\ea08";
+}
+.icon-Переместить5:before {
+  content: "\ea09";
+}
+.icon-Поиск6:before {
+  content: "\ea0a";
+}
+.icon-Создать4:before {
+  content: "\ea0b";
+}
+.icon-Удалить8:before {
+  content: "\ea0c";
+}
+.icon-Не-нравится:before {
+  content: "\ea0d";
+}
+.icon-Нравится:before {
+  content: "\ea0e";
+}
+.icon-Очистить-ленту2 .path1:before {
+  content: "\ea0f";
+  color: rgb(0, 0, 0);
+}
+.icon-Очистить-ленту2 .path2:before {
+  content: "\ea10";
+  margin-left: -0.998046875em;
+  color: rgb(2, 2, 2);
+}
+.icon-Очистить-ленту_2:before {
+  content: "\ea11";
+}
+.icon-Очистить-ленту_3:before {
+  content: "\ea12";
+}
+.icon-Очистить-ленту_4:before {
+  content: "\ea13";
+}
+.icon-Очистить-ленту_5:before {
+  content: "\ea14";
+}
+.icon-Скрыть:before {
+  content: "\ea15";
+}
+.icon-Информация:before {
+  content: "\ea16";
+}
+.icon-Партнерская-программа:before {
+  content: "\ea17";
+}
+.icon-Сохранить6:before {
+  content: "\ea18";
+}
+.icon-Статистика:before {
+  content: "\ea19";
+}
+.icon-Анкета2:before {
+  content: "\ea1a";
+}
+.icon-Видеоконференции:before {
+  content: "\ea1b";
+}
+.icon-Друзья:before {
+  content: "\ea1c";
+}
+.icon-История:before {
+  content: "\ea1d";
+}
+.icon-Календарь:before {
+  content: "\ea1e";
+}
+.icon-Контакты2:before {
+  content: "\ea1f";
+}
+.icon-Новости2:before {
+  content: "\ea20";
+}
+.icon-Почта2:before {
+  content: "\ea21";
+}
+.icon-Проекты:before {
+  content: "\ea22";
+}
+.icon-Телефония-и-смс:before {
+  content: "\ea23";
+}
+.icon-Файлы2:before {
+  content: "\ea24";
+}
+.icon-Чаты:before {
+  content: "\ea25";
+}
+.icon-Восстановить-даные:before {
+  content: "\ea26";
+}
+.icon-Закрыть13:before {
+  content: "\ea27";
+}
+.icon-Изменить-пароль:before {
+  content: "\ea28";
+}
+.icon-Очистить-хранилище:before {
+  content: "\ea29";
+}
+.icon-Пароль:before {
+  content: "\ea2a";
+}
+.icon-Скачать-агент:before {
+  content: "\ea2b";
+}
+.icon-Сохранить5:before {
+  content: "\ea2c";
+}
+.icon-База-знаний:before {
+  content: "\ea2d";
+}
+.icon-В-избранное2:before {
+  content: "\ea2e";
+}
+.icon-Вид2:before {
+  content: "\ea2f";
+}
+.icon-Вложить-изображение-из-буфера-обмена:before {
+  content: "\ea30";
+}
+.icon-Вразброс:before {
+  content: "\ea31";
+}
+.icon-Добавить-файлы2:before {
+  content: "\ea32";
+}
+.icon-Закрыть12:before {
+  content: "\ea33";
+}
+.icon-Заменить-файл:before {
+  content: "\ea34";
+}
+.icon-Изменена-категория:before {
+  content: "\ea35";
+}
+.icon-Картинка2:before {
+  content: "\ea36";
+}
+.icon-Категория:before {
+  content: "\ea37";
+}
+.icon-Комментировать3:before {
+  content: "\ea38";
+}
+.icon-Копировать2:before {
+  content: "\ea39";
+}
+.icon-Назначить2:before {
+  content: "\ea3a";
+}
+.icon-Настройки2:before {
+  content: "\ea3b";
+}
+.icon-Новое-дело:before {
+  content: "\ea3c";
+}
+.icon-Оповещение:before {
+  content: "\ea3d";
+}
+.icon-Отклик2:before {
+  content: "\ea3e";
+}
+.icon-Отмена3:before {
+  content: "\ea3f";
+}
+.icon-Отправить3:before {
+  content: "\ea40";
+}
+.icon-Очистить-ленту:before {
+  content: "\ea41";
+}
+.icon-Перенести:before {
+  content: "\ea42";
+}
+.icon-По-задаче:before {
+  content: "\ea43";
+}
+.icon-Почта:before {
+  content: "\ea44";
+}
+.icon-Предыдущие-обновления:before {
+  content: "\ea45";
+}
+.icon-Проверить-обновления:before {
+  content: "\ea46";
+}
+.icon-Просмотреть:before {
+  content: "\ea47";
+}
+.icon-Свойства-файла2:before {
+  content: "\ea48";
+}
+.icon-Статус-задачи:before {
+  content: "\ea49";
+}
+.icon-Файл:before {
+  content: "\ea4a";
+}
+.icon-Добавить-документ:before {
+  content: "\ea4b";
+}
+.icon-Добавить-запись:before {
+  content: "\ea4c";
+}
+.icon-Закрыть11:before {
+  content: "\ea4d";
+}
+.icon-Итого:before {
+  content: "\ea4e";
+}
+.icon-Просмотр-документа:before {
+  content: "\ea4f";
+}
+.icon-Скачать:before {
+  content: "\ea50";
+}
+.icon-Скопировать-ссылку:before {
+  content: "\ea51";
+}
+.icon-Сохранить4:before {
+  content: "\ea52";
+}
+.icon-Удалить-запись:before {
+  content: "\ea53";
+}
+.icon-Удалить7:before {
+  content: "\ea54";
+}
+.icon-Экспорт:before {
+  content: "\ea55";
+}
+.icon-Экспортировать:before {
+  content: "\ea56";
+}
+.icon-Закрыть10:before {
+  content: "\ea57";
+}
+.icon-Контакты-для-смс:before {
+  content: "\ea58";
+}
+.icon-Личные:before {
+  content: "\ea59";
+}
+.icon-Отменить5:before {
+  content: "\ea5a";
+}
+.icon-Отправитель:before {
+  content: "\ea5b";
+}
+.icon-Отправить-со-счета:before {
+  content: "\ea5c";
+}
+.icon-Отправить2:before {
+  content: "\ea5d";
+}
+.icon-Задачи2:before {
+  content: "\ea5e";
+}
+.icon-Контакты:before {
+  content: "\ea5f";
+}
+.icon-Пользователи2:before {
+  content: "\ea60";
+}
+.icon-Расширенный-поиск:before {
+  content: "\ea61";
+}
+.icon-Завершить2:before {
+  content: "\ea62";
+}
+.icon-Начать:before {
+  content: "\ea63";
+}
+.icon-Отменить4:before {
+  content: "\ea64";
+}
+.icon-Печать:before {
+  content: "\ea65";
+}
+.icon-Важное:before {
+  content: "\ea66";
+}
+.icon-Задача:before {
+  content: "\ea67";
+}
+.icon-Закрыть9:before {
+  content: "\ea68";
+}
+.icon-Личное:before {
+  content: "\ea69";
+}
+.icon-Организация_1:before {
+  content: "\ea6a";
+}
+.icon-Организация_2:before {
+  content: "\ea6b";
+}
+.icon-Перейти-к-задаче:before {
+  content: "\ea6c";
+}
+.icon-Перейти-к-записи:before {
+  content: "\ea6d";
+}
+.icon-Проект2:before {
+  content: "\ea6e";
+}
+.icon-Сохранить3:before {
+  content: "\ea6f";
+}
+.icon-Срочное:before {
+  content: "\ea70";
+}
+.icon-Добавить-файл:before {
+  content: "\ea71";
+}
+.icon-Достаточно-сложная:before {
+  content: "\ea72";
+}
+.icon-Легкая-задача:before {
+  content: "\ea73";
+}
+.icon-Название2:before {
+  content: "\ea74";
+}
+.icon-Начало:before {
+  content: "\ea75";
+}
+.icon-Не-определена:before {
+  content: "\ea76";
+}
+.icon-Ответственный:before {
+  content: "\ea77";
+}
+.icon-Отмена2:before {
+  content: "\ea78";
+}
+.icon-Очень-сложная:before {
+  content: "\ea79";
+}
+.icon-Прибыль:before {
+  content: "\ea7a";
+}
+.icon-Сложная-задача:before {
+  content: "\ea7b";
+}
+.icon-Создать3:before {
+  content: "\ea7c";
+}
+.icon-Средняя-задача:before {
+  content: "\ea7d";
+}
+.icon-Срок:before {
+  content: "\ea7e";
+}
+.icon-Название:before {
+  content: "\ea7f";
+}
+.icon-Описание:before {
+  content: "\ea80";
+}
+.icon-Отмена:before {
+  content: "\ea81";
+}
+.icon-Создать2:before {
+  content: "\ea82";
+}
+.icon-Закрыть8:before {
+  content: "\ea83";
+}
+.icon-К-задаче:before {
+  content: "\ea84";
+}
+.icon-Картинка:before {
+  content: "\ea85";
+}
+.icon-Комментировать2:before {
+  content: "\ea86";
+}
+.icon-Копировать:before {
+  content: "\ea87";
+}
+.icon-Переместить4:before {
+  content: "\ea88";
+}
+.icon-Посмотреть:before {
+  content: "\ea89";
+}
+.icon-Сохранить2:before {
+  content: "\ea8a";
+}
+.icon-Prostoy.Biz:before {
+  content: "\ea8b";
+}
+.icon-Выбрать-файл3:before {
+  content: "\ea8c";
+}
+.icon-Доступ:before {
+  content: "\ea8d";
+}
+.icon-Закрыть7:before {
+  content: "\ea8e";
+}
+.icon-Организация:before {
+  content: "\ea8f";
+}
+.icon-Поиск5:before {
+  content: "\ea90";
+}
+.icon-Почтовые-шлюзы2 .path1:before {
+  content: "\ea91";
+  color: rgb(0, 0, 0);
+}
+.icon-Почтовые-шлюзы2 .path2:before {
+  content: "\ea92";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Почтовые-шлюзы2 .path3:before {
+  content: "\ea93";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Почтовые-шлюзы2 .path4:before {
+  content: "\ea94";
+  margin-left: -0.998046875em;
+  color: rgb(2, 2, 2);
+}
+.icon-Почтовые-шлюзы2 .path5:before {
+  content: "\ea95";
+  margin-left: -0.998046875em;
+  color: rgb(2, 2, 2);
+}
+.icon-Почтовые-шлюзы2 .path6:before {
+  content: "\ea96";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Почтовые-шлюзы2 .path7:before {
+  content: "\ea97";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Почтовый-ящик2 .path1:before {
+  content: "\ea98";
+  color: rgb(2, 2, 2);
+}
+.icon-Почтовый-ящик2 .path2:before {
+  content: "\ea99";
+  margin-left: -0.998046875em;
+  color: rgb(2, 2, 2);
+}
+.icon-Почтовый-ящик2 .path3:before {
+  content: "\ea9a";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Правило:before {
+  content: "\ea9b";
+}
+.icon-Редактирование-правила:before {
+  content: "\ea9c";
+}
+.icon-Ресурсы:before {
+  content: "\ea9d";
+}
+.icon-Сервер2:before {
+  content: "\ea9e";
+}
+.icon-Создание почтового шлюза Prostoy.Biz:before {
+  content: "\ea9f";
+}
+.icon-Создать-правило2:before {
+  content: "\eaa0";
+}
+.icon-Создать-шлюз:before {
+  content: "\eaa1";
+}
+.icon-Сохранить:before {
+  content: "\eaa2";
+}
+.icon-Удалить6:before {
+  content: "\eaa3";
+}
+.icon-Открыть2:before {
+  content: "\eaa4";
+}
+.icon-Отменить3:before {
+  content: "\eaa5";
+}
+.icon-Переместить3:before {
+  content: "\eaa6";
+}
+.icon-Поиск4:before {
+  content: "\eaa7";
+}
+.icon-Пригласить-пользователя:before {
+  content: "\eaa8";
+}
+.icon-Расположить-окна-по-умолчанию2:before {
+  content: "\eaa9";
+}
+.icon-Закрыть6:before {
+  content: "\eaaa";
+}
+.icon-Обновить-данные:before {
+  content: "\eaab";
+}
+.icon-Почтовые-шлюзы:before {
+  content: "\eaac";
+}
+.icon-Почтовый-ящик .path1:before {
+  content: "\eaad";
+  color: rgb(2, 2, 2);
+}
+.icon-Почтовый-ящик .path2:before {
+  content: "\eaae";
+  margin-left: -0.998046875em;
+  color: rgb(2, 2, 2);
+}
+.icon-Почтовый-ящик .path3:before {
+  content: "\eaaf";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Редактирование-почтового-шлюза:before {
+  content: "\eab0";
+}
+.icon-Сервер:before {
+  content: "\eab1";
+}
+.icon-Создание-правила:before {
+  content: "\eab2";
+}
+.icon-Создать-правило:before {
+  content: "\eab3";
+}
+.icon-Удалить5:before {
+  content: "\eab4";
+}
+.icon-Шлюз-по-умолчанию:before {
+  content: "\eab5";
+}
+.icon-Вид:before {
+  content: "\eab6";
+}
+.icon-Высокая-важность:before {
+  content: "\eab7";
+}
+.icon-Добавить-в-избранное:before {
+  content: "\eab8";
+}
+.icon-Комментировать:before {
+  content: "\eab9";
+}
+.icon-Низкая-важность:before {
+  content: "\eaba";
+}
+.icon-Открыть-проект:before {
+  content: "\eabb";
+}
+.icon-Открыть:before {
+  content: "\eabc";
+}
+.icon-Переместить2:before {
+  content: "\eabd";
+}
+.icon-Поиск3:before {
+  content: "\eabe";
+}
+.icon-Проект:before {
+  content: "\eabf";
+}
+.icon-Создать:before {
+  content: "\eac0";
+}
+.icon-Удалить4:before {
+  content: "\eac1";
+}
+.icon-Добавить-файлы:before {
+  content: "\eac2";
+}
+.icon-Назначить:before {
+  content: "\eac3";
+}
+.icon-Ответить-всем:before {
+  content: "\eac4";
+}
+.icon-Ответить:before {
+  content: "\eac5";
+}
+.icon-Отклик:before {
+  content: "\eac6";
+}
+.icon-Переместить:before {
+  content: "\eac7";
+}
+.icon-Переслать:before {
+  content: "\eac8";
+}
+.icon-Удалить3:before {
+  content: "\eac9";
+}
+.icon-N:before {
+  content: "\eaca";
+}
+.icon-PDF:before {
+  content: "\eacb";
+}
+.icon-X:before {
+  content: "\eacc";
+}
+.icon-Анкета:before {
+  content: "\eacd";
+}
+.icon-Вступить-в-организацию:before {
+  content: "\eace";
+}
+.icon-Дела:before {
+  content: "\eacf";
+}
+.icon-Добавить-в-друзья:before {
+  content: "\ead0";
+}
+.icon-Документ:before {
+  content: "\ead1";
+}
+.icon-Задачи:before {
+  content: "\ead2";
+}
+.icon-Звонок:before {
+  content: "\ead3";
+}
+.icon-Найти:before {
+  content: "\ead4";
+}
+.icon-Организации:before {
+  content: "\ead5";
+}
+.icon-Пользователи:before {
+  content: "\ead6";
+}
+.icon-Пригласить-в-организацию:before {
+  content: "\ead7";
+}
+.icon-Профиль-организации:before {
+  content: "\ead8";
+}
+.icon-Сайт:before {
+  content: "\ead9";
+}
+.icon-Сбросить:before {
+  content: "\eada";
+}
+.icon-Смс:before {
+  content: "\eadb";
+}
+.icon-Файлы:before {
+  content: "\eadc";
+}
+.icon-Часы:before {
+  content: "\eadd";
+}
+.icon-Закрыть5:before {
+  content: "\eade";
+}
+.icon-Обновить2:before {
+  content: "\eadf";
+}
+.icon-Отправить:before {
+  content: "\eae0";
+}
+.icon-Отправьте-отчеты:before {
+  content: "\eae1";
+}
+.icon-Подать-заявку:before {
+  content: "\eae2";
+}
+.icon-Поиск2:before {
+  content: "\eae3";
+}
+.icon-Получение-ЭП:before {
+  content: "\eae4";
+}
+.icon-Получите-ответ:before {
+  content: "\eae5";
+}
+.icon-ПФР:before {
+  content: "\eae6";
+}
+.icon-Росстат:before {
+  content: "\eae7";
+}
+.icon-ФНС:before {
+  content: "\eae8";
+}
+.icon-ФСС:before {
+  content: "\eae9";
+}
+.icon-Электронная-подпись:before {
+  content: "\eaea";
+}
+.icon-Завершить:before {
+  content: "\eaeb";
+}
+.icon-Закрыть4:before {
+  content: "\eaec";
+}
+.icon-Купить:before {
+  content: "\eaed";
+}
+.icon-Маркетинг:before {
+  content: "\eaee";
+}
+.icon-Менеджмент:before {
+  content: "\eaef";
+}
+.icon-Найти-организацию:before {
+  content: "\eaf0";
+}
+.icon-в-которой-я-работаю:before {
+  content: "\eaf0";
+}
+.icon-Основные-сведенья-об-организации:before {
+  content: "\eaf1";
+}
+.icon-Проектный-офис:before {
+  content: "\eaf2";
+}
+.icon-Распределение-обязанностей:before {
+  content: "\eaf3";
+}
+.icon-Создание-команды:before {
+  content: "\eaf4";
+}
+.icon-Создание-почтового-ящика .path1:before {
+  content: "\eaf5";
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path2:before {
+  content: "\eaf6";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path3:before {
+  content: "\eaf7";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path4:before {
+  content: "\eaf8";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path5:before {
+  content: "\eaf9";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path6:before {
+  content: "\eafa";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path7:before {
+  content: "\eafb";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path8:before {
+  content: "\eafc";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path9:before {
+  content: "\eafd";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path10:before {
+  content: "\eafe";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path11:before {
+  content: "\eaff";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path12:before {
+  content: "\eb00";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path13:before {
+  content: "\eb01";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path14:before {
+  content: "\eb02";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path15:before {
+  content: "\eb03";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path16:before {
+  content: "\eb04";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path17:before {
+  content: "\eb05";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path18:before {
+  content: "\eb06";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path19:before {
+  content: "\eb07";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path20:before {
+  content: "\eb08";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Создание-почтового-ящика .path21:before {
+  content: "\eb09";
+  margin-left: -0.998046875em;
+  color: rgb(1, 1, 1);
+}
+.icon-Создать-новую-организацию:before {
+  content: "\eb0a";
+}
+.icon-Сфера-деятельности-организации:before {
+  content: "\eb0b";
+}
+.icon-Счета .path1:before {
+  content: "\eb0c";
+  color: rgb(1, 1, 1);
+}
+.icon-Счета .path2:before {
+  content: "\eb0d";
+  margin-left: -0.998046875em;
+  color: rgb(1, 1, 1);
+}
+.icon-Счета .path3:before {
+  content: "\eb0e";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Счета .path4:before {
+  content: "\eb0f";
+  margin-left: -0.998046875em;
+  color: rgb(1, 1, 1);
+}
+.icon-Счета .path5:before {
+  content: "\eb10";
+  margin-left: -0.998046875em;
+  color: rgb(1, 1, 1);
+}
+.icon-Счета .path6:before {
+  content: "\eb11";
+  margin-left: -0.998046875em;
+  color: rgb(1, 1, 1);
+}
+.icon-Счета .path7:before {
+  content: "\eb12";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Закрыть3:before {
+  content: "\eb13";
+}
+.icon-Новости:before {
+  content: "\eb14";
+}
+.icon-Оповещения:before {
+  content: "\eb15";
+}
+.icon-Приглашение:before {
+  content: "\eb16";
+}
+.icon-Проекты-и-задачи:before {
+  content: "\eb17";
+}
+.icon-Создание-организации:before {
+  content: "\eb18";
+}
+.icon-Чат2:before {
+  content: "\eb19";
+}
+.icon-Аудиоконференция:before {
+  content: "\eb1a";
+}
+.icon-Ведущий .path1:before {
+  content: "\eb1b";
+  color: rgb(0, 0, 0);
+}
+.icon-Ведущий .path2:before {
+  content: "\eb1c";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Ведущий .path3:before {
+  content: "\eb1d";
+  margin-left: -0.998046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Ведущий .path4:before {
+  content: "\eb1e";
+  margin-left: -0.998046875em;
+  color: rgb(35, 31, 32);
+}
+.icon-Видео-трансляция:before {
+  content: "\eb1f";
+}
+.icon-Включить-камеру:before {
+  content: "\eb20";
+}
+.icon-Выбрать-толщину-линий:before {
+  content: "\eb21";
+}
+.icon-Выбрать-цвет:before {
+  content: "\eb22";
+}
+.icon-Выключить-камеру:before {
+  content: "\eb23";
+}
+.icon-Закрузить-документ:before {
+  content: "\eb24";
+}
+.icon-Маркер:before {
+  content: "\eb25";
+}
+.icon-Написать-сообщение:before {
+  content: "\eb26";
+}
+.icon-Окружность:before {
+  content: "\eb27";
+}
+.icon-Отменить-фигуру:before {
+  content: "\eb28";
+}
+.icon-Очистить-страницу:before {
+  content: "\eb29";
+}
+.icon-Подогнать-под-размер-окна:before {
+  content: "\eb2a";
+}
+.icon-Подогнать-под-ширину-окна:before {
+  content: "\eb2b";
+}
+.icon-Предыдущий-слайд:before {
+  content: "\eb2c";
+}
+.icon-Прямоугольник:before {
+  content: "\eb2d";
+}
+.icon-Расположить-окна-по-умолчанию:before {
+  content: "\eb2e";
+}
+.icon-Следующий-слайд:before {
+  content: "\eb2f";
+}
+.icon-Транслировать-рабочий-стол:before {
+  content: "\eb30";
+}
+.icon-Участники:before {
+  content: "\eb31";
+}
+.icon-Чат:before {
+  content: "\eb32";
+}
+.icon-SMS:before {
+  content: "\e900";
+}
+.icon-Администраторская-настройка:before {
+  content: "\e901";
+}
+.icon-Выбрать-файл2:before {
+  content: "\eb33";
+}
+.icon-Добавить:before {
+  content: "\eb34";
+}
+.icon-Загрузить-файл:before {
+  content: "\eb35";
+}
+.icon-Закрыть2:before {
+  content: "\eb36";
+}
+.icon-Интеграция-с-сайтом:before {
+  content: "\eb37";
+}
+.icon-Интеграция:before {
+  content: "\eb38";
+}
+.icon-Настройки:before {
+  content: "\e902";
+}
+.icon-Обновить:before {
+  content: "\e903";
+}
+.icon-Очистить-поиск:before {
+  content: "\e904";
+}
+.icon-Подробнее .path1:before {
+  content: "\e905";
+  color: rgb(0, 0, 0);
+}
+.icon-Подробнее .path2:before {
+  content: "\e906";
+  margin-left: -0.998046875em;
+  color: rgb(1, 1, 1);
+}
+.icon-Подробнее .path3:before {
+  content: "\e907";
+  margin-left: -0.998046875em;
+  color: rgb(1, 1, 1);
+}
+.icon-Подробнее .path4:before {
+  content: "\e908";
+  margin-left: -0.998046875em;
+  color: rgb(1, 1, 1);
+}
+.icon-Поиск:before {
+  content: "\e909";
+}
+.icon-Пользовательская-настройка:before {
+  content: "\e90a";
+}
+.icon-Редактировать:before {
+  content: "\e90b";
+}
+.icon-Удалить2:before {
+  content: "\e90c";
+}
+.icon-ок:before {
+  content: "\e90d";
+}
+.icon-Отменить2:before {
+  content: "\e90e";
+}
+.icon-Удалить:before {
+  content: "\e90f";
+}
+.icon-В-избранное:before {
+  content: "\e910";
+}
+.icon-Закрыть:before {
+  content: "\e911";
+}
+.icon-Копировать-ссылку:before {
+  content: "\e912";
+}
+.icon-Копировать-ссылку_2:before {
+  content: "\e913";
+}
+.icon-Открыть-файл:before {
+  content: "\e914";
+}
+.icon-Отменить:before {
+  content: "\e915";
+}
+.icon-Свойства-файла:before {
+  content: "\e916";
+}
+.icon-Удалить-файлы:before {
+  content: "\e917";
+}
+.icon-Выбрать-файл:before {
+  content: "\e918";
+}
+.icon-Готово:before {
+  content: "\e919";
+}
+.icon-Закрыть-диалог:before {
+  content: "\e91a";
+}
+.icon-Найти-собеседника:before {
+  content: "\e91b";
+}
+.icon-Показать-за:before {
+  content: "\e91c";
+}
+.icon-Свернуть-диалог:before {
+  content: "\e91d";
+}
+.icon-Смайлы:before {
+  content: "\e91e";
+}
+.icon-Увеличить-размер-окна:before {
+  content: "\e91f";
+}
+.icon-Уменьшить-размер-окна:before {
+  content: "\e920";
+}

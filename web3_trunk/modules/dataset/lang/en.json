@@ -1,0 +1,21 @@
+{
+  "dataset": {
+    "loading": "Loading",
+    "contacts": "contacts of the group",
+    "tasks": "tasks of the project",
+    "task": {
+      "empty_contact": "Blank contact",
+      "no_name": "Untitled"
+    },
+    "org": {
+      "private": "Private",
+      "no_name": "[Untitled]"
+    },
+    "group": {
+      "default": "Default"
+    },
+    "category": {
+      "no_name": "[Uncategorized]"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<div class="tform-file {{data.hidden}} {{#data.multi}}multiple{{/data.multi}}" id="{{data.id}}">
+    <div class="tform-top">
+        {{#data.elements}}
+        <div class="tform-element">
+            <div class="tform-left">
+                <div class="tform-title">{{data.title}}</div>
+            </div>
+            <div class="tform-right">
+                {{#data.access}}
+                <input type="text" class="tform-file-value" value="{{title}}" readonly="readonly">
+                <div class="tform-file-delete" title="Удалить файл">&times;</div>
+                <span class="tform-file-download icon-Скачать"></span>
+                <div class="tform-file-add" title="Выбрать файл">
+                    <span class="icon-Выбрать-файл"></span>
+                    <input type="file" id="upload_{{data.id}}">
+                </div>
+                {{/data.access}}
+                <input type="hidden" class="tform-file-full" value="{{full}}">
+            </div>
+            {{#data.multi}}
+            <div class="tform-delete"></div>
+            {{/data.multi}}
+        </div>
+        {{/data.elements}}
+    </div>
+    {{#data.multi}}
+    <div class="tform-bot">
+        <div class="tform-title-multi">+ {{data.title}}</div>
+    </div>
+    {{/data.multi}}
+</div>

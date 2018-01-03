@@ -1,0 +1,299 @@
+@import "../../../_variables";
+.w-carcase {
+  &.--full {
+    .w-carcase-left {
+      width: 200px;
+      .w-carcase-logo-image {
+        background-size: 40px !important;
+      }
+      .w-carcase-logo-crm {
+        display: block !important;
+      }
+      .w-carcase-logo-pro {
+        display: block !important;
+      }
+      .w-carcase-navigate {
+        .w-carcase-navigate-button {
+          .w-carcase-navigate-icon {
+            display: block;
+            font-size: 28px;
+          }
+          .w-carcase-navigate-text {
+            display: block;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .w-carcase-center {
+      left: 200px;
+
+      .w-carcase-resize {
+        background-image: url("/images/icons/hide.png") !important;
+      }
+    }
+  }
+  &.--right {
+    .w-carcase-center {
+      right: 200px;
+    }
+    .w-carcase-right {
+      width: 200px;
+    }
+  }
+  .w-carcase-left {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 70px;
+    transition: all 0.5s;
+
+    .w-carcase-logo {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 70px;
+      background-color: #F8F8F8;
+      overflow: hidden;
+
+      .w-carcase-logo-image {
+        background-image: url(../../../images/logo.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 50px;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        transition: all 0.5s;
+      }
+      .w-carcase-logo-crm {
+        position: absolute;
+        left: 60px;
+        top: 10px;
+        line-height: 25px;
+        color: #747474;
+        font-size: 16px;
+        letter-spacing: 2px;
+        display: none;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .w-carcase-logo-pro {
+        position: absolute;
+        left: 60px;
+        bottom: 10px;
+        line-height: 25px;
+        color: $main-bg-text-color;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: -0.5px;
+        display: none;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+    .w-carcase-navigate {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $main-bg-text-color;
+      display: flex;
+      flex-flow: column nowrap;
+
+      .w-carcase-navigate-button {
+        position: relative;
+        min-height: 50px;
+        cursor: pointer;
+        background: linear-gradient(
+                        to bottom,
+                        $main-bg-text-color-hover,
+                        $main-bg-text-color-active
+        ) left bottom $main-bg-text-color no-repeat;
+        background-size: 100% 1px;
+        transition: all 0.5s;
+
+        &:hover {
+          background-color: $main-bg-text-color-hover;
+        }
+        &.active {
+          background-color: $main-bg-text-color-active;
+        }
+
+        .w-carcase-navigate-icon {
+          position: absolute;
+          left: 5px;
+          top: 0;
+          width: 60px;
+          height: 50px;
+          font-family: 'Prostoy', serif;
+          color: white;
+          line-height: 50px;
+          text-align: center;
+          font-size: 34px;
+          transition: all 0.5s;
+        }
+        .w-carcase-navigate-text {
+          display: none;
+          position: absolute;
+          left: 75px;
+          right: 5px;
+          height: 50px;
+          line-height: 50px;
+          color: #ffffff;
+          text-align: left;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .w-carcase-center {
+    left: 70px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    transition: all 0.5s;
+
+    .w-carcase-header {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 70px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: stretch;
+      align-content: stretch;
+
+      .w-carcase-resize {
+        max-width: 100px;
+        min-width: 100px;
+        flex: 1 100%;
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        cursor: pointer;
+        background-image: url("/images/icons/show.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .w-carcase-company {
+        min-width: 100px;
+        flex: 1 100%;
+        border-right: 1px solid #ccc;
+        position: relative;
+      }
+      .w-carcase-personal {
+        min-width: 100px;
+        flex: 1 100%;
+        border-right: 1px solid #ccc;
+      }
+      .w-carcase-search {
+        flex: 1 100%;
+        border-right: 1px solid #ccc;
+      }
+      .w-carcase-fast {
+        flex: 3 100%;
+        display: flex;
+        flex-flow: row nowrap;
+
+        .w-carcase-menu-button {
+          min-width: 80px;
+          position: relative;
+          cursor: pointer;
+          background: linear-gradient(
+                          to right,
+                          $main-bg-text-color-hover,
+                          $main-bg-text-color-active
+          ) left bottom $main-bg-text-color no-repeat;
+          background-size: 1px 100%;
+          transition: all 0.5s;
+
+          &:hover {
+            background-color: $main-bg-text-color-hover;
+          }
+          &.disable {
+            background-color: $border-and-add-text-bg-color;
+          }
+          &.active {
+            background-color: #4cb648;
+          }
+
+          .w-carcase-menu-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 30px;
+            font-family: 'Prostoy', serif;
+            font-size: 28px;
+            text-align: center;
+            color: white;
+            height: 50px;
+            line-height: 50px;
+          }
+          .w-carcase-menu-text {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 10px;
+            height: 20px;
+            line-height: 20px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+          }
+          &.sizes {
+            font-size: 11px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .w-carcase-content {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 70px;
+      bottom: 30px;
+      border: 1px solid #ccc;
+    }
+
+    .w-carcase-footer {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 30px;
+    }
+  }
+  .w-carcase-right {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 0;
+    transition: all 0.5s;
+
+    &.slide-enter {
+      opacity: 1
+    }
+    &.slide-enter-active {
+      opacity: 0
+    }
+    &.slide-leave-to {
+      opacity: 0
+    }
+  }
+}

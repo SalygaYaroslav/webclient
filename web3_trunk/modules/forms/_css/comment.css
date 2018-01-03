@@ -1,0 +1,63 @@
+.form.--comment .tab-header { left: 0; right: 0; }
+
+.form.--comment .tab-content { left: 0; right: 0; }
+
+.form.--comment .tab-header-custom { margin-left: 10px; position: relative; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+
+.form.--comment .tab-header-custom .select-block { position: absolute; left: 0; right: 97px; top: 0; bottom: 0; }
+
+.form.--comment .tab-header-custom .select-block .selectize-input { height: 29px; padding: 5px 8px; margin-top: 2px; }
+
+.form.--comment .tab-header-custom .email-block { position: absolute; left: 0; right: 68px; top: 0; bottom: 0; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.form.--comment .tab-header-custom .email-block .elm-input { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+
+.form.--comment .tab-header-custom .email-block .elm-input:not(:last-child) { margin-right: 10px; }
+
+.form.--comment .tab-header-custom .email-block .elm-input .input { height: 29px; padding: 5px 8px; margin-top: 2px; }
+
+.form.--comment .tab-header-custom .buttons-block { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; -ms-flex-line-pack: stretch; align-content: stretch; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; position: absolute; width: 110px; right: 0; top: 0; bottom: 0; }
+
+.form.--comment .tab-header-custom .buttons-block .button { margin: 1px; height: 29px; width: 29px; border-radius: 3px; cursor: pointer; line-height: 29px; text-align: center; font-size: 20px; }
+
+.form.--comment .tab-header-custom .buttons-block .button:hover { background-color: #5cadd6; color: white; }
+
+.form.--comment .tab-header-custom .buttons-block .button.active { color: #ffffff; background-color: #3399cc; }
+
+.form.--comment .tab { bottom: 36px; }
+
+.form.--comment.to-comment .--email { display: none; }
+
+.form.--comment.to-email .--comment { display: none; }
+
+.form.--comment.to-email .buttons-block { width: 68px; }
+
+.form.--comment .buttons { padding: 2px; background-color: #f6f6f6; bottom: 0; left: 0; right: 0; position: absolute; height: 34px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.form.--comment .buttons .toleft { -ms-flex-item-align: start; align-self: flex-start; }
+
+.form.--comment .buttons .toleft { -ms-flex-item-align: start; align-self: flex-start; }
+
+.form.--comment .comment-files { display: none; position: absolute; width: 0; top: 0; bottom: 0; right: 0; background-color: #f2f2f2; overflow-x: hidden; overflow-y: auto; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -ms-flex-line-pack: stretch; align-content: stretch; }
+
+.form.--comment .comment-files .file-item { height: 30px; position: relative; min-height: 30px; line-height: 30px; overflow: hidden; display: -webkit-box; display: -ms-flexbox; display: flex; list-style: none; }
+
+.form.--comment .comment-files .file-item .progress { position: absolute; left: 0; right: 100%; top: 0; bottom: 0; background-color: #3399cc; -webkit-transition: all 0.2s; transition: all 0.2s; }
+
+.form.--comment .comment-files .file-item.success .progress { background-color: green; }
+
+.form.--comment .comment-files .file-item.error .progress { background-color: red; }
+
+.form.--comment .comment-files .file-item .file-icon { line-height: 30px; margin: 0 5px; font-size: 18px; z-index: 1; }
+
+.form.--comment .comment-files .file-item .file-name { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; z-index: 1; }
+
+.form.--comment .comment-files .file-item .file-extension { margin-left: 1px; z-index: 1; }
+
+.form.--comment .comment-files .file-item .file-size { white-space: nowrap; margin: 0 5px; z-index: 1; }
+
+.form.--comment .comment-files .file-item .close { white-space: nowrap; width: 30px; height: 30px; font-size: 20px; margin-left: auto; cursor: pointer; text-align: center; -ms-flex-negative: 0; flex-shrink: 0; }
+
+.form.--comment.--files .elm-textarea { right: 30%; }
+
+.form.--comment.--files .comment-files { width: 30%; display: -webkit-box; display: -ms-flexbox; display: flex; }

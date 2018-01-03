@@ -1,0 +1,36 @@
+@import "../../../_variables";
+
+#webscene {
+  overflow: hidden;
+  background-color: #f6f6f6;
+
+  .triangle {
+    &:after {
+      width: 0;
+      height: 0;
+      content: ' ';
+    }
+    &.to-right {
+      &:after {
+        border-left: 5px solid $main-bg-text-color;
+        border-bottom: 5px solid transparent;
+        border-top: 5px solid transparent;
+        position: absolute;
+        right: 12.5px;
+        top: 50%;
+        margin-top: -2.5px;
+      }
+    }
+    &.to-bottom {
+      &:after {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid $border-and-add-text-bg-color;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        margin-top: -2.5px;
+      }
+    }
+  }
+}

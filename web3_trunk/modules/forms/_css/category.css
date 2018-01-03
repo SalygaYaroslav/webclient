@@ -1,0 +1,13 @@
+.category-change { overflow: hidden; }
+
+.category-change .category-search { position: absolute; left: 0; right: 0; top: 0; height: 40px; padding: 2px; }
+
+.category-change .category-list { position: absolute; left: 0; right: 0; top: 40px; bottom: 0; overflow-x: hidden; overflow-y: auto; border-top: 1px solid #c2c2c2; }
+
+.category-change .category-list .category-item { display: -webkit-box; display: -ms-flexbox; display: flex; height: 30px; line-height: 30px; -ms-flex-line-pack: stretch; align-content: stretch; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; cursor: pointer; }
+
+.category-change .category-list .category-item.active { background-color: #f2f2f2; }
+
+.category-change .category-list .category-item .color { width: 26px; height: 26px; margin: 2px; border-radius: 3px; }
+
+.category-change .category-list .category-item .text { margin-left: 5px; }

@@ -1,0 +1,29 @@
+.w-carcase-personal { position: relative; }
+
+.w-carcase-personal .user-block { cursor: pointer; }
+
+.w-carcase-personal .user-block .user-avatar { -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center center; mask-position: center center; -webkit-mask-size: 24px; mask-size: 24px; width: 40px; height: 70px; position: absolute; left: 0; background-color: #303030; }
+
+.w-carcase-personal .user-block .user-avatar.unknown { -webkit-mask-image: url("/images/icons/userblock_unknown.svg"); mask-image: url("/images/icons/userblock_unknown.svg"); }
+
+.w-carcase-personal .user-block .user-avatar.male { -webkit-mask-image: url("/images/icons/userblock_male.svg"); mask-image: url("/images/icons/userblock_male.svg"); }
+
+.w-carcase-personal .user-block .user-avatar.female { -webkit-mask-image: url("/images/icons/userblock_female.svg"); mask-image: url("/images/icons/userblock_female.svg"); }
+
+.w-carcase-personal .user-block .user-name { position: absolute; left: 50px; right: 0; top: 0; bottom: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; line-height: 70px; }
+
+.w-carcase-personal .user-block:after { content: ''; position: absolute; right: 10px; bottom: 25px; border: 5px solid transparent; border-top: 5px solid #ccc; }
+
+.w-carcase-personal .user-params { position: absolute; top: 70px; max-height: 300px; left: 0; right: 0; padding: 1px; z-index: 2; border: 1px solid #ccc; overflow-x: hidden; background-color: white; overflow-y: auto; box-sizing: content-box; }
+
+.w-carcase-personal .user-params .params-item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; cursor: pointer; }
+
+.w-carcase-personal .user-params .params-item:hover { background-color: rgba(0, 0, 0, 0.02); }
+
+.w-carcase-personal .user-params .params-item [class^="icon-"] { width: 40px; height: 40px; line-height: 40px; text-align: center; font-size: 24px; }
+
+.w-carcase-personal .user-params .params-item .params-text { line-height: 40px; margin-left: 10px; height: 40px; }
+
+.w-carcase-personal.show-params .user-block:after { content: ''; position: absolute; right: 10px; bottom: 30px; border: 5px solid transparent; border-bottom: 5px solid #3399cc; }
+
+.w-carcase-personal.show-params .user-params { display: block; }

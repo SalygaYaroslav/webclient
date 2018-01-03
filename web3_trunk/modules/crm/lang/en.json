@@ -1,0 +1,28 @@
+{
+  "crm": {
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "first": "First",
+      "last": "Last",
+      "limit": "On page: "
+    },
+    "remove": {
+      "success": "Successfully deleted entries",
+      "success_one": "Successfully deleted entry",
+      "remove": "Yes",
+      "cancel": "No",
+      "record": "Remove entry?",
+      "records": "Remove entries?"
+    },
+    "edit": {
+      "save": "Save",
+      "cancel": "Cancel",
+      "update": "Edit record",
+      "create": "Create record",
+      "new": "New record",
+      "yes": "Yes",
+      "no": "No"
+    }
+  }
+}

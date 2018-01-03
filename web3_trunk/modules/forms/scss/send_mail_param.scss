@@ -1,0 +1,27 @@
+@import "../../../_variables";
+
+.form.--send-mail-params {
+  .selects {
+    margin: 10px 10px 0 10px;
+  }
+  .inputs {
+    margin: 0 10px;
+  }
+  .information {
+    margin: 10px 10px;
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .information-local {
+      color: $border-and-add-text-bg-color;
+    }
+    .information-default {
+      color: $main-bg-text-color;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}

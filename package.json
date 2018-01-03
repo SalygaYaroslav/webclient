@@ -1,0 +1,27 @@
+{
+  "name": "web3_project",
+  "version": "1.0.0",
+  "description": "webclient ver 3",
+  "main": "index.js",
+  "scripts": {
+    "install gulp": "npm i gulp --save-dev",
+    "install del": "npm i del --save-dev",
+    "install watch": "npm i gulp-watch --save-dev",
+    "install merge json": "npm install gulp-merge-json --save-dev",
+    "install css helpers": "npm i gulp-sass gulp-clean-css gulp-rename gulp-autoprefixer --save-dev",
+    "install vue": "npm install vue --save-dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-merge-json": "^0.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "vue": "^2.4.2"
+  }
+}

@@ -1,0 +1,126 @@
+@import "../../../_variables";
+
+.tab {
+  transition: all 0.5s;
+  background-color: #f6f6f6;
+
+  .tab-header {
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    height: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    .tab-header-items {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+
+      .tab-header-item {
+        line-height: 35px;
+        padding: 0 20px;
+        cursor: pointer;
+        position: relative;
+
+        &.active {
+          background-color: $main-bg-text-color;
+          color: #fff;
+          border-radius: 3px 3px 0 0;
+          &:before {
+            content: ' ';
+            width: 1px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -1px;
+            background: #f0f0f0;
+          }
+          &:after {
+            content: ' ';
+            width: 1px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -1px;
+            background: #f0f0f0;
+          }
+        }
+        &:not(:last-child) {
+          border-right: 1px solid $border-and-add-text-bg-color;
+        }
+      }
+    }
+    .full-size {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 30px;
+      bottom: 0;
+      line-height: 35px;
+
+      span {
+        line-height: 35px;
+        width: 35px;
+        height: 35px;
+        font-size: 24px;
+        cursor: pointer;
+        color: $main-bg-text-color;
+      }
+      &.not {
+        .--minus {
+          display: none;
+        }
+        .--plus {
+          display: block;
+        }
+      }
+      &.yes {
+        .--minus {
+          display: block;
+        }
+        .--plus {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    left: 2px;
+    right: 2px;
+    top: 37px;
+    bottom: 0;
+    position: absolute;
+    border-top: 3px solid $main-bg-text-color;
+    border-left: 1px solid $border-and-add-text-bg-color;
+    border-right: 1px solid $border-and-add-text-bg-color;
+    border-bottom: 1px solid $border-and-add-text-bg-color;
+    background-color: $text-for-main-bg-text-color;
+    padding: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+
+    .tab-content-item {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  &.without-header {
+    .tab-header {
+      display: none;
+    }
+    .tab-content {
+      top: 2px;
+      border: none;
+    }
+  }
+}

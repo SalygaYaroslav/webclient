@@ -1,0 +1,2991 @@
+@import "variables";
+
+@font-face {
+  font-family: 'prostoy';
+  src:  url('#{$icomoon-font-path}/prostoy.eot?k6fn45');
+  src:  url('#{$icomoon-font-path}/prostoy.eot?k6fn45#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/prostoy.ttf?k6fn45') format('truetype'),
+    url('#{$icomoon-font-path}/prostoy.woff?k6fn45') format('woff'),
+    url('#{$icomoon-font-path}/prostoy.svg?k6fn45#prostoy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'prostoy' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mnog_p {
+  &:before {
+    content: $icon-mnog_p;
+  }
+}
+.icon-comment_incoming {
+  &:before {
+    content: $icon-comment_incoming;
+  }
+}
+.icon-orgblock_personal_org {
+  &:before {
+    content: $icon-orgblock_personal_org;
+  }
+}
+.icon-orgblock_private_org {
+  &:before {
+    content: $icon-orgblock_private_org;
+  }
+}
+.icon-orgblock_prof_org {
+  &:before {
+    content: $icon-orgblock_prof_org;
+  }
+}
+.icon-orgblock_standart_org {
+  &:before {
+    content: $icon-orgblock_standart_org;
+  }
+}
+.icon-userblock_female {
+  &:before {
+    content: $icon-userblock_female;
+  }
+}
+.icon-userblock_male {
+  &:before {
+    content: $icon-userblock_male;
+  }
+}
+.icon-userblock_unknown {
+  &:before {
+    content: $icon-userblock_unknown;
+  }
+}
+.icon-arrow_down {
+  &:before {
+    content: $icon-arrow_down;
+  }
+}
+.icon-arrow_up {
+  &:before {
+    content: $icon-arrow_up;
+  }
+}
+.icon-Видимость {
+  &:before {
+    content: $icon-Видимость;
+  }
+}
+.icon-obyaz_p-01 {
+  &:before {
+    content: $icon-obyaz_p-01;
+  }
+}
+.icon-Аудиозапись {
+  &:before {
+    content: $icon-Аудиозапись;
+  }
+}
+.icon-Вернуть-последний-удаленный-комментарий {
+  &:before {
+    content: $icon-Вернуть-последний-удаленный-комментарий;
+  }
+}
+.icon-ВК {
+  &:before {
+    content: $icon-ВК;
+  }
+}
+.icon-Включить-динамик {
+  &:before {
+    content: $icon-Включить-динамик;
+  }
+}
+.icon-Входящий {
+  &:before {
+    content: $icon-Входящий;
+  }
+}
+.icon-Выбрать-номер-из-телефонной-книги {
+  &:before {
+    content: $icon-Выбрать-номер-из-телефонной-книги;
+  }
+}
+.icon-Главное-меню {
+  &:before {
+    content: $icon-Главное-меню;
+  }
+}
+.icon-Группа-контактов {
+  &:before {
+    content: $icon-Группа-контактов;
+  }
+}
+.icon-Добавить-запись-в-таблицу-по-входящему-звонку {
+  &:before {
+    content: $icon-Добавить-запись-в-таблицу-по-входящему-звонку;
+  }
+}
+.icon-Добавить-собеседника {
+  &:before {
+    content: $icon-Добавить-собеседника;
+  }
+}
+.icon-Задача-с-вложением {
+  &:before {
+    content: $icon-Задача-с-вложением;
+  }
+}
+.icon-Заметки-к-делу {
+  &:before {
+    content: $icon-Заметки-к-делу;
+  }
+}
+.icon-История3 {
+  &:before {
+    content: $icon-История3;
+  }
+}
+.icon-Исходящий {
+  &:before {
+    content: $icon-Исходящий;
+  }
+}
+.icon-Место-выполнения-дела {
+  &:before {
+    content: $icon-Место-выполнения-дела;
+  }
+}
+.icon-Набрать-номер-на-клавиатуре---клавиши {
+  &:before {
+    content: $icon-Набрать-номер-на-клавиатуре---клавиши;
+  }
+}
+.icon-Назад {
+  &:before {
+    content: $icon-Назад;
+  }
+}
+.icon-Настройка-телефонии {
+  &:before {
+    content: $icon-Настройка-телефонии;
+  }
+}
+.icon-шлюзов {
+  &:before {
+    content: $icon-шлюзов;
+  }
+}
+.icon-Отключить-микрофон {
+  &:before {
+    content: $icon-Отключить-микрофон;
+  }
+}
+.icon-Отложить-дело {
+  &:before {
+    content: $icon-Отложить-дело;
+  }
+}
+.icon-Отобразить-дерево {
+  &:before {
+    content: $icon-Отобразить-дерево;
+  }
+}
+.icon-Очистить-ленту3 {
+  &:before {
+    content: $icon-Очистить-ленту3;
+  }
+}
+.icon-Переадресовать-звонок {
+  &:before {
+    content: $icon-Переадресовать-звонок;
+  }
+}
+.icon-Перейти-к-анкете-пользователя .path1 {
+  &:before {
+    content: $icon-Перейти-к-анкете-пользователя-path1;  
+    color: rgb(35, 31, 32);
+  }
+}
+.icon-Перейти-к-анкете-пользователя .path2 {
+  &:before {
+    content: $icon-Перейти-к-анкете-пользователя-path2;  
+    margin-left: -0.9970703125em;  
+    color: rgb(35, 31, 32);
+  }
+}
+.icon-Перейти-к-анкете-пользователя .path3 {
+  &:before {
+    content: $icon-Перейти-к-анкете-пользователя-path3;  
+    margin-left: -0.9970703125em;  
+    color: rgb(35, 31, 32);
+  }
+}
+.icon-Перейти-к-анкете-пользователя .path4 {
+  &:before {
+    content: $icon-Перейти-к-анкете-пользователя-path4;  
+    margin-left: -0.9970703125em;  
+    color: rgb(35, 31, 32);
+  }
+}
+.icon-Перейти-к-анкете-пользователя .path5 {
+  &:before {
+    content: $icon-Перейти-к-анкете-пользователя-path5;  
+    margin-left: -0.9970703125em;  
+    color: rgb(35, 31, 32);
+  }
+}
+.icon-Перейти-к-анкете-пользователя .path6 {
+  &:before {
+    content: $icon-Перейти-к-анкете-пользователя-path6;  
+    margin-left: -0.9970703125em;  
+    color: rgb(35, 31, 32);
+  }
+}
+.icon-Перейти-к-анкете-пользователя .path7 {
+  &:before {
+    content: $icon-Перейти-к-анкете-пользователя-path7;  
+    margin-left: -0.9970703125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Пропущенный {
+  &:before {
+    content: $icon-Пропущенный;
+  }
+}
+.icon-Свернуть-окно-телефонии {
+  &:before {
+    content: $icon-Свернуть-окно-телефонии;
+  }
+}
+.icon-Создать-новое-SMS--сообщение {
+  &:before {
+    content: $icon-Создать-новое-SMS--сообщение;
+  }
+}
+.icon-Сортировка-в-хронологич {
+  &:before {
+    content: $icon-Сортировка-в-хронологич;
+  }
+}
+.icon-Сортировка-по-задачам {
+  &:before {
+    content: $icon-Сортировка-по-задачам;
+  }
+}
+.icon-Спасательный-круг {
+  &:before {
+    content: $icon-Спасательный-круг;
+  }
+}
+.icon-Список {
+  &:before {
+    content: $icon-Список;
+  }
+}
+.icon-Список-пользователей-для-фильтрации {
+  &:before {
+    content: $icon-Список-пользователей-для-фильтрации;
+  }
+}
+.icon-Список-проектов-для-фильтрации .path1 {
+  &:before {
+    content: $icon-Список-проектов-для-фильтрации-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Список-проектов-для-фильтрации .path2 {
+  &:before {
+    content: $icon-Список-проектов-для-фильтрации-path2;  
+    margin-left: -0.9970703125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Список-проектов-для-фильтрации .path3 {
+  &:before {
+    content: $icon-Список-проектов-для-фильтрации-path3;  
+    margin-left: -0.9970703125em;  
+    color: rgb(35, 31, 32);
+  }
+}
+.icon-Удерживать-звонок-на-линии---пауза {
+  &:before {
+    content: $icon-Удерживать-звонок-на-линии---пауза;
+  }
+}
+.icon-Фейсбук {
+  &:before {
+    content: $icon-Фейсбук;
+  }
+}
+.icon-Фото-с-камеры {
+  &:before {
+    content: $icon-Фото-с-камеры;
+  }
+}
+.icon-Бонус {
+  &:before {
+    content: $icon-Бонус;
+  }
+}
+.icon-Информация2 {
+  &:before {
+    content: $icon-Информация2;
+  }
+}
+.icon-Статистика2 {
+  &:before {
+    content: $icon-Статистика2;
+  }
+}
+.icon-Чат4 {
+  &:before {
+    content: $icon-Чат4;
+  }
+}
+.icon-SMS-сообщения2 {
+  &:before {
+    content: $icon-SMS-сообщения2;
+  }
+}
+.icon-SMS-шлюз-с-симкартой {
+  &:before {
+    content: $icon-SMS-шлюз-с-симкартой;
+  }
+}
+.icon-SMS-шлюзы {
+  &:before {
+    content: $icon-SMS-шлюзы;
+  }
+}
+.icon-SMS-сообщения-дополнительно {
+  &:before {
+    content: $icon-SMS-сообщения-дополнительно;
+  }
+}
+.icon-База-клиентов {
+  &:before {
+    content: $icon-База-клиентов;
+  }
+}
+.icon-Бухгалтерия {
+  &:before {
+    content: $icon-Бухгалтерия;
+  }
+}
+.icon-Видео-уроки {
+  &:before {
+    content: $icon-Видео-уроки;
+  }
+}
+.icon-входящее-письмо {
+  &:before {
+    content: $icon-входящее-письмо;
+  }
+}
+.icon-Дисковое-пространство {
+  &:before {
+    content: $icon-Дисковое-пространство;
+  }
+}
+.icon-Добавить-клиента {
+  &:before {
+    content: $icon-Добавить-клиента;
+  }
+}
+.icon-Добавить-услугу {
+  &:before {
+    content: $icon-Добавить-услугу;
+  }
+}
+.icon-Закрыть16 {
+  &:before {
+    content: $icon-Закрыть16;
+  }
+}
+.icon-Исходящее-письмо {
+  &:before {
+    content: $icon-Исходящее-письмо;
+  }
+}
+.icon-Личный-счет {
+  &:before {
+    content: $icon-Личный-счет;
+  }
+}
+.icon-Напоминание {
+  &:before {
+    content: $icon-Напоминание;
+  }
+}
+.icon-Обычная-организация {
+  &:before {
+    content: $icon-Обычная-организация;
+  }
+}
+.icon-Обычный-пользователь {
+  &:before {
+    content: $icon-Обычный-пользователь;
+  }
+}
+.icon-Передать {
+  &:before {
+    content: $icon-Передать;
+  }
+}
+.icon-Пользователи3 {
+  &:before {
+    content: $icon-Пользователи3;
+  }
+}
+.icon-Пополнить {
+  &:before {
+    content: $icon-Пополнить;
+  }
+}
+.icon-Пополнить_1 {
+  &:before {
+    content: $icon-Пополнить_1;
+  }
+}
+.icon-Почтовые-шлюзы3 .path1 {
+  &:before {
+    content: $icon-Почтовые-шлюзы3-path1;  
+    color: rgb(2, 2, 2);
+  }
+}
+.icon-Почтовые-шлюзы3 .path2 {
+  &:before {
+    content: $icon-Почтовые-шлюзы3-path2;  
+    margin-left: -0.998046875em;  
+    color: rgb(2, 2, 2);
+  }
+}
+.icon-Почтовые-шлюзы3 .path3 {
+  &:before {
+    content: $icon-Почтовые-шлюзы3-path3;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Почтовые-шлюзы3 .path4 {
+  &:before {
+    content: $icon-Почтовые-шлюзы3-path4;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Почтовые-шлюзы3 .path5 {
+  &:before {
+    content: $icon-Почтовые-шлюзы3-path5;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Почтовые-шлюзы3 .path6 {
+  &:before {
+    content: $icon-Почтовые-шлюзы3-path6;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Почтовые-шлюзы3 .path7 {
+  &:before {
+    content: $icon-Почтовые-шлюзы3-path7;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Продление {
+  &:before {
+    content: $icon-Продление;
+  }
+}
+.icon-Продлить-профи {
+  &:before {
+    content: $icon-Продлить-профи;
+  }
+}
+.icon-Продлить-услугу {
+  &:before {
+    content: $icon-Продлить-услугу;
+  }
+}
+.icon-Профи {
+  &:before {
+    content: $icon-Профи;
+  }
+}
+.icon-Сайт2 {
+  &:before {
+    content: $icon-Сайт2;
+  }
+}
+.icon-Сдача-отчетности2 {
+  &:before {
+    content: $icon-Сдача-отчетности2;
+  }
+}
+.icon-Счет-организации {
+  &:before {
+    content: $icon-Счет-организации;
+  }
+}
+.icon-Тарифы {
+  &:before {
+    content: $icon-Тарифы;
+  }
+}
+.icon-Телефония {
+  &:before {
+    content: $icon-Телефония;
+  }
+}
+.icon-Телефонные-шлюзы {
+  &:before {
+    content: $icon-Телефонные-шлюзы;
+  }
+}
+.icon-Техподдержка {
+  &:before {
+    content: $icon-Техподдержка;
+  }
+}
+.icon-Универсальные-таблицы {
+  &:before {
+    content: $icon-Универсальные-таблицы;
+  }
+}
+.icon-Участники-видеоконферен {
+  &:before {
+    content: $icon-Участники-видеоконферен;
+  }
+}
+.icon-Всего-проведено-видеоконференций {
+  &:before {
+    content: $icon-Всего-проведено-видеоконференций;
+  }
+}
+.icon-Закрыть15 {
+  &:before {
+    content: $icon-Закрыть15;
+  }
+}
+.icon-Копировать-ссылку3 {
+  &:before {
+    content: $icon-Копировать-ссылку3;
+  }
+}
+.icon-Личные3 {
+  &:before {
+    content: $icon-Личные3;
+  }
+}
+.icon-Начать-конференцию {
+  &:before {
+    content: $icon-Начать-конференцию;
+  }
+}
+.icon-Отправить-по-Email {
+  &:before {
+    content: $icon-Отправить-по-Email;
+  }
+}
+.icon-Пригласить-участника {
+  &:before {
+    content: $icon-Пригласить-участника;
+  }
+}
+.icon-Продолжительность {
+  &:before {
+    content: $icon-Продолжительность;
+  }
+}
+.icon-Создать5 {
+  &:before {
+    content: $icon-Создать5;
+  }
+}
+.icon-Участников {
+  &:before {
+    content: $icon-Участников;
+  }
+}
+.icon-Восстановить {
+  &:before {
+    content: $icon-Восстановить;
+  }
+}
+.icon-Все-объекты {
+  &:before {
+    content: $icon-Все-объекты;
+  }
+}
+.icon-Задачи-и-комментарии {
+  &:before {
+    content: $icon-Задачи-и-комментарии;
+  }
+}
+.icon-Контакты5 {
+  &:before {
+    content: $icon-Контакты5;
+  }
+}
+.icon-Организации2 {
+  &:before {
+    content: $icon-Организации2;
+  }
+}
+.icon-Проекты4 {
+  &:before {
+    content: $icon-Проекты4;
+  }
+}
+.icon-Сайты {
+  &:before {
+    content: $icon-Сайты;
+  }
+}
+.icon-Таблицы3 {
+  &:before {
+    content: $icon-Таблицы3;
+  }
+}
+.icon-Баланс-общий-по-организациям {
+  &:before {
+    content: $icon-Баланс-общий-по-организациям;
+  }
+}
+.icon-Баланс-пользователя {
+  &:before {
+    content: $icon-Баланс-пользователя;
+  }
+}
+.icon-Выход {
+  &:before {
+    content: $icon-Выход;
+  }
+}
+.icon-Добавить-заметку {
+  &:before {
+    content: $icon-Добавить-заметку;
+  }
+}
+.icon-Избранное2 {
+  &:before {
+    content: $icon-Избранное2;
+  }
+}
+.icon-Настройки3 {
+  &:before {
+    content: $icon-Настройки3;
+  }
+}
+.icon-Отправить-SMS {
+  &:before {
+    content: $icon-Отправить-SMS;
+  }
+}
+.icon-Партнерская-программа2 {
+  &:before {
+    content: $icon-Партнерская-программа2;
+  }
+}
+.icon-Портфель-проектов {
+  &:before {
+    content: $icon-Портфель-проектов;
+  }
+}
+.icon-Проверить-обновления2 {
+  &:before {
+    content: $icon-Проверить-обновления2;
+  }
+}
+.icon-Справка {
+  &:before {
+    content: $icon-Справка;
+  }
+}
+.icon-E-mail {
+  &:before {
+    content: $icon-E-mail;
+  }
+}
+.icon-SMS-сообщения {
+  &:before {
+    content: $icon-SMS-сообщения;
+  }
+}
+.icon-Видеоконференции2 {
+  &:before {
+    content: $icon-Видеоконференции2;
+  }
+}
+.icon-Главная-страница .path1 {
+  &:before {
+    content: $icon-Главная-страница-path1;  
+    color: rgb(1, 1, 1);
+  }
+}
+.icon-Главная-страница .path2 {
+  &:before {
+    content: $icon-Главная-страница-path2;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Главная-страница .path3 {
+  &:before {
+    content: $icon-Главная-страница-path3;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Главная-страница .path4 {
+  &:before {
+    content: $icon-Главная-страница-path4;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Избранное {
+  &:before {
+    content: $icon-Избранное;
+  }
+}
+.icon-Календарь2 {
+  &:before {
+    content: $icon-Календарь2;
+  }
+}
+.icon-Контакты4 {
+  &:before {
+    content: $icon-Контакты4;
+  }
+}
+.icon-настройки {
+  &:before {
+    content: $icon-настройки;
+  }
+}
+.icon-Новости3 {
+  &:before {
+    content: $icon-Новости3;
+  }
+}
+.icon-Оповещения2 {
+  &:before {
+    content: $icon-Оповещения2;
+  }
+}
+.icon-Организация2 {
+  &:before {
+    content: $icon-Организация2;
+  }
+}
+.icon-Персонал {
+  &:before {
+    content: $icon-Персонал;
+  }
+}
+.icon-Позвонить {
+  &:before {
+    content: $icon-Позвонить;
+  }
+}
+.icon-Поиск8 {
+  &:before {
+    content: $icon-Поиск8;
+  }
+}
+.icon-Проекты3 {
+  &:before {
+    content: $icon-Проекты3;
+  }
+}
+.icon-Сдача-отчетности {
+  &:before {
+    content: $icon-Сдача-отчетности;
+  }
+}
+.icon-Создать-организацию {
+  &:before {
+    content: $icon-Создать-организацию;
+  }
+}
+.icon-Таблицы2 {
+  &:before {
+    content: $icon-Таблицы2;
+  }
+}
+.icon-Телефония-и-смс2 .path1 {
+  &:before {
+    content: $icon-Телефония-и-смс2-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Телефония-и-смс2 .path2 {
+  &:before {
+    content: $icon-Телефония-и-смс2-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Телефония-и-смс2 .path3 {
+  &:before {
+    content: $icon-Телефония-и-смс2-path3;  
+    margin-left: -1em;  
+    color: rgb(1, 1, 1);
+  }
+}
+.icon-Файлы4 {
+  &:before {
+    content: $icon-Файлы4;
+  }
+}
+.icon-Чат3 {
+  &:before {
+    content: $icon-Чат3;
+  }
+}
+.icon-Чаты2 {
+  &:before {
+    content: $icon-Чаты2;
+  }
+}
+.icon-Важное-дело {
+  &:before {
+    content: $icon-Важное-дело;
+  }
+}
+.icon-Время {
+  &:before {
+    content: $icon-Время;
+  }
+}
+.icon-Выполненное-дело {
+  &:before {
+    content: $icon-Выполненное-дело;
+  }
+}
+.icon-Дата {
+  &:before {
+    content: $icon-Дата;
+  }
+}
+.icon-Дело-еще-не-просрочено {
+  &:before {
+    content: $icon-Дело-еще-не-просрочено;
+  }
+}
+.icon-Календарь-дел {
+  &:before {
+    content: $icon-Календарь-дел;
+  }
+}
+.icon-Ответственный2 {
+  &:before {
+    content: $icon-Ответственный2;
+  }
+}
+.icon-Плавающее-дело {
+  &:before {
+    content: $icon-Плавающее-дело;
+  }
+}
+.icon-Просроченное-дело {
+  &:before {
+    content: $icon-Просроченное-дело;
+  }
+}
+.icon-Создать-дело {
+  &:before {
+    content: $icon-Создать-дело;
+  }
+}
+.icon-Аноним {
+  &:before {
+    content: $icon-Аноним;
+  }
+}
+.icon-Друзья2 {
+  &:before {
+    content: $icon-Друзья2;
+  }
+}
+.icon-Женщина {
+  &:before {
+    content: $icon-Женщина;
+  }
+}
+.icon-Мужчина {
+  &:before {
+    content: $icon-Мужчина;
+  }
+}
+.icon-Поиск7 {
+  &:before {
+    content: $icon-Поиск7;
+  }
+}
+.icon-База-знаний2 {
+  &:before {
+    content: $icon-База-знаний2;
+  }
+}
+.icon-В-избранное3 {
+  &:before {
+    content: $icon-В-избранное3;
+  }
+}
+.icon-Вложить-изображение-из-буфера-обмена2 {
+  &:before {
+    content: $icon-Вложить-изображение-из-буфера-обмена2;
+  }
+}
+.icon-Дело-выполнено {
+  &:before {
+    content: $icon-Дело-выполнено;
+  }
+}
+.icon-Дело-отменено {
+  &:before {
+    content: $icon-Дело-отменено;
+  }
+}
+.icon-Добавить-файлы3 {
+  &:before {
+    content: $icon-Добавить-файлы3;
+  }
+}
+.icon-Документы {
+  &:before {
+    content: $icon-Документы;
+  }
+}
+.icon-Доступ2 {
+  &:before {
+    content: $icon-Доступ2;
+  }
+}
+.icon-Завершена {
+  &:before {
+    content: $icon-Завершена;
+  }
+}
+.icon-Закрыть14 {
+  &:before {
+    content: $icon-Закрыть14;
+  }
+}
+.icon-Заменить-файл2 {
+  &:before {
+    content: $icon-Заменить-файл2;
+  }
+}
+.icon-Избранные-комментарии {
+  &:before {
+    content: $icon-Избранные-комментарии;
+  }
+}
+.icon-Источник-RSS {
+  &:before {
+    content: $icon-Источник-RSS;
+  }
+}
+.icon-Картинка3 {
+  &:before {
+    content: $icon-Картинка3;
+  }
+}
+.icon-Категория2 {
+  &:before {
+    content: $icon-Категория2;
+  }
+}
+.icon-Комментарий-преобразован-в-дело {
+  &:before {
+    content: $icon-Комментарий-преобразован-в-дело;
+  }
+}
+.icon-Копировать-ссылку2 {
+  &:before {
+    content: $icon-Копировать-ссылку2;
+  }
+}
+.icon-Копировать3 {
+  &:before {
+    content: $icon-Копировать3;
+  }
+}
+.icon-Личные2 {
+  &:before {
+    content: $icon-Личные2;
+  }
+}
+.icon-Назначена {
+  &:before {
+    content: $icon-Назначена;
+  }
+}
+.icon-Назначена_2 {
+  &:before {
+    content: $icon-Назначена_2;
+  }
+}
+.icon-Назначить3 {
+  &:before {
+    content: $icon-Назначить3;
+  }
+}
+.icon-Не-нравится2 {
+  &:before {
+    content: $icon-Не-нравится2;
+  }
+}
+.icon-Нравится2 {
+  &:before {
+    content: $icon-Нравится2;
+  }
+}
+.icon-Отклик3 {
+  &:before {
+    content: $icon-Отклик3;
+  }
+}
+.icon-Отложена {
+  &:before {
+    content: $icon-Отложена;
+  }
+}
+.icon-Отменена {
+  &:before {
+    content: $icon-Отменена;
+  }
+}
+.icon-Отправить4 {
+  &:before {
+    content: $icon-Отправить4;
+  }
+}
+.icon-Отработана {
+  &:before {
+    content: $icon-Отработана;
+  }
+}
+.icon-Переместить6 {
+  &:before {
+    content: $icon-Переместить6;
+  }
+}
+.icon-Подтверждена {
+  &:before {
+    content: $icon-Подтверждена;
+  }
+}
+.icon-Подтверждена_2 {
+  &:before {
+    content: $icon-Подтверждена_2;
+  }
+}
+.icon-Просмотреть2 {
+  &:before {
+    content: $icon-Просмотреть2;
+  }
+}
+.icon-Свойства-задачи {
+  &:before {
+    content: $icon-Свойства-задачи;
+  }
+}
+.icon-Свойства-файла3 {
+  &:before {
+    content: $icon-Свойства-файла3;
+  }
+}
+.icon-Сохранить7 {
+  &:before {
+    content: $icon-Сохранить7;
+  }
+}
+.icon-Статус-задачи2 {
+  &:before {
+    content: $icon-Статус-задачи2;
+  }
+}
+.icon-Таблица {
+  &:before {
+    content: $icon-Таблица;
+  }
+}
+.icon-Удалить9 {
+  &:before {
+    content: $icon-Удалить9;
+  }
+}
+.icon-Цитировать {
+  &:before {
+    content: $icon-Цитировать;
+  }
+}
+.icon-Microsoft-Word {
+  &:before {
+    content: $icon-Microsoft-Word;
+  }
+}
+.icon-Добавить2 {
+  &:before {
+    content: $icon-Добавить2;
+  }
+}
+.icon-Документ2 {
+  &:before {
+    content: $icon-Документ2;
+  }
+}
+.icon-Задачи3 {
+  &:before {
+    content: $icon-Задачи3;
+  }
+}
+.icon-Комментировать4 {
+  &:before {
+    content: $icon-Комментировать4;
+  }
+}
+.icon-Контакты3 {
+  &:before {
+    content: $icon-Контакты3;
+  }
+}
+.icon-Личные-проекты-друзей {
+  &:before {
+    content: $icon-Личные-проекты-друзей;
+  }
+}
+.icon-Проекты2 {
+  &:before {
+    content: $icon-Проекты2;
+  }
+}
+.icon-Таблицы {
+  &:before {
+    content: $icon-Таблицы;
+  }
+}
+.icon-Файлы3 {
+  &:before {
+    content: $icon-Файлы3;
+  }
+}
+.icon-История2 {
+  &:before {
+    content: $icon-История2;
+  }
+}
+.icon-Обновить3 {
+  &:before {
+    content: $icon-Обновить3;
+  }
+}
+.icon-Вид3 {
+  &:before {
+    content: $icon-Вид3;
+  }
+}
+.icon-Переместить5 {
+  &:before {
+    content: $icon-Переместить5;
+  }
+}
+.icon-Поиск6 {
+  &:before {
+    content: $icon-Поиск6;
+  }
+}
+.icon-Создать4 {
+  &:before {
+    content: $icon-Создать4;
+  }
+}
+.icon-Удалить8 {
+  &:before {
+    content: $icon-Удалить8;
+  }
+}
+.icon-Не-нравится {
+  &:before {
+    content: $icon-Не-нравится;
+  }
+}
+.icon-Нравится {
+  &:before {
+    content: $icon-Нравится;
+  }
+}
+.icon-Очистить-ленту2 .path1 {
+  &:before {
+    content: $icon-Очистить-ленту2-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Очистить-ленту2 .path2 {
+  &:before {
+    content: $icon-Очистить-ленту2-path2;  
+    margin-left: -0.998046875em;  
+    color: rgb(2, 2, 2);
+  }
+}
+.icon-Очистить-ленту_2 {
+  &:before {
+    content: $icon-Очистить-ленту_2;
+  }
+}
+.icon-Очистить-ленту_3 {
+  &:before {
+    content: $icon-Очистить-ленту_3;
+  }
+}
+.icon-Очистить-ленту_4 {
+  &:before {
+    content: $icon-Очистить-ленту_4;
+  }
+}
+.icon-Очистить-ленту_5 {
+  &:before {
+    content: $icon-Очистить-ленту_5;
+  }
+}
+.icon-Скрыть {
+  &:before {
+    content: $icon-Скрыть;
+  }
+}
+.icon-Информация {
+  &:before {
+    content: $icon-Информация;
+  }
+}
+.icon-Партнерская-программа {
+  &:before {
+    content: $icon-Партнерская-программа;
+  }
+}
+.icon-Сохранить6 {
+  &:before {
+    content: $icon-Сохранить6;
+  }
+}
+.icon-Статистика {
+  &:before {
+    content: $icon-Статистика;
+  }
+}
+.icon-Анкета2 {
+  &:before {
+    content: $icon-Анкета2;
+  }
+}
+.icon-Видеоконференции {
+  &:before {
+    content: $icon-Видеоконференции;
+  }
+}
+.icon-Друзья {
+  &:before {
+    content: $icon-Друзья;
+  }
+}
+.icon-История {
+  &:before {
+    content: $icon-История;
+  }
+}
+.icon-Календарь {
+  &:before {
+    content: $icon-Календарь;
+  }
+}
+.icon-Контакты2 {
+  &:before {
+    content: $icon-Контакты2;
+  }
+}
+.icon-Новости2 {
+  &:before {
+    content: $icon-Новости2;
+  }
+}
+.icon-Почта2 {
+  &:before {
+    content: $icon-Почта2;
+  }
+}
+.icon-Проекты {
+  &:before {
+    content: $icon-Проекты;
+  }
+}
+.icon-Телефония-и-смс {
+  &:before {
+    content: $icon-Телефония-и-смс;
+  }
+}
+.icon-Файлы2 {
+  &:before {
+    content: $icon-Файлы2;
+  }
+}
+.icon-Чаты {
+  &:before {
+    content: $icon-Чаты;
+  }
+}
+.icon-Восстановить-даные {
+  &:before {
+    content: $icon-Восстановить-даные;
+  }
+}
+.icon-Закрыть13 {
+  &:before {
+    content: $icon-Закрыть13;
+  }
+}
+.icon-Изменить-пароль {
+  &:before {
+    content: $icon-Изменить-пароль;
+  }
+}
+.icon-Очистить-хранилище {
+  &:before {
+    content: $icon-Очистить-хранилище;
+  }
+}
+.icon-Пароль {
+  &:before {
+    content: $icon-Пароль;
+  }
+}
+.icon-Скачать-агент {
+  &:before {
+    content: $icon-Скачать-агент;
+  }
+}
+.icon-Сохранить5 {
+  &:before {
+    content: $icon-Сохранить5;
+  }
+}
+.icon-База-знаний {
+  &:before {
+    content: $icon-База-знаний;
+  }
+}
+.icon-В-избранное2 {
+  &:before {
+    content: $icon-В-избранное2;
+  }
+}
+.icon-Вид2 {
+  &:before {
+    content: $icon-Вид2;
+  }
+}
+.icon-Вложить-изображение-из-буфера-обмена {
+  &:before {
+    content: $icon-Вложить-изображение-из-буфера-обмена;
+  }
+}
+.icon-Вразброс {
+  &:before {
+    content: $icon-Вразброс;
+  }
+}
+.icon-Добавить-файлы2 {
+  &:before {
+    content: $icon-Добавить-файлы2;
+  }
+}
+.icon-Закрыть12 {
+  &:before {
+    content: $icon-Закрыть12;
+  }
+}
+.icon-Заменить-файл {
+  &:before {
+    content: $icon-Заменить-файл;
+  }
+}
+.icon-Изменена-категория {
+  &:before {
+    content: $icon-Изменена-категория;
+  }
+}
+.icon-Картинка2 {
+  &:before {
+    content: $icon-Картинка2;
+  }
+}
+.icon-Категория {
+  &:before {
+    content: $icon-Категория;
+  }
+}
+.icon-Комментировать3 {
+  &:before {
+    content: $icon-Комментировать3;
+  }
+}
+.icon-Копировать2 {
+  &:before {
+    content: $icon-Копировать2;
+  }
+}
+.icon-Назначить2 {
+  &:before {
+    content: $icon-Назначить2;
+  }
+}
+.icon-Настройки2 {
+  &:before {
+    content: $icon-Настройки2;
+  }
+}
+.icon-Новое-дело {
+  &:before {
+    content: $icon-Новое-дело;
+  }
+}
+.icon-Оповещение {
+  &:before {
+    content: $icon-Оповещение;
+  }
+}
+.icon-Отклик2 {
+  &:before {
+    content: $icon-Отклик2;
+  }
+}
+.icon-Отмена3 {
+  &:before {
+    content: $icon-Отмена3;
+  }
+}
+.icon-Отправить3 {
+  &:before {
+    content: $icon-Отправить3;
+  }
+}
+.icon-Очистить-ленту {
+  &:before {
+    content: $icon-Очистить-ленту;
+  }
+}
+.icon-Перенести {
+  &:before {
+    content: $icon-Перенести;
+  }
+}
+.icon-По-задаче {
+  &:before {
+    content: $icon-По-задаче;
+  }
+}
+.icon-Почта {
+  &:before {
+    content: $icon-Почта;
+  }
+}
+.icon-Предыдущие-обновления {
+  &:before {
+    content: $icon-Предыдущие-обновления;
+  }
+}
+.icon-Проверить-обновления {
+  &:before {
+    content: $icon-Проверить-обновления;
+  }
+}
+.icon-Просмотреть {
+  &:before {
+    content: $icon-Просмотреть;
+  }
+}
+.icon-Свойства-файла2 {
+  &:before {
+    content: $icon-Свойства-файла2;
+  }
+}
+.icon-Статус-задачи {
+  &:before {
+    content: $icon-Статус-задачи;
+  }
+}
+.icon-Файл {
+  &:before {
+    content: $icon-Файл;
+  }
+}
+.icon-Добавить-документ {
+  &:before {
+    content: $icon-Добавить-документ;
+  }
+}
+.icon-Добавить-запись {
+  &:before {
+    content: $icon-Добавить-запись;
+  }
+}
+.icon-Закрыть11 {
+  &:before {
+    content: $icon-Закрыть11;
+  }
+}
+.icon-Итого {
+  &:before {
+    content: $icon-Итого;
+  }
+}
+.icon-Просмотр-документа {
+  &:before {
+    content: $icon-Просмотр-документа;
+  }
+}
+.icon-Скачать {
+  &:before {
+    content: $icon-Скачать;
+  }
+}
+.icon-Скопировать-ссылку {
+  &:before {
+    content: $icon-Скопировать-ссылку;
+  }
+}
+.icon-Сохранить4 {
+  &:before {
+    content: $icon-Сохранить4;
+  }
+}
+.icon-Удалить-запись {
+  &:before {
+    content: $icon-Удалить-запись;
+  }
+}
+.icon-Удалить7 {
+  &:before {
+    content: $icon-Удалить7;
+  }
+}
+.icon-Экспорт {
+  &:before {
+    content: $icon-Экспорт;
+  }
+}
+.icon-Экспортировать {
+  &:before {
+    content: $icon-Экспортировать;
+  }
+}
+.icon-Закрыть10 {
+  &:before {
+    content: $icon-Закрыть10;
+  }
+}
+.icon-Контакты-для-смс {
+  &:before {
+    content: $icon-Контакты-для-смс;
+  }
+}
+.icon-Личные {
+  &:before {
+    content: $icon-Личные;
+  }
+}
+.icon-Отменить5 {
+  &:before {
+    content: $icon-Отменить5;
+  }
+}
+.icon-Отправитель {
+  &:before {
+    content: $icon-Отправитель;
+  }
+}
+.icon-Отправить-со-счета {
+  &:before {
+    content: $icon-Отправить-со-счета;
+  }
+}
+.icon-Отправить2 {
+  &:before {
+    content: $icon-Отправить2;
+  }
+}
+.icon-Задачи2 {
+  &:before {
+    content: $icon-Задачи2;
+  }
+}
+.icon-Контакты {
+  &:before {
+    content: $icon-Контакты;
+  }
+}
+.icon-Пользователи2 {
+  &:before {
+    content: $icon-Пользователи2;
+  }
+}
+.icon-Расширенный-поиск {
+  &:before {
+    content: $icon-Расширенный-поиск;
+  }
+}
+.icon-Завершить2 {
+  &:before {
+    content: $icon-Завершить2;
+  }
+}
+.icon-Начать {
+  &:before {
+    content: $icon-Начать;
+  }
+}
+.icon-Отменить4 {
+  &:before {
+    content: $icon-Отменить4;
+  }
+}
+.icon-Печать {
+  &:before {
+    content: $icon-Печать;
+  }
+}
+.icon-Важное {
+  &:before {
+    content: $icon-Важное;
+  }
+}
+.icon-Задача {
+  &:before {
+    content: $icon-Задача;
+  }
+}
+.icon-Закрыть9 {
+  &:before {
+    content: $icon-Закрыть9;
+  }
+}
+.icon-Личное {
+  &:before {
+    content: $icon-Личное;
+  }
+}
+.icon-Организация_1 {
+  &:before {
+    content: $icon-Организация_1;
+  }
+}
+.icon-Организация_2 {
+  &:before {
+    content: $icon-Организация_2;
+  }
+}
+.icon-Перейти-к-задаче {
+  &:before {
+    content: $icon-Перейти-к-задаче;
+  }
+}
+.icon-Перейти-к-записи {
+  &:before {
+    content: $icon-Перейти-к-записи;
+  }
+}
+.icon-Проект2 {
+  &:before {
+    content: $icon-Проект2;
+  }
+}
+.icon-Сохранить3 {
+  &:before {
+    content: $icon-Сохранить3;
+  }
+}
+.icon-Срочное {
+  &:before {
+    content: $icon-Срочное;
+  }
+}
+.icon-Добавить-файл {
+  &:before {
+    content: $icon-Добавить-файл;
+  }
+}
+.icon-Достаточно-сложная {
+  &:before {
+    content: $icon-Достаточно-сложная;
+  }
+}
+.icon-Легкая-задача {
+  &:before {
+    content: $icon-Легкая-задача;
+  }
+}
+.icon-Название2 {
+  &:before {
+    content: $icon-Название2;
+  }
+}
+.icon-Начало {
+  &:before {
+    content: $icon-Начало;
+  }
+}
+.icon-Не-определена {
+  &:before {
+    content: $icon-Не-определена;
+  }
+}
+.icon-Ответственный {
+  &:before {
+    content: $icon-Ответственный;
+  }
+}
+.icon-Отмена2 {
+  &:before {
+    content: $icon-Отмена2;
+  }
+}
+.icon-Очень-сложная {
+  &:before {
+    content: $icon-Очень-сложная;
+  }
+}
+.icon-Прибыль {
+  &:before {
+    content: $icon-Прибыль;
+  }
+}
+.icon-Сложная-задача {
+  &:before {
+    content: $icon-Сложная-задача;
+  }
+}
+.icon-Создать3 {
+  &:before {
+    content: $icon-Создать3;
+  }
+}
+.icon-Средняя-задача {
+  &:before {
+    content: $icon-Средняя-задача;
+  }
+}
+.icon-Срок {
+  &:before {
+    content: $icon-Срок;
+  }
+}
+.icon-Название {
+  &:before {
+    content: $icon-Название;
+  }
+}
+.icon-Описание {
+  &:before {
+    content: $icon-Описание;
+  }
+}
+.icon-Отмена {
+  &:before {
+    content: $icon-Отмена;
+  }
+}
+.icon-Создать2 {
+  &:before {
+    content: $icon-Создать2;
+  }
+}
+.icon-Закрыть8 {
+  &:before {
+    content: $icon-Закрыть8;
+  }
+}
+.icon-К-задаче {
+  &:before {
+    content: $icon-К-задаче;
+  }
+}
+.icon-Картинка {
+  &:before {
+    content: $icon-Картинка;
+  }
+}
+.icon-Комментировать2 {
+  &:before {
+    content: $icon-Комментировать2;
+  }
+}
+.icon-Копировать {
+  &:before {
+    content: $icon-Копировать;
+  }
+}
+.icon-Переместить4 {
+  &:before {
+    content: $icon-Переместить4;
+  }
+}
+.icon-Посмотреть {
+  &:before {
+    content: $icon-Посмотреть;
+  }
+}
+.icon-Сохранить2 {
+  &:before {
+    content: $icon-Сохранить2;
+  }
+}
+.icon-Prostoy.Biz {
+  &:before {
+    content: $icon-Prostoy.Biz;
+  }
+}
+.icon-Выбрать-файл3 {
+  &:before {
+    content: $icon-Выбрать-файл3;
+  }
+}
+.icon-Доступ {
+  &:before {
+    content: $icon-Доступ;
+  }
+}
+.icon-Закрыть7 {
+  &:before {
+    content: $icon-Закрыть7;
+  }
+}
+.icon-Организация {
+  &:before {
+    content: $icon-Организация;
+  }
+}
+.icon-Поиск5 {
+  &:before {
+    content: $icon-Поиск5;
+  }
+}
+.icon-Почтовые-шлюзы2 .path1 {
+  &:before {
+    content: $icon-Почтовые-шлюзы2-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Почтовые-шлюзы2 .path2 {
+  &:before {
+    content: $icon-Почтовые-шлюзы2-path2;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Почтовые-шлюзы2 .path3 {
+  &:before {
+    content: $icon-Почтовые-шлюзы2-path3;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Почтовые-шлюзы2 .path4 {
+  &:before {
+    content: $icon-Почтовые-шлюзы2-path4;  
+    margin-left: -0.998046875em;  
+    color: rgb(2, 2, 2);
+  }
+}
+.icon-Почтовые-шлюзы2 .path5 {
+  &:before {
+    content: $icon-Почтовые-шлюзы2-path5;  
+    margin-left: -0.998046875em;  
+    color: rgb(2, 2, 2);
+  }
+}
+.icon-Почтовые-шлюзы2 .path6 {
+  &:before {
+    content: $icon-Почтовые-шлюзы2-path6;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Почтовые-шлюзы2 .path7 {
+  &:before {
+    content: $icon-Почтовые-шлюзы2-path7;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Почтовый-ящик2 .path1 {
+  &:before {
+    content: $icon-Почтовый-ящик2-path1;  
+    color: rgb(2, 2, 2);
+  }
+}
+.icon-Почтовый-ящик2 .path2 {
+  &:before {
+    content: $icon-Почтовый-ящик2-path2;  
+    margin-left: -0.998046875em;  
+    color: rgb(2, 2, 2);
+  }
+}
+.icon-Почтовый-ящик2 .path3 {
+  &:before {
+    content: $icon-Почтовый-ящик2-path3;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Правило {
+  &:before {
+    content: $icon-Правило;
+  }
+}
+.icon-Редактирование-правила {
+  &:before {
+    content: $icon-Редактирование-правила;
+  }
+}
+.icon-Ресурсы {
+  &:before {
+    content: $icon-Ресурсы;
+  }
+}
+.icon-Сервер2 {
+  &:before {
+    content: $icon-Сервер2;
+  }
+}
+.icon-Создание почтового шлюза Prostoy.Biz {
+  &:before {
+    content: $icon-Создание почтового шлюза Prostoy.Biz;
+  }
+}
+.icon-Создать-правило2 {
+  &:before {
+    content: $icon-Создать-правило2;
+  }
+}
+.icon-Создать-шлюз {
+  &:before {
+    content: $icon-Создать-шлюз;
+  }
+}
+.icon-Сохранить {
+  &:before {
+    content: $icon-Сохранить;
+  }
+}
+.icon-Удалить6 {
+  &:before {
+    content: $icon-Удалить6;
+  }
+}
+.icon-Открыть2 {
+  &:before {
+    content: $icon-Открыть2;
+  }
+}
+.icon-Отменить3 {
+  &:before {
+    content: $icon-Отменить3;
+  }
+}
+.icon-Переместить3 {
+  &:before {
+    content: $icon-Переместить3;
+  }
+}
+.icon-Поиск4 {
+  &:before {
+    content: $icon-Поиск4;
+  }
+}
+.icon-Пригласить-пользователя {
+  &:before {
+    content: $icon-Пригласить-пользователя;
+  }
+}
+.icon-Расположить-окна-по-умолчанию2 {
+  &:before {
+    content: $icon-Расположить-окна-по-умолчанию2;
+  }
+}
+.icon-Закрыть6 {
+  &:before {
+    content: $icon-Закрыть6;
+  }
+}
+.icon-Обновить-данные {
+  &:before {
+    content: $icon-Обновить-данные;
+  }
+}
+.icon-Почтовые-шлюзы {
+  &:before {
+    content: $icon-Почтовые-шлюзы;
+  }
+}
+.icon-Почтовый-ящик .path1 {
+  &:before {
+    content: $icon-Почтовый-ящик-path1;  
+    color: rgb(2, 2, 2);
+  }
+}
+.icon-Почтовый-ящик .path2 {
+  &:before {
+    content: $icon-Почтовый-ящик-path2;  
+    margin-left: -0.998046875em;  
+    color: rgb(2, 2, 2);
+  }
+}
+.icon-Почтовый-ящик .path3 {
+  &:before {
+    content: $icon-Почтовый-ящик-path3;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Редактирование-почтового-шлюза {
+  &:before {
+    content: $icon-Редактирование-почтового-шлюза;
+  }
+}
+.icon-Сервер {
+  &:before {
+    content: $icon-Сервер;
+  }
+}
+.icon-Создание-правила {
+  &:before {
+    content: $icon-Создание-правила;
+  }
+}
+.icon-Создать-правило {
+  &:before {
+    content: $icon-Создать-правило;
+  }
+}
+.icon-Удалить5 {
+  &:before {
+    content: $icon-Удалить5;
+  }
+}
+.icon-Шлюз-по-умолчанию {
+  &:before {
+    content: $icon-Шлюз-по-умолчанию;
+  }
+}
+.icon-Вид {
+  &:before {
+    content: $icon-Вид;
+  }
+}
+.icon-Высокая-важность {
+  &:before {
+    content: $icon-Высокая-важность;
+  }
+}
+.icon-Добавить-в-избранное {
+  &:before {
+    content: $icon-Добавить-в-избранное;
+  }
+}
+.icon-Комментировать {
+  &:before {
+    content: $icon-Комментировать;
+  }
+}
+.icon-Низкая-важность {
+  &:before {
+    content: $icon-Низкая-важность;
+  }
+}
+.icon-Открыть-проект {
+  &:before {
+    content: $icon-Открыть-проект;
+  }
+}
+.icon-Открыть {
+  &:before {
+    content: $icon-Открыть;
+  }
+}
+.icon-Переместить2 {
+  &:before {
+    content: $icon-Переместить2;
+  }
+}
+.icon-Поиск3 {
+  &:before {
+    content: $icon-Поиск3;
+  }
+}
+.icon-Проект {
+  &:before {
+    content: $icon-Проект;
+  }
+}
+.icon-Создать {
+  &:before {
+    content: $icon-Создать;
+  }
+}
+.icon-Удалить4 {
+  &:before {
+    content: $icon-Удалить4;
+  }
+}
+.icon-Добавить-файлы {
+  &:before {
+    content: $icon-Добавить-файлы;
+  }
+}
+.icon-Назначить {
+  &:before {
+    content: $icon-Назначить;
+  }
+}
+.icon-Ответить-всем {
+  &:before {
+    content: $icon-Ответить-всем;
+  }
+}
+.icon-Ответить {
+  &:before {
+    content: $icon-Ответить;
+  }
+}
+.icon-Отклик {
+  &:before {
+    content: $icon-Отклик;
+  }
+}
+.icon-Переместить {
+  &:before {
+    content: $icon-Переместить;
+  }
+}
+.icon-Переслать {
+  &:before {
+    content: $icon-Переслать;
+  }
+}
+.icon-Удалить3 {
+  &:before {
+    content: $icon-Удалить3;
+  }
+}
+.icon-N {
+  &:before {
+    content: $icon-N;
+  }
+}
+.icon-PDF {
+  &:before {
+    content: $icon-PDF;
+  }
+}
+.icon-X {
+  &:before {
+    content: $icon-X;
+  }
+}
+.icon-Анкета {
+  &:before {
+    content: $icon-Анкета;
+  }
+}
+.icon-Вступить-в-организацию {
+  &:before {
+    content: $icon-Вступить-в-организацию;
+  }
+}
+.icon-Дела {
+  &:before {
+    content: $icon-Дела;
+  }
+}
+.icon-Добавить-в-друзья {
+  &:before {
+    content: $icon-Добавить-в-друзья;
+  }
+}
+.icon-Документ {
+  &:before {
+    content: $icon-Документ;
+  }
+}
+.icon-Задачи {
+  &:before {
+    content: $icon-Задачи;
+  }
+}
+.icon-Звонок {
+  &:before {
+    content: $icon-Звонок;
+  }
+}
+.icon-Найти {
+  &:before {
+    content: $icon-Найти;
+  }
+}
+.icon-Организации {
+  &:before {
+    content: $icon-Организации;
+  }
+}
+.icon-Пользователи {
+  &:before {
+    content: $icon-Пользователи;
+  }
+}
+.icon-Пригласить-в-организацию {
+  &:before {
+    content: $icon-Пригласить-в-организацию;
+  }
+}
+.icon-Профиль-организации {
+  &:before {
+    content: $icon-Профиль-организации;
+  }
+}
+.icon-Сайт {
+  &:before {
+    content: $icon-Сайт;
+  }
+}
+.icon-Сбросить {
+  &:before {
+    content: $icon-Сбросить;
+  }
+}
+.icon-Смс {
+  &:before {
+    content: $icon-Смс;
+  }
+}
+.icon-Файлы {
+  &:before {
+    content: $icon-Файлы;
+  }
+}
+.icon-Часы {
+  &:before {
+    content: $icon-Часы;
+  }
+}
+.icon-Закрыть5 {
+  &:before {
+    content: $icon-Закрыть5;
+  }
+}
+.icon-Обновить2 {
+  &:before {
+    content: $icon-Обновить2;
+  }
+}
+.icon-Отправить {
+  &:before {
+    content: $icon-Отправить;
+  }
+}
+.icon-Отправьте-отчеты {
+  &:before {
+    content: $icon-Отправьте-отчеты;
+  }
+}
+.icon-Подать-заявку {
+  &:before {
+    content: $icon-Подать-заявку;
+  }
+}
+.icon-Поиск2 {
+  &:before {
+    content: $icon-Поиск2;
+  }
+}
+.icon-Получение-ЭП {
+  &:before {
+    content: $icon-Получение-ЭП;
+  }
+}
+.icon-Получите-ответ {
+  &:before {
+    content: $icon-Получите-ответ;
+  }
+}
+.icon-ПФР {
+  &:before {
+    content: $icon-ПФР;
+  }
+}
+.icon-Росстат {
+  &:before {
+    content: $icon-Росстат;
+  }
+}
+.icon-ФНС {
+  &:before {
+    content: $icon-ФНС;
+  }
+}
+.icon-ФСС {
+  &:before {
+    content: $icon-ФСС;
+  }
+}
+.icon-Электронная-подпись {
+  &:before {
+    content: $icon-Электронная-подпись;
+  }
+}
+.icon-Завершить {
+  &:before {
+    content: $icon-Завершить;
+  }
+}
+.icon-Закрыть4 {
+  &:before {
+    content: $icon-Закрыть4;
+  }
+}
+.icon-Купить {
+  &:before {
+    content: $icon-Купить;
+  }
+}
+.icon-Маркетинг {
+  &:before {
+    content: $icon-Маркетинг;
+  }
+}
+.icon-Менеджмент {
+  &:before {
+    content: $icon-Менеджмент;
+  }
+}
+.icon-Найти-организацию {
+  &:before {
+    content: $icon-Найти-организацию;
+  }
+}
+.icon-в-которой-я-работаю {
+  &:before {
+    content: $icon-в-которой-я-работаю;
+  }
+}
+.icon-Основные-сведенья-об-организации {
+  &:before {
+    content: $icon-Основные-сведенья-об-организации;
+  }
+}
+.icon-Проектный-офис {
+  &:before {
+    content: $icon-Проектный-офис;
+  }
+}
+.icon-Распределение-обязанностей {
+  &:before {
+    content: $icon-Распределение-обязанностей;
+  }
+}
+.icon-Создание-команды {
+  &:before {
+    content: $icon-Создание-команды;
+  }
+}
+.icon-Создание-почтового-ящика .path1 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path2 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path2;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path3 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path3;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path4 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path4;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path5 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path5;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path6 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path6;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path7 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path7;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path8 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path8;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path9 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path9;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path10 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path10;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path11 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path11;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path12 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path12;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path13 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path13;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path14 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path14;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path15 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path15;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path16 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path16;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path17 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path17;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path18 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path18;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path19 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path19;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path20 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path20;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Создание-почтового-ящика .path21 {
+  &:before {
+    content: $icon-Создание-почтового-ящика-path21;  
+    margin-left: -0.998046875em;  
+    color: rgb(1, 1, 1);
+  }
+}
+.icon-Создать-новую-организацию {
+  &:before {
+    content: $icon-Создать-новую-организацию;
+  }
+}
+.icon-Сфера-деятельности-организации {
+  &:before {
+    content: $icon-Сфера-деятельности-организации;
+  }
+}
+.icon-Счета .path1 {
+  &:before {
+    content: $icon-Счета-path1;  
+    color: rgb(1, 1, 1);
+  }
+}
+.icon-Счета .path2 {
+  &:before {
+    content: $icon-Счета-path2;  
+    margin-left: -0.998046875em;  
+    color: rgb(1, 1, 1);
+  }
+}
+.icon-Счета .path3 {
+  &:before {
+    content: $icon-Счета-path3;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Счета .path4 {
+  &:before {
+    content: $icon-Счета-path4;  
+    margin-left: -0.998046875em;  
+    color: rgb(1, 1, 1);
+  }
+}
+.icon-Счета .path5 {
+  &:before {
+    content: $icon-Счета-path5;  
+    margin-left: -0.998046875em;  
+    color: rgb(1, 1, 1);
+  }
+}
+.icon-Счета .path6 {
+  &:before {
+    content: $icon-Счета-path6;  
+    margin-left: -0.998046875em;  
+    color: rgb(1, 1, 1);
+  }
+}
+.icon-Счета .path7 {
+  &:before {
+    content: $icon-Счета-path7;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Закрыть3 {
+  &:before {
+    content: $icon-Закрыть3;
+  }
+}
+.icon-Новости {
+  &:before {
+    content: $icon-Новости;
+  }
+}
+.icon-Оповещения {
+  &:before {
+    content: $icon-Оповещения;
+  }
+}
+.icon-Приглашение {
+  &:before {
+    content: $icon-Приглашение;
+  }
+}
+.icon-Проекты-и-задачи {
+  &:before {
+    content: $icon-Проекты-и-задачи;
+  }
+}
+.icon-Создание-организации {
+  &:before {
+    content: $icon-Создание-организации;
+  }
+}
+.icon-Чат2 {
+  &:before {
+    content: $icon-Чат2;
+  }
+}
+.icon-Аудиоконференция {
+  &:before {
+    content: $icon-Аудиоконференция;
+  }
+}
+.icon-Ведущий .path1 {
+  &:before {
+    content: $icon-Ведущий-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Ведущий .path2 {
+  &:before {
+    content: $icon-Ведущий-path2;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Ведущий .path3 {
+  &:before {
+    content: $icon-Ведущий-path3;  
+    margin-left: -0.998046875em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Ведущий .path4 {
+  &:before {
+    content: $icon-Ведущий-path4;  
+    margin-left: -0.998046875em;  
+    color: rgb(35, 31, 32);
+  }
+}
+.icon-Видео-трансляция {
+  &:before {
+    content: $icon-Видео-трансляция;
+  }
+}
+.icon-Включить-камеру {
+  &:before {
+    content: $icon-Включить-камеру;
+  }
+}
+.icon-Выбрать-толщину-линий {
+  &:before {
+    content: $icon-Выбрать-толщину-линий;
+  }
+}
+.icon-Выбрать-цвет {
+  &:before {
+    content: $icon-Выбрать-цвет;
+  }
+}
+.icon-Выключить-камеру {
+  &:before {
+    content: $icon-Выключить-камеру;
+  }
+}
+.icon-Закрузить-документ {
+  &:before {
+    content: $icon-Закрузить-документ;
+  }
+}
+.icon-Маркер {
+  &:before {
+    content: $icon-Маркер;
+  }
+}
+.icon-Написать-сообщение {
+  &:before {
+    content: $icon-Написать-сообщение;
+  }
+}
+.icon-Окружность {
+  &:before {
+    content: $icon-Окружность;
+  }
+}
+.icon-Отменить-фигуру {
+  &:before {
+    content: $icon-Отменить-фигуру;
+  }
+}
+.icon-Очистить-страницу {
+  &:before {
+    content: $icon-Очистить-страницу;
+  }
+}
+.icon-Подогнать-под-размер-окна {
+  &:before {
+    content: $icon-Подогнать-под-размер-окна;
+  }
+}
+.icon-Подогнать-под-ширину-окна {
+  &:before {
+    content: $icon-Подогнать-под-ширину-окна;
+  }
+}
+.icon-Предыдущий-слайд {
+  &:before {
+    content: $icon-Предыдущий-слайд;
+  }
+}
+.icon-Прямоугольник {
+  &:before {
+    content: $icon-Прямоугольник;
+  }
+}
+.icon-Расположить-окна-по-умолчанию {
+  &:before {
+    content: $icon-Расположить-окна-по-умолчанию;
+  }
+}
+.icon-Следующий-слайд {
+  &:before {
+    content: $icon-Следующий-слайд;
+  }
+}
+.icon-Транслировать-рабочий-стол {
+  &:before {
+    content: $icon-Транслировать-рабочий-стол;
+  }
+}
+.icon-Участники {
+  &:before {
+    content: $icon-Участники;
+  }
+}
+.icon-Чат {
+  &:before {
+    content: $icon-Чат;
+  }
+}
+.icon-SMS {
+  &:before {
+    content: $icon-SMS;
+  }
+}
+.icon-Администраторская-настройка {
+  &:before {
+    content: $icon-Администраторская-настройка;
+  }
+}
+.icon-Выбрать-файл2 {
+  &:before {
+    content: $icon-Выбрать-файл2;
+  }
+}
+.icon-Добавить {
+  &:before {
+    content: $icon-Добавить;
+  }
+}
+.icon-Загрузить-файл {
+  &:before {
+    content: $icon-Загрузить-файл;
+  }
+}
+.icon-Закрыть2 {
+  &:before {
+    content: $icon-Закрыть2;
+  }
+}
+.icon-Интеграция-с-сайтом {
+  &:before {
+    content: $icon-Интеграция-с-сайтом;
+  }
+}
+.icon-Интеграция {
+  &:before {
+    content: $icon-Интеграция;
+  }
+}
+.icon-Настройки {
+  &:before {
+    content: $icon-Настройки;
+  }
+}
+.icon-Обновить {
+  &:before {
+    content: $icon-Обновить;
+  }
+}
+.icon-Очистить-поиск {
+  &:before {
+    content: $icon-Очистить-поиск;
+  }
+}
+.icon-Подробнее .path1 {
+  &:before {
+    content: $icon-Подробнее-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-Подробнее .path2 {
+  &:before {
+    content: $icon-Подробнее-path2;  
+    margin-left: -0.998046875em;  
+    color: rgb(1, 1, 1);
+  }
+}
+.icon-Подробнее .path3 {
+  &:before {
+    content: $icon-Подробнее-path3;  
+    margin-left: -0.998046875em;  
+    color: rgb(1, 1, 1);
+  }
+}
+.icon-Подробнее .path4 {
+  &:before {
+    content: $icon-Подробнее-path4;  
+    margin-left: -0.998046875em;  
+    color: rgb(1, 1, 1);
+  }
+}
+.icon-Поиск {
+  &:before {
+    content: $icon-Поиск;
+  }
+}
+.icon-Пользовательская-настройка {
+  &:before {
+    content: $icon-Пользовательская-настройка;
+  }
+}
+.icon-Редактировать {
+  &:before {
+    content: $icon-Редактировать;
+  }
+}
+.icon-Удалить2 {
+  &:before {
+    content: $icon-Удалить2;
+  }
+}
+.icon-ок {
+  &:before {
+    content: $icon-ок;
+  }
+}
+.icon-Отменить2 {
+  &:before {
+    content: $icon-Отменить2;
+  }
+}
+.icon-Удалить {
+  &:before {
+    content: $icon-Удалить;
+  }
+}
+.icon-В-избранное {
+  &:before {
+    content: $icon-В-избранное;
+  }
+}
+.icon-Закрыть {
+  &:before {
+    content: $icon-Закрыть;
+  }
+}
+.icon-Копировать-ссылку {
+  &:before {
+    content: $icon-Копировать-ссылку;
+  }
+}
+.icon-Копировать-ссылку_2 {
+  &:before {
+    content: $icon-Копировать-ссылку_2;
+  }
+}
+.icon-Открыть-файл {
+  &:before {
+    content: $icon-Открыть-файл;
+  }
+}
+.icon-Отменить {
+  &:before {
+    content: $icon-Отменить;
+  }
+}
+.icon-Свойства-файла {
+  &:before {
+    content: $icon-Свойства-файла;
+  }
+}
+.icon-Удалить-файлы {
+  &:before {
+    content: $icon-Удалить-файлы;
+  }
+}
+.icon-Выбрать-файл {
+  &:before {
+    content: $icon-Выбрать-файл;
+  }
+}
+.icon-Готово {
+  &:before {
+    content: $icon-Готово;
+  }
+}
+.icon-Закрыть-диалог {
+  &:before {
+    content: $icon-Закрыть-диалог;
+  }
+}
+.icon-Найти-собеседника {
+  &:before {
+    content: $icon-Найти-собеседника;
+  }
+}
+.icon-Показать-за {
+  &:before {
+    content: $icon-Показать-за;
+  }
+}
+.icon-Свернуть-диалог {
+  &:before {
+    content: $icon-Свернуть-диалог;
+  }
+}
+.icon-Смайлы {
+  &:before {
+    content: $icon-Смайлы;
+  }
+}
+.icon-Увеличить-размер-окна {
+  &:before {
+    content: $icon-Увеличить-размер-окна;
+  }
+}
+.icon-Уменьшить-размер-окна {
+  &:before {
+    content: $icon-Уменьшить-размер-окна;
+  }
+}
+

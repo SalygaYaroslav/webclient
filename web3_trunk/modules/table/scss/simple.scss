@@ -1,0 +1,18 @@
+@import "../../../_variables";
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid white;
+
+  .table-head {
+    background-color: $add-text-bg-color;
+  }
+  .table-tr {
+
+    .table-td {
+      padding: 2px 8px;
+      border: 1px solid $border-and-add-text-bg-color;
+    }
+  }
+}

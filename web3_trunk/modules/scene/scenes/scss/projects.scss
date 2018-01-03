@@ -1,0 +1,309 @@
+@import "../../../../_variables";
+
+.projects-scene {
+  bottom: 1px;
+  left: 1px;
+  overflow: hidden;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+
+  .projects-list {
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    width: 25%;
+
+    .project-squire {
+      border-bottom: 1px solid $border-and-add-text-bg-color;
+      cursor: pointer;
+      height: 50px;
+      position: relative;
+      background-color: #f0f0f0;
+      line-height: 50px;
+      transition: all 0.5s;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.1);
+      }
+      &.selected {
+        background-color: #ffffff;
+        color: $main-bg-text-color;
+      }
+      span[class^="icon-"] {
+        margin-left: 13px;
+        font-size: 20px;
+      }
+      .project-name {
+        bottom: 0;
+        left: 45px;
+        line-height: 50px;
+        position: absolute;
+        right: 30px;
+        top: 0;
+      }
+    }
+  }
+  .tasks-list {
+    bottom: 0;
+    left: 25%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    width: 25%;
+
+    .task-squire {
+      border: 1px solid $border-and-add-text-bg-color;
+      cursor: pointer;
+      height: 50px;
+      line-height: 50px;
+      margin: 2px;
+      background-color: #fff;
+      position: relative;
+      border-radius: $border-radius;
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: #e6e6e6;
+      }
+      &.selected {
+        border: 1px solid #f0f0f0;
+        color: $main-bg-text-color;
+        background-color: transparent;
+        .task-name {
+          right: 30px;
+        }
+      }
+      span[class^="icon-"] {
+        margin-left: 13px;
+        font-size: 19px;
+      }
+      .task-name {
+        bottom: 0;
+        left: 45px;
+        line-height: 50px;
+        overflow: hidden;
+        position: absolute;
+        right: 5px;
+        text-overflow: ellipsis;
+        top: 0;
+        white-space: nowrap;
+      }
+    }
+  }
+  .comments-list {
+    bottom: 0;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 1;
+
+    .tab-content {
+      border-left: none;
+      border-bottom: none;
+      border-right: none;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .list.--comments {
+      overflow: hidden;
+      position: absolute;
+      background-color: #f6f6f6;
+
+      .top {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 70px;
+        background-color: $main-bg-text-color;
+
+        .names {
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          width: 40%;
+          padding: 0 5px;
+          .name {
+            line-height: 35px;
+            color: #ffffff;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+            span {
+              margin-right: 10px;
+            }
+          }
+          .author {
+            line-height: 35px;
+            color: #ffffff;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+            span {
+              margin-right: 10px;
+            }
+          }
+        }
+        .category {
+          position: absolute;
+          left: 40%;
+          top: 0;
+          bottom: 0;
+          right: 35%;
+          padding: 0 5px;
+          .list-select {
+            margin-top: 17px;
+          }
+        }
+        .search {
+          position: absolute;
+          width: 35%;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          padding: 0 5px;
+          .elm-search {
+            margin-top: 17px;
+          }
+        }
+      }
+      .loading {
+        display: none;
+        position: absolute;
+        left: 50%;
+        bottom: 40px;
+        width: 200px;
+        text-align: center;
+        margin-left: -100px;
+        background-color: rgba(0, 0, 0, 0.1);
+        line-height: 30px;
+        border-radius: $border-radius;
+        z-index: 1;
+      }
+      .bottom {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 38px;
+        top: 73px;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      .find-result {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 38px;
+        top: 73px;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        .no-result {
+          display: flex;
+          width: 100%;
+          height: 100%;
+
+          .no-result-text {
+            margin: auto;
+          }
+        }
+      }
+      .list-form {
+        //background-color: #ffffff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 35px;
+        //border-left: 1px solid $main-bg-text-color;
+        //border-top: 1px solid $main-bg-text-color;
+
+        .title-form {
+          line-height: 35px;
+          width: 100%;
+          text-align: center;
+          color: #ffffff;
+          background-color: $main-bg-text-color;
+          cursor: pointer;
+        }
+
+        .form {
+          display: none;
+        }
+      }
+
+      &.--form {
+        .loading {
+          bottom: 210px;
+        }
+        .bottom {
+          bottom: 203px;
+        }
+        .find-result {
+          bottom: 203px;
+        }
+        .list-form {
+          border-left: none;
+          border-top: none;
+          height: 200px;
+          .title-form {
+            display: none;
+          }
+          .form {
+            display: block;
+          }
+        }
+      }
+      &.find {
+        .bottom {
+          display: none;
+        }
+        .find-result {
+          display: block;
+        }
+      }
+      &.hide-form {
+        .list-form {
+          display: none;
+        }
+        .bottom {
+          bottom: 0;
+
+          .button {
+            &#resend {
+              display: none;
+            }
+            &#quote {
+              display: none;
+            }
+            &#category {
+              display: none;
+            }
+            &#favorite {
+              display: none;
+            }
+            &#job_open {
+              display: none;
+            }
+            &#move {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

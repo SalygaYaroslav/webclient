@@ -1,0 +1,33 @@
+.loadscreen { position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: rgba(255, 255, 255, 0.5); z-index: 100; }
+
+.loadscreen .loadscreen-text { color: #666666; left: 0; margin-top: 55px; position: absolute; right: 0; text-align: center; top: 50%; }
+
+.loadscreen .loadscreen-additional { color: #666666; left: 0; margin-top: 75px; position: absolute; right: 0; text-align: center; top: 50%; }
+
+.loadscreen .loadscreen-cube-grid { width: 42px; height: 42px; position: absolute; left: 50%; top: 50%; margin-top: -21px; margin-left: -21px; }
+
+.loadscreen .loadscreen-cube-grid .loadscreen-cube { width: 14px; height: 14px; float: left; -webkit-animation: loadscreen-cube 1.3s infinite ease-in-out; animation: loadscreen-cube 1.3s infinite ease-in-out; }
+
+.loadscreen .loadscreen-cube-grid .loadscreen-cube.loadscreen-cube1 { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; background-image: url("/images/cube/cube1.png"); }
+
+.loadscreen .loadscreen-cube-grid .loadscreen-cube.loadscreen-cube2 { -webkit-animation-delay: 0.3s; animation-delay: 0.3s; background-image: url("/images/cube/cube2.png"); }
+
+.loadscreen .loadscreen-cube-grid .loadscreen-cube.loadscreen-cube3 { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; background-image: url("/images/cube/cube3.png"); }
+
+.loadscreen .loadscreen-cube-grid .loadscreen-cube.loadscreen-cube4 { -webkit-animation-delay: 0.1s; animation-delay: 0.1s; background-image: url("/images/cube/cube4.png"); }
+
+.loadscreen .loadscreen-cube-grid .loadscreen-cube.loadscreen-cube5 { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; background-image: url("/images/cube/cube5.png"); }
+
+.loadscreen .loadscreen-cube-grid .loadscreen-cube.loadscreen-cube6 { -webkit-animation-delay: 0.3s; animation-delay: 0.3s; background-image: url("/images/cube/cube6.png"); }
+
+.loadscreen .loadscreen-cube-grid .loadscreen-cube.loadscreen-cube7 { -webkit-animation-delay: 0s; animation-delay: 0s; background-image: url("/images/cube/cube7.png"); }
+
+.loadscreen .loadscreen-cube-grid .loadscreen-cube.loadscreen-cube8 { -webkit-animation-delay: 0.1s; animation-delay: 0.1s; background-image: url("/images/cube/cube8.png"); }
+
+.loadscreen .loadscreen-cube-grid .loadscreen-cube.loadscreen-cube9 { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; background-image: url("/images/cube/cube9.png"); }
+
+@-webkit-keyframes loadscreen-cube { 0%, 70%, 100% { -webkit-transform: scale3D(1, 1, 1); transform: scale3D(1, 1, 1); }
+  35% { -webkit-transform: scale3D(0, 0, 1); transform: scale3D(0, 0, 1); } }
+
+@keyframes loadscreen-cube { 0%, 70%, 100% { -webkit-transform: scale3D(1, 1, 1); transform: scale3D(1, 1, 1); }
+  35% { -webkit-transform: scale3D(0, 0, 1); transform: scale3D(0, 0, 1); } }

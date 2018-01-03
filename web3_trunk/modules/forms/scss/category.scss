@@ -1,0 +1,50 @@
+@import "../../../_variables";
+
+.category-change {
+  overflow: hidden;
+
+  .category-search {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 40px;
+    padding: 2px;
+  }
+
+  .category-list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-top: 1px solid $border-and-add-text-bg-color;
+
+    .category-item {
+      display: flex;
+      height: 30px;
+      line-height: 30px;
+      align-content: stretch;
+      align-items: flex-start;
+      flex-direction: row;
+      cursor: pointer;
+
+      &.active {
+        background-color: $add-text-bg-color;
+      }
+
+      .color {
+        width: 26px;
+        height: 26px;
+        margin: 2px;
+        border-radius: $border-radius;
+      }
+
+      .text {
+        margin-left: 5px;
+      }
+    }
+  }
+}

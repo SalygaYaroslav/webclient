@@ -1,0 +1,42 @@
+@import "../../../variables";
+
+.bblock-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  border-left: 1px solid $border-and-add-text-bg-color;
+
+  .bblock-item {
+    line-height: 30px;
+    height: 30px;
+    border-right: 1px solid $border-and-add-text-bg-color;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+
+    .bblock-item-icon {
+      padding: 0 5px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .bblock-item-title {
+      padding: 0 5px;
+      font-size: 12px;
+      height: 30px;
+      line-height: 30px;
+      user-select: none;
+    }
+    &:hover {
+      color: $add-text-bg-color;
+      background-color: $main-bg-text-color;
+    }
+  }
+  .bblock-item-empty {
+    border-right: 1px solid $border-and-add-text-bg-color;
+    height: 30px;
+    width: 30px;
+  }
+}

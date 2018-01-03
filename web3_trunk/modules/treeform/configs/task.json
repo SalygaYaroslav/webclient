@@ -1,0 +1,42 @@
+{
+  "task": [
+    {
+      "options": {
+        "id": "main",
+        "type": "section",
+        "title": "Основное",
+        "multi": "false"
+      },
+      "children": [
+        {
+          "options": {
+            "id": "vcName",
+            "type": "string",
+            "title": "",
+            "multi": "false",
+            "placeholder": "Введите название задачи"
+          }
+        }
+      ]
+    },
+    {
+      "options": {
+        "id": "additional",
+        "type": "section",
+        "title": "Дополнительная",
+        "multi": "false"
+      },
+      "children": [
+        {
+          "options": {
+            "id": "vcName",
+            "type": "string",
+            "title": "",
+            "multi": "false",
+            "placeholder": "Введите название задачи"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+.tform { -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.tform .tform-sections .tform-section .tform-section-element .tform-section-top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; height: 24px; line-height: 24px; }
+
+.tform .tform-sections .tform-section .tform-section-element .tform-section-top .tform-section-expander { width: 24px; height: 24px; cursor: pointer; background-size: 14px; background-position: center center; background-repeat: no-repeat; }
+
+.tform .tform-sections .tform-section .tform-section-element .tform-section-top .tform-section-title { font-size: 16px; margin-left: 10px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; white-space: nowrap; }
+
+.tform .tform-sections .tform-section .tform-section-element .tform-section-top .tform-section-line { height: 1px; background-color: #3399cc; width: 100%; margin-top: 12px; margin-left: 10px; }
+
+.tform .tform-sections .tform-section .tform-section-element .tform-section-elements-container { padding: 2px 10px; }
+
+.tform .tform-sections .tform-section .tform-section-element .tform-section-elements-container .no-vision { display: none; }
+
+.tform .tform-sections .tform-section .tform-section-element .tform-section-elements-container .vision { display: block; }
+
+.tform .tform-sections .tform-section .tform-section-element .tform-section-titles-container { color: #c2c2c2; text-align: right; }
+
+.tform .tform-sections .tform-section .tform-section-element .tform-section-titles-container .tform-titles { font-size: 12px; display: inline-block; margin: 0 5px; cursor: pointer; }
+
+.tform .tform-sections .tform-section .tform-section-element .tform-section-titles-container .tform-titles.no-vision { display: none; }
+
+.tform .tform-sections .tform-section .tform-section-element .tform-section-titles-container .tform-titles.vision { display: inline-block; }
+
+.tform .tform-sections .tform-section .tform-section-element.expanded .tform-section-elements-container, .tform .tform-sections .tform-section .tform-section-element.expanded .tform-section-titles-container { display: block; }
+
+.tform .tform-sections .tform-section .tform-section-element.expanded .tform-section-expander { background-image: url("/images/treeform/expand.png"); }
+
+.tform .tform-sections .tform-section .tform-section-element.unexpanded .tform-section-elements-container, .tform .tform-sections .tform-section .tform-section-element.unexpanded .tform-section-titles-container { display: none; }
+
+.tform .tform-sections .tform-section .tform-section-element.unexpanded .tform-section-expander { background-image: url("/images/treeform/unexpand.png"); }
+
+.tform .tform-sections .tform-bot .tform-title-multi { text-align: right; color: #c2c2c2; font-size: 12px; cursor: pointer; }
+
+.tform-html { margin-bottom: 2px; }
+
+.tform-html .tform-top .tform-element { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.tform-html .tform-top .tform-element .tform-left { width: 30%; text-align: right; }
+
+.tform-html .tform-top .tform-element .tform-left .tform-title { margin: 0 5px; color: #3399cc; }
+
+.tform-html .tform-top .tform-element .tform-right { width: 70%; }
+
+.tform-html .tform-top .tform-element:not(:last-child) { margin-bottom: 2px; }
+
+.tform-html .tform-top .tform-element:not(:first-child) .tform-title { display: none; }
+
+.tform-string { margin-bottom: 2px; }
+
+.tform-string .tform-top .tform-element { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.tform-string .tform-top .tform-element .tform-left { width: 30%; text-align: right; }
+
+.tform-string .tform-top .tform-element .tform-left .tform-title { margin: 0 5px; line-height: 29px; color: #3399cc; }
+
+.tform-string .tform-top .tform-element .tform-right { width: 70%; }
+
+.tform-string .tform-top .tform-element .tform-right input { height: 29px; border: 1px solid #d0d0d0; padding: 8px 8px; width: 100%; overflow: hidden; position: relative; z-index: 1; box-sizing: border-box; border-radius: 3px; }
+
+.tform-string .tform-top .tform-element:not(:last-child) { margin-bottom: 2px; }
+
+.tform-string .tform-bot .tform-title-multi { text-align: right; color: #c2c2c2; font-size: 12px; cursor: pointer; }
+
+.tform-checkbox { margin-bottom: 2px; }
+
+.tform-checkbox .tform-top .tform-element { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.tform-checkbox .tform-top .tform-element .tform-left { width: 30%; text-align: right; }
+
+.tform-checkbox .tform-top .tform-element .tform-left .tform-title { margin: 0 5px; line-height: 29px; color: #3399cc; }
+
+.tform-checkbox .tform-top .tform-element .tform-right { width: 70%; }
+
+.tform-checkbox .tform-top .tform-element .tform-right input[type="checkbox"] { display: none; }
+
+.tform-checkbox .tform-top .tform-element .tform-right input[type="checkbox"] + label span { display: inline-block; width: 25px; height: 25px; margin: 4px 4px 0 0; vertical-align: middle; background-image: url(/images/elements/unchecked.png); background-repeat: no-repeat; background-size: contain; cursor: pointer; }
+
+.tform-checkbox .tform-top .tform-element .tform-right input[type="checkbox"]:checked + label span { background-image: url(/images/elements/checked.png); background-repeat: no-repeat; background-size: contain; }
+
+.tform-checkbox .tform-top .tform-element:not(:last-child) { margin-bottom: 2px; }
+
+.tform-checkbox .tform-bot .tform-title-multi { text-align: right; color: #c2c2c2; font-size: 12px; cursor: pointer; }
+
+.tform-date { margin-bottom: 2px; }
+
+.tform-date .tform-top .tform-element { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.tform-date .tform-top .tform-element .tform-left { width: 30%; text-align: right; }
+
+.tform-date .tform-top .tform-element .tform-left .tform-title { margin: 0 5px; line-height: 29px; color: #3399cc; }
+
+.tform-date .tform-top .tform-element .tform-right { width: 70%; position: relative; }
+
+.tform-date .tform-top .tform-element .tform-right input { height: 29px; border: 1px solid #d0d0d0; padding: 8px 8px; width: 100%; overflow: hidden; position: relative; z-index: 1; box-sizing: border-box; border-radius: 3px; }
+
+.tform-date .tform-top .tform-element:not(:last-child) { margin-bottom: 2px; }
+
+.tform-date .tform-bot .tform-title-multi { text-align: right; color: #c2c2c2; font-size: 12px; cursor: pointer; }
+
+.tform-select .tform-top .tform-element { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.tform-select .tform-top .tform-element .tform-left { width: 30%; text-align: right; }
+
+.tform-select .tform-top .tform-element .tform-left .tform-title { margin: 0 5px; line-height: 29px; color: #3399cc; }
+
+.tform-select .tform-top .tform-element .tform-right { width: 70%; }
+
+.tform-select .tform-top .tform-element .tform-right .selectize-input { height: 29px; padding: 5px 8px; }
+
+.tform-select .tform-top .tform-element .tform-right select { width: 100%; margin: 0 5px; }
+
+.tform-select .tform-top .tform-element:not(:last-child) { margin-bottom: 2px; }
+
+.tform-select .tform-bot .tform-title-multi { text-align: right; color: #c2c2c2; font-size: 12px; cursor: pointer; }
+
+.tform-avatar { margin-bottom: 2px; }
+
+.tform-avatar .tform-top .tform-element { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.tform-avatar .tform-top .tform-element .tform-left { width: 30%; text-align: right; }
+
+.tform-avatar .tform-top .tform-element .tform-left .tform-title { margin: 0 5px; line-height: 29px; color: #3399cc; }
+
+.tform-avatar .tform-top .tform-element .tform-right { width: 70%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+
+.tform-avatar .tform-top .tform-element .tform-right .tform-avatar-wrap { max-height: 200px; position: relative; }
+
+.tform-avatar .tform-top .tform-element .tform-right .tform-avatar-wrap.empty { height: 200px; width: 200px; background-image: url("/images/icons/userblock_unknown.svg"); }
+
+.tform-avatar .tform-top .tform-element .tform-right .tform-avatar-wrap.empty .tform-avatar-delete { display: none; }
+
+.tform-avatar .tform-top .tform-element .tform-right .tform-avatar-wrap.empty .--webfile { display: none; }
+
+.tform-avatar .tform-top .tform-element .tform-right .tform-avatar-wrap .tform-avatar-item { max-width: 200px; max-height: 200px; background-size: contain; background-repeat: no-repeat; }
+
+.tform-avatar .tform-top .tform-element .tform-right .tform-avatar-wrap .tform-avatar-delete { position: absolute; width: 20px; height: 20px; background-color: rgba(255, 255, 255, 0.8); color: #3399cc; top: 0; right: 0; cursor: pointer; text-align: center; line-height: 20px; }
+
+.tform-avatar .tform-top .tform-element .tform-right .tform-avatar-wrap .tform-avatar-upload { position: absolute; bottom: 0; text-align: center; line-height: 30px; width: 100%; background-color: rgba(255, 255, 255, 0.8); color: #3399cc; cursor: pointer; }
+
+.tform-avatar .tform-top .tform-element .tform-right .tform-avatar-wrap .tform-avatar-upload input[type=file] { position: absolute; height: 100%; top: 0; right: 0; margin: 0; border: solid transparent; border-width: 0; opacity: 0.0; width: 100%; }
+
+.tform-avatar .tform-top .tform-element:not(:last-child) { margin-bottom: 2px; }
+
+.tform-avatar .tform-bot .tform-title-multi { text-align: right; color: #c2c2c2; font-size: 12px; cursor: pointer; }
+
+.tform-file { margin-bottom: 2px; }
+
+.tform-file .tform-top .tform-element { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.tform-file .tform-top .tform-element .tform-left { width: 30%; text-align: right; }
+
+.tform-file .tform-top .tform-element .tform-left .tform-title { margin: 0 5px; line-height: 29px; color: #3399cc; }
+
+.tform-file .tform-top .tform-element .tform-right { width: 70%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; position: relative; }
+
+.tform-file .tform-top .tform-element .tform-right.empty { height: 200px; width: 200px; background-image: url("/images/icons/userblock_unknown.svg"); }
+
+.tform-file .tform-top .tform-element .tform-right.empty .tform-image-delete { display: none; }
+
+.tform-file .tform-top .tform-element .tform-right.empty .--webfile { display: none; }
+
+.tform-file .tform-top .tform-element .tform-right .tform-image-item { max-width: 200px; max-height: 200px; background-size: contain; background-repeat: no-repeat; }
+
+.tform-file .tform-top .tform-element .tform-right .tform-file-delete { position: absolute; width: 30px; height: 30px; color: #808080; top: 0; right: 69px; cursor: pointer; text-align: center; line-height: 30px; z-index: 1; }
+
+.tform-file .tform-top .tform-element .tform-right input[type=text] { height: 29px; border: 1px solid #d0d0d0; padding: 8px 8px; width: 100%; overflow: hidden; position: relative; z-index: 1; box-sizing: border-box; border-radius: 3px; }
+
+.tform-file .tform-top .tform-element .tform-right .tform-file-download { box-sizing: border-box; position: absolute; right: 36px; top: 0; z-index: 1; line-height: 30px; color: #808080; cursor: pointer; border-radius: 3px; width: 30px; text-align: center; height: 30px; }
+
+.tform-file .tform-top .tform-element .tform-right .tform-file-add { box-sizing: border-box; position: absolute; right: 3px; top: 0; z-index: 1; line-height: 30px; color: #808080; cursor: pointer; border-radius: 3px; width: 30px; text-align: center; height: 30px; }
+
+.tform-file .tform-top .tform-element .tform-right .tform-file-add span { cursor: pointer; }
+
+.tform-file .tform-top .tform-element .tform-right .tform-file-add input[type=file] { position: absolute; height: 100%; top: 0; right: 0; margin: 0; border: solid transparent; border-width: 0; opacity: 0.0; cursor: pointer; width: 100%; }
+
+.tform-file .tform-top .tform-element:not(:last-child) { margin-bottom: 2px; }
+
+.tform-file .tform-bot .tform-title-multi { text-align: right; color: #c2c2c2; font-size: 12px; cursor: pointer; }
+
+.tform-image { margin-bottom: 2px; }
+
+.tform-image .tform-top .tform-element { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.tform-image .tform-top .tform-element .tform-left { width: 30%; text-align: right; }
+
+.tform-image .tform-top .tform-element .tform-left .tform-title { margin: 0 5px; line-height: 29px; color: #3399cc; }
+
+.tform-image .tform-top .tform-element .tform-right { width: 70%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; position: relative; }
+
+.tform-image .tform-top .tform-element .tform-right.empty { height: 200px; width: 200px; background-image: url("/images/icons/userblock_unknown.svg"); }
+
+.tform-image .tform-top .tform-element .tform-right.empty .tform-image-delete { display: none; }
+
+.tform-image .tform-top .tform-element .tform-right.empty .--webfile { display: none; }
+
+.tform-image .tform-top .tform-element .tform-right .tform-image-item { max-width: 200px; max-height: 200px; background-size: contain; background-repeat: no-repeat; }
+
+.tform-image .tform-top .tform-element .tform-right .tform-image-delete { position: absolute; width: 30px; height: 30px; color: #808080; top: 0; right: 69px; cursor: pointer; text-align: center; line-height: 30px; z-index: 1; }
+
+.tform-image .tform-top .tform-element .tform-right input[type=text] { height: 29px; border: 1px solid #d0d0d0; padding: 8px 8px; width: 100%; overflow: hidden; position: relative; z-index: 1; box-sizing: border-box; border-radius: 3px; }
+
+.tform-image .tform-top .tform-element .tform-right .tform-image-download { box-sizing: border-box; position: absolute; right: 36px; top: 0; z-index: 1; line-height: 30px; color: #808080; cursor: pointer; border-radius: 3px; width: 30px; text-align: center; height: 30px; }
+
+.tform-image .tform-top .tform-element .tform-right .tform-image-add { box-sizing: border-box; position: absolute; right: 3px; top: 0; z-index: 1; line-height: 30px; color: #808080; cursor: pointer; border-radius: 3px; width: 30px; text-align: center; height: 30px; }
+
+.tform-image .tform-top .tform-element .tform-right .tform-image-add span { cursor: pointer; }
+
+.tform-image .tform-top .tform-element .tform-right .tform-image-add input[type=file] { position: absolute; height: 100%; top: 0; right: 0; margin: 0; border: solid transparent; border-width: 0; opacity: 0.0; cursor: pointer; width: 100%; }
+
+.tform-image .tform-top .tform-element:not(:last-child) { margin-bottom: 2px; }
+
+.tform-image .tform-bot .tform-title-multi { text-align: right; color: #c2c2c2; font-size: 12px; cursor: pointer; }

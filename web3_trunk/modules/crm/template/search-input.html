@@ -1,0 +1,11 @@
+<div class="crm-search-input">
+    <template v-if="data.type == 'input'">
+        <input type="text">
+    </template>
+    <template v-if="data.type == 'select'">
+        <select>
+            <option v-if="data.empty == false" value="#empty"></option>
+            <option v-for="option in data.list" v-bind:value="option.value" v-html="option.text"></option>
+        </select>
+    </template>
+</div>

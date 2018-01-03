@@ -1,0 +1,29 @@
+@import "../../../_variables";
+
+.form.--personal {
+  margin: 2px 2px 0 2px;
+  border: 1px solid $main-bg-text-color;
+  border-radius: $border-radius;
+  background-color: $text-for-main-bg-text-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .personal_table_parent {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .personal-block-top {
+    display: flex;
+    flex-direction: column;
+
+    .personal-span-top {
+      margin: 10px;
+      display: block;
+    }
+  }
+  .personal-span-bot {
+    margin: 10px;
+    display: block;
+  }
+}

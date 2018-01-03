@@ -1,0 +1,36 @@
+<div class="tform-avatar {{data.hidden}} {{#data.multi}}multiple{{/data.multi}}" id="{{data.id}}">
+    <div class="tform-top">
+        {{#data.elements}}
+        <div class="tform-element">
+            <div class="tform-left">
+                <div class="tform-title">{{data.title}}</div>
+            </div>
+            <div class="tform-right">
+                <div class="tform-avatar-wrap {{^.}}empty{{/.}}">
+                    <a href="{{link}}" class="--webfile">
+                        <img src="{{link}}" class="tform-avatar-item">
+                    </a>
+                    {{#data.access}}
+                    <div class="tform-avatar-delete" title="удалить файл">&times;</div>
+                    <div class="tform-avatar-upload">
+                        <input type="file" id="upload_{{data.id}}" accept="image/x-png,image/gif,image/jpeg">
+                        Обновить
+                    </div>
+                    {{/data.access}}
+                </div>
+                {{#data.access}}
+                <input type="hidden" class="tform-avatar-link" value="{{value}}">
+                {{/data.access}}
+            </div>
+            {{#data.multi}}
+            <div class="tform-delete"></div>
+            {{/data.multi}}
+        </div>
+        {{/data.elements}}
+    </div>
+    {{#data.multi}}
+    <div class="tform-bot">
+        <div class="tform-title-multi">+ {{data.title}}</div>
+    </div>
+    {{/data.multi}}
+</div>

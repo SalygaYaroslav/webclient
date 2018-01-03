@@ -1,0 +1,18 @@
+<table class="table" id="{{data.id}}">
+    <thead class="table-head">
+    <tr class="table-tr">
+        {{#data.head}}
+        <td class="table-td">{{title}}</td>
+        {{/data.head}}
+    </tr>
+    </thead>
+    <tbody class="table-body">
+    {{#data.body}}
+    <tr class="table-tr" id={{id}}>
+        {{#content}}
+        <td class="table-td" id="{{id}}">{{{content}}}</td>
+        {{/content}}
+    </tr>
+    {{/data.body}}
+    </tbody>
+</table>

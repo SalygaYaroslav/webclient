@@ -1,0 +1,7 @@
+<div class="chat-user" v-bind:id="data.entity.id" v-bind:title="data.entity.name"
+     v-bind:class="{selected: selected == data.entity.id}" v-on:click="selectUser(data.entity.id)">
+    <div class="chat-user-status" v-bind:class="data.status ? 'online' : 'offline'"></div>
+    <div class="chat-user-avatar"
+         v-bind:style="{ backgroundImage: 'url(' + data.entity.avatar + ')' }"></div>
+    <div class="chat-user-name" v-html="data.entity.name"></div>
+</div>

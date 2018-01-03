@@ -1,0 +1,20 @@
+<div id="chat_right" class="full-wh">
+    <div class="chat-header"></div>
+    <div class="chat-users">
+        <div v-show="Object.keys(chats).length > 0" class="chat-user-caption">
+            Активные чаты
+        </div>
+        <chat-active-user v-for="(user_active, key) in chats" v-bind:key="key" v-bind:selected="selected"
+                          v-if="user_active!==null"
+                          v-bind:data="user_active" v-bind:selectUser="select"></chat-active-user>
+        <div class="chat-user-caption">Список пользователей</div>
+        <chat-user v-for="user in sortedItems" v-bind:key="user.id" v-bind:selected="selected"
+                   v-if="user!==null"
+                   v-bind:data="user" v-bind:selectUser="select" v-show="chats[user.id] == null"></chat-user>
+    </div>
+    <div class="chats" v-show="active">
+        <chat-item v-for="(chat, id) in chats" v-bind:chat="chat" v-if="chat!==null" v-show="id == active"
+                   v-bind:id="id" v-bind:key="id" v-bind:closeChat="close" v-bind:sendChat="send"
+                   v-bind:chat_id="id"></chat-item>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+<div class="bblock-item" v-bind:id="data.id" v-bind:title="data.title" v-if="data.rights" v-on:click="data.callback">
+    <span class="bblock-item-icon" v-bind:class="'icon-'+data.icon"></span>
+    <span class="bblock-item-title" v-html="data.title"></span>
+</div>

@@ -1,0 +1,48 @@
+@import "../../../_variables";
+
+body.blue {
+  .crcs-top {
+    background-color: #e6e6e6;
+  }
+  .crcs-left {
+    background-color: #2aa2cb;
+
+    &:empty {
+      background-color: #fff;
+    }
+  }
+  .crcs-navigate-button {
+    &:hover, &.selected {
+      background-color: #2baad4;
+    }
+    &:after {
+      background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #2799be, #2baad4) repeat scroll 0 0;
+      &:hover {
+        background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #2baad4, #2baad4) repeat scroll 0 0;
+      }
+    }
+  }
+  .crcs-navigate-button-controll {
+    &:hover {
+      background-color: #2baad4;
+    }
+    &:after {
+      background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #2799be, #2baad4) repeat scroll 0 0;
+      &:hover {
+        background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #2baad4, #2baad4) repeat scroll 0 0;
+      }
+    }
+  }
+  .crcs-menu-button {
+    &:before {
+      background: rgba(0, 0, 0, 0) linear-gradient(to left, #e6e6e6, #d9d9d9) repeat scroll 0 0;
+    }
+  }
+  .crcs-logo {
+    background-color: #e6e6e6;
+    background-image: url("/images/logo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 44px auto
+  }
+}

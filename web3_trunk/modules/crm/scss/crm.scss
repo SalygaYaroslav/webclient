@@ -1,0 +1,419 @@
+@import "../../../_variables";
+
+.crm {
+  margin: 5px !important;
+  overflow: hidden;
+
+  .crm-table-block {
+    overflow: auto;
+    bottom: 46px;
+    transition: all 0.5s;
+
+    .crm-table {
+      width: 100%;
+      border-collapse: collapse;
+
+      .crm-thead {
+        background-color: $add-text-bg-color;
+
+        .crm-tr {
+          .crm-th {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 200px;
+            padding: 2px 5px;
+            border-bottom: 1px solid white;
+            text-align: center;
+            line-height: 35px;
+            font-weight: normal;
+
+            &.hidden {
+              display: none;
+            }
+            &:not(:last-child) {
+              border-right: 1px solid white;
+            }
+            &.sorted {
+              cursor: pointer;
+            }
+            &.order-a {
+              padding-right: 20px;
+              background-repeat: no-repeat;
+              background-position: right center;
+              background-size: 20px;
+              background-image: url(/images/crm/arrow_up.svg);
+            }
+            &.order-d {
+              padding-right: 20px;
+              background-repeat: no-repeat;
+              background-position: right center;
+              background-size: 20px;
+              background-image: url(/images/crm/arrow_down.svg);
+            }
+          }
+        }
+      }
+      .crm-tfoot {
+        background-color: $add-text-bg-color;
+
+        .crm-tr {
+          .crm-th {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 200px;
+            border: 1px solid $add-text-bg-color;
+            border-bottom: none;
+            text-align: center;
+            line-height: 20px;
+            font-weight: normal;
+
+            &.hidden {
+              display: none;
+            }
+            &:not(:last-child) {
+              border-right: 1px solid white;
+            }
+
+            select {
+              width: 100%;
+              height: 24px;
+              border: none;
+            }
+            input {
+              width: 100%;
+              height: 22px;
+              border: none;
+            }
+          }
+        }
+      }
+      .crm-tbody {
+        .crm-tr {
+          .crm-td {
+            cursor: pointer;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 200px;
+            text-align: center;
+            padding: 2px 8px;
+            border: 1px solid $border-and-add-text-bg-color;
+            min-width: 30px;
+            line-height: 20px;
+            height: 20px;
+            position: relative;
+            user-select: none;
+
+            &.hidden {
+              display: none;
+            }
+          }
+          &.selected {
+            background-color: $main-bg-text-color-hover;
+            color: white;
+
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .crm-navigate {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+
+    .crm-pagination {
+      display: flex;
+      justify-content: center;
+
+      &-button {
+        user-select: none;
+        font-size: 12px;
+        height: 35px;
+        min-width: 35px;
+        line-height: 35px;
+        text-align: center;
+        background-color: $text-for-main-bg-text-color;
+        border: 1px solid $border-and-add-text-bg-color;
+        border-right: none;
+        color: #333333;
+        padding: 0 7px;
+        margin: auto;
+
+        cursor: pointer;
+        &:last-child {
+          border-right: 1px solid $border-and-add-text-bg-color;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+        &:first-child {
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+        &.selected {
+          background-color: $main-bg-text-color;
+          color: white;
+          cursor: default;
+        }
+      }
+    }
+    .crm-pagination-limit {
+      margin-left: 100px;
+      display: flex;
+
+      &-title {
+        line-height: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+      &-button {
+        user-select: none;
+        margin: auto;
+        font-size: 12px;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+        text-align: center;
+        background-color: $text-for-main-bg-text-color;
+        border: 1px solid $border-and-add-text-bg-color;
+        border-right: none;
+        color: #333333;
+        cursor: pointer;
+
+        &[index=last] {
+          border-right: 1px solid $border-and-add-text-bg-color;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+        &[index=first] {
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+        &.selected {
+          background-color: $main-bg-text-color;
+          color: white;
+          cursor: default;
+        }
+      }
+    }
+  }
+
+  .crm-additional {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 46px;
+    width: 0;
+    transition: all 0.5s;
+    background-color: white;
+
+    &-container {
+      opacity: 0;
+
+      &-item {
+        display: flex;
+        justify-items: flex-start;
+        flex-direction: column;
+
+        &-title {
+          color: $main-bg-text-color;
+        }
+        &-value {
+
+        }
+      }
+    }
+
+    .crm-show-hide {
+      position: absolute;
+      top: 50%;
+      width: 35px;
+      height: 35px;
+      margin-top: -15px;
+      left: -35px;
+      cursor: pointer;
+      border: 1px solid $border-and-add-text-bg-color;
+      border-right: none;
+      opacity: 0.8;
+      transition: all 0.5s;
+      background-color: white;
+      color: $border-and-add-text-bg-color;
+      font-size: 20px;
+      line-height: 35px;
+      text-align: center;
+      padding: 0;
+      z-index: 1;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.additional {
+    .crm-additional {
+      width: 19.5%;
+      border-left: 1px solid $border-and-add-text-bg-color;
+
+      .crm-additional-container {
+        padding: 0 5px !important;
+        opacity: 1;
+      }
+
+      .crm-show-hide {
+        left: -1px;
+        border-right: 1px solid $border-and-add-text-bg-color;
+      }
+    }
+    .crm-table-block {
+      right: 20%;
+    }
+  }
+}
+
+.crm-params {
+  &-item-header {
+    margin: 5px;
+
+    &-tr {
+      height: 30px;
+      line-height: 30px;
+      background-color: white;
+      position: relative;
+
+      .crm-params-item-td {
+        text-align: center;
+        line-height: 30px;
+        user-select: none;
+        white-space: nowrap;
+        position: absolute;
+
+        &#name {
+          left: 0;
+          right: 50%;
+        }
+        &#type {
+          left: 50%;
+          right: 120px;
+        }
+        &#edit {
+          right: 90px;
+        }
+        &#visible {
+          right: 60px;
+        }
+        &#multiple {
+          right: 30px;
+        }
+        &#empty {
+          right: 0;
+        }
+
+        &.small {
+          width: 30px;
+        }
+        span {
+          font-size: 24px;
+          margin: auto;
+        }
+      }
+    }
+  }
+  &-list {
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &-items {
+      margin: 5px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+
+      &-drop {
+        height: 30px;
+        line-height: 30px;
+        background-color: $main-bg-text-color;
+        margin-bottom: 3px;
+      }
+      .crm-params-item-tr {
+        cursor: pointer;
+        border: 1px solid $border-and-add-text-bg-color;
+        border-radius: $border-radius;
+        height: 30px;
+        line-height: 30px;
+        background-color: white;
+        position: relative;
+
+        &.--no-border {
+          font-size: 26px;
+          border: none;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 3px;
+        }
+
+        &.selected {
+          background-color: $main-bg-text-color;
+          color: white;
+
+          .crm-params-item-td#edit {
+            color: white;
+          }
+        }
+
+        .crm-params-item-td {
+          text-align: center;
+          line-height: 30px;
+          padding: 0 5px;
+          user-select: none;
+          white-space: nowrap;
+          position: absolute;
+
+          &#name {
+            left: 0;
+            right: 50%;
+          }
+          &#type {
+            left: 50%;
+            right: 120px;
+          }
+          &#edit {
+            right: 90px;
+            color: $main-bg-text-color;
+            font-size: 18px;
+          }
+          &#visible {
+            right: 60px;
+          }
+          &#multiple {
+            right: 30px;
+          }
+          &#empty {
+            right: 0;
+          }
+
+          &.small {
+            width: 30px;
+          }
+          &.--left {
+            text-align: left;
+          }
+
+          input[type=checkbox] {
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}

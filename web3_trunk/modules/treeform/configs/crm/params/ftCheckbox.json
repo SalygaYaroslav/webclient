@@ -1,0 +1,32 @@
+{
+  "ftCheckbox": [
+    {
+      "options": {
+        "id": "ftCheckbox",
+        "type": "section",
+        "title": "Основные свойства",
+        "multi": "false"
+      },
+      "children": [
+        {
+          "options": {
+            "id": "defaulttext",
+            "type": "checkbox",
+            "hidden": false,
+            "title": "По умолчанию",
+            "multi": "false"
+          }
+        },
+        {
+          "options": {
+            "id": "color",
+            "type": "html",
+            "hidden": false,
+            "title": "Цвет",
+            "multi": "false"
+          }
+        }
+      ]
+    }
+  ]
+}

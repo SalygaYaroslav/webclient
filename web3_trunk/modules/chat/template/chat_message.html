@@ -1,0 +1,4 @@
+<div v-bind:id="data.id" class="chat-message-item" v-bind:class="[data.type,{unread: data.unread}]">
+    <div class="chat-message-item-text" v-html="data.text"></div>
+    <div class="chat-message-item-time" v-html="data.format_time"></div>
+</div>

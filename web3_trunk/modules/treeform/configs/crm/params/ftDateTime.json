@@ -1,0 +1,34 @@
+{
+  "ftDateTime": [
+    {
+      "options": {
+        "id": "ftDateTime",
+        "type": "section",
+        "title": "Основные свойства",
+        "multi": "false"
+      },
+      "children": [
+        {
+          "options": {
+            "id": "date_type",
+            "type": "select",
+            "hidden": false,
+            "title": "Выводить",
+            "multi": "false",
+            "list": "crm_datetime_format"
+          }
+        },
+        {
+          "options": {
+            "id": "defaulttext",
+            "type": "string",
+            "hidden": false,
+            "title": "По умолчанию",
+            "multi": "false",
+            "placeholder": "Введите текст"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "ftText": [
+    {
+      "options": {
+        "id": "ftText",
+        "type": "section",
+        "title": "Основные свойства",
+        "multi": "false"
+      },
+      "children": [
+        {
+          "options": {
+            "id": "defaulttext",
+            "type": "string",
+            "hidden": false,
+            "title": "По умолчанию",
+            "multi": "false",
+            "placeholder": "Введите текст"
+          }
+        },
+        {
+          "options": {
+            "id": "format",
+            "type": "select",
+            "hidden": false,
+            "title": "Формат",
+            "multi": "false",
+            "list": "crm_text_format"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<div id="organization-block" class="organization-block">
+    <div class="organization-selected full-wh" v-on:click="showList">
+        <div v-if="selected" v-bind:id="selected.id" class="organization-item-selected ellipsis"
+             v-bind:title="selected.name">
+            <span class="organization-item-avatar" v-bind:class="selected.avatar"></span>
+            <span class="organization-item-name" v-html="selected.name"></span>
+        </div>
+    </div>
+    <div class="organization-list" v-show="show_list">
+        <div v-for="organization in list" v-bind:id="organization.id" class="organization-item ellipsis"
+             v-bind:title="organization.name" v-on:click="selectOrganization(organization.id)"
+             v-show="organization.id != selected.id">
+            <span class="organization-item-avatar" v-bind:class="organization.avatar"></span>
+            <span class="organization-item-name" v-html="organization.name"></span>
+        </div>
+    </div>
+</div>

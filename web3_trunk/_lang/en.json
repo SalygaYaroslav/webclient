@@ -1,0 +1,258 @@
+{
+	"auth": {
+		"auth.crm": "CRM Prostoy Business",
+		"auth.enter_login": "Enter login...",
+		"auth.enter_password": "Enter password...",
+		"auth.remember_password": "Remember password",
+		"auth.sign_in": "Sign in",
+		"form": {
+			"enter_login": "Enter login",
+			"enter_password": "Enter password",
+			"auth_error": "Authorisation Error. Verify that the input is correct",
+			"welcome": "Welcome"
+		},
+		"params": {
+			"param": "Application settings"
+		}
+	},
+	"comment": {
+		"loading": "Loading comments",
+		"commenting": "Comment",
+		"show_full_version": "Show original mail",
+		"button": {
+			"resend": "Resend",
+			"copy": "Copy",
+			"copy_link": "Link",
+			"quote": "Quote",
+			"category": "Category",
+			"favorite": "Favorite",
+			"job": "Job",
+			"move": "Move",
+			"delete": "Delete"
+		},
+		"notice": {
+			"copy_link": "Link copied",
+			"copy_text": "Text copied",
+			"error_copy": "Copying error"
+		},
+		"com_header": {
+			"mail": "Email",
+			"vc_to": "Task assigned",
+			"vc_to_null": "Destination removed from task",
+			"change_date": "The date of the task change has changed",
+			"personal_for_user": "Personal comment for users",
+			"notify_send": "Notification sent",
+			"without": "[Unassigned]",
+			"need_response": "I need a response from",
+			"comment_added": "Comment added",
+			"mail_has_not_theme": "no subject"
+		},
+		"cls": {
+			"system": "System message",
+			"outgoing": "--- Original message ---",
+			"date": "Date",
+			"sender": "Sender",
+			"recipients": "Recipients",
+			"theme": "Theme"
+		}
+	},
+	"crm": {
+		"pagination": {
+			"previous": "Previous",
+			"next": "Next",
+			"first": "First",
+			"last": "Last",
+			"limit": "On page: "
+		},
+		"remove": {
+			"success": "Successfully deleted entries",
+			"success_one": "Successfully deleted entry",
+			"remove": "Yes",
+			"cancel": "No",
+			"record": "Remove entry?",
+			"records": "Remove entries?"
+		},
+		"edit": {
+			"save": "Save",
+			"cancel": "Cancel",
+			"update": "Edit record",
+			"create": "Create record",
+			"new": "New record",
+			"yes": "Yes",
+			"no": "No"
+		}
+	},
+	"dataset": {
+		"loading": "Loading",
+		"contacts": "contacts of the group",
+		"tasks": "tasks of the project",
+		"task": {
+			"empty_contact": "Blank contact",
+			"no_name": "Untitled"
+		},
+		"org": {
+			"private": "Private",
+			"no_name": "[Untitled]"
+		},
+		"group": {
+			"default": "Default"
+		},
+		"category": {
+			"no_name": "[Uncategorized]"
+		}
+	},
+	"elements": {
+		"search": {
+			"placeholder": "Enter a phrase to search"
+		}
+	},
+	"forms": {
+		"category": {
+			"title": "List of categories",
+			"category": "Category",
+			"history": "History",
+			"save": "Save",
+			"cancel": "Cancel",
+			"date": "Date",
+			"author": "Author"
+		},
+		"comment": {
+			"comment": "Comment",
+			"email": "E-mail",
+			"target": "Recipient",
+			"theme": "Theme",
+			"send": "Send",
+			"cancel": "Cancel",
+			"mail_param": "Email params",
+			"assign": "Assign",
+			"response": "Response",
+			"targets": "Targets",
+			"load_files": "Download files",
+			"send_comment": "Sending a comment",
+			"no_vc_to": "[Unassigned]",
+			"error": "Error",
+			"no_recipients": "The recipients are not filled",
+			"invalid_mail": "Invalid mail address",
+			"hello": "Hello!"
+		},
+		"comment_move": {
+			"title": "Moving a comment",
+			"task": "To task",
+			"copy": "Copy",
+			"move": "Move",
+			"cancel": "Cancel",
+			"table": "To table",
+			"error_request": "The request failed",
+			"error_equal": "Comment already in this task",
+			"error_not": "The selected item is not a task. Select a task from the list"
+		},
+		"participants": {
+			"participants": "Participants",
+			"save": "Save",
+			"cancel": "Cancel",
+			"users": "Users",
+			"contacts": "Contacts"
+		},
+		"send_mail_params": {
+			"local": "Local settings used",
+			"default": "Reset settings",
+			"params": "Gateway params",
+			"save_all": "Save to all",
+			"save_local": "Save local",
+			"cancel": "Cancel"
+		},
+		"personal": {
+			"title": "Do you want to share the task?",
+			"title_second": "Show comment?",
+			"save": "Accept",
+			"close": "Cancel",
+			"user": "User",
+			"in_org": "Is in organizations",
+			"render_assign_all_task": "To make the whole task visible and to receive comments.",
+			"render_assign_comment": "Make this comment visible only.",
+			"render_assign_top": "User %%user%% (%%login%%) does not see this task. It consists in organizations: <br> %%orgs%% <br> Choose what you want to do:",
+			"render_note_top": "In the table below, please indicate which of these users need to make the added comment visible:",
+			"render_note_bot": "Note: If you do not have a dialogue with these users or do not know who it is, just click Accept, without selecting anyone in the table."
+		},
+		"errors_text": {
+			"fired_user": "User %%users%% consists of a group of laid-off employees.<br>Users of this group can not comment.",
+			"fired_users": "Users %%users%% are in the group of laid-off employees.<br>Users of this group can not comment."
+		},
+		"gateway": {
+			"show_prefix": "Greeting",
+			"show_postfix": "Individually",
+			"individual": "Original message",
+			"save-original": "Links with attachments",
+			"file-attach": "Notify about reading",
+			"read-notify": "Notify about reading",
+			"override_theme": "Override the subject of the letter",
+			"theme_text": "Enter a subject"
+		}
+	},
+	"interface": {
+		"navigate": {
+			"main": "Start Page",
+			"info": "Information",
+			"profile": "Profile",
+			"users": "Users",
+			"friends": "Friends",
+			"projects": "Projects",
+			"contacts": "Contacts",
+			"calendar": "Calendar",
+			"crm": "Crm",
+			"video": "Video",
+			"files": "Files",
+			"favorite": "Favorite"
+		},
+		"menu": {
+			"goto": "Open",
+			"notification": "Notification",
+			"sms": "SMS",
+			"chat": "Chat",
+			"telephony": "Telephony",
+			"notes": "Notes"
+		}
+	},
+	"request": {
+		"notify": {
+			"change_server": "Server will be changed"
+		}
+	},
+	"scene": {
+		"empty_text": "At the moment this scene is unavailable",
+		"tab": {
+			"info": "Information",
+			"favorite": "Favorite",
+			"files": "Файлы",
+			"comments": "Comment",
+			"task": "Task",
+			"chat": "Chat",
+			"job": "Jobs",
+			"access": "Access"
+		}
+	},
+	"user_block": {
+		"menu": {
+			"profile": "Profile",
+			"personal_billing": "Personal billing",
+			"organization_billing": "Organization billing",
+			"properties": "Properties",
+			"exit": "Logout",
+			"clear_storage": "Clear Storage"
+		}
+	},
+	"viewer": {
+		"close": "Close",
+		"previous": "Previous file",
+		"next": "Next file",
+		"copy_link": "Copy link",
+		"download": "Download file",
+		"file": "File",
+		"of": "of",
+		"notice": {
+			"copy_link": "Link copied",
+			"error_copy": "Copying error"
+		},
+		"unknown": "Unexpected file or file format is not supported"
+	}
+}

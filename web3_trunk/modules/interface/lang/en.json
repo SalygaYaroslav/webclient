@@ -1,0 +1,26 @@
+{
+  "interface": {
+    "navigate": {
+      "main": "Start Page",
+      "info": "Information",
+      "profile": "Profile",
+      "users": "Users",
+      "friends": "Friends",
+      "projects": "Projects",
+      "contacts": "Contacts",
+      "calendar": "Calendar",
+      "crm": "Crm",
+      "video": "Video",
+      "files": "Files",
+      "favorite": "Favorite"
+    },
+    "menu": {
+      "goto": "Open",
+      "notification": "Notification",
+      "sms": "SMS",
+      "chat": "Chat",
+      "telephony": "Telephony",
+      "notes": "Notes"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.loadscreen {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 100;
+
+  .loadscreen-text {
+    color: #666666;
+    left: 0;
+    margin-top: 55px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+  }
+  .loadscreen-additional {
+    color: #666666;
+    left: 0;
+    margin-top: 75px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+  }
+  .loadscreen-cube-grid {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -21px;
+    margin-left: -21px;
+
+    .loadscreen-cube {
+      width: 14px;
+      height: 14px;
+      float: left;
+      animation: loadscreen-cube 1.3s infinite ease-in-out;
+
+      &.loadscreen-cube1 {
+        animation-delay: 0.2s;
+        background-image: url("/images/cube/cube1.png");
+      }
+      &.loadscreen-cube2 {
+        animation-delay: 0.3s;
+        background-image: url("/images/cube/cube2.png");
+      }
+      &.loadscreen-cube3 {
+        animation-delay: 0.4s;
+        background-image: url("/images/cube/cube3.png");
+      }
+      &.loadscreen-cube4 {
+        animation-delay: 0.1s;
+        background-image: url("/images/cube/cube4.png");
+      }
+      &.loadscreen-cube5 {
+        animation-delay: 0.2s;
+        background-image: url("/images/cube/cube5.png");
+      }
+      &.loadscreen-cube6 {
+        animation-delay: 0.3s;
+        background-image: url("/images/cube/cube6.png");
+      }
+      &.loadscreen-cube7 {
+        animation-delay: 0s;
+        background-image: url("/images/cube/cube7.png");
+      }
+      &.loadscreen-cube8 {
+        animation-delay: 0.1s;
+        background-image: url("/images/cube/cube8.png");
+      }
+      &.loadscreen-cube9 {
+        animation-delay: 0.2s;
+        background-image: url("/images/cube/cube9.png");
+      }
+    }
+  }
+  @keyframes loadscreen-cube {
+    0%, 70%, 100% {
+      transform: scale3D(1, 1, 1);
+    }
+    35% {
+      transform: scale3D(0, 0, 1);
+    }
+  }
+}

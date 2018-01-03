@@ -1,0 +1,101 @@
+.projects-scene { bottom: 1px; left: 1px; overflow: hidden; position: absolute; right: 1px; top: 1px; }
+
+.projects-scene .projects-list { bottom: 0; left: 0; overflow-x: hidden; overflow-y: auto; position: absolute; top: 0; width: 25%; }
+
+.projects-scene .projects-list .project-squire { border-bottom: 1px solid #c2c2c2; cursor: pointer; height: 50px; position: relative; background-color: #f0f0f0; line-height: 50px; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.projects-scene .projects-list .project-squire:hover { background: rgba(0, 0, 0, 0.1); }
+
+.projects-scene .projects-list .project-squire.selected { background-color: #ffffff; color: #3399cc; }
+
+.projects-scene .projects-list .project-squire span[class^="icon-"] { margin-left: 13px; font-size: 20px; }
+
+.projects-scene .projects-list .project-squire .project-name { bottom: 0; left: 45px; line-height: 50px; position: absolute; right: 30px; top: 0; }
+
+.projects-scene .tasks-list { bottom: 0; left: 25%; overflow-x: hidden; overflow-y: auto; position: absolute; top: 0; width: 25%; }
+
+.projects-scene .tasks-list .task-squire { border: 1px solid #c2c2c2; cursor: pointer; height: 50px; line-height: 50px; margin: 2px; background-color: #fff; position: relative; border-radius: 3px; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.projects-scene .tasks-list .task-squire:hover { background-color: #e6e6e6; }
+
+.projects-scene .tasks-list .task-squire.selected { border: 1px solid #f0f0f0; color: #3399cc; background-color: transparent; }
+
+.projects-scene .tasks-list .task-squire.selected .task-name { right: 30px; }
+
+.projects-scene .tasks-list .task-squire span[class^="icon-"] { margin-left: 13px; font-size: 19px; }
+
+.projects-scene .tasks-list .task-squire .task-name { bottom: 0; left: 45px; line-height: 50px; overflow: hidden; position: absolute; right: 5px; text-overflow: ellipsis; top: 0; white-space: nowrap; }
+
+.projects-scene .comments-list { bottom: 0; left: 50%; overflow: hidden; position: absolute; top: 0; right: 0; -webkit-transition: all 0.5s; transition: all 0.5s; z-index: 1; }
+
+.projects-scene .comments-list .tab-content { border-left: none; border-bottom: none; border-right: none; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+
+.projects-scene .comments-list .list.--comments { overflow: hidden; position: absolute; background-color: #f6f6f6; }
+
+.projects-scene .comments-list .list.--comments .top { position: absolute; left: 0; right: 0; top: 0; height: 70px; background-color: #3399cc; }
+
+.projects-scene .comments-list .list.--comments .top .names { position: absolute; left: 0; top: 0; bottom: 0; width: 40%; padding: 0 5px; }
+
+.projects-scene .comments-list .list.--comments .top .names .name { line-height: 35px; color: #ffffff; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+.projects-scene .comments-list .list.--comments .top .names .name span { margin-right: 10px; }
+
+.projects-scene .comments-list .list.--comments .top .names .author { line-height: 35px; color: #ffffff; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+.projects-scene .comments-list .list.--comments .top .names .author span { margin-right: 10px; }
+
+.projects-scene .comments-list .list.--comments .top .category { position: absolute; left: 40%; top: 0; bottom: 0; right: 35%; padding: 0 5px; }
+
+.projects-scene .comments-list .list.--comments .top .category .list-select { margin-top: 17px; }
+
+.projects-scene .comments-list .list.--comments .top .search { position: absolute; width: 35%; top: 0; bottom: 0; right: 0; padding: 0 5px; }
+
+.projects-scene .comments-list .list.--comments .top .search .elm-search { margin-top: 17px; }
+
+.projects-scene .comments-list .list.--comments .loading { display: none; position: absolute; left: 50%; bottom: 40px; width: 200px; text-align: center; margin-left: -100px; background-color: rgba(0, 0, 0, 0.1); line-height: 30px; border-radius: 3px; z-index: 1; }
+
+.projects-scene .comments-list .list.--comments .bottom { position: absolute; left: 0; right: 0; bottom: 38px; top: 73px; overflow-x: hidden; overflow-y: auto; }
+
+.projects-scene .comments-list .list.--comments .find-result { display: none; position: absolute; left: 0; right: 0; bottom: 38px; top: 73px; overflow-x: hidden; overflow-y: auto; }
+
+.projects-scene .comments-list .list.--comments .find-result .no-result { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; height: 100%; }
+
+.projects-scene .comments-list .list.--comments .find-result .no-result .no-result-text { margin: auto; }
+
+.projects-scene .comments-list .list.--comments .list-form { position: absolute; left: 0; right: 0; bottom: 0; height: 35px; }
+
+.projects-scene .comments-list .list.--comments .list-form .title-form { line-height: 35px; width: 100%; text-align: center; color: #ffffff; background-color: #3399cc; cursor: pointer; }
+
+.projects-scene .comments-list .list.--comments .list-form .form { display: none; }
+
+.projects-scene .comments-list .list.--comments.--form .loading { bottom: 210px; }
+
+.projects-scene .comments-list .list.--comments.--form .bottom { bottom: 203px; }
+
+.projects-scene .comments-list .list.--comments.--form .find-result { bottom: 203px; }
+
+.projects-scene .comments-list .list.--comments.--form .list-form { border-left: none; border-top: none; height: 200px; }
+
+.projects-scene .comments-list .list.--comments.--form .list-form .title-form { display: none; }
+
+.projects-scene .comments-list .list.--comments.--form .list-form .form { display: block; }
+
+.projects-scene .comments-list .list.--comments.find .bottom { display: none; }
+
+.projects-scene .comments-list .list.--comments.find .find-result { display: block; }
+
+.projects-scene .comments-list .list.--comments.hide-form .list-form { display: none; }
+
+.projects-scene .comments-list .list.--comments.hide-form .bottom { bottom: 0; }
+
+.projects-scene .comments-list .list.--comments.hide-form .bottom .button#resend { display: none; }
+
+.projects-scene .comments-list .list.--comments.hide-form .bottom .button#quote { display: none; }
+
+.projects-scene .comments-list .list.--comments.hide-form .bottom .button#category { display: none; }
+
+.projects-scene .comments-list .list.--comments.hide-form .bottom .button#favorite { display: none; }
+
+.projects-scene .comments-list .list.--comments.hide-form .bottom .button#job_open { display: none; }
+
+.projects-scene .comments-list .list.--comments.hide-form .bottom .button#move { display: none; }

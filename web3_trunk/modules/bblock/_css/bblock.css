@@ -1,0 +1,11 @@
+.bblock-container { position: absolute; left: 0; right: 0; top: 0; bottom: 0; display: -webkit-box; display: -ms-flexbox; display: flex; border-left: 1px solid #c2c2c2; }
+
+.bblock-container .bblock-item { line-height: 30px; height: 30px; border-right: 1px solid #c2c2c2; cursor: pointer; -webkit-transition: all 0.5s; transition: all 0.5s; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.bblock-container .bblock-item .bblock-item-icon { padding: 0 5px; font-size: 20px; line-height: 30px; }
+
+.bblock-container .bblock-item .bblock-item-title { padding: 0 5px; font-size: 12px; height: 30px; line-height: 30px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.bblock-container .bblock-item:hover { color: #f2f2f2; background-color: #3399cc; }
+
+.bblock-container .bblock-item-empty { border-right: 1px solid #c2c2c2; height: 30px; width: 30px; }

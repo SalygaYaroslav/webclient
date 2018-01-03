@@ -1,0 +1,5 @@
+<div v-if="data.show" class="w-carcase-navigate-button"
+     v-bind:title="data.title" v-on:click="click(data.id)" v-bind:class="data.active ? 'active':''">
+    <div class="w-carcase-navigate-icon" v-bind:class="'icon-'+data.icon" v-bind:id="data.id"></div>
+    <div class="w-carcase-navigate-text" v-html="data.title"></div>
+</div>

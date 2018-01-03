@@ -1,0 +1,33 @@
+{
+  "ftCombobox": [
+    {
+      "options": {
+        "id": "ftCombobox",
+        "type": "section",
+        "title": "Основные свойства",
+        "multi": "false"
+      },
+      "children": [
+        {
+          "options": {
+            "id": "combobox_types",
+            "type": "select",
+            "hidden": false,
+            "title": "Тип значений",
+            "multi": "false",
+            "list": "crm_combobox_types"
+          }
+        },
+        {
+          "options": {
+            "id": "empty_defaulttext",
+            "type": "checkbox",
+            "hidden": false,
+            "title": "Пустое значение по умолчанию",
+            "multi": "false"
+          }
+        }
+      ]
+    }
+  ]
+}

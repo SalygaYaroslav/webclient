@@ -1,0 +1,21 @@
+body.blue .crcs-top { background-color: #e6e6e6; }
+
+body.blue .crcs-left { background-color: #2aa2cb; }
+
+body.blue .crcs-left:empty { background-color: #fff; }
+
+body.blue .crcs-navigate-button:hover, body.blue .crcs-navigate-button.selected { background-color: #2baad4; }
+
+body.blue .crcs-navigate-button:after { background: transparent -webkit-linear-gradient(top, #2799be, #2baad4) repeat scroll 0 0; background: transparent linear-gradient(to bottom, #2799be, #2baad4) repeat scroll 0 0; }
+
+body.blue .crcs-navigate-button:after:hover { background: transparent -webkit-linear-gradient(top, #2baad4, #2baad4) repeat scroll 0 0; background: transparent linear-gradient(to bottom, #2baad4, #2baad4) repeat scroll 0 0; }
+
+body.blue .crcs-navigate-button-controll:hover { background-color: #2baad4; }
+
+body.blue .crcs-navigate-button-controll:after { background: transparent -webkit-linear-gradient(top, #2799be, #2baad4) repeat scroll 0 0; background: transparent linear-gradient(to bottom, #2799be, #2baad4) repeat scroll 0 0; }
+
+body.blue .crcs-navigate-button-controll:after:hover { background: transparent -webkit-linear-gradient(top, #2baad4, #2baad4) repeat scroll 0 0; background: transparent linear-gradient(to bottom, #2baad4, #2baad4) repeat scroll 0 0; }
+
+body.blue .crcs-menu-button:before { background: transparent -webkit-linear-gradient(right, #e6e6e6, #d9d9d9) repeat scroll 0 0; background: transparent linear-gradient(to left, #e6e6e6, #d9d9d9) repeat scroll 0 0; }
+
+body.blue .crcs-logo { background-color: #e6e6e6; background-image: url("/images/logo.png"); background-position: center center; background-repeat: no-repeat; background-size: 44px auto; }

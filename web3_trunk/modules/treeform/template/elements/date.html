@@ -1,0 +1,23 @@
+<div class="tform-date {{data.hidden}} {{#data.multi}}multiple{{/data.multi}}" id="{{data.id}}">
+    <div class="tform-top">
+        {{#data.elements}}
+        <div class="tform-element">
+            <div class="tform-left">
+                <div class="tform-title">{{data.title}}</div>
+            </div>
+            <div class="tform-right">
+                <input type="text" class="element-date" rel="index" value="{{.}}"
+                       placeholder="{{data.placeholder}}">
+            </div>
+            {{#data.multi}}
+            <div class="tform-delete"></div>
+            {{/data.multi}}
+        </div>
+        {{/data.elements}}
+    </div>
+    {{#data.multi}}
+    <div class="tform-bot">
+        <div class="tform-title-multi">+ {{data.title}}</div>
+    </div>
+    {{/data.multi}}
+</div>

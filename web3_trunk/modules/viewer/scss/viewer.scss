@@ -1,0 +1,194 @@
+@import "../../../_variables";
+
+.viewer-overlay {
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+
+  .viewer-window {
+    position: absolute;
+    border: 1px solid $main-bg-text-color;
+    background-color: white;
+    transition: all 0.5s;
+    z-index: 1001;
+
+    .--gallery {
+      display: none;
+    }
+    &.gallery {
+      .--gallery {
+        display: block;
+      }
+    }
+
+    .viewer-header {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 30px;
+      line-height: 30px;
+      background-color: $main-bg-text-color;
+
+      .viewer-header-text {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #ffffff;
+        position: absolute;
+        left: 0;
+        right: 30px;
+        top: 0;
+        bottom: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .viewer-header-close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-family: 'Verdana';
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+      }
+    }
+
+    .viewer-wrap {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 30px;
+      bottom: 0;
+
+      .viewer-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 40px;
+        top: 0;
+
+        .viewer-unknown-format {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          text-align: center;
+        }
+
+        .viewer-image {
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+      }
+      .viewer-buttons {
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+
+        .viewer-gallery-count {
+          float: left;
+          margin-right: 5px;
+          line-height: 30px;
+          height: 30px;
+        }
+        .viewer-button {
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          color: white;
+          background-color: $main-bg-text-color;
+          border-radius: $border-radius;
+          cursor: pointer;
+
+          &.left {
+            float: left;
+            margin-right: 5px;
+          }
+          &.right {
+            float: right;
+            margin-left: 5px;
+          }
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .viewer-loading {
+      display: none;
+      z-index: 1002;
+      top: 30px;
+
+      .viewer-cube-grid {
+        width: 42px;
+        height: 42px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -21px;
+        margin-left: -21px;
+
+        .viewer-cube {
+          width: 14px;
+          height: 14px;
+          float: left;
+          animation: viewer-cube 1.3s infinite ease-in-out;
+
+          &.viewer-cube1 {
+            animation-delay: 0.2s;
+            background-image: url("/images/cube/cube1.png");
+          }
+          &.viewer-cube2 {
+            animation-delay: 0.3s;
+            background-image: url("/images/cube/cube2.png");
+          }
+          &.viewer-cube3 {
+            animation-delay: 0.4s;
+            background-image: url("/images/cube/cube3.png");
+          }
+          &.viewer-cube4 {
+            animation-delay: 0.1s;
+            background-image: url("/images/cube/cube4.png");
+          }
+          &.viewer-cube5 {
+            animation-delay: 0.2s;
+            background-image: url("/images/cube/cube5.png");
+          }
+          &.viewer-cube6 {
+            animation-delay: 0.3s;
+            background-image: url("/images/cube/cube6.png");
+          }
+          &.viewer-cube7 {
+            animation-delay: 0s;
+            background-image: url("/images/cube/cube7.png");
+          }
+          &.viewer-cube8 {
+            animation-delay: 0.1s;
+            background-image: url("/images/cube/cube8.png");
+          }
+          &.viewer-cube9 {
+            animation-delay: 0.2s;
+            background-image: url("/images/cube/cube9.png");
+          }
+        }
+      }
+      @keyframes viewer-cube {
+        0%, 70%, 100% {
+          transform: scale3D(1, 1, 1);
+        }
+        35% {
+          transform: scale3D(0, 0, 1);
+        }
+      }
+    }
+  }
+}

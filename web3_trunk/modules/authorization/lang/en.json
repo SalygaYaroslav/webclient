@@ -1,0 +1,18 @@
+{
+  "auth": {
+    "auth.crm": "CRM Prostoy Business",
+    "auth.enter_login": "Enter login...",
+    "auth.enter_password": "Enter password...",
+    "auth.remember_password": "Remember password",
+    "auth.sign_in": "Sign in",
+    "form": {
+      "enter_login": "Enter login",
+      "enter_password": "Enter password",
+      "auth_error": "Authorisation Error. Verify that the input is correct",
+      "welcome": "Welcome"
+    },
+    "params": {
+      "param": "Application settings"
+    }
+  }
+}

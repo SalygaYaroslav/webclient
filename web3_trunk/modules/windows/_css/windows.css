@@ -1,0 +1,51 @@
+.windows-overlay { z-index: 1000; background-color: rgba(0, 0, 0, 0.4); overflow: hidden; }
+
+.windows-overlay .windows-window { position: absolute; border: 1px solid #3399cc; background-color: #f6f6f6; -webkit-transition: all 0.5s; transition: all 0.5s; z-index: 1001; border-radius: 3px; box-shadow: 0 0 200px rgba(0, 0, 0, 0.3); }
+
+.windows-overlay .windows-window .windows-header { position: absolute; left: 0; right: 0; top: 0; height: 40px; line-height: 40px; background-color: #f6f6f6; }
+
+.windows-overlay .windows-window .windows-header .windows-header-text { padding-left: 10px; padding-right: 10px; color: #c2c2c2; font-size: 16px; position: absolute; left: 0; right: 40px; top: 0; bottom: 0; text-overflow: ellipsis; white-space: nowrap; }
+
+.windows-overlay .windows-window .windows-header .windows-header-close { position: absolute; right: 0; top: 0; bottom: 0; width: 40px; line-height: 40px; text-align: center; font-family: 'Verdana'; font-size: 20px; cursor: pointer; color: #c2c2c2; }
+
+.windows-overlay .windows-window .windows-wrap { position: absolute; left: 0; right: 0; top: 40px; bottom: 0; }
+
+.windows-overlay .windows-window .windows-wrap .windows-content { position: absolute; left: 10px; right: 10px; bottom: 45px; top: 0; overflow-y: auto; overflow-x: hidden; }
+
+.windows-overlay .windows-window .windows-wrap .windows-content.no-scroll { overflow: hidden; }
+
+.windows-overlay .windows-window .windows-wrap .windows-buttons { position: absolute; left: 10px; right: 10px; bottom: 0; height: 44px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; -ms-flex-line-pack: stretch; align-content: stretch; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+.windows-overlay .windows-window .windows-wrap .windows-buttons .elm-button { margin: 7px 0 2px 7px; }
+
+.windows-overlay .windows-window .windows-wrap .windows-buttons .elm-button.--left { -ms-flex-item-align: start; align-self: flex-start; }
+
+.windows-overlay .windows-window .windows-loading { display: none; z-index: 1002; top: 30px; background-color: rgba(0, 0, 0, 0.1); }
+
+.windows-overlay .windows-window .windows-loading .windows-cube-grid { width: 42px; height: 42px; position: absolute; left: 50%; top: 50%; margin-top: -21px; margin-left: -21px; }
+
+.windows-overlay .windows-window .windows-loading .windows-cube-grid .windows-cube { width: 14px; height: 14px; float: left; -webkit-animation: windows-cube 1.3s infinite ease-in-out; animation: windows-cube 1.3s infinite ease-in-out; }
+
+.windows-overlay .windows-window .windows-loading .windows-cube-grid .windows-cube.windows-cube1 { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; background-image: url("/images/cube/cube1.png"); }
+
+.windows-overlay .windows-window .windows-loading .windows-cube-grid .windows-cube.windows-cube2 { -webkit-animation-delay: 0.3s; animation-delay: 0.3s; background-image: url("/images/cube/cube2.png"); }
+
+.windows-overlay .windows-window .windows-loading .windows-cube-grid .windows-cube.windows-cube3 { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; background-image: url("/images/cube/cube3.png"); }
+
+.windows-overlay .windows-window .windows-loading .windows-cube-grid .windows-cube.windows-cube4 { -webkit-animation-delay: 0.1s; animation-delay: 0.1s; background-image: url("/images/cube/cube4.png"); }
+
+.windows-overlay .windows-window .windows-loading .windows-cube-grid .windows-cube.windows-cube5 { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; background-image: url("/images/cube/cube5.png"); }
+
+.windows-overlay .windows-window .windows-loading .windows-cube-grid .windows-cube.windows-cube6 { -webkit-animation-delay: 0.3s; animation-delay: 0.3s; background-image: url("/images/cube/cube6.png"); }
+
+.windows-overlay .windows-window .windows-loading .windows-cube-grid .windows-cube.windows-cube7 { -webkit-animation-delay: 0s; animation-delay: 0s; background-image: url("/images/cube/cube7.png"); }
+
+.windows-overlay .windows-window .windows-loading .windows-cube-grid .windows-cube.windows-cube8 { -webkit-animation-delay: 0.1s; animation-delay: 0.1s; background-image: url("/images/cube/cube8.png"); }
+
+.windows-overlay .windows-window .windows-loading .windows-cube-grid .windows-cube.windows-cube9 { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; background-image: url("/images/cube/cube9.png"); }
+
+@-webkit-keyframes windows-cube { 0%, 70%, 100% { -webkit-transform: scale3D(1, 1, 1); transform: scale3D(1, 1, 1); }
+  35% { -webkit-transform: scale3D(0, 0, 1); transform: scale3D(0, 0, 1); } }
+
+@keyframes windows-cube { 0%, 70%, 100% { -webkit-transform: scale3D(1, 1, 1); transform: scale3D(1, 1, 1); }
+  35% { -webkit-transform: scale3D(0, 0, 1); transform: scale3D(0, 0, 1); } }

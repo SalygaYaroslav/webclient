@@ -1,0 +1,42 @@
+{
+  "ftFloat": [
+    {
+      "options": {
+        "id": "ftFloat",
+        "type": "section",
+        "title": "Основные свойства",
+        "multi": "false"
+      },
+      "children": [
+        {
+          "options": {
+            "id": "money_type",
+            "type": "checkbox",
+            "hidden": false,
+            "title": "Денежный формат",
+            "multi": "false"
+          }
+        },
+        {
+          "options": {
+            "id": "defaulttext",
+            "type": "string",
+            "hidden": false,
+            "title": "По умолчанию",
+            "multi": "false",
+            "placeholder": "Введите текст"
+          }
+        },
+        {
+          "options": {
+            "id": "after_point",
+            "type": "string",
+            "hidden": false,
+            "title": "Знаков после запятой",
+            "multi": "false"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+#authorization .auth-form { -webkit-backface-visibility: hidden; backface-visibility: hidden; height: 200px; left: 50%; margin-left: -200px; margin-top: -100px; overflow: hidden; position: absolute; top: 50%; -webkit-transform: rotateY(0deg); transform: rotateY(0deg); -webkit-transition: all 0.6s ease 0s; transition: all 0.6s ease 0s; width: 400px; }
+
+#authorization .auth-form .auth-logo { background-image: url("../../../images/logo.png"); background-position: left center; background-repeat: no-repeat; background-size: 39px auto; box-sizing: border-box; font-size: 30px; font-weight: bold; height: 50px; line-height: 50px; margin-bottom: 10px; padding-left: 45px; text-transform: uppercase; width: 100%; }
+
+#authorization .auth-form .auth-inp-div { margin-bottom: 20px; position: relative; }
+
+#authorization .auth-form .auth-inp-div:after { color: red; content: attr(rel); font-size: 12px; left: 0; position: absolute; right: 0; top: 25px; }
+
+#authorization .auth-form .auth-inp-div .auth-inp { border: medium none; height: 20px; line-height: 20px; width: 100%; border-bottom: 1px solid black; }
+
+#authorization .auth-form .auth-inp-div .auth-link { color: #2aa2cb; cursor: pointer; height: 30px; line-height: 30px; text-decoration: underline; }
+
+#authorization .auth-form .auth-inp-div .auth-button { background-color: #2aa2cb; border: medium none; color: white; cursor: pointer; float: right; height: 30px; line-height: 20px; padding: 5px 10px; text-transform: uppercase; }
+
+#authorization .auth-wellcome { -webkit-backface-visibility: hidden; backface-visibility: hidden; height: 200px; left: 50%; margin-left: -200px; margin-top: -100px; overflow: hidden; position: absolute; top: 50%; -webkit-transform: rotateY(180deg); transform: rotateY(180deg); -webkit-transition: all 0.6s ease 0s; transition: all 0.6s ease 0s; width: 400px; }
+
+#authorization .auth-wellcome .auth-wellcome-title { font-size: 30px; height: 40px; line-height: 40px; text-align: center; }
+
+#authorization .auth-wellcome .auth-wellcome-avatar { background-position: center center; background-repeat: no-repeat; background-size: cover; border-radius: 50%; height: 100px; margin-left: 150px; width: 100px; }
+
+#authorization .auth-wellcome .auth-wellcome-name { font-size: 20px; height: 30px; line-height: 30px; text-align: center; }
+
+#authorization.success .auth-form { -webkit-transform: rotateY(180deg); transform: rotateY(180deg); }
+
+#authorization.success .auth-wellcome { -webkit-transform: rotateY(360deg); transform: rotateY(360deg); }

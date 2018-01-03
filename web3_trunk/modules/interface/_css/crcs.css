@@ -1,0 +1,81 @@
+.w-carcase.--full .w-carcase-left { width: 200px; }
+
+.w-carcase.--full .w-carcase-left .w-carcase-logo-image { background-size: 40px !important; }
+
+.w-carcase.--full .w-carcase-left .w-carcase-logo-crm { display: block !important; }
+
+.w-carcase.--full .w-carcase-left .w-carcase-logo-pro { display: block !important; }
+
+.w-carcase.--full .w-carcase-left .w-carcase-navigate .w-carcase-navigate-button .w-carcase-navigate-icon { display: block; font-size: 28px; }
+
+.w-carcase.--full .w-carcase-left .w-carcase-navigate .w-carcase-navigate-button .w-carcase-navigate-text { display: block; font-size: 12px; }
+
+.w-carcase.--full .w-carcase-center { left: 200px; }
+
+.w-carcase.--full .w-carcase-center .w-carcase-resize { background-image: url("/images/icons/hide.png") !important; }
+
+.w-carcase.--right .w-carcase-center { right: 200px; }
+
+.w-carcase.--right .w-carcase-right { width: 200px; }
+
+.w-carcase .w-carcase-left { left: 0; right: 0; top: 0; bottom: 0; position: absolute; width: 70px; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.w-carcase .w-carcase-left .w-carcase-logo { position: absolute; left: 0; right: 0; top: 0; height: 70px; background-color: #F8F8F8; overflow: hidden; }
+
+.w-carcase .w-carcase-left .w-carcase-logo .w-carcase-logo-image { background-image: url(../../../images/logo.png); background-position: center center; background-repeat: no-repeat; background-size: 50px; width: 60px; height: 60px; position: absolute; left: 5px; top: 5px; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.w-carcase .w-carcase-left .w-carcase-logo .w-carcase-logo-crm { position: absolute; left: 60px; top: 10px; line-height: 25px; color: #747474; font-size: 16px; letter-spacing: 2px; display: none; white-space: nowrap; overflow: hidden; }
+
+.w-carcase .w-carcase-left .w-carcase-logo .w-carcase-logo-pro { position: absolute; left: 60px; bottom: 10px; line-height: 25px; color: #3399cc; font-size: 16px; text-transform: uppercase; letter-spacing: -0.5px; display: none; white-space: nowrap; overflow: hidden; }
+
+.w-carcase .w-carcase-left .w-carcase-navigate { position: absolute; top: 70px; right: 0; bottom: 0; left: 0; background-color: #3399cc; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-flow: column nowrap; flex-flow: column nowrap; }
+
+.w-carcase .w-carcase-left .w-carcase-navigate .w-carcase-navigate-button { position: relative; min-height: 50px; cursor: pointer; background: -webkit-linear-gradient(top, #5cadd6, #297aa3) left bottom #3399cc no-repeat; background: linear-gradient(to bottom, #5cadd6, #297aa3) left bottom #3399cc no-repeat; background-size: 100% 1px; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.w-carcase .w-carcase-left .w-carcase-navigate .w-carcase-navigate-button:hover { background-color: #5cadd6; }
+
+.w-carcase .w-carcase-left .w-carcase-navigate .w-carcase-navigate-button.active { background-color: #297aa3; }
+
+.w-carcase .w-carcase-left .w-carcase-navigate .w-carcase-navigate-button .w-carcase-navigate-icon { position: absolute; left: 5px; top: 0; width: 60px; height: 50px; font-family: 'Prostoy', serif; color: white; line-height: 50px; text-align: center; font-size: 34px; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.w-carcase .w-carcase-left .w-carcase-navigate .w-carcase-navigate-button .w-carcase-navigate-text { display: none; position: absolute; left: 75px; right: 5px; height: 50px; line-height: 50px; color: #ffffff; text-align: left; font-size: 12px; }
+
+.w-carcase .w-carcase-center { left: 70px; right: 0; top: 0; bottom: 0; position: absolute; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.w-carcase .w-carcase-center .w-carcase-header { position: absolute; left: 0; right: 0; top: 0; height: 70px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; -ms-flex-line-pack: stretch; align-content: stretch; }
+
+.w-carcase .w-carcase-center .w-carcase-header .w-carcase-resize { max-width: 100px; min-width: 100px; -webkit-box-flex: 1; -ms-flex: 1 100%; flex: 1 100%; border-right: 1px solid #ccc; border-left: 1px solid #ccc; cursor: pointer; background-image: url("/images/icons/show.png"); background-repeat: no-repeat; background-position: center center; }
+
+.w-carcase .w-carcase-center .w-carcase-header .w-carcase-company { min-width: 100px; -webkit-box-flex: 1; -ms-flex: 1 100%; flex: 1 100%; border-right: 1px solid #ccc; position: relative; }
+
+.w-carcase .w-carcase-center .w-carcase-header .w-carcase-personal { min-width: 100px; -webkit-box-flex: 1; -ms-flex: 1 100%; flex: 1 100%; border-right: 1px solid #ccc; }
+
+.w-carcase .w-carcase-center .w-carcase-header .w-carcase-search { -webkit-box-flex: 1; -ms-flex: 1 100%; flex: 1 100%; border-right: 1px solid #ccc; }
+
+.w-carcase .w-carcase-center .w-carcase-header .w-carcase-fast { -webkit-box-flex: 3; -ms-flex: 3 100%; flex: 3 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-flow: row nowrap; flex-flow: row nowrap; }
+
+.w-carcase .w-carcase-center .w-carcase-header .w-carcase-fast .w-carcase-menu-button { min-width: 80px; position: relative; cursor: pointer; background: -webkit-linear-gradient(left, #5cadd6, #297aa3) left bottom #3399cc no-repeat; background: linear-gradient(to right, #5cadd6, #297aa3) left bottom #3399cc no-repeat; background-size: 1px 100%; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.w-carcase .w-carcase-center .w-carcase-header .w-carcase-fast .w-carcase-menu-button:hover { background-color: #5cadd6; }
+
+.w-carcase .w-carcase-center .w-carcase-header .w-carcase-fast .w-carcase-menu-button.disable { background-color: #c2c2c2; }
+
+.w-carcase .w-carcase-center .w-carcase-header .w-carcase-fast .w-carcase-menu-button.active { background-color: #4cb648; }
+
+.w-carcase .w-carcase-center .w-carcase-header .w-carcase-fast .w-carcase-menu-button .w-carcase-menu-icon { position: absolute; top: 0; left: 0; right: 0; bottom: 30px; font-family: 'Prostoy', serif; font-size: 28px; text-align: center; color: white; height: 50px; line-height: 50px; }
+
+.w-carcase .w-carcase-center .w-carcase-header .w-carcase-fast .w-carcase-menu-button .w-carcase-menu-text { position: absolute; left: 0; right: 0; bottom: 10px; height: 20px; line-height: 20px; color: #ffffff; text-align: center; font-size: 12px; }
+
+.w-carcase .w-carcase-center .w-carcase-header .w-carcase-fast .w-carcase-menu-button.sizes { font-size: 11px; text-align: center; padding-top: 10px; color: white; }
+
+.w-carcase .w-carcase-center .w-carcase-content { position: absolute; left: 0; right: 0; top: 70px; bottom: 30px; border: 1px solid #ccc; }
+
+.w-carcase .w-carcase-center .w-carcase-footer { position: absolute; left: 0; right: 0; bottom: 0; height: 30px; }
+
+.w-carcase .w-carcase-right { right: 0; top: 0; bottom: 0; position: absolute; width: 0; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.w-carcase .w-carcase-right.slide-enter { opacity: 1; }
+
+.w-carcase .w-carcase-right.slide-enter-active { opacity: 0; }
+
+.w-carcase .w-carcase-right.slide-leave-to { opacity: 0; }

@@ -1,0 +1,29 @@
+.phone-number-converted { background-size: 20px 15px; padding-left: 22px; background-repeat: no-repeat; background-position: left center; }
+
+.phone-number-converted:hover { text-decoration: underline; cursor: pointer; }
+
+.phone-number-converted.am { background-image: url(/images/flags/am.png); }
+
+.phone-number-converted.az { background-image: url(/images/flags/az.png); }
+
+.phone-number-converted.by { background-image: url(/images/flags/by.png); }
+
+.phone-number-converted.ee { background-image: url(/images/flags/ee.png); }
+
+.phone-number-converted.ge { background-image: url(/images/flags/ge.png); }
+
+.phone-number-converted.kg { background-image: url(/images/flags/kg.png); }
+
+.phone-number-converted.lt { background-image: url(/images/flags/lt.png); }
+
+.phone-number-converted.lv { background-image: url(/images/flags/lv.png); }
+
+.phone-number-converted.md { background-image: url(/images/flags/md.png); }
+
+.phone-number-converted.ru { background-image: url(/images/flags/ru.png); }
+
+.phone-number-converted.tm { background-image: url(/images/flags/tm.png); }
+
+.phone-number-converted.ua { background-image: url(/images/flags/ua.png); }
+
+.phone-number-converted.uz { background-image: url(/images/flags/uz.png); }

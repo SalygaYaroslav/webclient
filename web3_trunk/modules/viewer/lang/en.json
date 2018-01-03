@@ -1,0 +1,16 @@
+{
+  "viewer": {
+    "close": "Close",
+    "previous": "Previous file",
+    "next": "Next file",
+    "copy_link": "Copy link",
+    "download": "Download file",
+    "file": "File",
+    "of": "of",
+    "notice": {
+      "copy_link": "Link copied",
+      "error_copy": "Copying error"
+    },
+    "unknown": "Unexpected file or file format is not supported"
+  }
+}

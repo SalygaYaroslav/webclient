@@ -1,0 +1,162 @@
+@import "../../../_variables";
+
+.windows-overlay {
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+
+  .windows-window {
+    position: absolute;
+    border: 1px solid $main-bg-text-color;
+    background-color: #f6f6f6;
+    transition: all 0.5s;
+    z-index: 1001;
+    border-radius: $border-radius;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.3);
+
+    .windows-header {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 40px;
+      line-height: 40px;
+      background-color: #f6f6f6;
+
+      .windows-header-text {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: $border-and-add-text-bg-color;
+        font-size: 16px;
+        position: absolute;
+        left: 0;
+        right: 40px;
+        top: 0;
+        bottom: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .windows-header-close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-family: 'Verdana';
+        font-size: 20px;
+        cursor: pointer;
+        color: $border-and-add-text-bg-color;
+      }
+    }
+
+    .windows-wrap {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 40px;
+      bottom: 0;
+
+      .windows-content {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: 45px;
+        top: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        &.no-scroll {
+          overflow: hidden;
+        }
+      }
+      .windows-buttons {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: 0;
+        height: 44px;
+        display: flex;
+        align-items: stretch;
+        align-content: stretch;
+        justify-content: flex-end;
+
+        .elm-button {
+          margin: 7px 0 2px 7px;
+
+          &.--left {
+            align-self: flex-start;
+          }
+        }
+      }
+    }
+    .windows-loading {
+      display: none;
+      z-index: 1002;
+      top: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+
+      .windows-cube-grid {
+        width: 42px;
+        height: 42px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -21px;
+        margin-left: -21px;
+
+        .windows-cube {
+          width: 14px;
+          height: 14px;
+          float: left;
+          animation: windows-cube 1.3s infinite ease-in-out;
+
+          &.windows-cube1 {
+            animation-delay: 0.2s;
+            background-image: url("/images/cube/cube1.png");
+          }
+          &.windows-cube2 {
+            animation-delay: 0.3s;
+            background-image: url("/images/cube/cube2.png");
+          }
+          &.windows-cube3 {
+            animation-delay: 0.4s;
+            background-image: url("/images/cube/cube3.png");
+          }
+          &.windows-cube4 {
+            animation-delay: 0.1s;
+            background-image: url("/images/cube/cube4.png");
+          }
+          &.windows-cube5 {
+            animation-delay: 0.2s;
+            background-image: url("/images/cube/cube5.png");
+          }
+          &.windows-cube6 {
+            animation-delay: 0.3s;
+            background-image: url("/images/cube/cube6.png");
+          }
+          &.windows-cube7 {
+            animation-delay: 0s;
+            background-image: url("/images/cube/cube7.png");
+          }
+          &.windows-cube8 {
+            animation-delay: 0.1s;
+            background-image: url("/images/cube/cube8.png");
+          }
+          &.windows-cube9 {
+            animation-delay: 0.2s;
+            background-image: url("/images/cube/cube9.png");
+          }
+        }
+      }
+      @keyframes windows-cube {
+        0%, 70%, 100% {
+          transform: scale3D(1, 1, 1);
+        }
+        35% {
+          transform: scale3D(0, 0, 1);
+        }
+      }
+    }
+  }
+}

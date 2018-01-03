@@ -1,0 +1,39 @@
+.users-scene { bottom: 0; left: 0; overflow: hidden; position: absolute; right: 0; top: 0; }
+
+.users-scene .groups-list { bottom: 0; left: 0; overflow-x: hidden; overflow-y: auto; position: absolute; top: 0; width: 25%; }
+
+.users-scene .groups-list .group-squire { border-bottom: 1px solid #c2c2c2; cursor: pointer; height: 50px; line-height: 50px; position: relative; background-color: #f0f0f0; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.users-scene .groups-list .group-squire:hover { background: rgba(0, 0, 0, 0.1); }
+
+.users-scene .groups-list .group-squire.selected { background-color: #ffffff; color: #3399cc; }
+
+.users-scene .groups-list .group-squire span[class^="icon-"] { margin-left: 13px; font-size: 24px; }
+
+.users-scene .groups-list .group-squire .group-name { bottom: 0; left: 45px; line-height: 50px; position: absolute; right: 50px; top: 0; overflow: hidden; }
+
+.users-scene .users-list { bottom: 0; left: 25%; overflow-x: hidden; overflow-y: auto; position: absolute; top: 0; width: 25%; }
+
+.users-scene .users-list .user-squire { border: 1px solid #c2c2c2; cursor: pointer; height: 50px; line-height: 50px; margin: 2px; background-color: #fff; position: relative; border-radius: 3px; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.users-scene .users-list .user-squire:hover { background-color: #e6e6e6; }
+
+.users-scene .users-list .user-squire.selected { border: 1px solid #f0f0f0; color: #3399cc; background-color: transparent; }
+
+.users-scene .users-list .user-squire.selected .user-name { right: 30px; }
+
+.users-scene .users-list .user-squire span[class^="icon-"] { margin-left: 13px; font-size: 19px; }
+
+.users-scene .users-list .user-squire .user-name { bottom: 0; left: 45px; line-height: 50px; overflow: hidden; position: absolute; right: 50px; text-overflow: ellipsis; top: 0; white-space: nowrap; }
+
+.users-scene .info-block { bottom: 0; left: 50%; overflow-x: hidden; overflow-y: auto; position: absolute; top: 0; right: 0; }
+
+.users-scene .info-block .tab-content { background-color: unset; }
+
+.users-scene .info-block .tab-content .tab-content-item.active { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.users-scene .info-block .tab-content .tab-content-item .form-info { overflow-x: hidden; overflow-y: auto; }
+
+.users-scene .info-block .tab-content .tab-content-item .form-info.editable { bottom: 40px; }
+
+.users-scene .info-block .tab-content .tab-content-item .form-button { bottom: 0; left: 0; right: 0; height: 40px; position: absolute; text-align: right; padding-top: 5px; }

@@ -1,0 +1,85 @@
+{
+  "forms": {
+    "category": {
+      "title": "List of categories",
+      "category": "Category",
+      "history": "History",
+      "save": "Save",
+      "cancel": "Cancel",
+      "date": "Date",
+      "author": "Author"
+    },
+    "comment": {
+      "comment": "Comment",
+      "email": "E-mail",
+      "target": "Recipient",
+      "theme": "Theme",
+      "send": "Send",
+      "cancel": "Cancel",
+      "mail_param": "Email params",
+      "assign": "Assign",
+      "response": "Response",
+      "targets": "Targets",
+      "load_files": "Download files",
+      "send_comment": "Sending a comment",
+      "no_vc_to": "[Unassigned]",
+      "error": "Error",
+      "no_recipients": "The recipients are not filled",
+      "invalid_mail": "Invalid mail address",
+      "hello": "Hello!"
+    },
+    "comment_move": {
+      "title": "Moving a comment",
+      "task": "To task",
+      "copy": "Copy",
+      "move": "Move",
+      "cancel": "Cancel",
+      "table": "To table",
+      "error_request": "The request failed",
+      "error_equal": "Comment already in this task",
+      "error_not": "The selected item is not a task. Select a task from the list"
+    },
+    "participants": {
+      "participants": "Participants",
+      "save": "Save",
+      "cancel": "Cancel",
+      "users": "Users",
+      "contacts": "Contacts"
+    },
+    "send_mail_params": {
+      "local": "Local settings used",
+      "default": "Reset settings",
+      "params": "Gateway params",
+      "save_all": "Save to all",
+      "save_local": "Save local",
+      "cancel": "Cancel"
+    },
+    "personal": {
+      "title": "Do you want to share the task?",
+      "title_second": "Show comment?",
+      "save": "Accept",
+      "close": "Cancel",
+      "user": "User",
+      "in_org": "Is in organizations",
+      "render_assign_all_task": "To make the whole task visible and to receive comments.",
+      "render_assign_comment": "Make this comment visible only.",
+      "render_assign_top": "User %%user%% (%%login%%) does not see this task. It consists in organizations: <br> %%orgs%% <br> Choose what you want to do:",
+      "render_note_top": "In the table below, please indicate which of these users need to make the added comment visible:",
+      "render_note_bot": "Note: If you do not have a dialogue with these users or do not know who it is, just click Accept, without selecting anyone in the table."
+    },
+    "errors_text": {
+      "fired_user": "User %%users%% consists of a group of laid-off employees.<br>Users of this group can not comment.",
+      "fired_users": "Users %%users%% are in the group of laid-off employees.<br>Users of this group can not comment."
+    },
+    "gateway": {
+      "show_prefix": "Greeting",
+      "show_postfix": "Individually",
+      "individual": "Original message",
+      "save-original": "Links with attachments",
+      "file-attach": "Notify about reading",
+      "read-notify": "Notify about reading",
+      "override_theme": "Override the subject of the letter",
+      "theme_text": "Enter a subject"
+    }
+  }
+}

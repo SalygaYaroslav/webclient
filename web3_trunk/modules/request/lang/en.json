@@ -1,0 +1,7 @@
+{
+  "request": {
+    "notify": {
+      "change_server": "Server will be changed"
+    }
+  }
+}

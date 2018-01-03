@@ -1,0 +1,63 @@
+{
+  "ftString": [
+    {
+      "options": {
+        "id": "ftString",
+        "type": "section",
+        "title": "Основные свойства",
+        "multi": "false"
+      },
+      "children": [
+        {
+          "options": {
+            "id": "intell",
+            "type": "checkbox",
+            "hidden": false,
+            "title": "Интеллектуальная подсказка",
+            "multi": "false"
+          }
+        },
+        {
+          "options": {
+            "id": "defaulttext",
+            "type": "string",
+            "hidden": false,
+            "title": "По умолчанию",
+            "multi": "false",
+            "placeholder": "Введите текст"
+          }
+        },
+        {
+          "options": {
+            "id": "format",
+            "type": "select",
+            "hidden": false,
+            "title": "Формат",
+            "multi": "false",
+            "list": "crm_string_format"
+          }
+        },
+        {
+          "options": {
+            "id": "req",
+            "type": "string",
+            "hidden": false,
+            "title": "Ограничения",
+            "multi": "false",
+            "placeholder": "Введите текст"
+          }
+        },
+        {
+          "options": {
+            "id": "req_text",
+            "type": "string",
+            "hidden": false,
+            "title": "Сообщение об ограничении",
+            "multi": "false",
+            "placeholder": "Введите текст"
+          }
+        }
+      ]
+    }
+  ]
+}

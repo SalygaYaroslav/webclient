@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Простой Бизнес</title>
+    <style>
+        @font-face {
+            font-family: 'Prostoy';
+            src: url('/font/fonts/prostoy.eot');
+            src: url('/font/fonts/prostoy.eot') format('embedded-opentype'),
+            url('/font/fonts/prostoy.woff') format('woff'),
+            url('/font/fonts/prostoy.ttf') format('truetype'),
+            url('/font/fonts/prostoy.svg') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <!--font-->
+    <link rel="stylesheet" href="/font/style.css"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251"/>
+    <!--jQuery-->
+    <script src="/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery-ui.min.js"></script>
+    <!--scroll To-->
+    <script src="/libs/jquery/jquery.scrollTo.min.js"></script>
+    <!--config-->
+    <script src="/config.js"></script>
+    <!--app-->
+    <script src="/modules/prostoy.js"></script>
+    <!--selectize-->
+    <script src="/libs/selectize/selectize.js"></script>
+    <link rel="stylesheet" href="/libs/selectize/selectize.css">
+    <!--vkbeautify-->
+    <script src="/libs/vkbeautify/vkbeautify.js"></script>
+    <!--jbox-->
+    <script src="/libs/jbox/jBox.min.js"></script>
+    <script src="/libs/jbox/plugins/Notice/jBox.Notice.min.js"></script>
+    <script src="/libs/jbox/plugins/Confirm/jBox.Confirm.min.js"></script>
+    <link rel="stylesheet" href="/libs/jbox/jBox.css">
+    <link rel="stylesheet" href="/libs/jbox/plugins/Notice/jBox.Notice.css">
+    <link rel="stylesheet" href="/libs/jbox/plugins/Confirm/jBox.Confirm.css">
+    <!--clipboard-->
+    <script src="/libs/clipboard/clipboard.js"></script>
+    <!--jstree-->
+    <script src="/libs/jstree/jstree.js"></script>
+    <link rel="stylesheet" href="/libs/jstree/themes/proton/style.css">
+    <!--filereader-->
+    <script src="/libs/filereader/filereader.js"></script>
+    <!--datetimepicker-->
+    <script src="/libs/datetimepicker/datetimepicker.js"></script>
+    <link rel="stylesheet" href="/libs/datetimepicker/datetimepicker.css">
+    <!--vue-->
+    <script src="/libs/vue/vue.js"></script>
+</head>
+<body>
+<!--init config-->
+<!--start app-->
+<script type="text/javascript">
+    document.body.style["min-width"] = __web__.width + 'px';
+    document.body.style["min-height"] = __web__.height + 'px';
+    document.body.className = __web__.style;
+    $(function () {
+        document.body.innerHTML = '<div id="webapp" class="full-wh"></div>';
+        Prostoy.load(function () {
+            document.title = __web__.application_name;
+        });
+    });
+</script>
+<div id="webapp"></div>
+</body>
+</html>

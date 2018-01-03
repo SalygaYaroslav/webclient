@@ -1,0 +1,12 @@
+{
+  "user_block": {
+    "menu": {
+      "profile": "Анкета",
+      "personal_billing": "Личный счет",
+      "organization_billing": "Счет организации",
+      "properties": "Настройки",
+      "exit": "Выход",
+      "clear_storage": "Очистить хранилище"
+    }
+  }
+}

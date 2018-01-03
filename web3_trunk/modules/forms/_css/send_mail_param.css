@@ -1,0 +1,9 @@
+.form.--send-mail-params .selects { margin: 10px 10px 0 10px; }
+
+.form.--send-mail-params .inputs { margin: 0 10px; }
+
+.form.--send-mail-params .information { margin: 10px 10px; font-size: 13px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+
+.form.--send-mail-params .information .information-local { color: #c2c2c2; }
+
+.form.--send-mail-params .information .information-default { color: #3399cc; cursor: pointer; text-decoration: underline; }

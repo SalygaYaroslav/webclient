@@ -1,0 +1,70 @@
+{
+  "ftImage": [
+    {
+      "options": {
+        "id": "ftImage",
+        "type": "section",
+        "title": "Основные свойства",
+        "multi": "false"
+      },
+      "children": [
+        {
+          "options": {
+            "id": "displayname",
+            "type": "string",
+            "hidden": false,
+            "title": "Название",
+            "multi": "false",
+            "placeholder": "Введите название"
+          }
+        },
+        {
+          "options": {
+            "id": "type",
+            "type": "select",
+            "hidden": false,
+            "title": "Тип",
+            "multi": "false",
+            "list": "crm_types"
+          }
+        },
+        {
+          "options": {
+            "id": "invisible",
+            "type": "checkbox",
+            "hidden": false,
+            "title": "Скрытое в таблице",
+            "multi": "false"
+          }
+        },
+        {
+          "options": {
+            "id": "multiple",
+            "type": "checkbox",
+            "hidden": false,
+            "title": "Множественное",
+            "multi": "false"
+          }
+        },
+        {
+          "options": {
+            "id": "empty",
+            "type": "checkbox",
+            "hidden": false,
+            "title": "Обязательное поле",
+            "multi": "false"
+          }
+        },
+        {
+          "options": {
+            "id": "use_in_find",
+            "type": "checkbox",
+            "hidden": false,
+            "title": "Использовать в поиске",
+            "multi": "false"
+          }
+        }
+      ]
+    }
+  ]
+}

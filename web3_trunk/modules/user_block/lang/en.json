@@ -1,0 +1,12 @@
+{
+  "user_block": {
+    "menu": {
+      "profile": "Profile",
+      "personal_billing": "Personal billing",
+      "organization_billing": "Organization billing",
+      "properties": "Properties",
+      "exit": "Logout",
+      "clear_storage": "Clear Storage"
+    }
+  }
+}

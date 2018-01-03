@@ -1,0 +1,40 @@
+<div id="app">
+    <div class="w-carcase full-wh" v-bind:class="{'--full': small,'--right': right}">
+        <div class="w-carcase-left">
+            <div class="w-carcase-logo">
+                <a href="#">
+                    <div class="w-carcase-logo-image"></div>
+                    <div class="w-carcase-logo-crm">CRM - система</div>
+                    <div class="w-carcase-logo-pro">Простой Бизнес</div>
+                </a>
+            </div>
+            <div class="w-carcase-navigate">
+                <button-navigate v-for="(button, key) in navigate" v-bind:key="key"
+                                 v-bind:data="button"></button-navigate>
+            </div>
+        </div>
+        <div class="w-carcase-center">
+            <div class="w-carcase-header">
+                <div class="w-carcase-resize" v-on:click="resizeNavigate"></div>
+                <div class="w-carcase-company"></div>
+                <div class="w-carcase-personal"></div>
+                <div class="w-carcase-search"></div>
+                <div class="w-carcase-fast">
+                    <div v-for="button in menu" class="w-carcase-menu-button"
+                         v-bind:class="button.disable ? 'disable': (button.active ? 'active':'default')"
+                         v-bind:title="button.title" v-on:click="button.click(button.active = !button.active)">
+                        <div class="w-carcase-menu-icon" v-bind:class="'icon-'+button.icon" v-bind:id="button.id"></div>
+                        <div class="w-carcase-menu-text" v-html="button.title"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-carcase-content" id="webscene"></div>
+            <div class="w-carcase-footer"></div>
+        </div>
+        <transition name="slide">
+            <div class="w-carcase-right" v-show="right"></div>
+        </transition>
+    </div>
+    <div id="notification-container"></div>
+    <div id="trash"></div>
+</div>

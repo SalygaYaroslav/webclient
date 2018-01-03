@@ -1,0 +1,32 @@
+<div class="tab full-wh" id="tab-{{data.id}}">
+    <div class="tab-header">
+        <div class="tab-header-items">
+            {{#data.items}}
+            <div class="tab-header-item" id="{{id}}" rel="{{data.id}}">
+                {{title}}
+            </div>
+            {{/data.items}}
+        </div>
+        {{#data.custom}}
+        <div class="tab-header-custom">
+            {{{data.custom}}}
+        </div>
+        {{/data.custom}}
+        {{#data.full}}
+        <div class="full-size not" title=""  rel="{{data.id}}">
+            <span class="--plus icon-Подогнать-под-ширину-окна"></span>
+            <span class="--minus icon-Подогнать-под-размер-окна"></span>
+        </div>
+        {{/data.full}}
+    </div>
+    <div class="tab-content">
+        {{#data.content}}
+        <div class="tab-content-item" id="{{id}}" rel="{{data.id}}"></div>
+        {{/data.content}}
+    </div>
+    {{#data.bottom}}
+    <div class="tab-bottom">
+        {{{data.bottom}}}
+    </div>
+    {{/data.bottom}}
+</div>

@@ -1,0 +1,391 @@
+{
+  "user": [
+    {
+      "options": {
+        "id": "main",
+        "type": "section",
+        "title": "Основное",
+        "multi": "false"
+      },
+      "children": [
+        {
+          "options": {
+            "id": "avatarName",
+            "type": "avatar",
+            "title": "",
+            "multi": "false"
+          }
+        },
+        {
+          "options": {
+            "id": "vcSurname",
+            "type": "string",
+            "title": "Фамилия",
+            "multi": "false",
+            "placeholder": "Введите фамилию"
+          }
+        },
+        {
+          "options": {
+            "id": "vcRealName",
+            "type": "string",
+            "title": "Имя",
+            "multi": "false",
+            "placeholder": "Введите имя"
+          }
+        },
+        {
+          "options": {
+            "id": "vcPatrname",
+            "type": "string",
+            "title": "Отчетсво",
+            "multi": "false",
+            "placeholder": "Введите отчетсво"
+          }
+        },
+        {
+          "options": {
+            "id": "vcName",
+            "type": "string",
+            "title": "Отображаемое имя",
+            "multi": "false",
+            "placeholder": "Введите отображаемое имя"
+          }
+        },
+        {
+          "options": {
+            "id": "gender",
+            "type": "select",
+            "title": "Пол",
+            "multi": "false",
+            "list": "user_gender"
+          }
+        },
+        {
+          "options": {
+            "id": "marstate",
+            "type": "select",
+            "title": "Семейное положение",
+            "multi": "false",
+            "list": "user_marstate"
+          }
+        },
+        {
+          "options": {
+            "id": "dtBirthday",
+            "type": "date",
+            "template": "d.m.Y",
+            "timepicker": "false",
+            "datepicker": "true",
+            "title": "Дата рождения",
+            "multi": "false",
+            "placeholder": "Введите дату",
+            "format": "user_birthday"
+          }
+        },
+        {
+          "options": {
+            "id": "showBirthday",
+            "type": "select",
+            "title": "Показывать дату рождения",
+            "multi": "false",
+            "list": "user_show_birthday"
+          }
+        },
+        {
+          "options": {
+            "id": "political",
+            "type": "select",
+            "title": "Политические взгляды",
+            "multi": "false",
+            "list": "user_political"
+          }
+        },
+        {
+          "options": {
+            "id": "religion",
+            "type": "string",
+            "title": "Религиозные взгляды",
+            "multi": "false",
+            "placeholder": "Введите текст"
+          }
+        }
+      ]
+    },
+    {
+      "options": {
+        "id": "contacts",
+        "type": "section",
+        "title": "Контакты",
+        "multi": "false"
+      },
+      "children": [
+        {
+          "options": {
+            "id": "vcCountry",
+            "type": "string",
+            "title": "Страна",
+            "multi": "false",
+            "placeholder": "Введите название страны"
+          }
+        },
+        {
+          "options": {
+            "id": "vcCity",
+            "type": "string",
+            "title": "Город",
+            "multi": "false",
+            "placeholder": "Введите название города"
+          }
+        },
+        {
+          "options": {
+            "id": "vcPhoneHand",
+            "type": "string",
+            "title": "Мобильный",
+            "multi": "true",
+            "split": ";",
+            "placeholder": "Введите номер телефона"
+          }
+        },
+        {
+          "options": {
+            "id": "vcPhoneWork",
+            "type": "string",
+            "title": "Рабочий",
+            "multi": "true",
+            "split": ";",
+            "placeholder": "Введите номер телефона"
+          }
+        },
+        {
+          "options": {
+            "id": "vcPhoneHome",
+            "type": "string",
+            "title": "Домашний",
+            "multi": "true",
+            "split": ";",
+            "placeholder": "Введите номер телефона"
+          }
+        },
+        {
+          "options": {
+            "id": "vcEmail",
+            "type": "string",
+            "title": "E-mail",
+            "multi": "true",
+            "split": ";",
+            "placeholder": "Введите E-mail"
+          }
+        },
+        {
+          "options": {
+            "id": "vcICQ",
+            "type": "string",
+            "title": "ICQ",
+            "multi": "false",
+            "placeholder": "Введите ICQ"
+          }
+        },
+        {
+          "options": {
+            "id": "vcSkype",
+            "type": "string",
+            "title": "Skype",
+            "multi": "false",
+            "placeholder": "Введите Skype"
+          }
+        },
+        {
+          "options": {
+            "id": "vcSite",
+            "type": "string",
+            "title": "Личный сайт",
+            "multi": "false",
+            "placeholder": "Введите адрес сайта"
+          }
+        },
+        {
+          "options": {
+            "id": "vcSIP",
+            "type": "string",
+            "title": "SIP",
+            "multi": "false",
+            "placeholder": "Введите SIP"
+          }
+        }
+      ]
+    },
+    {
+      "options": {
+        "id": "private",
+        "type": "section",
+        "title": "Личное",
+        "multi": "false"
+      },
+      "children": [
+        {
+          "options": {
+            "id": "vcActivity",
+            "type": "string",
+            "title": "Общественная деятельность",
+            "multi": "false",
+            "placeholder": ""
+          }
+        },
+        {
+          "options": {
+            "id": "vcInterests",
+            "type": "string",
+            "title": "Интересы",
+            "multi": "false",
+            "placeholder": ""
+          }
+        },
+        {
+          "options": {
+            "id": "vcFavMusic",
+            "type": "string",
+            "title": "Любимая музыка",
+            "multi": "false",
+            "placeholder": ""
+          }
+        },
+        {
+          "options": {
+            "id": "vcFavMusician",
+            "type": "string",
+            "title": "Группы, исполнители, композиторы",
+            "multi": "false",
+            "placeholder": ""
+          }
+        },
+        {
+          "options": {
+            "id": "vcFavFilms",
+            "type": "string",
+            "title": "Любимые фильмы",
+            "multi": "false",
+            "placeholder": ""
+          }
+        },
+        {
+          "options": {
+            "id": "vcTeleshow",
+            "type": "string",
+            "title": "Любимые телешоу",
+            "multi": "false",
+            "placeholder": ""
+          }
+        },
+        {
+          "options": {
+            "id": "vcFavBooks",
+            "type": "string",
+            "title": "Любимые книги",
+            "multi": "false",
+            "placeholder": ""
+          }
+        },
+        {
+          "options": {
+            "id": "vcFavGames",
+            "type": "string",
+            "title": "Любимые игры",
+            "multi": "false",
+            "placeholder": ""
+          }
+        },
+        {
+          "options": {
+            "id": "vcFavQuotes",
+            "type": "string",
+            "title": "Любимые цитаты",
+            "multi": "false",
+            "placeholder": ""
+          }
+        },
+        {
+          "options": {
+            "id": "vcItself",
+            "type": "string",
+            "title": "Любимые цитаты",
+            "multi": "false",
+            "placeholder": ""
+          }
+        }
+      ]
+    },
+    {
+      "options": {
+        "id": "jobs",
+        "type": "section",
+        "title": "Карьера",
+        "multi": "false"
+      },
+      "children": [
+        {
+          "options": {
+            "id": "workexp",
+            "type": "section",
+            "title": "Опыт работы",
+            "multi": "true"
+          },
+          "children": [
+            {
+              "options": {
+                "id": "vcJobs",
+                "type": "string",
+                "title": "Место работы",
+                "multi": "false",
+                "placeholder": ""
+              }
+            },
+            {
+              "options": {
+                "id": "vcPosition",
+                "type": "string",
+                "title": "Должность",
+                "multi": "false",
+                "placeholder": ""
+              }
+            },
+            {
+              "options": {
+                "id": "dtDateStart",
+                "template": "d.m.Y",
+                "timepicker": "false",
+                "datepicker": "true",
+                "type": "date",
+                "title": "Дата начала работы",
+                "multi": "false",
+                "placeholder": ""
+              }
+            },
+            {
+              "options": {
+                "id": "dtDateEnd",
+                "template": "d.m.Y",
+                "timepicker": "false",
+                "datepicker": "true",
+                "type": "date",
+                "title": "Дата окончания работы",
+                "multi": "false",
+                "placeholder": ""
+              }
+            },
+            {
+              "options": {
+                "id": "vcReasons",
+                "type": "string",
+                "title": "Причины увольнения",
+                "multi": "false",
+                "placeholder": ""
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

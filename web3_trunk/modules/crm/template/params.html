@@ -1,0 +1,35 @@
+<div class="crm-params full-wh">
+    <div class="crm-params-list full-wh">
+        <div class="crm-params-item-header">
+            <div class="crm-params-item-header-tr">
+                <div id="name" class="crm-params-item-td"></div>
+                <div id="type" class="crm-params-item-td"></div>
+                <div id="edit" class="crm-params-item-td small"></div>
+                <div id="visible" class="crm-params-item-td small"><span class="icon-Скрыть"></span></div>
+                <div id="multiple" class="crm-params-item-td small"><span class="icon-mnog_p"></span></div>
+                <div id="empty" class="crm-params-item-td small"><span class="icon-obyaz_p-01"></span></div>
+            </div>
+        </div>
+        <div class="crm-params-list-items">
+            <template v-for="item in list">
+                <div v-bind:id="item.id" class="crm-params-item-tr" v-on:click="select(item.id)" v-on:dblclick="editRow(item.id)"
+                     v-bind:class="selected == item.id ? 'selected':''">
+                    <div id="name" class="crm-params-item-td --left" v-html="item.name"></div>
+                    <div id="type" class="crm-params-item-td --left" v-bind:rel="item.type.id"
+                         v-html="item.type.text"></div>
+                    <div id="edit" class="crm-params-item-td small" v-on:click="editRow(item.id)"><span
+                            class="icon-Редактировать"></span></div>
+                    <div id="visible" class="crm-params-item-td small">
+                        <input type="checkbox" v-model="item.visible">
+                    </div>
+                    <div id="multiple" class="crm-params-item-td small">
+                        <input type="checkbox" v-model="item.multiple">
+                    </div>
+                    <div id="empty" class="crm-params-item-td small">
+                        <input type="checkbox" v-model="item.empty">
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+.comment { border: 1px solid #c2c2c2; border-radius: 3px; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin-right: 3px; margin-bottom: 3px; background-color: #ffffff; }
+
+.comment .comment-body { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; -ms-flex-line-pack: stretch; align-content: stretch; }
+
+.comment .comment-body .header { margin: 10px 10px 0 10px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.comment .comment-body .header .avatar { left: 0; top: 0; min-width: 40px; min-height: 40px; background-position: top center; background-size: cover; background-repeat: no-repeat; -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; max-width: 40px; max-height: 40px; }
+
+.comment .comment-body .header .wrap-nds { margin-left: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-line-pack: stretch; align-content: stretch; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; }
+
+.comment .comment-body .header .wrap-nds .wrap-name-status { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; -ms-flex-line-pack: stretch; align-content: stretch; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+
+.comment .comment-body .header .wrap-nds .wrap-name-status .name { white-space: nowrap; margin-right: 5px; line-height: 20px; }
+
+.comment .comment-body .header .wrap-nds .wrap-name-status .name .date { font-size: 12px; color: #c2c2c2; line-height: 20px; }
+
+.comment .comment-body .header .wrap-nds .wrap-name-status .status { color: #3399cc; line-height: 20px; overflow: hidden; }
+
+.comment .comment-body .content { margin: 5px 10px 0 10px; overflow: hidden; border-top: 1px solid #c2c2c2; }
+
+.comment .comment-body .content .show-full-version { color: #3399cc; text-decoration: underline; margin-top: 10px; text-align: right; font-size: 12px; cursor: pointer; float: right; }
+
+.comment .comment-body .content .files { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-flow: row wrap; flex-flow: row wrap; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.comment .comment-body .content .files .attach-block { margin-top: 20px; margin-left: 15px; }
+
+.comment .comment-body .content .files .attach-block .preview { height: 50px; width: 50px; background-size: cover; background-repeat: no-repeat; background-position: center; border: 1px solid #c2c2c2; }
+
+.comment .comment-body .content .files .attach-block span { margin: 0 1px 0 0; font-size: 16px; }
+
+.comment .comment-body .content .resend_text { margin-top: 10px; display: block; }
+
+.comment .comment-body .content .resend_text .switch { height: 12px; line-height: 1px; width: 26px; background-color: #f2f2f2; text-align: center; cursor: pointer; display: block; margin: 5px; }
+
+.comment .comment-body .content .resend_text .text { font-size: 12px; }
+
+.comment .comment-body .content .resend_text.hide .text { display: none; }
+
+.comment .comment-body .content .resend_text.show .text { display: block; }
+
+.comment .comment-body .likes { font-size: 12px; display: -webkit-box; display: -ms-flexbox; display: flex; margin: 5px 10px 0 10px; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+.comment .comment-body .likes:not(:empty) { border-top: 1px solid #c2c2c2; }
+
+.comment .comment-body .likes .like { margin-left: auto; }
+
+.comment .comment-body .likes .like, .comment .comment-body .likes .dislike { padding: 5px; }
+
+.comment .comment-body .likes .like span, .comment .comment-body .likes .dislike span { font-size: 18px; color: #3399cc; cursor: pointer; }
+
+.comment .comment-body .categories .flag { margin-left: 10px; width: 28px; height: 28px; position: relative; -webkit-clip-path: circle(40% at 50% 50%); clip-path: circle(40% at 50% 50%); }
+
+.comment .comment-body .categories .category { line-height: 28px; font-size: 12px; margin-left: 5px; }
+
+.comment .comment-buttons { display: none; height: 30px; line-height: 30px; background-color: #f6f6f6; border-top: 1px solid #c2c2c2; border-radius: 0 0 3px 3px; }
+
+.comment .comment-buttons .button { cursor: pointer; margin: 0 3px; }
+
+.comment .comment-buttons .button span { font-size: 16px; color: black; margin: 0 2px 0 0; }
+
+.comment .comment-buttons .button#favorite [rel="1"] { font-weight: bolder; color: gold; }
+
+.comment.active { border: 1px solid #3399cc; }
+
+.comment.active .comment-buttons { display: -webkit-box; display: -ms-flexbox; display: flex; font-size: 12px; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; }

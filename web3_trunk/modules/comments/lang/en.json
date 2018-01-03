@@ -1,0 +1,43 @@
+{
+  "comment": {
+    "loading": "Loading comments",
+    "commenting": "Comment",
+    "show_full_version": "Show original mail",
+    "button": {
+      "resend": "Resend",
+      "copy": "Copy",
+      "copy_link": "Link",
+      "quote": "Quote",
+      "category": "Category",
+      "favorite": "Favorite",
+      "job": "Job",
+      "move": "Move",
+      "delete": "Delete"
+    },
+    "notice": {
+      "copy_link": "Link copied",
+      "copy_text": "Text copied",
+      "error_copy": "Copying error"
+    },
+    "com_header": {
+      "mail": "Email",
+      "vc_to": "Task assigned",
+      "vc_to_null": "Destination removed from task",
+      "change_date": "The date of the task change has changed",
+      "personal_for_user": "Personal comment for users",
+      "notify_send": "Notification sent",
+      "without": "[Unassigned]",
+      "need_response": "I need a response from",
+      "comment_added": "Comment added",
+      "mail_has_not_theme": "no subject"
+    },
+    "cls": {
+      "system": "System message",
+      "outgoing": "--- Original message ---",
+      "date": "Date",
+      "sender": "Sender",
+      "recipients": "Recipients",
+      "theme": "Theme"
+    }
+  }
+}

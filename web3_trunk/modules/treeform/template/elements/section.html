@@ -1,0 +1,18 @@
+<div class="tform-section {{data.hidden}} {{#data.multi}}multiple{{/data.multi}}" id="{{data.id}}">
+    {{#data.elements}}
+    <div class="tform-section-element {{data.expand}}" id="{{index}}">
+        <div class="tform-section-top">
+            <div class="tform-section-expander to-expand" id="expand_{{data.id}}_{{index}}"></div>
+            <div class="tform-section-title to-expand" id="expand_{{data.id}}_{{index}}">{{data.title}}</div>
+            <div class="tform-section-line"></div>
+        </div>
+        <div class="tform-section-elements-container"></div>
+        <div class="tform-section-titles-container"></div>
+    </div>
+    {{/data.elements}}
+    {{#data.multi}}
+    <div class="tform-bot">
+        <div class="tform-title-multi">+ {{data.title}}</div>
+    </div>
+    {{/data.multi}}
+</div>

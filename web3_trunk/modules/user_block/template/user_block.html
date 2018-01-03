@@ -1,0 +1,13 @@
+<div id="user-block">
+    <div class="user-block full-wh" v-bind:id="user.id" v-on:click="showList">
+        <div class="user-avatar" v-bind:class="user.userGenderClass"></div>
+        <div class="user-name ellipsis" v-html="user.name"></div>
+    </div>
+    <div class="user-params" v-show="show_list">
+        <div v-for="button in list" class="params-item" v-bind:class="'--'+button.id" v-bind:title="button.title"
+             v-on:click="selectButton(button.callback)">
+            <div v-bind:class="'icon-'+button.icon"></div>
+            <div class="params-text" v-html="button.title"></div>
+        </div>
+    </div>
+</div>

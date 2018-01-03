@@ -1,0 +1,50 @@
+.phone-number-converted {
+  background-size: 20px 15px;
+  padding-left: 22px;
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  &.am {
+    background-image: url(/images/flags/am.png);
+  }
+  &.az {
+    background-image: url(/images/flags/az.png);
+  }
+  &.by {
+    background-image: url(/images/flags/by.png);
+  }
+  &.ee {
+    background-image: url(/images/flags/ee.png);
+  }
+  &.ge {
+    background-image: url(/images/flags/ge.png);
+  }
+  &.kg {
+    background-image: url(/images/flags/kg.png);
+  }
+  &.lt {
+    background-image: url(/images/flags/lt.png);
+  }
+  &.lv {
+    background-image: url(/images/flags/lv.png);
+  }
+  &.md {
+    background-image: url(/images/flags/md.png);
+  }
+  &.ru {
+    background-image: url(/images/flags/ru.png);
+  }
+  &.tm {
+    background-image: url(/images/flags/tm.png);
+  }
+  &.ua {
+    background-image: url(/images/flags/ua.png);
+  }
+  &.uz {
+    background-image: url(/images/flags/uz.png);
+  }
+}

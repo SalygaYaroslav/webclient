@@ -1,0 +1,48 @@
+.phone_number_converted {
+    background-size: 20px 15px;
+    padding-left: 22px;
+    background-repeat: no-repeat;
+}
+.phone_number_converted:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.phone_number_converted.am {
+    background-image: url(am.png);
+}
+.phone_number_converted.az {
+    background-image: url(az.png);
+}
+.phone_number_converted.by {
+    background-image: url(by.png);
+}
+.phone_number_converted.ee {
+    background-image: url(ee.png);
+}
+.phone_number_converted.ge {
+    background-image: url(ge.png);
+}
+.phone_number_converted.kg {
+    background-image: url(kg.png);
+}
+.phone_number_converted.lt {
+    background-image: url(lt.png);
+}
+.phone_number_converted.lv {
+    background-image: url(lv.png);
+}
+.phone_number_converted.md {
+    background-image: url(md.png);
+}
+.phone_number_converted.ru {
+    background-image: url(ru.png);
+}
+.phone_number_converted.tm {
+    background-image: url(tm.png);
+}
+.phone_number_converted.ua {
+    background-image: url(ua.png);
+}
+.phone_number_converted.uz {
+    background-image: url(uz.png);
+}

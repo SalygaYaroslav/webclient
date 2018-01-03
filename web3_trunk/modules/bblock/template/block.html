@@ -1,0 +1,6 @@
+<div class="bblock-container">
+    <template v-for="button in buttons">
+        <button-block-item v-if="button != 'empty'" v-bind:data="button"></button-block-item>
+        <button-block-empty v-else></button-block-empty>
+    </template>
+</div>

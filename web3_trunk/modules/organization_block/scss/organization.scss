@@ -1,0 +1,147 @@
+@import "../../../_variables";
+
+.w-carcase-company {
+  .organization-selected {
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 10px;
+      bottom: 22.5px;
+      border: 5px solid transparent;
+      border-top: 5px solid #ccc;
+    }
+    .organization-item-selected {
+      line-height: 70px;
+      height: 70px;
+      position: absolute;
+      left: 5px;
+      right: 30px;
+      top: 0;
+      bottom: 0;
+      padding-left: 50px;
+      background-position: 5px center;
+      background-repeat: no-repeat;
+      background-size: 40px;
+
+      .organization-item-avatar {
+        mask-repeat: no-repeat;
+        mask-position: center center;
+        mask-size: 24px;
+        width: 40px;
+        height: 70px;
+        position: absolute;
+        left: 0;
+
+        &.standart {
+          mask-image: url("/images/icons/orgblock_private_org.svg");
+          background-color: #303030;
+        }
+        &.prof {
+          mask-image: url("/images/icons/orgblock_standart_org.svg");
+          background-color: #303030;
+        }
+        &.admin {
+          mask-image: url("/images/icons/orgblock_private_org.svg");
+          background-color: $main-bg-text-color;
+        }
+        &.personal {
+          mask-image: url("/images/icons/orgblock_personal_org.svg");
+          background-color: $main-bg-text-color;
+        }
+      }
+      .organization-item-name {
+        position: absolute;
+        left: 50px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .organization-list {
+    position: absolute;
+    top: 70px;
+    max-height: 150px;
+    left: 0;
+    right: 0;
+    padding: 1px;
+    //display: none;
+    border: 1px solid #ccc;
+    overflow-x: hidden;
+    background-color: white;
+    overflow-y: auto;
+    box-sizing: content-box;
+    z-index: 2;
+
+    .organization-item {
+      height: 40px;
+      width: 100%;
+      line-height: 40px;
+      cursor: pointer;
+      position: relative;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.02);
+      }
+      .organization-item-avatar {
+        mask-repeat: no-repeat;
+        mask-position: center center;
+        mask-size: 24px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 0;
+
+        &.standart {
+          mask-image: url("/images/icons/orgblock_private_org.svg");
+          background-color: #303030;
+        }
+        &.prof {
+          mask-image: url("/images/icons/orgblock_standart_org.svg");
+          background-color: #303030;
+        }
+        &.admin {
+          mask-image: url("/images/icons/orgblock_private_org.svg");
+          background-color: $main-bg-text-color;
+        }
+        &.personal {
+          mask-image: url("/images/icons/orgblock_personal_org.svg");
+          background-color: $main-bg-text-color;
+        }
+      }
+      .organization-item-name {
+        position: absolute;
+        left: 50px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+  &.show-list {
+    .organization-selected {
+      &:after {
+        content: '';
+        position: absolute;
+        right: 10px;
+        bottom: 27.5px;
+        border: 5px solid transparent;
+        border-bottom: 5px solid $main-bg-text-color;
+      }
+    }
+    .organization-list {
+      display: block;
+    }
+  }
+}

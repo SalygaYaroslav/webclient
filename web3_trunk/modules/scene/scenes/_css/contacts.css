@@ -1,0 +1,29 @@
+.contacts-scene { bottom: 0; left: 0; overflow: hidden; position: absolute; right: 0; top: 0; }
+
+.contacts-scene .groups-list { bottom: 0; left: 0; overflow-x: hidden; overflow-y: auto; position: absolute; top: 0; width: 25%; }
+
+.contacts-scene .groups-list .contact-group-squire { border-bottom: 1px solid #c2c2c2; cursor: pointer; height: 50px; line-height: 50px; position: relative; background-color: #f0f0f0; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.contacts-scene .groups-list .contact-group-squire:hover { background: rgba(0, 0, 0, 0.1); }
+
+.contacts-scene .groups-list .contact-group-squire.selected { background-color: #ffffff; color: #3399cc; }
+
+.contacts-scene .groups-list .contact-group-squire span[class^="icon-"] { margin-left: 13px; font-size: 19px; }
+
+.contacts-scene .groups-list .contact-group-squire .group-name { bottom: 0; left: 45px; line-height: 50px; position: absolute; right: 50px; top: 0; overflow: hidden; }
+
+.contacts-scene .contacts-list { bottom: 0; left: 25%; overflow-x: hidden; overflow-y: auto; position: absolute; top: 0; width: 25%; }
+
+.contacts-scene .contacts-list .contact-squire { border: 1px solid #c2c2c2; cursor: pointer; height: 50px; line-height: 50px; margin: 2px; background-color: #fff; position: relative; border-radius: 3px; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.contacts-scene .contacts-list .contact-squire:hover { background-color: #e6e6e6; }
+
+.contacts-scene .contacts-list .contact-squire.selected { border: 1px solid #f0f0f0; color: #3399cc; background-color: transparent; }
+
+.contacts-scene .contacts-list .contact-squire.selected .task-name { right: 30px; }
+
+.contacts-scene .contacts-list .contact-squire span[class^="icon-"] { margin-left: 13px; font-size: 19px; }
+
+.contacts-scene .contacts-list .contact-squire .contact-name { bottom: 0; left: 45px; line-height: 50px; overflow: hidden; position: absolute; right: 50px; text-overflow: ellipsis; top: 0; white-space: nowrap; }
+
+.contacts-scene .info-block { bottom: 0; left: 50%; overflow-x: hidden; overflow-y: auto; position: absolute; top: 0; right: 0; }

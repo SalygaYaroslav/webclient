@@ -1,0 +1,9 @@
+.form.--personal { margin: 2px 2px 0 2px; border: 1px solid #3399cc; border-radius: 3px; background-color: #ffffff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.form.--personal .personal_table_parent { overflow-x: hidden; overflow-y: auto; }
+
+.form.--personal .personal-block-top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+.form.--personal .personal-block-top .personal-span-top { margin: 10px; display: block; }
+
+.form.--personal .personal-span-bot { margin: 10px; display: block; }

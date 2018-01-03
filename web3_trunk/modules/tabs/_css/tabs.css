@@ -1,0 +1,37 @@
+.tab { -webkit-transition: all 0.5s; transition: all 0.5s; background-color: #f6f6f6; }
+
+.tab .tab-header { position: absolute; left: 2px; right: 2px; top: 2px; height: 35px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; }
+
+.tab .tab-header .tab-header-items { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; }
+
+.tab .tab-header .tab-header-items .tab-header-item { line-height: 35px; padding: 0 20px; cursor: pointer; position: relative; }
+
+.tab .tab-header .tab-header-items .tab-header-item.active { background-color: #3399cc; color: #fff; border-radius: 3px 3px 0 0; }
+
+.tab .tab-header .tab-header-items .tab-header-item.active:before { content: ' '; width: 1px; position: absolute; top: 0; bottom: 0; left: -1px; background: #f0f0f0; }
+
+.tab .tab-header .tab-header-items .tab-header-item.active:after { content: ' '; width: 1px; position: absolute; top: 0; bottom: 0; right: -1px; background: #f0f0f0; }
+
+.tab .tab-header .tab-header-items .tab-header-item:not(:last-child) { border-right: 1px solid #c2c2c2; }
+
+.tab .tab-header .full-size { position: absolute; right: 0; top: 0; width: 30px; bottom: 0; line-height: 35px; }
+
+.tab .tab-header .full-size span { line-height: 35px; width: 35px; height: 35px; font-size: 24px; cursor: pointer; color: #3399cc; }
+
+.tab .tab-header .full-size.not .--minus { display: none; }
+
+.tab .tab-header .full-size.not .--plus { display: block; }
+
+.tab .tab-header .full-size.yes .--minus { display: block; }
+
+.tab .tab-header .full-size.yes .--plus { display: none; }
+
+.tab .tab-content { left: 2px; right: 2px; top: 37px; bottom: 0; position: absolute; border-top: 3px solid #3399cc; border-left: 1px solid #c2c2c2; border-right: 1px solid #c2c2c2; border-bottom: 1px solid #c2c2c2; background-color: #ffffff; padding: 5px; overflow-x: hidden; overflow-y: auto; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; }
+
+.tab .tab-content .tab-content-item { display: none; }
+
+.tab .tab-content .tab-content-item.active { display: block; }
+
+.tab.without-header .tab-header { display: none; }
+
+.tab.without-header .tab-content { top: 2px; border: none; }

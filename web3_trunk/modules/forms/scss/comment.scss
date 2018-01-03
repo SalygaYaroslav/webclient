@@ -1,0 +1,206 @@
+@import "../../../_variables";
+
+.form.--comment {
+  .tab-header {
+    left: 0;
+    right: 0;
+  }
+  .tab-content {
+    left: 0;
+    right: 0;
+  }
+  .tab-header-custom {
+    margin-left: 10px;
+    position: relative;
+    flex-grow: 1;
+
+    .select-block {
+      position: absolute;
+      left: 0;
+      right: 97px;
+      top: 0;
+      bottom: 0;
+
+      .selectize-input {
+        height: 29px;
+        padding: 5px 8px;
+        margin-top: 2px;
+      }
+    }
+    .email-block {
+      position: absolute;
+      left: 0;
+      right: 68px;
+      top: 0;
+      bottom: 0;
+      display: flex;
+
+      .elm-input {
+        flex-grow: 1;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+        .input {
+          height: 29px;
+          padding: 5px 8px;
+          margin-top: 2px;
+        }
+      }
+    }
+    .buttons-block {
+      display: flex;
+      align-items: stretch;
+      align-content: stretch;
+      justify-content: flex-end;
+      position: absolute;
+      width: 110px;
+      right: 0;
+      top: 0;
+      bottom: 0;
+
+      .button {
+        margin: 1px;
+        height: 29px;
+        width: 29px;
+        border-radius: $border-radius;
+        cursor: pointer;
+        line-height: 29px;
+        text-align: center;
+        font-size: 20px;
+
+        &:hover {
+          background-color: $main-bg-text-color-hover;
+          color: white;
+        }
+        &.active {
+          color: #ffffff;
+          background-color: $main-bg-text-color;
+        }
+      }
+    }
+  }
+  .tab {
+    bottom: 36px;
+  }
+  &.to-comment {
+    .--email {
+      display: none;
+    }
+  }
+  &.to-email {
+    .--comment {
+      display: none;
+    }
+    .buttons-block {
+      width: 68px;
+    }
+  }
+
+  .buttons {
+    padding: 2px;
+    background-color: #f6f6f6;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+
+    .toleft {
+      align-self: flex-start;
+    }
+    .toleft {
+      align-self: flex-start;
+    }
+  }
+
+  .comment-files {
+    display: none;
+    position: absolute;
+    width: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $add-text-bg-color;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+
+    .file-item {
+      height: 30px;
+      position: relative;
+      min-height: 30px;
+      line-height: 30px;
+      overflow: hidden;
+      display: flex;
+      list-style: none;
+
+      .progress {
+        position: absolute;
+        left: 0;
+        right: 100%;
+        top: 0;
+        bottom: 0;
+        background-color: $main-bg-text-color;
+        transition: all 0.2s;
+      }
+
+      &.success {
+        .progress {
+          background-color: green;
+        }
+      }
+      &.error {
+        .progress {
+          background-color: red;
+        }
+      }
+
+      .file-icon {
+        line-height: 30px;
+        margin: 0 5px;
+        font-size: 18px;
+        z-index: 1;
+      }
+      .file-name {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .file-extension {
+        margin-left: 1px;
+        z-index: 1;
+      }
+      .file-size {
+        white-space: nowrap;
+        margin: 0 5px;
+        z-index: 1;
+      }
+      .close {
+        white-space: nowrap;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        margin-left: auto;
+        cursor: pointer;
+        text-align: center;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  &.--files {
+    .elm-textarea {
+      right: 30%;
+    }
+    .comment-files {
+      width: 30%;
+      display: flex;
+    }
+  }
+}

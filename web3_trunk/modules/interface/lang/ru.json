@@ -1,0 +1,26 @@
+{
+  "interface": {
+    "navigate": {
+      "main": "Главная страница",
+      "info": "Информация",
+      "profile": "Анкета",
+      "users": "Пользователи",
+      "friends": "Друзья",
+      "projects": "Проекты",
+      "contacts": "Контакты",
+      "calendar": "Календарь",
+      "crm": "Таблицы",
+      "video": "Видео",
+      "files": "Файлы",
+      "favorite": "Избранное"
+    },
+    "menu": {
+      "goto": "Открыть",
+      "notification": "Оповещения",
+      "sms": "SMS",
+      "chat": "Чат",
+      "telephony": "Телефония",
+      "notes": "Заметки"
+    }
+  }
+}

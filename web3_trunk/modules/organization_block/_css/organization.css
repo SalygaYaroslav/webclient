@@ -1,0 +1,41 @@
+.w-carcase-company .organization-selected { cursor: pointer; }
+
+.w-carcase-company .organization-selected:after { content: ''; position: absolute; right: 10px; bottom: 22.5px; border: 5px solid transparent; border-top: 5px solid #ccc; }
+
+.w-carcase-company .organization-selected .organization-item-selected { line-height: 70px; height: 70px; position: absolute; left: 5px; right: 30px; top: 0; bottom: 0; padding-left: 50px; background-position: 5px center; background-repeat: no-repeat; background-size: 40px; }
+
+.w-carcase-company .organization-selected .organization-item-selected .organization-item-avatar { -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center center; mask-position: center center; -webkit-mask-size: 24px; mask-size: 24px; width: 40px; height: 70px; position: absolute; left: 0; }
+
+.w-carcase-company .organization-selected .organization-item-selected .organization-item-avatar.standart { -webkit-mask-image: url("/images/icons/orgblock_private_org.svg"); mask-image: url("/images/icons/orgblock_private_org.svg"); background-color: #303030; }
+
+.w-carcase-company .organization-selected .organization-item-selected .organization-item-avatar.prof { -webkit-mask-image: url("/images/icons/orgblock_standart_org.svg"); mask-image: url("/images/icons/orgblock_standart_org.svg"); background-color: #303030; }
+
+.w-carcase-company .organization-selected .organization-item-selected .organization-item-avatar.admin { -webkit-mask-image: url("/images/icons/orgblock_private_org.svg"); mask-image: url("/images/icons/orgblock_private_org.svg"); background-color: #3399cc; }
+
+.w-carcase-company .organization-selected .organization-item-selected .organization-item-avatar.personal { -webkit-mask-image: url("/images/icons/orgblock_personal_org.svg"); mask-image: url("/images/icons/orgblock_personal_org.svg"); background-color: #3399cc; }
+
+.w-carcase-company .organization-selected .organization-item-selected .organization-item-name { position: absolute; left: 50px; right: 0; top: 0; bottom: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.w-carcase-company .organization-list { position: absolute; top: 70px; max-height: 150px; left: 0; right: 0; padding: 1px; border: 1px solid #ccc; overflow-x: hidden; background-color: white; overflow-y: auto; box-sizing: content-box; z-index: 2; }
+
+.w-carcase-company .organization-list .organization-item { height: 40px; width: 100%; line-height: 40px; cursor: pointer; position: relative; }
+
+.w-carcase-company .organization-list .organization-item:hover { background-color: rgba(0, 0, 0, 0.02); }
+
+.w-carcase-company .organization-list .organization-item .organization-item-avatar { -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center center; mask-position: center center; -webkit-mask-size: 24px; mask-size: 24px; width: 40px; height: 40px; position: absolute; left: 0; }
+
+.w-carcase-company .organization-list .organization-item .organization-item-avatar.standart { -webkit-mask-image: url("/images/icons/orgblock_private_org.svg"); mask-image: url("/images/icons/orgblock_private_org.svg"); background-color: #303030; }
+
+.w-carcase-company .organization-list .organization-item .organization-item-avatar.prof { -webkit-mask-image: url("/images/icons/orgblock_standart_org.svg"); mask-image: url("/images/icons/orgblock_standart_org.svg"); background-color: #303030; }
+
+.w-carcase-company .organization-list .organization-item .organization-item-avatar.admin { -webkit-mask-image: url("/images/icons/orgblock_private_org.svg"); mask-image: url("/images/icons/orgblock_private_org.svg"); background-color: #3399cc; }
+
+.w-carcase-company .organization-list .organization-item .organization-item-avatar.personal { -webkit-mask-image: url("/images/icons/orgblock_personal_org.svg"); mask-image: url("/images/icons/orgblock_personal_org.svg"); background-color: #3399cc; }
+
+.w-carcase-company .organization-list .organization-item .organization-item-name { position: absolute; left: 50px; right: 0; top: 0; bottom: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.w-carcase-company .organization-list .organization-item.hidden { display: none; }
+
+.w-carcase-company.show-list .organization-selected:after { content: ''; position: absolute; right: 10px; bottom: 27.5px; border: 5px solid transparent; border-bottom: 5px solid #3399cc; }
+
+.w-carcase-company.show-list .organization-list { display: block; }

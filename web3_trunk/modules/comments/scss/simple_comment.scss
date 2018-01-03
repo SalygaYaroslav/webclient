@@ -1,0 +1,218 @@
+@import "../../../_variables";
+
+.comment {
+  border: 1px solid $border-and-add-text-bg-color;
+  border-radius: $border-radius;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  //margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  background-color: #ffffff;
+
+  .comment-body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+
+    .header {
+      margin: 10px 10px 0 10px;
+      display: flex;
+
+      .avatar {
+        left: 0;
+        top: 0;
+        min-width: 40px;
+        min-height: 40px;
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex: 1 1 auto;
+        max-width: 40px;
+        max-height: 40px;
+      }
+
+      .wrap-nds {
+        margin-left: 10px;
+        display: flex;
+        align-content: stretch;
+        align-items: stretch;
+        flex-direction: column;
+        flex: 1 1 auto;
+
+        .wrap-name-status {
+          display: flex;
+          align-items: stretch;
+          align-content: stretch;
+          flex-direction: row;
+          flex-wrap: nowrap;
+
+          .name {
+            white-space: nowrap;
+            margin-right: 5px;
+            line-height: 20px;
+
+            .date {
+              font-size: 12px;
+              color: $border-and-add-text-bg-color;
+              line-height: 20px;
+            }
+          }
+
+          .status {
+            color: $main-bg-text-color;
+            line-height: 20px;
+            overflow: hidden;
+          }
+        }
+
+      }
+    }
+
+    .content {
+      margin: 5px 10px 0 10px;
+      overflow: hidden;
+      border-top: 1px solid $border-and-add-text-bg-color;
+
+      .show-full-version {
+        color: $main-bg-text-color;
+        text-decoration: underline;
+        margin-top: 10px;
+        text-align: right;
+        font-size: 12px;
+        cursor: pointer;
+        float: right;
+      }
+
+      .files {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        .attach-block {
+          margin-top: 20px;
+          margin-left: 15px;
+
+          .preview {
+            height: 50px;
+            width: 50px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 1px solid $border-and-add-text-bg-color;
+          }
+
+          span {
+            margin: 0 1px 0 0;
+            font-size: 16px;
+          }
+        }
+      }
+      .resend_text {
+        margin-top: 10px;
+        display: block;
+
+        .switch {
+          height: 12px;
+          line-height: 1px;
+          width: 26px;
+          background-color: #f2f2f2;
+          text-align: center;
+          cursor: pointer;
+          display: block;
+          margin: 5px;
+        }
+        .text {
+          font-size: 12px;
+        }
+        &.hide {
+          .text {
+            display: none;
+          }
+        }
+        &.show {
+          .text {
+            display: block;
+          }
+        }
+      }
+    }
+    .likes {
+      font-size: 12px;
+      display: flex;
+      margin: 5px 10px 0 10px;
+      justify-content: flex-end;
+      &:not(:empty) {
+        border-top: 1px solid $border-and-add-text-bg-color;
+      }
+
+      .like {
+        margin-left: auto;
+      }
+      .like, .dislike {
+        padding: 5px;
+
+        span {
+          font-size: 18px;
+          color: $main-bg-text-color;
+          cursor: pointer;
+        }
+      }
+    }
+    .categories {
+      .flag {
+        margin-left: 10px;
+        width: 28px;
+        height: 28px;
+        position: relative;
+        //clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 70%, 0 100%);
+        clip-path: circle(40% at 50% 50%);
+      }
+      .category {
+        line-height: 28px;
+        font-size: 12px;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .comment-buttons {
+    display: none;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f6f6f6;
+    border-top: 1px solid $border-and-add-text-bg-color;
+    border-radius: 0 0 $border-radius $border-radius;
+
+    .button {
+      cursor: pointer;
+      margin: 0 3px;
+
+      span {
+        font-size: 16px;
+        color: black;
+        margin: 0 2px 0 0;
+      }
+
+      &#favorite {
+        [rel="1"] {
+          font-weight: bolder;
+          color: gold;
+        }
+      }
+    }
+  }
+  &.active {
+    border: 1px solid $main-bg-text-color;
+
+    .comment-buttons {
+      display: flex;
+      font-size: 12px;
+      justify-content: flex-end;
+      align-items: stretch;
+    }
+  }
+}

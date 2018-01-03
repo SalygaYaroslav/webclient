@@ -1,0 +1,92 @@
+<div class="crm full-wh" v-bind:class="additional ? 'additional' : ''">
+    <div class="crm-loading"></div>
+    <div class="crm-table-block full-wh">
+        <table class="crm-table">
+            <thead class="crm-thead">
+            <tr class="crm-tr">
+                <template v-for="(th, index) in thead">
+                    <th class="crm-th" v-show="!th.hidden"
+                        v-bind:class="[th.sorted ? 'sorted' : '', th.order ? 'order-'+th.order : '']"
+                        v-bind:id="th.id"
+                        v-bind:title="th.title"
+                        v-on:click="theadClick(index)"
+                        v-html="th.value">
+                    </th>
+                </template>
+            </tr>
+            </thead>
+            <tbody class="crm-tfoot">
+            <tr class="crm-tr">
+                <template v-for="(th, index) in tfoot">
+                    <th class="crm-th" v-show="!th.hidden"
+                        v-bind:id="th.id">
+                        <template v-if="th.sortable">
+                            <crm-search-input v-bind:data="th.data"></crm-search-input>
+                        </template>
+                    </th>
+                </template>
+            </tr>
+            </tbody>
+            <tfoot class="crm-tbody">
+            <tr class="crm-tr" v-for="(tr, index) in tbody" v-bind:id="tr.id"
+                v-on:click="selectTr($event, index, tr.id)" v-on:dblclick="dblSelectTr($event, index, tr.id)"
+                v-bind:class="tr.selected ? 'selected' : ''">
+                <td class="crm-td" v-for="td in tr.td" v-show="!td.hidden" v-bind:id="td.id" v-bind:title="td.val"
+                    v-bind:name="td.name"
+                    v-html="td.calc ? td.calc : td.val">
+                </td>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="crm-additional">
+        <div class="crm-show-hide" v-on:click="additional = !additional">
+            <span v-if="additional" class="icon-Следующий-слайд"></span>
+            <span v-else class="icon-Предыдущий-слайд"></span>
+        </div>
+        <div class="crm-additional-container full-wh">
+            <template v-if="thidden.length > 0">
+                <div v-for="item in thidden" v-if="item.hidden && item.val" v-bind:id="item.id"
+                     class="crm-additional-container-item">
+                    <span class="crm-additional-container-item-title" v-html="item.title"></span>
+                    <span class="crm-additional-container-item-value" v-html="item.val"></span>
+                </div>
+            </template>
+        </div>
+    </div>
+    <div class="crm-navigate">
+        <div class="crm-pagination" v-if="pagination">
+            <div v-if="pagination.show_lf" class="crm-pagination-button" v-bind:class="pagination.first ? 'active':''"
+                 id="first"
+                 v-bind:title="pagination.first_title" v-html="pagination.first_title"
+                 v-on:click="paginationClick('first')">
+            </div>
+            <div v-if="pagination.left" class="crm-pagination-button" id="left"
+                 v-bind:title="pagination.previous_title" v-on:click="paginationClick('left')"><
+            </div>
+            <div v-for="item in pagination.list" class="crm-pagination-button"
+                 v-bind:class="item.selected ? 'selected' :''"
+                 v-bind:id="item.value" v-bind:title="item.value" v-html="item.value"
+                 v-on:click="paginationPageClick(item)">
+            </div>
+            <div v-if="pagination.right" class="crm-pagination-button" id="right"
+                 v-bind:title="pagination.next_title" v-on:click="paginationClick('right')">>
+            </div>
+            <div v-if="pagination.show_lf" class="crm-pagination-button" v-bind:class="pagination.last ? 'active':''"
+                 id="last"
+                 v-bind:title="pagination.last_title" v-html="pagination.last_title"
+                 v-on:click="paginationClick('last')">
+            </div>
+        </div>
+        <div class="crm-pagination-limit">
+            <div class="crm-pagination-limit-title" v-bind:title="pagination.limit_title"
+                 v-html="pagination.limit_title">
+            </div>
+            <div v-for="(limit, index) in pagination.limits" class="crm-pagination-limit-button"
+                 v-bind:class="limit.selected ? 'selected' : ''" v-bind:id="limit.value" v-bind:title="limit.value"
+                 v-html="limit.value" v-on:click="limitClick(limit)"
+                 v-bind:index="(index == 0) ? 'first': (index + 1 == pagination.limits.length? 'last':'')">
+            </div>
+        </div>
+    </div>
+</div>
