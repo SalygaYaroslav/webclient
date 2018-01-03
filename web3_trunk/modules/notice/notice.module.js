@@ -1,5 +1,5 @@
 /**
- * модуль уведомлений
+ * РјРѕРґСѓР»СЊ СѓРІРµРґРѕРјР»РµРЅРёР№
  * @type {{error, notify, confirm, modal}}
  */
 Notice = (function () {
@@ -7,7 +7,7 @@ Notice = (function () {
     /** public **/
     return {
         /**
-         * уведомление об ошибке
+         * СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± РѕС€РёР±РєРµ
          * @param text
          */
         error: function (text) {
@@ -22,7 +22,7 @@ Notice = (function () {
             });
         },
         /**
-         * уведомление
+         * СѓРІРµРґРѕРјР»РµРЅРёРµ
          * @param text
          */
         notify: function (text) {
@@ -37,7 +37,7 @@ Notice = (function () {
             });
         },
         /**
-         * модальный конфирм
+         * РјРѕРґР°Р»СЊРЅС‹Р№ РєРѕРЅС„РёСЂРј
          * @param text
          * @param confirm_button
          * @param cancel_button

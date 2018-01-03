@@ -82,7 +82,7 @@ var Tree = (function () {
                     'text': org.getName(),
                     'id': 'organization_' + org.getId(),
                     'data': {},
-                    'icon': 'icon-Организация2',
+                    'icon': 'icon-РћСЂРіР°РЅРёР·Р°С†РёСЏ2',
                     'children': function () {
                         let children = [];
                         let projects_list = new List.Projects(org.getId());
@@ -93,7 +93,7 @@ var Tree = (function () {
                             children.push({
                                 'text': project.getName(),
                                 'id': 'project_' + project.getId(),
-                                'icon': 'icon-Проект',
+                                'icon': 'icon-РџСЂРѕРµРєС‚',
                                 'data': {},
                                 'children': function () {
                                     let children = [];
@@ -106,7 +106,7 @@ var Tree = (function () {
                                         children.push({
                                             'text': task.getName(),
                                             'id': 'task_' + task.getId(),
-                                            'icon': 'icon-Задача',
+                                            'icon': 'icon-Р—Р°РґР°С‡Р°',
                                             'data': {
                                                 'vcTo': task.getAuthorName()
                                             }
@@ -133,7 +133,7 @@ var Tree = (function () {
                     'text': org.getName(),
                     'id': 'organization_' + org.getId(),
                     'data': {},
-                    'icon': 'icon-Организация2',
+                    'icon': 'icon-РћСЂРіР°РЅРёР·Р°С†РёСЏ2',
                     'children': function () {
                         let children = [];
                         let groups_list = new List.UserGrops(org.getId());
@@ -147,7 +147,7 @@ var Tree = (function () {
                             children.push({
                                 'text': group.getName(),
                                 'id': 'group_' + group.getId(),
-                                'icon': 'icon-Пользователи',
+                                'icon': 'icon-РџРѕР»СЊР·РѕРІР°С‚РµР»Рё',
                                 'data': {},
                                 'children': function () {
                                     let children = [];
@@ -159,7 +159,7 @@ var Tree = (function () {
                                         children.push({
                                             'text': user.getName(),
                                             'id': 'user_' + user.getId(),
-                                            'icon': 'icon-Обычный-пользователь',
+                                            'icon': 'icon-РћР±С‹С‡РЅС‹Р№-РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ',
                                             'data': {}
                                         })
                                     }
@@ -184,7 +184,7 @@ var Tree = (function () {
                     'text': org.getName(),
                     'id': 'organization_' + org.getId(),
                     'data': {},
-                    'icon': 'icon-Организация2',
+                    'icon': 'icon-РћСЂРіР°РЅРёР·Р°С†РёСЏ2',
                     'children': function () {
                         let children = [];
                         let groups_list = new List.ContactGroups(org.getId());
@@ -195,7 +195,7 @@ var Tree = (function () {
                             children.push({
                                 'text': group.getName(),
                                 'id': 'group_' + group.getId(),
-                                'icon': 'icon-Контакты-для-смс',
+                                'icon': 'icon-РљРѕРЅС‚Р°РєС‚С‹-РґР»СЏ-СЃРјСЃ',
                                 'data': {},
                                 'children': function () {
                                     let children = [];
@@ -222,7 +222,7 @@ var Tree = (function () {
                                                 children.push({
                                                     'text': full_name,
                                                     'id': 'contact_' + id,
-                                                    'icon': 'icon-Контакты',
+                                                    'icon': 'icon-РљРѕРЅС‚Р°РєС‚С‹',
                                                     'data': {}
                                                 });
                                             }
@@ -230,7 +230,7 @@ var Tree = (function () {
                                             children.push({
                                                 'text': name,
                                                 'id': 'contact_' + id,
-                                                'icon': 'icon-Контакты',
+                                                'icon': 'icon-РљРѕРЅС‚Р°РєС‚С‹',
                                                 'data': {}
                                             });
                                         }

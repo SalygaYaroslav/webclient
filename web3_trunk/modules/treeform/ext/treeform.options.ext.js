@@ -3,92 +3,92 @@ TreeForm.Options = (function () {
     let self = {
         user_show_birthday: function () {
             return [
-                {value: '0', text: 'Не показывать', dont_show: true},
-                {value: '1', text: 'Показывать', dont_show: true},
-                {value: '2', text: 'Показывать только дату и месяц', dont_show: true}
+                {value: '0', text: 'РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ', dont_show: true},
+                {value: '1', text: 'РџРѕРєР°Р·С‹РІР°С‚СЊ', dont_show: true},
+                {value: '2', text: 'РџРѕРєР°Р·С‹РІР°С‚СЊ С‚РѕР»СЊРєРѕ РґР°С‚Сѓ Рё РјРµСЃСЏС†', dont_show: true}
             ];
         },
         user_gender: function () {
             return [
-                {value: '-1', text: 'Не выбрано', dont_show: true},
-                {value: '0', text: 'Женский'},
-                {value: '1', text: 'Мужской'}
+                {value: '-1', text: 'РќРµ РІС‹Р±СЂР°РЅРѕ', dont_show: true},
+                {value: '0', text: 'Р–РµРЅСЃРєРёР№'},
+                {value: '1', text: 'РњСѓР¶СЃРєРѕР№'}
             ];
         },
         user_political: function () {
             return [
-                {value: '0', text: 'Не выбрано', dont_show: true},
-                {value: '1', text: 'Индифферентные'},
-                {value: '2', text: 'Коммунистические'},
-                {value: '3', text: 'Социалистические'},
-                {value: '4', text: 'Умеренные'},
-                {value: '5', text: 'Либеральные'},
-                {value: '6', text: 'Консервативные'},
-                {value: '7', text: 'Монархические'},
-                {value: '8', text: 'Ультраконсервативные'},
+                {value: '0', text: 'РќРµ РІС‹Р±СЂР°РЅРѕ', dont_show: true},
+                {value: '1', text: 'РРЅРґРёС„С„РµСЂРµРЅС‚РЅС‹Рµ'},
+                {value: '2', text: 'РљРѕРјРјСѓРЅРёСЃС‚РёС‡РµСЃРєРёРµ'},
+                {value: '3', text: 'РЎРѕС†РёР°Р»РёСЃС‚РёС‡РµСЃРєРёРµ'},
+                {value: '4', text: 'РЈРјРµСЂРµРЅРЅС‹Рµ'},
+                {value: '5', text: 'Р›РёР±РµСЂР°Р»СЊРЅС‹Рµ'},
+                {value: '6', text: 'РљРѕРЅСЃРµСЂРІР°С‚РёРІРЅС‹Рµ'},
+                {value: '7', text: 'РњРѕРЅР°СЂС…РёС‡РµСЃРєРёРµ'},
+                {value: '8', text: 'РЈР»СЊС‚СЂР°РєРѕРЅСЃРµСЂРІР°С‚РёРІРЅС‹Рµ'},
             ];
         },
         user_marstate: function () {
             return [
-                {value: '0', text: 'Не женат / Не замужем'},
-                {value: '1', text: 'В активном поиске'},
-                {value: '2', text: 'Все сложно'},
-                {value: '3', text: 'Есть подруга / друг'},
-                {value: '4', text: 'Помолвлен(а)'},
-                {value: '5', text: 'Женат / Замужем'}
+                {value: '0', text: 'РќРµ Р¶РµРЅР°С‚ / РќРµ Р·Р°РјСѓР¶РµРј'},
+                {value: '1', text: 'Р’ Р°РєС‚РёРІРЅРѕРј РїРѕРёСЃРєРµ'},
+                {value: '2', text: 'Р’СЃРµ СЃР»РѕР¶РЅРѕ'},
+                {value: '3', text: 'Р•СЃС‚СЊ РїРѕРґСЂСѓРіР° / РґСЂСѓРі'},
+                {value: '4', text: 'РџРѕРјРѕР»РІР»РµРЅ(Р°)'},
+                {value: '5', text: 'Р–РµРЅР°С‚ / Р—Р°РјСѓР¶РµРј'}
             ];
         },
         crm_types: function () {
             return [
-                {value: 'ftFloat', text: 'Вещественное число'},
-                {value: 'ftCombobox', text: 'Выпадающий список'},
-                {value: 'ftCalc', text: 'Вычисляемое'},
-                {value: 'ftDateTime', text: 'Дата и время'},
-                {value: 'ftImage', text: 'Изображение'},
-                {value: 'ftString', text: 'Строка'},
-                {value: 'ftText', text: 'Текст'},
-                {value: 'ftFile', text: 'Файл'},
-                {value: 'ftInt', text: 'Число'},
-                {value: 'ftLookup', text: 'Связанное поле'},
-                {value: 'ftCheckbox', text: 'Логическое'}
+                {value: 'ftFloat', text: 'Р’РµС‰РµСЃС‚РІРµРЅРЅРѕРµ С‡РёСЃР»Рѕ'},
+                {value: 'ftCombobox', text: 'Р’С‹РїР°РґР°СЋС‰РёР№ СЃРїРёСЃРѕРє'},
+                {value: 'ftCalc', text: 'Р’С‹С‡РёСЃР»СЏРµРјРѕРµ'},
+                {value: 'ftDateTime', text: 'Р”Р°С‚Р° Рё РІСЂРµРјСЏ'},
+                {value: 'ftImage', text: 'РР·РѕР±СЂР°Р¶РµРЅРёРµ'},
+                {value: 'ftString', text: 'РЎС‚СЂРѕРєР°'},
+                {value: 'ftText', text: 'РўРµРєСЃС‚'},
+                {value: 'ftFile', text: 'Р¤Р°Р№Р»'},
+                {value: 'ftInt', text: 'Р§РёСЃР»Рѕ'},
+                {value: 'ftLookup', text: 'РЎРІСЏР·Р°РЅРЅРѕРµ РїРѕР»Рµ'},
+                {value: 'ftCheckbox', text: 'Р›РѕРіРёС‡РµСЃРєРѕРµ'}
             ];
         },
         crm_text_format: function () {
             return [
-                {value: '0', text: '[Не выбрано]'},
-                {value: 'call-phone', text: 'Позвонить, отправить SMS'},
-                {value: 'is-mail', text: 'Отправить письмо'},
-                {value: 'allowed_phone', text: 'Форматирование номера'},
-                {value: 'allowed_requisites', text: 'Реквизиты'},
-                {value: 'auto-date', text: 'Добавлять текущую дату в новое поле'}
+                {value: '0', text: '[РќРµ РІС‹Р±СЂР°РЅРѕ]'},
+                {value: 'call-phone', text: 'РџРѕР·РІРѕРЅРёС‚СЊ, РѕС‚РїСЂР°РІРёС‚СЊ SMS'},
+                {value: 'is-mail', text: 'РћС‚РїСЂР°РІРёС‚СЊ РїРёСЃСЊРјРѕ'},
+                {value: 'allowed_phone', text: 'Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РЅРѕРјРµСЂР°'},
+                {value: 'allowed_requisites', text: 'Р РµРєРІРёР·РёС‚С‹'},
+                {value: 'auto-date', text: 'Р”РѕР±Р°РІР»СЏС‚СЊ С‚РµРєСѓС‰СѓСЋ РґР°С‚Сѓ РІ РЅРѕРІРѕРµ РїРѕР»Рµ'}
             ];
         },
         crm_string_format: function () {
             return [
-                {value: '0', text: '[Не выбрано]'},
-                {value: 'call-phone', text: 'Позвонить, отправить SMS'},
-                {value: 'is-mail', text: 'Отправить письмо'},
-                {value: 'allowed_phone', text: 'Форматирование номера'},
-                {value: 'auto-date', text: 'Добавлять текущую дату в новое поле'},
-                {value: 'location', text: 'Местоположение'},
-                {value: 'search', text: 'Найти'}
+                {value: '0', text: '[РќРµ РІС‹Р±СЂР°РЅРѕ]'},
+                {value: 'call-phone', text: 'РџРѕР·РІРѕРЅРёС‚СЊ, РѕС‚РїСЂР°РІРёС‚СЊ SMS'},
+                {value: 'is-mail', text: 'РћС‚РїСЂР°РІРёС‚СЊ РїРёСЃСЊРјРѕ'},
+                {value: 'allowed_phone', text: 'Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РЅРѕРјРµСЂР°'},
+                {value: 'auto-date', text: 'Р”РѕР±Р°РІР»СЏС‚СЊ С‚РµРєСѓС‰СѓСЋ РґР°С‚Сѓ РІ РЅРѕРІРѕРµ РїРѕР»Рµ'},
+                {value: 'location', text: 'РњРµСЃС‚РѕРїРѕР»РѕР¶РµРЅРёРµ'},
+                {value: 'search', text: 'РќР°Р№С‚Рё'}
             ];
         },
         crm_datetime_format: function () {
             return [
-                {value: 'datetime', text: 'Дата и время в одном поле'},
-                {value: 'datetime_separated', text: 'Дата и время в разных полях'},
-                {value: 'date', text: 'Дата'},
-                {value: 'time', text: 'Время'}
+                {value: 'datetime', text: 'Р”Р°С‚Р° Рё РІСЂРµРјСЏ РІ РѕРґРЅРѕРј РїРѕР»Рµ'},
+                {value: 'datetime_separated', text: 'Р”Р°С‚Р° Рё РІСЂРµРјСЏ РІ СЂР°Р·РЅС‹С… РїРѕР»СЏС…'},
+                {value: 'date', text: 'Р”Р°С‚Р°'},
+                {value: 'time', text: 'Р’СЂРµРјСЏ'}
             ];
         },
         crm_combobox_types: function () {
             return [
-                {value: '0', text: 'Значения'},
-                {value: 'users', text: 'Пользователи'},
-                {value: 'groups', text: 'Группы'},
-                {value: 'contacts', text: 'Контакты'},
-                {value: 'tasks', text: 'Задачи'}
+                {value: '0', text: 'Р—РЅР°С‡РµРЅРёСЏ'},
+                {value: 'users', text: 'РџРѕР»СЊР·РѕРІР°С‚РµР»Рё'},
+                {value: 'groups', text: 'Р“СЂСѓРїРїС‹'},
+                {value: 'contacts', text: 'РљРѕРЅС‚Р°РєС‚С‹'},
+                {value: 'tasks', text: 'Р—Р°РґР°С‡Рё'}
             ];
         },
     };

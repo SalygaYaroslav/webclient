@@ -1,5 +1,5 @@
 /**
- * пустая сцена
+ * РїСѓСЃС‚Р°СЏ СЃС†РµРЅР°
  * @type {Function}
  */
 Scene.empty = (function (template, params) {
@@ -8,19 +8,19 @@ Scene.empty = (function (template, params) {
     /** public */
     return {
         /**
-         * инициализация
+         * РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ
          * @returns {void|*}
          */
         init: function () {
             return template.append(Template.render('scene', 'empty_scene'));
         },
         /**
-         * перезагрузка
+         * РїРµСЂРµР·Р°РіСЂСѓР·РєР°
          */
         reload: function () {
         },
         /**
-         * снятие калбеков
+         * СЃРЅСЏС‚РёРµ РєР°Р»Р±РµРєРѕРІ
          * @param callback
          * @returns {*}
          */

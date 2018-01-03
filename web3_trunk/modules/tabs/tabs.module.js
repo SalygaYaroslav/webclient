@@ -1,5 +1,5 @@
 /**
- * модуль табов
+ * РјРѕРґСѓР»СЊ С‚Р°Р±РѕРІ
  * @type {Function}
  */
 var Tabs = (function (config) {
@@ -21,7 +21,7 @@ var Tabs = (function (config) {
     };
 
     /**
-     * инициализация
+     * РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ
      * @param config
      */
     let init = function (config) {
@@ -30,7 +30,7 @@ var Tabs = (function (config) {
         return this;
     };
     /**
-     * прорисовка
+     * РїСЂРѕСЂРёСЃРѕРІРєР°
      */
     let render = function () {
         try {
@@ -78,7 +78,7 @@ var Tabs = (function (config) {
         }
     };
     /**
-     * рисуем контент для таба
+     * СЂРёСЃСѓРµРј РєРѕРЅС‚РµРЅС‚ РґР»СЏ С‚Р°Р±Р°
      * @param id
      * @param no_activate
      * @returns {boolean}
@@ -104,7 +104,7 @@ var Tabs = (function (config) {
         }
     };
     /**
-     * добавим калбеки
+     * РґРѕР±Р°РІРёРј РєР°Р»Р±РµРєРё
      */
     let addListener = function () {
         local.header.undelegate('.tab-header-item[rel=' + local.config.tab_id + ']', 'click').delegate('.tab-header-item[rel=' + local.config.tab_id + ']', 'click', function () {

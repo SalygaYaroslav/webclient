@@ -25,7 +25,7 @@ Forms.Comment = function (task) {
     };
     let self = {
         /**
-         * построим
+         * РїРѕСЃС‚СЂРѕРёРј
          * @param force_content
          */
         build: function (force_content) {
@@ -76,7 +76,7 @@ Forms.Comment = function (task) {
                 $(this).addClass('active');
             });
             custom_header.undelegate('#notification_users', 'click').delegate('#notification_users', 'click', function () {
-                // проверим что за контакты у нас остались
+                // РїСЂРѕРІРµСЂРёРј С‡С‚Рѕ Р·Р° РєРѕРЅС‚Р°РєС‚С‹ Сѓ РЅР°СЃ РѕСЃС‚Р°Р»РёСЃСЊ
                 local.temp.participants.contacts = $('#email-target', form).val().split(';');
                 new Forms.CommentParticipants(local.temp.participants, function (data) {
                     if (data) {
@@ -114,13 +114,13 @@ Forms.Comment = function (task) {
             /** go */
             tabs.setContent(force_content || 'comment');
 
-            // проверка на задачи, в которых скрыты элементы
+            // РїСЂРѕРІРµСЂРєР° РЅР° Р·Р°РґР°С‡Рё, РІ РєРѕС‚РѕСЂС‹С… СЃРєСЂС‹С‚С‹ СЌР»РµРјРµРЅС‚С‹
             if (local.task.getId() == 8501) {
                 tabs_html.addClass('without-header');
             }
         },
         /**
-         * блок коммента
+         * Р±Р»РѕРє РєРѕРјРјРµРЅС‚Р°
          */
         buildCommentBlock: function () {
             let block = local.comment_block.empty();
@@ -133,21 +133,21 @@ Forms.Comment = function (task) {
             area.setCaretEnd();
         },
         /**
-         * введем задачу
+         * РІРІРµРґРµРј Р·Р°РґР°С‡Сѓ
          * @param task
          */
         setTask: function (task) {
             local.task = task;
         },
         /**
-         * введем коммент
+         * РІРІРµРґРµРј РєРѕРјРјРµРЅС‚
          * @param comment
          */
         setComment: function (comment) {
             local.comment = comment;
         },
         /**
-         * калбек закрытия
+         * РєР°Р»Р±РµРє Р·Р°РєСЂС‹С‚РёСЏ
          * @param callback
          */
         setCancelCallback: function (callback) {
@@ -156,7 +156,7 @@ Forms.Comment = function (task) {
             }
         },
         /**
-         * калбек отправки
+         * РєР°Р»Р±РµРє РѕС‚РїСЂР°РІРєРё
          * @param callback
          */
         setSendCallback: function (callback) {
@@ -165,14 +165,14 @@ Forms.Comment = function (task) {
             }
         },
         /**
-         * получим шаблон
+         * РїРѕР»СѓС‡РёРј С€Р°Р±Р»РѕРЅ
          * @returns {null}
          */
         html: function () {
             return local.template;
         },
         /**
-         * отправим на сервер
+         * РѕС‚РїСЂР°РІРёРј РЅР° СЃРµСЂРІРµСЂ
          */
         send: function () {
             let lang = Lang.get()['forms']['comment'];
@@ -224,14 +224,14 @@ Forms.Comment = function (task) {
             });
         },
         /**
-         * перед отправкой
+         * РїРµСЂРµРґ РѕС‚РїСЂР°РІРєРѕР№
          * @param success
          * @returns {*}
          */
         beforeSend: function (success) {
             let lang = Lang.get()['forms']['comment'];
-            // проверяем если выбранный пользователь в группе уволенных, если это так, то выводим
-            // соответствующее сообщение, проверяем пользователей которым назначаем или выбираем для оповещения
+            // РїСЂРѕРІРµСЂСЏРµРј РµСЃР»Рё РІС‹Р±СЂР°РЅРЅС‹Р№ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РІ РіСЂСѓРїРїРµ СѓРІРѕР»РµРЅРЅС‹С…, РµСЃР»Рё СЌС‚Рѕ С‚Р°Рє, С‚Рѕ РІС‹РІРѕРґРёРј
+            // СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РµРµ СЃРѕРѕР±С‰РµРЅРёРµ, РїСЂРѕРІРµСЂСЏРµРј РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ РєРѕС‚РѕСЂС‹Рј РЅР°Р·РЅР°С‡Р°РµРј РёР»Рё РІС‹Р±РёСЂР°РµРј РґР»СЏ РѕРїРѕРІРµС‰РµРЅРёСЏ
             let task = local.task;
             let project = task.getParentProject();
             let org = project.getParentOrganization();
@@ -240,22 +240,22 @@ Forms.Comment = function (task) {
             local.temp.is_email = local.template.hasClass('to-email');
             local.temp.email_target = $('#email-target', local.template).val().split(';').join(',');
             local.temp.email_theme = $('#email-theme', local.template).val();
-            // набор диалоговых окон
+            // РЅР°Р±РѕСЂ РґРёР°Р»РѕРіРѕРІС‹С… РѕРєРѕРЅ
             let dialog_array = [];
 
             let notification_user_logins = local.temp.participants.users;
             let contact_ids = local.temp.participants.contacts;
-            // проверим юзеров
+            // РїСЂРѕРІРµСЂРёРј СЋР·РµСЂРѕРІ
             let users_array = [];
             if (local.temp.assign_user) {
                 users_array.push(local.temp.assign_user);
             }
-            // проверим уволенных
+            // РїСЂРѕРІРµСЂРёРј СѓРІРѕР»РµРЅРЅС‹С…
             let fired_users = [];
             let no_assign_users = [];
             let no_notification_users = [];
             let no_writer_users = [];
-            // writers. им отправляли персональным в задаче
+            // writers. РёРј РѕС‚РїСЂР°РІР»СЏР»Рё РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹Рј РІ Р·Р°РґР°С‡Рµ
             let writers = [];
             let particulars = [];
             let writer_field = local.task.getEntityField('writers');
@@ -270,15 +270,15 @@ Forms.Comment = function (task) {
                 let assigned_user_id = ((local.temp.assign_user == 0) ? 0 : local.temp.assign_user.getId());
                 for (let i = 0; i < writers.length; i++) {
                     let writer = writers[i];
-                    // если назначена - пропускаем
+                    // РµСЃР»Рё РЅР°Р·РЅР°С‡РµРЅР° - РїСЂРѕРїСѓСЃРєР°РµРј
                     if (assigned_user_id == writer) {
                         continue;
                     }
-                    // если нужен отклик - тоже
+                    // РµСЃР»Рё РЅСѓР¶РµРЅ РѕС‚РєР»РёРє - С‚РѕР¶Рµ
                     if (local.temp.participants.users.indexOf(writer) != '-1') {
                         continue;
                     }
-                    // если у него уже просили отклик - тоже
+                    // РµСЃР»Рё Сѓ РЅРµРіРѕ СѓР¶Рµ РїСЂРѕСЃРёР»Рё РѕС‚РєР»РёРє - С‚РѕР¶Рµ
                     if (particulars.indexOf(writer) != '-1') {
                         continue;
                     }
@@ -289,11 +289,11 @@ Forms.Comment = function (task) {
                 let user = Dataset.Tree.getUserByLogin(notification_user_logins[i]);
                 if (user.getId() != self.getAssignUser()) {
                     users_array.push(user);
-                    // добавим уволенных
+                    // РґРѕР±Р°РІРёРј СѓРІРѕР»РµРЅРЅС‹С…
                     if (org.userInFired(user)) {
                         fired_users.push(user.getName());
                     } else {
-                        // проверим на пользователей, которые не видят задачу
+                        // РїСЂРѕРІРµСЂРёРј РЅР° РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№, РєРѕС‚РѕСЂС‹Рµ РЅРµ РІРёРґСЏС‚ Р·Р°РґР°С‡Сѓ
                         if (local.task.isUserReader(user) == false) {
                             no_notification_users.push(user);
                         }
@@ -305,27 +305,27 @@ Forms.Comment = function (task) {
                     no_assign_users.push(local.temp.assign_user);
                 }
             }
-            // если они есть - посылаем всех к чертям
+            // РµСЃР»Рё РѕРЅРё РµСЃС‚СЊ - РїРѕСЃС‹Р»Р°РµРј РІСЃРµС… Рє С‡РµСЂС‚СЏРј
             if (fired_users.length > 0) {
                 Notice.modal(lang['error'],
                     Lang.get()['forms']['errors_text']['fired_user' + ((fired_users.length > 0) ? 's' : '')].replace('%%users%%', fired_users.join(', ')),
                     function () {
                     });
             } else {
-                // иначе все нормально, идем дальше
-                // если это почта
+                // РёРЅР°С‡Рµ РІСЃРµ РЅРѕСЂРјР°Р»СЊРЅРѕ, РёРґРµРј РґР°Р»СЊС€Рµ
+                // РµСЃР»Рё СЌС‚Рѕ РїРѕС‡С‚Р°
                 if (local.temp.is_email) {
                     let gateway = self.getGatewayParams();
-                    // проверим отправителей
+                    // РїСЂРѕРІРµСЂРёРј РѕС‚РїСЂР°РІРёС‚РµР»РµР№
                     if (local.temp.email_target == '' && contact_ids.length == 0) {
                         return Notice.error(lang['no_recipients']);
                     }
-                    // если есть тема - в настройки вобьем ее
+                    // РµСЃР»Рё РµСЃС‚СЊ С‚РµРјР° - РІ РЅР°СЃС‚СЂРѕР№РєРё РІРѕР±СЊРµРј РµРµ
                     if (local.temp.email_theme != '') {
                         gateway.theme = '1';
                         gateway.themetext = local.temp.email_theme;
                     }
-                    // проверим адреса на валидность
+                    // РїСЂРѕРІРµСЂРёРј Р°РґСЂРµСЃР° РЅР° РІР°Р»РёРґРЅРѕСЃС‚СЊ
                     let mails = $('#email-target', local.template).val().split(';');
                     let invalid = [];
                     for (let i = 0; i < mails.length; i++) {
@@ -353,7 +353,7 @@ Forms.Comment = function (task) {
                     }(),
                     vcNeedResponse: ((local.temp.assign_type == 'response' ? local.temp.assign_user.getId() : ''))
                 };
-                // проверим как открыть задачу пользователю, которому назначение
+                // РїСЂРѕРІРµСЂРёРј РєР°Рє РѕС‚РєСЂС‹С‚СЊ Р·Р°РґР°С‡Сѓ РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ, РєРѕС‚РѕСЂРѕРјСѓ РЅР°Р·РЅР°С‡РµРЅРёРµ
                 if (no_assign_users.length > 0) {
                     dialog_array.push(function (callback) {
                         new Forms.CommentPersonal({type: '0', list: no_assign_users}, function (data) {
@@ -376,7 +376,7 @@ Forms.Comment = function (task) {
                         });
                     });
                 }
-                // проверим юзеров, которые не видят задачу
+                // РїСЂРѕРІРµСЂРёРј СЋР·РµСЂРѕРІ, РєРѕС‚РѕСЂС‹Рµ РЅРµ РІРёРґСЏС‚ Р·Р°РґР°С‡Сѓ
                 if (no_notification_users.length > 0) {
                     dialog_array.push(function (callback) {
                         new Forms.CommentPersonal({type: '1', list: no_notification_users}, function (data) {
@@ -392,7 +392,7 @@ Forms.Comment = function (task) {
                         });
                     });
                 }
-                // проверим юзеров, которым отправляли персоналки
+                // РїСЂРѕРІРµСЂРёРј СЋР·РµСЂРѕРІ, РєРѕС‚РѕСЂС‹Рј РѕС‚РїСЂР°РІР»СЏР»Рё РїРµСЂСЃРѕРЅР°Р»РєРё
                 if (no_writer_users.length > 0) {
                     dialog_array.push(function (callback) {
                         new Forms.CommentPersonal({type: '2', list: no_writer_users}, function (data) {
@@ -423,7 +423,7 @@ Forms.Comment = function (task) {
                             com_header: com_header,
                             system: self.getSystemTitle(com_header),
                         };
-                        // проверка на спецзадачи
+                        // РїСЂРѕРІРµСЂРєР° РЅР° СЃРїРµС†Р·Р°РґР°С‡Рё
                         if (local.task.getId() == 8501) {
                             local.temp.dialog_data.addwriters.push(Authorization.getCurrentUser().getId());
                             object.comment = '(web): ' + object.comment;
@@ -480,7 +480,7 @@ Forms.Comment = function (task) {
             }
         },
         /**
-         * добавим пересылаемый коммент
+         * РґРѕР±Р°РІРёРј РїРµСЂРµСЃС‹Р»Р°РµРјС‹Р№ РєРѕРјРјРµРЅС‚
          * @param comment
          */
         setReplyComment: function (comment) {
@@ -489,7 +489,7 @@ Forms.Comment = function (task) {
             local.temp.reply_comment = comment;
         },
         /**
-         * пересылаемый коммент
+         * РїРµСЂРµСЃС‹Р»Р°РµРјС‹Р№ РєРѕРјРјРµРЅС‚
          * @returns {null}
          */
         getReplyComment: function () {
@@ -513,7 +513,7 @@ Forms.Comment = function (task) {
             } else if (private_sign) {
                 sign = private_sign;
             } else {
-                sign = '-- \nС уважением, ' + user.getName() + ', ' + organization.getName().encode();
+                sign = '-- \nРЎ СѓРІР°Р¶РµРЅРёРµРј, ' + user.getName() + ', ' + organization.getName().encode();
             }
             return sign;
         },
@@ -527,7 +527,7 @@ Forms.Comment = function (task) {
             let message = self.getMessage();
             if (message) {
                 let sub = message.substr(0, 100);
-                let reg_exp = new RegExp('(прив|здрав|уваж|добр)', 'gi');
+                let reg_exp = new RegExp('(РїСЂРёРІ|Р·РґСЂР°РІ|СѓРІР°Р¶|РґРѕР±СЂ)', 'gi');
                 if (reg_exp.test(sub) == false) {
                     prefix = lang['hello'];
                 }
@@ -537,7 +537,7 @@ Forms.Comment = function (task) {
             return prefix;
         },
         /**
-         * тема
+         * С‚РµРјР°
          * @param gateway
          * @returns {string}
          */
@@ -556,21 +556,21 @@ Forms.Comment = function (task) {
          */
         getMessage: function () {
             let message = $('textarea#comment', local.template).val();
-            // спец заглушка для техподдержки
+            // СЃРїРµС† Р·Р°РіР»СѓС€РєР° РґР»СЏ С‚РµС…РїРѕРґРґРµСЂР¶РєРё
             if (local.task.getId() == '8501') {
                 message = '(web): ' + message;
             }
             return message.toString().replace(/\r\n|\r|\n/g, '<br>');
         },
         /**
-         * тип отклик или назначение
+         * С‚РёРї РѕС‚РєР»РёРє РёР»Рё РЅР°Р·РЅР°С‡РµРЅРёРµ
          * @returns {*|jQuery}
          */
         getAssignType: function () {
             return $('.button.--switch.active', local.template).attr('id');
         },
         /**
-         * назначение
+         * РЅР°Р·РЅР°С‡РµРЅРёРµ
          * @returns {*|jQuery}
          */
         getAssignUser: function () {
@@ -582,52 +582,52 @@ Forms.Comment = function (task) {
          */
         getComHeader: function () {
             let com_header = '<comment_header>';
-            //========= случаи которые могут быть при отправке нового коммента
+            //========= СЃР»СѓС‡Р°Рё РєРѕС‚РѕСЂС‹Рµ РјРѕРіСѓС‚ Р±С‹С‚СЊ РїСЂРё РѕС‚РїСЂР°РІРєРµ РЅРѕРІРѕРіРѕ РєРѕРјРјРµРЅС‚Р°
             /**
-             * Мысли:
-             * comment_added не может быть с comment_added_personal
-             * comment_added не может быть с task_appointed
-             * comment_added не может быть с response_needed
-             * comment_added не может быть с task_appoint_reset
-             * comment_added не может быть с response_needed
-             * comment_added не может быть с task_state_changed
+             * РњС‹СЃР»Рё:
+             * comment_added РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЃ comment_added_personal
+             * comment_added РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЃ task_appointed
+             * comment_added РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЃ response_needed
+             * comment_added РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЃ task_appoint_reset
+             * comment_added РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЃ response_needed
+             * comment_added РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЃ task_state_changed
              *
-             * comment_added может быть с comment_notification если всего остального нет
+             * comment_added РјРѕР¶РµС‚ Р±С‹С‚СЊ СЃ comment_notification РµСЃР»Рё РІСЃРµРіРѕ РѕСЃС‚Р°Р»СЊРЅРѕРіРѕ РЅРµС‚
              *
              *
-             * task_appointed может быть с comment_added_personal
-             * task_appoint_reset может быть с comment_added_personal
+             * task_appointed РјРѕР¶РµС‚ Р±С‹С‚СЊ СЃ comment_added_personal
+             * task_appoint_reset РјРѕР¶РµС‚ Р±С‹С‚СЊ СЃ comment_added_personal
              *
              * ============================================================
-             * теперь проверим когда в задаче уже есть пользователи которые видят персональные и мы им
-             * тоже отображаем новый коммент:
+             * С‚РµРїРµСЂСЊ РїСЂРѕРІРµСЂРёРј РєРѕРіРґР° РІ Р·Р°РґР°С‡Рµ СѓР¶Рµ РµСЃС‚СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»Рё РєРѕС‚РѕСЂС‹Рµ РІРёРґСЏС‚ РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹Рµ Рё РјС‹ РёРј
+             * С‚РѕР¶Рµ РѕС‚РѕР±СЂР°Р¶Р°РµРј РЅРѕРІС‹Р№ РєРѕРјРјРµРЅС‚:
              * ----------------------------------
-             * никаких неожиданностей ведет себя нормально с остальными, например:
+             * РЅРёРєР°РєРёС… РЅРµРѕР¶РёРґР°РЅРЅРѕСЃС‚РµР№ РІРµРґРµС‚ СЃРµР±СЏ РЅРѕСЂРјР°Р»СЊРЅРѕ СЃ РѕСЃС‚Р°Р»СЊРЅС‹РјРё, РЅР°РїСЂРёРјРµСЂ:
              *
-             * Задача назначена: Владимир Марчевский
-             * Персональный комментарий для пользователей: Александр Македонский, Марина Любин
-             * Отправлено оповещение: Никита Соколов
+             * Р—Р°РґР°С‡Р° РЅР°Р·РЅР°С‡РµРЅР°: Р’Р»Р°РґРёРјРёСЂ РњР°СЂС‡РµРІСЃРєРёР№
+             * РџРµСЂСЃРѕРЅР°Р»СЊРЅС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№ РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№: РђР»РµРєСЃР°РЅРґСЂ РњР°РєРµРґРѕРЅСЃРєРёР№, РњР°СЂРёРЅР° Р›СЋР±РёРЅ
+             * РћС‚РїСЂР°РІР»РµРЅРѕ РѕРїРѕРІРµС‰РµРЅРёРµ: РќРёРєРёС‚Р° РЎРѕРєРѕР»РѕРІ
              *
              * ============================================================
-             * comment_notification - когда мы у нескольких запрашиваем отклик
-             * <response_needed from_login="wizzymails@gmail.com" of_whom_login="f.o.r.t@mail.ru"/> когда мы запрашивает отклик через селект назначения
+             * comment_notification - РєРѕРіРґР° РјС‹ Сѓ РЅРµСЃРєРѕР»СЊРєРёС… Р·Р°РїСЂР°С€РёРІР°РµРј РѕС‚РєР»РёРє
+             * <response_needed from_login="wizzymails@gmail.com" of_whom_login="f.o.r.t@mail.ru"/> РєРѕРіРґР° РјС‹ Р·Р°РїСЂР°С€РёРІР°РµС‚ РѕС‚РєР»РёРє С‡РµСЂРµР· СЃРµР»РµРєС‚ РЅР°Р·РЅР°С‡РµРЅРёСЏ
              *
-             * теперь проверяем когда нам нужен отклик, как себя ведет со всеми остальными вариантами:
+             * С‚РµРїРµСЂСЊ РїСЂРѕРІРµСЂСЏРµРј РєРѕРіРґР° РЅР°Рј РЅСѓР¶РµРЅ РѕС‚РєР»РёРє, РєР°Рє СЃРµР±СЏ РІРµРґРµС‚ СЃРѕ РІСЃРµРјРё РѕСЃС‚Р°Р»СЊРЅС‹РјРё РІР°СЂРёР°РЅС‚Р°РјРё:
              * ---------------------------------
-             * тоже никаких неожиданностей
+             * С‚РѕР¶Рµ РЅРёРєР°РєРёС… РЅРµРѕР¶РёРґР°РЅРЅРѕСЃС‚РµР№
              *
-             * Нужен отклик от пользователя Владимир Марчевский
-             * Персональный комментарий для пользователей: Александр Македонский
-             * Отправлено оповещение: Никита Соколов
+             * РќСѓР¶РµРЅ РѕС‚РєР»РёРє РѕС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ Р’Р»Р°РґРёРјРёСЂ РњР°СЂС‡РµРІСЃРєРёР№
+             * РџРµСЂСЃРѕРЅР°Р»СЊРЅС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№ РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№: РђР»РµРєСЃР°РЅРґСЂ РњР°РєРµРґРѕРЅСЃРєРёР№
+             * РћС‚РїСЂР°РІР»РµРЅРѕ РѕРїРѕРІРµС‰РµРЅРёРµ: РќРёРєРёС‚Р° РЎРѕРєРѕР»РѕРІ
              *
              */
 
-                //сначала определим, что есть в этом комменте и чего нет
-            let isTaskAppointed = false; // назначениа задача
-            let isTaskAppointReset = false; // снято назначение задачи
-            let isCommentsAddedPersonal = false; // персональный комментарий
-            let isCommentNotification = false; // оповещение
-            let isResponseNeeded = false; // нужен отклик
+                //СЃРЅР°С‡Р°Р»Р° РѕРїСЂРµРґРµР»РёРј, С‡С‚Рѕ РµСЃС‚СЊ РІ СЌС‚РѕРј РєРѕРјРјРµРЅС‚Рµ Рё С‡РµРіРѕ РЅРµС‚
+            let isTaskAppointed = false; // РЅР°Р·РЅР°С‡РµРЅРёР° Р·Р°РґР°С‡Р°
+            let isTaskAppointReset = false; // СЃРЅСЏС‚Рѕ РЅР°Р·РЅР°С‡РµРЅРёРµ Р·Р°РґР°С‡Рё
+            let isCommentsAddedPersonal = false; // РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№
+            let isCommentNotification = false; // РѕРїРѕРІРµС‰РµРЅРёРµ
+            let isResponseNeeded = false; // РЅСѓР¶РµРЅ РѕС‚РєР»РёРє
 
             let assign_type = local.temp.assign_type;
             let assign_user = ((local.temp.dialog_data.vcTo) ? Dataset.get('user', local.temp.dialog_data.vcTo) : 0);
@@ -644,59 +644,59 @@ Forms.Comment = function (task) {
                 loudalertlogins_login.push(Dataset.get('user', local.temp.dialog_data.loudalertlogins[i]).getLogin());
             }
 
-            // есть ли назначение задачи
+            // РµСЃС‚СЊ Р»Рё РЅР°Р·РЅР°С‡РµРЅРёРµ Р·Р°РґР°С‡Рё
             // && _private.newComment.openTaskChoice != "personal"
             if (is_email == false && assign_type == 'assign' && assign_user != 0) {
                 if (assign_user.getLogin() != task_author.getLogin()) {
                     isTaskAppointed = true;
                 }
             }
-            //снято ли назначение задачи
+            //СЃРЅСЏС‚Рѕ Р»Рё РЅР°Р·РЅР°С‡РµРЅРёРµ Р·Р°РґР°С‡Рё
             if (is_email == false && assign_type == 'assign' && assign_user == 0 && local.temp.assign_user == 0) {
                 if (task_author.getLogin() && task_author.getLogin() != '' && task_author.getLogin() != 'empty') {
                     isTaskAppointReset = true;
                 }
             }
-            //персональный комментарий
+            //РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№
             if (local.temp.dialog_data.addwriters.length > 0) {
                 isCommentsAddedPersonal = true;
             }
-            // есть ли оповещения
+            // РµСЃС‚СЊ Р»Рё РѕРїРѕРІРµС‰РµРЅРёСЏ
             if (local.temp.dialog_data.loudalertlogins.length > 0)
                 isCommentNotification = true;
-            // нужен ли отклик
+            // РЅСѓР¶РµРЅ Р»Рё РѕС‚РєР»РёРє
             if (assign_type == "response" && local.temp.dialog_data.vcNeedResponse)
                 isResponseNeeded = true;
-            // // изменен ли статус задачи
+            // // РёР·РјРµРЅРµРЅ Р»Рё СЃС‚Р°С‚СѓСЃ Р·Р°РґР°С‡Рё
             // if (_private.newComment.stateId != this.getParentTask().getStatus().id)
             //     isStateChanged = true;
             // // ----
-            //Добавлен комментарий
+            //Р”РѕР±Р°РІР»РµРЅ РєРѕРјРјРµРЅС‚Р°СЂРёР№
             if (is_email == false && !isTaskAppointed && !isTaskAppointReset && !isCommentsAddedPersonal && !isResponseNeeded) {
                 com_header += "<comment_added />";
             }
-            //Задача назначена
+            //Р—Р°РґР°С‡Р° РЅР°Р·РЅР°С‡РµРЅР°
             if (isTaskAppointed) {
                 com_header += '<task_appointed login="' + assign_user.getLogin() + '" />';
             }
-            //Снято назначение с задачи
+            //РЎРЅСЏС‚Рѕ РЅР°Р·РЅР°С‡РµРЅРёРµ СЃ Р·Р°РґР°С‡Рё
             if (isTaskAppointReset) {
                 com_header += "<task_appoint_reset />";
             }
-            //Персональный комментарий для пользователя
+            //РџРµСЂСЃРѕРЅР°Р»СЊРЅС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№ РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
             if (isCommentsAddedPersonal) {
                 com_header += '<comment_added_personal login="' + addwriters_login.join(',') + '" />';
             }
-            //Пользователю нужен отклик от
+            //РџРѕР»СЊР·РѕРІР°С‚РµР»СЋ РЅСѓР¶РµРЅ РѕС‚РєР»РёРє РѕС‚
             if (isResponseNeeded) {
                 com_header += '<response_needed from_login="' + Authorization.getCurrentUser().getLogin() + '" of_whom_login="' + Dataset.get('user', local.temp.dialog_data.vcNeedResponse).getLogin() + '" />';
             }
-            //Отправлено оповещение: Пользователь Один, Пользователь Два
+            //РћС‚РїСЂР°РІР»РµРЅРѕ РѕРїРѕРІРµС‰РµРЅРёРµ: РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РћРґРёРЅ, РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ Р”РІР°
             if (isCommentNotification) {
                 com_header += '<comment_notification login="' + loudalertlogins_login.join(',') + '" />';
             }
-            //Исходящее письмо
-            //Email: Re[4]: Тестовые письма (x12138C), 11111 qwqwqw12@wqwq.qw,22 22@22.22,3 2323@qwe.23,3 qweqe@qwe.qwe  (*исходящее письмо)
+            //РСЃС…РѕРґСЏС‰РµРµ РїРёСЃСЊРјРѕ
+            //Email: Re[4]: РўРµСЃС‚РѕРІС‹Рµ РїРёСЃСЊРјР° (x12138C), 11111 qwqwqw12@wqwq.qw,22 22@22.22,3 2323@qwe.23,3 qweqe@qwe.qwe  (*РёСЃС…РѕРґСЏС‰РµРµ РїРёСЃСЊРјРѕ)
             if (local.temp.is_email) {
                 let gatewayParams = self.getGatewayParams();
                 let theme = local.temp.email_theme || local.task.getName();
@@ -705,12 +705,12 @@ Forms.Comment = function (task) {
                 }
                 com_header += '<mail_sent theme="' + theme.replace(/"/gi, '&quot;') + '" recipients="' + local.temp.email_target + '" />';
             }
-            //возвращаем построенный com_header
+            //РІРѕР·РІСЂР°С‰Р°РµРј РїРѕСЃС‚СЂРѕРµРЅРЅС‹Р№ com_header
             com_header += "</comment_header>";
             return com_header;
         },
         /**
-         * системка
+         * СЃРёСЃС‚РµРјРєР°
          * @param com_header
          * @returns {*}
          */
@@ -718,7 +718,7 @@ Forms.Comment = function (task) {
             return Comments.parseComHeader(com_header);
         },
         /**
-         * перезагрузка
+         * РїРµСЂРµР·Р°РіСЂСѓР·РєР°
          */
         reload: function () {
             local.temp.participants = {
@@ -737,7 +737,7 @@ Forms.Comment = function (task) {
             Upload.removeQueue(local.temp.form_id);
         },
         /**
-         * добавим цитату
+         * РґРѕР±Р°РІРёРј С†РёС‚Р°С‚Сѓ
          * @param quote
          */
         appendQuote: function (quote) {
@@ -759,7 +759,7 @@ Forms.Comment = function (task) {
             }
         },
         /**
-         * удаление файла
+         * СѓРґР°Р»РµРЅРёРµ С„Р°Р№Р»Р°
          * @param id
          */
         removeFile: function (id) {
@@ -775,7 +775,7 @@ Forms.Comment = function (task) {
             }
         },
         /**
-         * параметры шлюза
+         * РїР°СЂР°РјРµС‚СЂС‹ С€Р»СЋР·Р°
          * @returns {*}
          */
         getGatewayParams: function () {

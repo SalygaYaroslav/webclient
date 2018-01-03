@@ -27,7 +27,7 @@ var Category = function (id) {
     return {
         classname: classname,
         /**
-         * получим поле
+         * РїРѕР»СѓС‡РёРј РїРѕР»Рµ
          * @param field
          * @returns {*|string}
          */
@@ -35,7 +35,7 @@ var Category = function (id) {
             return local.entity[field] || '';
         },
         /**
-         * введем данные
+         * РІРІРµРґРµРј РґР°РЅРЅС‹Рµ
          * @param category
          * @returns {Category}
          */
@@ -52,7 +52,7 @@ var Category = function (id) {
             return this;
         },
         /**
-         * удалим с хранилища
+         * СѓРґР°Р»РёРј СЃ С…СЂР°РЅРёР»РёС‰Р°
          */
         remove: function () {
             if (this.getId() == '0') {
@@ -68,7 +68,7 @@ var Category = function (id) {
             }
         },
         /**
-         * получаем родительскую организацию
+         * РїРѕР»СѓС‡Р°РµРј СЂРѕРґРёС‚РµР»СЊСЃРєСѓСЋ РѕСЂРіР°РЅРёР·Р°С†РёСЋ
          * @returns {*}
          */
         getParentOrganization: function () {
@@ -79,21 +79,21 @@ var Category = function (id) {
             return false;
         },
         /**
-         * получим ид
+         * РїРѕР»СѓС‡РёРј РёРґ
          * @returns {string|string}
          */
         getId: function () {
             return local.entity.id || '';
         },
         /**
-         * получим имя
+         * РїРѕР»СѓС‡РёРј РёРјСЏ
          * @returns {*|string}
          */
         getName: function () {
             return local.entity.cat_title || '';
         },
         /**
-         * получим цвет
+         * РїРѕР»СѓС‡РёРј С†РІРµС‚
          * @returns {*|string}
          */
         getColor: function () {

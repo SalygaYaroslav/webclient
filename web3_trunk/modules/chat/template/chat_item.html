@@ -3,21 +3,21 @@
         <div v-bind:style="{ backgroundImage: 'url(' + chat.user.entity.avatar + ')' }"
              class="chat-item-header-avatar"></div>
         <div class="chat-item-header-name" v-html="chat.user.entity.name"></div>
-        <div class="chat-item-header-close" title="Закрыть" v-on:click="closeChat(chat_id)">&times;</div>
+        <div class="chat-item-header-close" title="Р—Р°РєСЂС‹С‚СЊ" v-on:click="closeChat(chat_id)">&times;</div>
     </div>
     <div class="chat-item-text">
         <div class="chat-item-text-history" v-html="chat.history_label"></div>
         <chat-message v-for="message in chat.messages" v-bind:key="message.id"
                       v-bind:data="message"></chat-message>
     </div>
-    <div class="chat-item-typing" v-if="chat.typing" v-html="chat.user.entity.name+' набирает текст'"></div>
+    <div class="chat-item-typing" v-if="chat.typing" v-html="chat.user.entity.name+' РЅР°Р±РёСЂР°РµС‚ С‚РµРєСЃС‚'"></div>
     <div class="chat-item-footer">
         <div class="chat-item-footer-area">
                     <textarea v-model="chat.message_for_send" v-bind:id="'chatarea_'+chat_id"
                               v-on:keyup.ctrl.enter="sendChat(chat_id)"></textarea>
         </div>
         <div class="chat-item-footer-buttons">
-            <div class="elm-button --full" v-on:click="sendChat(chat_id)">Отправить</div>
+            <div class="elm-button --full" v-on:click="sendChat(chat_id)">РћС‚РїСЂР°РІРёС‚СЊ</div>
         </div>
     </div>
 </div>

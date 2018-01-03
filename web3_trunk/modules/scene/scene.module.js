@@ -1,5 +1,5 @@
 /**
- * модуль сцен
+ * РјРѕРґСѓР»СЊ СЃС†РµРЅ
  * @type {{changeScene, appendScene, eraseOldScene, changeParam, getScene, getSceneObject, getSceneName, contacts, empty, projects, users, crm}}
  */
 var Scene = (function () {
@@ -14,9 +14,9 @@ var Scene = (function () {
     /** public */
     return {
         /**
-         * смена сцены
-         * @param {string} scene_name название сцены
-         * @param {array} param параметры
+         * СЃРјРµРЅР° СЃС†РµРЅС‹
+         * @param {string} scene_name РЅР°Р·РІР°РЅРёРµ СЃС†РµРЅС‹
+         * @param {array} param РїР°СЂР°РјРµС‚СЂС‹
          */
         changeScene: function (scene_name, param) {
             let self = this;
@@ -39,7 +39,7 @@ var Scene = (function () {
             });
         },
         /**
-         * инициализация сцены
+         * РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ СЃС†РµРЅС‹
          * @param name
          * @param param
          * @returns {*}
@@ -50,7 +50,7 @@ var Scene = (function () {
             return work.current_object.init();
         },
         /**
-         * очистим сцену от старых биндов и тд
+         * РѕС‡РёСЃС‚РёРј СЃС†РµРЅСѓ РѕС‚ СЃС‚Р°СЂС‹С… Р±РёРЅРґРѕРІ Рё С‚Рґ
          * @param callback
          */
         eraseOldScene: function (callback) {
@@ -59,12 +59,12 @@ var Scene = (function () {
                 callback = function () {
                 };
             }
-            // проверим, есть ли объект
+            // РїСЂРѕРІРµСЂРёРј, РµСЃС‚СЊ Р»Рё РѕР±СЉРµРєС‚
             if (work.current_object != null) {
-                // проверим, есть ли функция
+                // РїСЂРѕРІРµСЂРёРј, РµСЃС‚СЊ Р»Рё С„СѓРЅРєС†РёСЏ
                 if (typeof work.current_object.unbindScene == 'function') {
                     work.current_object.unbindScene(function () {
-                        // очистим кнопки
+                        // РѕС‡РёСЃС‚РёРј РєРЅРѕРїРєРё
                         BBlock.clear();
                         callback();
                     });
@@ -76,23 +76,23 @@ var Scene = (function () {
             }
         },
         /**
-         * смена параметров в url\сцене
-         * @param scene_name название сцены
-         * @param param параметры
+         * СЃРјРµРЅР° РїР°СЂР°РјРµС‚СЂРѕРІ РІ url\СЃС†РµРЅРµ
+         * @param scene_name РЅР°Р·РІР°РЅРёРµ СЃС†РµРЅС‹
+         * @param param РїР°СЂР°РјРµС‚СЂС‹
          */
         changeParam: function (scene_name, param) {
             if (work.current_name != scene_name) {
                 return changeScene(scene_name, param);
             }
             work.param = param;
-            // запустим инициализацию
+            // Р·Р°РїСѓСЃС‚РёРј РёРЅРёС†РёР°Р»РёР·Р°С†РёСЋ
             if (work.current_object != null && typeof work.current_object.changeParams == 'function') {
                 work.current_object.changeParams(work.param);
             }
         },
         /**
-         * вернем объект html сцены
-         * @returns {*} сцена
+         * РІРµСЂРЅРµРј РѕР±СЉРµРєС‚ html СЃС†РµРЅС‹
+         * @returns {*} СЃС†РµРЅР°
          */
         getScene: function () {
             if (scene == null) {
@@ -101,14 +101,14 @@ var Scene = (function () {
             return scene;
         },
         /**
-         * вернем объект сцены
+         * РІРµСЂРЅРµРј РѕР±СЉРµРєС‚ СЃС†РµРЅС‹
          * @returns {*}
          */
         getSceneObject: function () {
             return work.current_object;
         },
         /**
-         * вернем название сцены
+         * РІРµСЂРЅРµРј РЅР°Р·РІР°РЅРёРµ СЃС†РµРЅС‹
          * @returns {string}
          */
         getSceneName: function () {

@@ -210,10 +210,10 @@ var Upload = (function () {
                                 status = 'success';
                             } else {
                                 status = 'error';
-                                text = 'Файл ' + file.name + ' не был загружен по причине:';
+                                text = 'Р¤Р°Р№Р» ' + file.name + ' РЅРµ Р±С‹Р» Р·Р°РіСЂСѓР¶РµРЅ РїРѕ РїСЂРёС‡РёРЅРµ:';
                                 switch (object['err_num']) {
                                     case '142':
-                                        text += ' дисковое пространство исчерпано';
+                                        text += ' РґРёСЃРєРѕРІРѕРµ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІРѕ РёСЃС‡РµСЂРїР°РЅРѕ';
                                         break;
                                 }
                                 Notice.error(text);

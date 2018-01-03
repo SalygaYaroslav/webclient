@@ -1,5 +1,5 @@
 /**
- * список организаций
+ * СЃРїРёСЃРѕРє РѕСЂРіР°РЅРёР·Р°С†РёР№
  * @param type
  * @param user_id
  * @returns {{list: list, sort: sort, removePrivate: removePrivate, convertToSelect: convertToSelect}}
@@ -32,14 +32,14 @@ List.Organizations = function (type, user_id) {
     /** public */
     return {
         /**
-         * список организаций
+         * СЃРїРёСЃРѕРє РѕСЂРіР°РЅРёР·Р°С†РёР№
          * @returns {Array}
          */
         list: function () {
             return local.list;
         },
         /**
-         * сортировка
+         * СЃРѕСЂС‚РёСЂРѕРІРєР°
          * @param order
          */
         sort: function (order) {
@@ -56,7 +56,7 @@ List.Organizations = function (type, user_id) {
             })
         },
         /**
-         * удалить приватную орг. из списка
+         * СѓРґР°Р»РёС‚СЊ РїСЂРёРІР°С‚РЅСѓСЋ РѕСЂРі. РёР· СЃРїРёСЃРєР°
          */
         removePrivate: function () {
             for (let i = 0; i < local.list.length; i++) {
@@ -66,7 +66,7 @@ List.Organizations = function (type, user_id) {
             }
         },
         /**
-         * конвертируем в селект
+         * РєРѕРЅРІРµСЂС‚РёСЂСѓРµРј РІ СЃРµР»РµРєС‚
          * @param default_value
          * @returns {*|jQuery}
          */

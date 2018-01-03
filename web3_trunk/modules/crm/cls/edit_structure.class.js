@@ -1,11 +1,11 @@
 Crm.EditStructure = function (base_structure) {
     let local = {
         data: {
-            id: null, // id таблицы
-            object_id: null, // id проекта родителя
+            id: null, // id С‚Р°Р±Р»РёС†С‹
+            object_id: null, // id РїСЂРѕРµРєС‚Р° СЂРѕРґРёС‚РµР»СЏ
             organization_id: null,
             gantt: false,
-            // данные
+            // РґР°РЅРЅС‹Рµ
             structure: {
                 rows: null,
                 positions: null,
@@ -16,32 +16,32 @@ Crm.EditStructure = function (base_structure) {
                 show_numeric: false
             },
             filters: {},
-            // пагинация
+            // РїР°РіРёРЅР°С†РёСЏ
             pagination: {
                 send: {
-                    page: 1, // текущая страница
-                    order: 'd', // направление
-                    field: 'id', // поле сортировки
-                    limit: 15, // лимит отображения
-                    total: 0 // всего записей
+                    page: 1, // С‚РµРєСѓС‰Р°СЏ СЃС‚СЂР°РЅРёС†Р°
+                    order: 'd', // РЅР°РїСЂР°РІР»РµРЅРёРµ
+                    field: 'id', // РїРѕР»Рµ СЃРѕСЂС‚РёСЂРѕРІРєРё
+                    limit: 15, // Р»РёРјРёС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ
+                    total: 0 // РІСЃРµРіРѕ Р·Р°РїРёСЃРµР№
                 },
                 limit_array: [15, 20, 50, 100],
                 limit_chart: 40
             },
             find: {},
-            // доступы
+            // РґРѕСЃС‚СѓРїС‹
             access: {
                 admin: null,
                 users: null,
                 columns: null,
                 disable_deletion: '0'
             },
-            // биллинг
+            // Р±РёР»Р»РёРЅРі
             bill: {
                 type: null,
                 access: null
             },
-            // параметры
+            // РїР°СЂР°РјРµС‚СЂС‹
             parameters: {
                 created: null,
                 modified: null,

@@ -1,5 +1,5 @@
 /**
- * сцена пользователей
+ * СЃС†РµРЅР° РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
  * @type {Function}
  */
 Scene.users = (function (template) {
@@ -19,7 +19,7 @@ Scene.users = (function (template) {
     /** public */
     return {
         /**
-         * инициализация
+         * РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ
          * @returns {Scene.users}
          */
         init() {
@@ -28,7 +28,7 @@ Scene.users = (function (template) {
             return this;
         },
         /**
-         * прорисовка
+         * РїСЂРѕСЂРёСЃРѕРІРєР°
          */
         render: function () {
             local.template.empty().append(Template.render('scene', 'users/scene'));
@@ -39,12 +39,12 @@ Scene.users = (function (template) {
             this.addListener();
         },
         /**
-         * рисуем группы
+         * СЂРёСЃСѓРµРј РіСЂСѓРїРїС‹
          */
         drawGroups: function () {
             let org = OrganizationBlock.getCurrentOrganization();
             let groups = new List.UserGrops(org.getId());
-            // удалим элемнт данных о том, что мы смотрим другой уровень
+            // СѓРґР°Р»РёРј СЌР»РµРјРЅС‚ РґР°РЅРЅС‹С… Рѕ С‚РѕРј, С‡С‚Рѕ РјС‹ СЃРјРѕС‚СЂРёРј РґСЂСѓРіРѕР№ СѓСЂРѕРІРµРЅСЊ
             local.scene.removeClass('user-lvl').removeClass('info-lvl');
             // sort
             groups.sortByName();
@@ -58,16 +58,16 @@ Scene.users = (function (template) {
             }
         },
         /**
-         * рисуем пользователей
+         * СЂРёСЃСѓРµРј РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
          * @param group_id
          * @param callback
          */
         drawUsers: function (group_id, callback) {
-            // очистим список старых задач
+            // РѕС‡РёСЃС‚РёРј СЃРїРёСЃРѕРє СЃС‚Р°СЂС‹С… Р·Р°РґР°С‡
             local.user_array = [];
-            // очистим блок
+            // РѕС‡РёСЃС‚РёРј Р±Р»РѕРє
             local.users_list.empty();
-            // удалим элемнт данных о том, что мы смотрим другой уровень
+            // СѓРґР°Р»РёРј СЌР»РµРјРЅС‚ РґР°РЅРЅС‹С… Рѕ С‚РѕРј, С‡С‚Рѕ РјС‹ СЃРјРѕС‚СЂРёРј РґСЂСѓРіРѕР№ СѓСЂРѕРІРµРЅСЊ
             local.scene.removeClass('info-lvl');
             local.scene.addClass('user-lvl');
 
@@ -86,7 +86,7 @@ Scene.users = (function (template) {
             }
         },
         /**
-         * добавим калбеки
+         * РґРѕР±Р°РІРёРј РєР°Р»Р±РµРєРё
          */
         addListener: function () {
             local.groups_list.undelegate('.group-squire', 'click').delegate('.group-squire', 'click', function () {
@@ -97,7 +97,7 @@ Scene.users = (function (template) {
             });
         },
         /**
-         * выбор группы
+         * РІС‹Р±РѕСЂ РіСЂСѓРїРїС‹
          * @param id
          * @param callback
          */
@@ -120,7 +120,7 @@ Scene.users = (function (template) {
             }
         },
         /**
-         * выбор юзера
+         * РІС‹Р±РѕСЂ СЋР·РµСЂР°
          * @param id
          * @param callback
          */
@@ -137,7 +137,7 @@ Scene.users = (function (template) {
             }
         },
         /**
-         * снятие выбора с юзера
+         * СЃРЅСЏС‚РёРµ РІС‹Р±РѕСЂР° СЃ СЋР·РµСЂР°
          * @param user_id
          */
         unSelectUser: function (user_id) {
@@ -145,7 +145,7 @@ Scene.users = (function (template) {
             local.selected_user_id = null;
         },
         /**
-         * прорисуем табулятор юзера
+         * РїСЂРѕСЂРёСЃСѓРµРј С‚Р°Р±СѓР»СЏС‚РѕСЂ СЋР·РµСЂР°
          * @param user_id
          */
         drawUserTabs: function (user_id) {
@@ -169,14 +169,14 @@ Scene.users = (function (template) {
                                 $('<div class="form-button"></div>').append(button_save).append(button_cancel).appendTo(block);
                             }
                             button_save.on('click', function () {
-                                Interface.Load.show('Обработка данных', block);
+                                Interface.Load.show('РћР±СЂР°Р±РѕС‚РєР° РґР°РЅРЅС‹С…', block);
                                 tree_form.getFormData(function (data) {
                                     user.saveEntityToServer(data, function () {
                                         Interface.Load.hide();
                                         $('.form-info', block).empty();
                                         tree_form = TreeForm.getTreeForm('user', user.getDataToForm, editable);
                                         $('.form-info', block).append(tree_form.render());
-                                        Notice.notify('Данные изменены');
+                                        Notice.notify('Р”Р°РЅРЅС‹Рµ РёР·РјРµРЅРµРЅС‹');
                                     });
                                 });
                             });
@@ -195,7 +195,7 @@ Scene.users = (function (template) {
             local.info_block.append(tabs.html());
         },
         /**
-         * прорисуем табулятор группы
+         * РїСЂРѕСЂРёСЃСѓРµРј С‚Р°Р±СѓР»СЏС‚РѕСЂ РіСЂСѓРїРїС‹
          * @param group_id
          */
         drawGroupTabs: function (group_id) {
@@ -217,27 +217,27 @@ Scene.users = (function (template) {
             local.info_block.append(tabs.html());
         },
         /**
-         * перегрузим
+         * РїРµСЂРµРіСЂСѓР·РёРј
          */
         reload: function () {
             let self = this;
-            // обнулим
+            // РѕР±РЅСѓР»РёРј
             local.selected_group_id = null;
             local.selected_user_id = null;
-            // рисуем
+            // СЂРёСЃСѓРµРј
             Router.changeParams([]);
             self.render();
             self.drawGroups();
         },
         /**
-         * снятие калбеков
+         * СЃРЅСЏС‚РёРµ РєР°Р»Р±РµРєРѕРІ
          * @param callback
          */
         unbindScene: function (callback) {
             callback();
         },
         /**
-         * смена параметров
+         * СЃРјРµРЅР° РїР°СЂР°РјРµС‚СЂРѕРІ
          * @param params
          */
         changeParams: function (params) {

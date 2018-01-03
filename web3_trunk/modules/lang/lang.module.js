@@ -1,5 +1,5 @@
 /**
- * языковой модуль
+ * СЏР·С‹РєРѕРІРѕР№ РјРѕРґСѓР»СЊ
  * @type {{get, loadConfig, current, checkLang}}
  */
 var Lang = (function () {
@@ -11,14 +11,14 @@ var Lang = (function () {
     /** public */
     return {
         /**
-         * выводим данные
+         * РІС‹РІРѕРґРёРј РґР°РЅРЅС‹Рµ
          * @returns {{}}
          */
         get: function () {
             return data;
         },
         /**
-         * грузим конфиг
+         * РіСЂСѓР·РёРј РєРѕРЅС„РёРі
          * @param callback_
          * @param custom_lang
          */
@@ -47,7 +47,7 @@ var Lang = (function () {
             return current;
         },
         /**
-         * проверка языка браузера
+         * РїСЂРѕРІРµСЂРєР° СЏР·С‹РєР° Р±СЂР°СѓР·РµСЂР°
          * @returns {*}
          */
         checkLang: function () {

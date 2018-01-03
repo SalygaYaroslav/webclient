@@ -16,11 +16,11 @@ var Comments = function () {
             if (!com_header)
                 return '';
             let xml_header = $(com_header);
-            // что есть в этом комменте и чего нет
+            // С‡С‚Рѕ РµСЃС‚СЊ РІ СЌС‚РѕРј РєРѕРјРјРµРЅС‚Рµ Рё С‡РµРіРѕ РЅРµС‚
             let email_out = false;
             let result_array = [];
 
-            //Отправлен email
+            //РћС‚РїСЂР°РІР»РµРЅ email
             if ($('mail_sent', xml_header).length > 0) {
                 email_out = true;
                 let theme = $('mail_sent', xml_header).attr('theme');
@@ -28,29 +28,29 @@ var Comments = function () {
                 result_array.push(lang['mail'] + ': ' + ((theme.trim()) ? theme.trim() : lang['mail_has_not_theme']) + ', ' + recipients);
             }
 
-            //Назначение задачи
+            //РќР°Р·РЅР°С‡РµРЅРёРµ Р·Р°РґР°С‡Рё
             if (!email_out && $('task_appointed', xml_header).length > 0) {
                 let user = Dataset.Tree.getUserByLogin($('task_appointed', xml_header).attr('login'));
                 if (user) {
                     result_array.push(lang['vc_to'] + ': ' + user.getName());
                 }
             }
-            //Снято назначение задачи
+            //РЎРЅСЏС‚Рѕ РЅР°Р·РЅР°С‡РµРЅРёРµ Р·Р°РґР°С‡Рё
             if (!email_out && $('task_appoint_reset', xml_header).length > 0) {
                 result_array.push(lang['vc_to_null']);
             }
-            //Дедлайн задачи
+            //Р”РµРґР»Р°Р№РЅ Р·Р°РґР°С‡Рё
             if (!email_out && $('task_deadline', xml_header).length > 0) {
                 let oaDate = $('task_deadline', xml_header).attr('datetime').replace(',', '.');
                 let date = new Date();
                 date.setTime((parseFloat(oaDate) - 25569) * 24 * 3600 * 1000);
                 result_array.push(lang['change_date'] + ': ' + moment.utc(date).calendar());
             }
-            //Персональный комментарий
+            //РџРµСЂСЃРѕРЅР°Р»СЊРЅС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№
             if (!email_out && $('comment_added_personal', xml_header).length > 0) {
                 let loginsList = $('comment_added_personal', xml_header).attr('login').split(',');
                 let userNamesList = [];
-                // прохожим по массиву логинов, чтобы узнать имена пользователей
+                // РїСЂРѕС…РѕР¶РёРј РїРѕ РјР°СЃСЃРёРІСѓ Р»РѕРіРёРЅРѕРІ, С‡С‚РѕР±С‹ СѓР·РЅР°С‚СЊ РёРјРµРЅР° РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
                 for (let i = 0; i < loginsList.length; i++) {
                     if ($.trim(loginsList[i]) != '') {
                         let user = Dataset.Tree.getUserByLogin(loginsList[i]);
@@ -61,7 +61,7 @@ var Comments = function () {
                 }
                 result_array.push(lang['personal_for_user'] + ': ' + userNamesList.join(', '));
             }
-            // //Звонки
+            // //Р—РІРѕРЅРєРё
             // if (!isEmailOut && $("call_incoming", xml_header).length > 0) {
             //     let incomingCalll = self._getObject().fields.system;
             //     isIncomingCall = true;
@@ -70,11 +70,11 @@ var Comments = function () {
             //     let outgoingCall = self._getObject().fields.system;
             //     isOutgoingCall = true;
             // }
-            //Оповещения
+            //РћРїРѕРІРµС‰РµРЅРёСЏ
             if ($('comment_notification', xml_header).length > 0) {
                 let loginsList = $('comment_notification', xml_header).attr('login').split(',');
                 let userNamesList = [];
-                // прохожим по массиву логинов, чтобы узнать имена пользователей
+                // РїСЂРѕС…РѕР¶РёРј РїРѕ РјР°СЃСЃРёРІСѓ Р»РѕРіРёРЅРѕРІ, С‡С‚РѕР±С‹ СѓР·РЅР°С‚СЊ РёРјРµРЅР° РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
                 for (let i = 0; i < loginsList.length; i++) {
                     if ($.trim(loginsList[i]) != '') {
                         let user = Dataset.Tree.getUserByLogin(loginsList[i]);
@@ -85,7 +85,7 @@ var Comments = function () {
                 }
                 result_array.push(lang['notify_send'] + ': ' + userNamesList.join(', '));
             }
-            //Нужен отклик
+            //РќСѓР¶РµРЅ РѕС‚РєР»РёРє
             if (!email_out && $('response_needed', xml_header).length > 0) {
                 let of_whom = $('response_needed', xml_header).attr('of_whom_login');
                 let user = Dataset.Tree.getUserByLogin(of_whom);
@@ -96,33 +96,33 @@ var Comments = function () {
                     result_array.push(lang['need_response'] + ' ' + userName);
                 }
             }
-            // //Поменялся статус задачи
-            // //(*бывают статусы: Назначена, Подтверждена, Отработана, Выполнена, Отложена, Отменена)
+            // //РџРѕРјРµРЅСЏР»СЃСЏ СЃС‚Р°С‚СѓСЃ Р·Р°РґР°С‡Рё
+            // //(*Р±С‹РІР°СЋС‚ СЃС‚Р°С‚СѓСЃС‹: РќР°Р·РЅР°С‡РµРЅР°, РџРѕРґС‚РІРµСЂР¶РґРµРЅР°, РћС‚СЂР°Р±РѕС‚Р°РЅР°, Р’С‹РїРѕР»РЅРµРЅР°, РћС‚Р»РѕР¶РµРЅР°, РћС‚РјРµРЅРµРЅР°)
             // if (!email_out && $('task_state_changed', xml_header).length > 0) {
             //     let stateText = '';
             //     switch ($('task_state_changed', xml_header).text()) {
             //         case "&LANG_APPOINTED":
-            //             stateText = "Назначена";
+            //             stateText = "РќР°Р·РЅР°С‡РµРЅР°";
             //             break;
             //         case "&LANG_CONFIRMED":
-            //             stateText = "Подтверждена";
+            //             stateText = "РџРѕРґС‚РІРµСЂР¶РґРµРЅР°";
             //             break;
             //         case "&LANG_WORKED":
-            //             stateText = "Отработана";
+            //             stateText = "РћС‚СЂР°Р±РѕС‚Р°РЅР°";
             //             break;
             //         case "&LANG_FINISHED":
-            //             stateText = "Выполнена";
+            //             stateText = "Р’С‹РїРѕР»РЅРµРЅР°";
             //             break;
             //         case "&LANG_DELAYED":
-            //             stateText = "Отложена";
+            //             stateText = "РћС‚Р»РѕР¶РµРЅР°";
             //             break;
             //         case "&LANG_CANCELED":
-            //             stateText = "Отменена";
+            //             stateText = "РћС‚РјРµРЅРµРЅР°";
             //             break;
             //     }
-            //     result_array.push('Назначен статус задачи "' + stateText + '"');
+            //     result_array.push('РќР°Р·РЅР°С‡РµРЅ СЃС‚Р°С‚СѓСЃ Р·Р°РґР°С‡Рё "' + stateText + '"');
             // }
-            //Если просто: Добавлен комментарий
+            //Р•СЃР»Рё РїСЂРѕСЃС‚Рѕ: Р”РѕР±Р°РІР»РµРЅ РєРѕРјРјРµРЅС‚Р°СЂРёР№
             if (!email_out && $('comment_added', xml_header).length > 0 && result_array.length == 0) {
                 result_array.push(lang['comment_added']);
             }

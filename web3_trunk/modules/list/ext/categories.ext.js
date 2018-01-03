@@ -1,5 +1,5 @@
 /**
- * список категорий
+ * СЃРїРёСЃРѕРє РєР°С‚РµРіРѕСЂРёР№
  * @param org_id
  * @returns {{list: list, sortByName: sortByName, appendDefault, convertToSelect: convertToSelect}}
  * @constructor
@@ -18,20 +18,20 @@ List.Categories = function (org_id) {
     /** public */
     return {
         /**
-         * список
+         * СЃРїРёСЃРѕРє
          * @returns {Array}
          */
         list: function () {
             return local.list;
         },
         /**
-         * добавим категорию по-умолчанию
+         * РґРѕР±Р°РІРёРј РєР°С‚РµРіРѕСЂРёСЋ РїРѕ-СѓРјРѕР»С‡Р°РЅРёСЋ
          */
         addDefault: function () {
             local.list.push(Dataset.get('category',0));
         },
         /**
-         * сортируем по имени
+         * СЃРѕСЂС‚РёСЂСѓРµРј РїРѕ РёРјРµРЅРё
          */
         sortByName: function () {
             local.list.sort(function (first, second) {
@@ -47,7 +47,7 @@ List.Categories = function (org_id) {
             })
         },
         /**
-         * получим селект
+         * РїРѕР»СѓС‡РёРј СЃРµР»РµРєС‚
          * @param with_default
          * @param default_value
          * @param onchange
@@ -58,8 +58,8 @@ List.Categories = function (org_id) {
             this.sortByName();
             let select = $('<select>').appendTo(div);
             if (typeof with_default != 'undefined') {
-                $('<option>').val('0').html('[Не выбрано]').attr('title', '[Не выбрано]').appendTo(select);
-                $('<option>').val('-10').html('[Без категории]').attr('title', '[Без категории]').appendTo(select);
+                $('<option>').val('0').html('[РќРµ РІС‹Р±СЂР°РЅРѕ]').attr('title', '[РќРµ РІС‹Р±СЂР°РЅРѕ]').appendTo(select);
+                $('<option>').val('-10').html('[Р‘РµР· РєР°С‚РµРіРѕСЂРёРё]').attr('title', '[Р‘РµР· РєР°С‚РµРіРѕСЂРёРё]').appendTo(select);
             }
             for (let i = 0; i < local.list.length; i++) {
                 let project = local.list[i];

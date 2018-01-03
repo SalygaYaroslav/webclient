@@ -16,8 +16,8 @@ window.Interface = (function () {
     /** public */
     return {
         /**
-         * вернем блок тела
-         * @returns тело
+         * РІРµСЂРЅРµРј Р±Р»РѕРє С‚РµР»Р°
+         * @returns С‚РµР»Рѕ
          */
         getBody: function () {
             if (local.body == null) {
@@ -26,14 +26,14 @@ window.Interface = (function () {
             return local.body;
         },
         /**
-         * строим каркас приложения
+         * СЃС‚СЂРѕРёРј РєР°СЂРєР°СЃ РїСЂРёР»РѕР¶РµРЅРёСЏ
          */
         renderCarcase: function () {
             let self = this;
-            // инициализация хранилища
+            // РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ С…СЂР°РЅРёР»РёС‰Р°
             Interface.initStorage();
             let body = local.body;
-            // очистим
+            // РѕС‡РёСЃС‚РёРј
             let template = $('<div ' +
                 'is="app" ' +
                 'v-bind:navigate_active="navigate_active" ' +
@@ -56,7 +56,7 @@ window.Interface = (function () {
                         main: {
                             id: 'main',
                             title: lang.navigate.main,
-                            icon: 'Главное-меню',
+                            icon: 'Р“Р»Р°РІРЅРѕРµ-РјРµРЅСЋ',
                             show: true,
                             active: false,
                             click: function (id) {
@@ -66,7 +66,7 @@ window.Interface = (function () {
                         info: {
                             id: 'info',
                             title: lang.navigate.info,
-                            icon: 'Организации',
+                            icon: 'РћСЂРіР°РЅРёР·Р°С†РёРё',
                             show: true,
                             active: false,
                             only: 'org',
@@ -77,7 +77,7 @@ window.Interface = (function () {
                         profile: {
                             id: 'profile',
                             title: lang.navigate.profile,
-                            icon: 'Анкета',
+                            icon: 'РђРЅРєРµС‚Р°',
                             active: false,
                             show: true,
                             only: 'my',
@@ -88,7 +88,7 @@ window.Interface = (function () {
                         users: {
                             id: 'users',
                             title: lang.navigate.users,
-                            icon: 'Пользователи',
+                            icon: 'РџРѕР»СЊР·РѕРІР°С‚РµР»Рё',
                             active: false,
                             show: true,
                             only: 'org',
@@ -99,7 +99,7 @@ window.Interface = (function () {
                         friends: {
                             id: 'friends',
                             title: lang.navigate.friends,
-                            icon: 'Друзья',
+                            icon: 'Р”СЂСѓР·СЊСЏ',
                             active: false,
                             show: true,
                             only: 'my',
@@ -110,7 +110,7 @@ window.Interface = (function () {
                         projects: {
                             id: 'projects',
                             title: lang.navigate.projects,
-                            icon: 'Проекты',
+                            icon: 'РџСЂРѕРµРєС‚С‹',
                             active: false,
                             show: true,
                             click: function (id) {
@@ -120,7 +120,7 @@ window.Interface = (function () {
                         contacts: {
                             id: 'contacts',
                             title: lang.navigate.contacts,
-                            icon: 'Контакты',
+                            icon: 'РљРѕРЅС‚Р°РєС‚С‹',
                             active: false,
                             show: true,
                             click: function (id) {
@@ -130,7 +130,7 @@ window.Interface = (function () {
                         calendar: {
                             id: 'calendar',
                             title: lang.navigate.calendar,
-                            icon: 'Календарь',
+                            icon: 'РљР°Р»РµРЅРґР°СЂСЊ',
                             active: false,
                             show: true,
                             click: function (id) {
@@ -140,7 +140,7 @@ window.Interface = (function () {
                         crm: {
                             id: 'crm',
                             title: lang.navigate.crm,
-                            icon: 'Таблицы',
+                            icon: 'РўР°Р±Р»РёС†С‹',
                             active: false,
                             show: true,
                             click: function (id) {
@@ -150,7 +150,7 @@ window.Interface = (function () {
                         video: {
                             id: 'video',
                             title: lang.navigate.video,
-                            icon: 'Видеоконференции',
+                            icon: 'Р’РёРґРµРѕРєРѕРЅС„РµСЂРµРЅС†РёРё',
                             active: false,
                             show: true,
                             click: function (id) {
@@ -160,7 +160,7 @@ window.Interface = (function () {
                         files: {
                             id: 'files',
                             title: lang.navigate.files,
-                            icon: 'Файлы4',
+                            icon: 'Р¤Р°Р№Р»С‹4',
                             active: false,
                             show: true,
                             click: function (id) {
@@ -172,7 +172,7 @@ window.Interface = (function () {
                         {
                             id: 'telephony',
                             title: lang.menu.telephony,
-                            icon: 'Телефония',
+                            icon: 'РўРµР»РµС„РѕРЅРёСЏ',
                             active: false,
                             disable: false,
                             click: function (status) {
@@ -182,7 +182,7 @@ window.Interface = (function () {
                         {
                             id: 'notification',
                             title: lang.menu.notification,
-                            icon: 'Оповещения',
+                            icon: 'РћРїРѕРІРµС‰РµРЅРёСЏ',
                             active: false,
                             disable: false,
                             click: function (status) {
@@ -198,7 +198,7 @@ window.Interface = (function () {
                         {
                             id: 'chat',
                             title: lang.menu.chat,
-                            icon: 'Чат',
+                            icon: 'Р§Р°С‚',
                             active: local.storage.show_chat,
                             disable: false,
                             click: function (status) {
@@ -214,7 +214,7 @@ window.Interface = (function () {
                             }
                         },
                         {
-                            id: 'notes', title: lang.menu.notes, icon: 'Чаты', active: false, disable: false,
+                            id: 'notes', title: lang.menu.notes, icon: 'Р§Р°С‚С‹', active: false, disable: false,
                             click: function (status) {
 
                             }
@@ -230,8 +230,8 @@ window.Interface = (function () {
             });
         },
         /**
-         * строим блок с организацией
-         * т.е. подключаем модуль организаций
+         * СЃС‚СЂРѕРёРј Р±Р»РѕРє СЃ РѕСЂРіР°РЅРёР·Р°С†РёРµР№
+         * С‚.Рµ. РїРѕРґРєР»СЋС‡Р°РµРј РјРѕРґСѓР»СЊ РѕСЂРіР°РЅРёР·Р°С†РёР№
          * @returns {*}
          */
         renderOrganizationBlock: function () {
@@ -245,7 +245,7 @@ window.Interface = (function () {
             return UserBlock.init($('.w-carcase-personal', local.body).empty());
         },
         /**
-         * сохраним состояние
+         * СЃРѕС…СЂР°РЅРёРј СЃРѕСЃС‚РѕСЏРЅРёРµ
          * @param type
          */
         saveNavigateButtonsSize: function (type) {
@@ -254,7 +254,7 @@ window.Interface = (function () {
             Interface.saveStorage();
         },
         /**
-         * сохраним состояние
+         * СЃРѕС…СЂР°РЅРёРј СЃРѕСЃС‚РѕСЏРЅРёРµ
          * @param type
          */
         saveChatBlockSize: function (type) {
@@ -263,7 +263,7 @@ window.Interface = (function () {
             Interface.saveStorage();
         },
         /**
-         * инициализация хранилища
+         * РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ С…СЂР°РЅРёР»РёС‰Р°
          */
         initStorage: function () {
             let data = Dataset.getCustomStorage('interface');
@@ -272,13 +272,13 @@ window.Interface = (function () {
             }
         },
         /**
-         * сохраним хранилище
+         * СЃРѕС…СЂР°РЅРёРј С…СЂР°РЅРёР»РёС‰Рµ
          */
         saveStorage: function () {
             Dataset.setCustomStorage('interface', local.storage);
         },
         /**
-         * перегрузим кнопки навигации
+         * РїРµСЂРµРіСЂСѓР·РёРј РєРЅРѕРїРєРё РЅР°РІРёРіР°С†РёРё
          * @param other
          */
         reloadNavigateButton: function (other) {
@@ -291,7 +291,7 @@ window.Interface = (function () {
             }
         },
         /**
-         * введем активную кнопку
+         * РІРІРµРґРµРј Р°РєС‚РёРІРЅСѓСЋ РєРЅРѕРїРєСѓ
          * @param id
          */
         setActiveNavigate: function (id) {

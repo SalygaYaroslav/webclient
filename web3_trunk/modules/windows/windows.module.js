@@ -1,5 +1,5 @@
 /**
- * модуль окна
+ * РјРѕРґСѓР»СЊ РѕРєРЅР°
  * @param data
  * @returns {{initialize: initialize, show: show, loading: loading, hide: hide}}
  * @constructor
@@ -36,7 +36,7 @@ window.Windows = function (data) {
         }
     };
     /**
-     * определение в каком виде размеры
+     * РѕРїСЂРµРґРµР»РµРЅРёРµ РІ РєР°РєРѕРј РІРёРґРµ СЂР°Р·РјРµСЂС‹
      * @returns {{left, top}}
      */
     let checkSizeSystem = function () {
@@ -78,7 +78,7 @@ window.Windows = function (data) {
 
     let self = {
         /**
-         * инициализация
+         * РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ
          * @param data ({
          *      id: '',
          *      title: '',
@@ -161,7 +161,7 @@ window.Windows = function (data) {
             win.same.draggable({cursor: 'move', handle: win.header, containment: els.overlay, scroll: false});
         },
         /**
-         * покажем
+         * РїРѕРєР°Р¶РµРј
          */
         show: function () {
             if (local.data.show == false) {
@@ -170,7 +170,7 @@ window.Windows = function (data) {
             }
         },
         /**
-         * окошко загрузки
+         * РѕРєРѕС€РєРѕ Р·Р°РіСЂСѓР·РєРё
          * @param show
          */
         loading: function (show) {

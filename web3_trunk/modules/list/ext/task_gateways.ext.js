@@ -17,23 +17,23 @@ List.TaskGateways = function (organization, additional_class) {
     /** public */
     return {
         /**
-         * список
+         * СЃРїРёСЃРѕРє
          * @returns {Array}
          */
         list: function () {
             return local.list;
         },
         /**
-         * подгрузка задач
+         * РїРѕРґРіСЂСѓР·РєР° Р·Р°РґР°С‡
          * @param callback
          */
         load: function () {
             local.list = local.organization.getRouters();
-            local.list.push({id: '0', email_name: '[Не выбрано]'});
+            local.list.push({id: '0', email_name: '[РќРµ РІС‹Р±СЂР°РЅРѕ]'});
             this.sort();
         },
         /**
-         * сортировка
+         * СЃРѕСЂС‚РёСЂРѕРІРєР°
          * @param order
          */
         sort: function () {
@@ -50,7 +50,7 @@ List.TaskGateways = function (organization, additional_class) {
             })
         },
         /**
-         * конвертируем в селект
+         * РєРѕРЅРІРµСЂС‚РёСЂСѓРµРј РІ СЃРµР»РµРєС‚
          * @param default_value
          * @returns {*|jQuery}
          */

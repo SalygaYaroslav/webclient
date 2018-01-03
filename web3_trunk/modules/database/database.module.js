@@ -11,12 +11,12 @@ window.Database = (function () {
             request.onerror = function (err) {
                 console.error(err);
             };
-            // При успешном открытии вызвали коллбэк передав ему объект БД
+            // РџСЂРё СѓСЃРїРµС€РЅРѕРј РѕС‚РєСЂС‹С‚РёРё РІС‹Р·РІР°Р»Рё РєРѕР»Р»Р±СЌРє РїРµСЂРµРґР°РІ РµРјСѓ РѕР±СЉРµРєС‚ Р‘Р”
             request.onsuccess = function () {
                 console.warn('successfully connect to DB');
                 callback(request.result);
             };
-            // Если БД еще не существует, то создаем хранилище объектов.
+            // Р•СЃР»Рё Р‘Р” РµС‰Рµ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚, С‚Рѕ СЃРѕР·РґР°РµРј С…СЂР°РЅРёР»РёС‰Рµ РѕР±СЉРµРєС‚РѕРІ.
             request.onupgradeneeded = function (event) {
                 console.warn('DB is upgraded from version ' + event.oldVersion + ' to ' + event.newVersion);
                 self.createDataBase(event);

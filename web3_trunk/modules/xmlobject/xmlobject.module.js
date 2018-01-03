@@ -1,5 +1,5 @@
 /**
- * Модуль дл обработки данных
+ * РњРѕРґСѓР»СЊ РґР» РѕР±СЂР°Р±РѕС‚РєРё РґР°РЅРЅС‹С…
  * @returns {{setFromXml: setFromXml, setFromText: setFromText, setFromObject: setFromObject}}
  * @constructor
  */
@@ -60,7 +60,7 @@ var XmlObject = function () {
     /** public **/
     return {
         /**
-         * задаем из xml
+         * Р·Р°РґР°РµРј РёР· xml
          * @param xml
          */
         setFromXml: function (xml) {
@@ -69,7 +69,7 @@ var XmlObject = function () {
             data_object = convertXmlToObject(xml);
         },
         /**
-         * задаем из текста
+         * Р·Р°РґР°РµРј РёР· С‚РµРєСЃС‚Р°
          * @param text
          */
         setFromText: function (text) {
@@ -78,7 +78,7 @@ var XmlObject = function () {
             data_object = convertTextToObject(text);
         },
         /**
-         * задаем из объекта
+         * Р·Р°РґР°РµРј РёР· РѕР±СЉРµРєС‚Р°
          * @param object
          */
         setFromObject: function (object) {
@@ -87,21 +87,21 @@ var XmlObject = function () {
             data_text = convertObjectToText(object);
         },
         /**
-         * вернем текстом
+         * РІРµСЂРЅРµРј С‚РµРєСЃС‚РѕРј
          * @returns {string}
          */
         text: function () {
             return data_text;
         },
         /**
-         * вернем объектом
+         * РІРµСЂРЅРµРј РѕР±СЉРµРєС‚РѕРј
          * @returns {null|Object}
          */
         object: function () {
             return data_object.response;
         },
         /**
-         * вернем как xml
+         * РІРµСЂРЅРµРј РєР°Рє xml
          * @returns {*|jQuery|HTMLElement}
          */
         xml: function () {

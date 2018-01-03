@@ -41,7 +41,7 @@ window.Chat = (function () {
             }
         },
         initialization: function () {
-            // инициализация только тут
+            // РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ С‚РѕР»СЊРєРѕ С‚СѓС‚
             local.personal_data.id = Authorization.getCurrentUser().getId();
             local.personal_data.password = Authorization.getUserAuthData('password');
             local.server_data.domain = Authorization.getJabberConnectionData('domain');
@@ -75,7 +75,7 @@ window.Chat = (function () {
             // $(document).off('delivery.receipts').on('delivery.receipts', self.delivery);
             // $(document).off('chat.window.roster').on('chat.window.roster', function (e, obj) {
             //     _private.rdw.users_list.find('#' + obj.i).find('.chat-u-s').attr('status', obj.s);
-            //     // удаляем уведомление если юзер вышел
+            //     // СѓРґР°Р»СЏРµРј СѓРІРµРґРѕРјР»РµРЅРёРµ РµСЃР»Рё СЋР·РµСЂ РІС‹С€РµР»
             //     if (obj.s == false) {
             //         _private.rdw.users_list.find('#' + obj.i).removeClass('type');
             //     }
@@ -123,7 +123,7 @@ window.Chat = (function () {
             let unload = function () {
                 if (_detaching == false) {
                     _connection.sync = true;
-                    // надо сделать выход из групп
+                    // РЅР°РґРѕ СЃРґРµР»Р°С‚СЊ РІС‹С…РѕРґ РёР· РіСЂСѓРїРї
                     _connection.flush();
                     _detaching = true;
                 }
@@ -197,7 +197,7 @@ window.Chat = (function () {
                 let from_id = Strophe.getNodeFromJid(from);
                 let subject = message.find('subject').text();
                 switch (subject) {
-                    case 'chat': // сообщение
+                    case 'chat': // СЃРѕРѕР±С‰РµРЅРёРµ
                         local.chat.window.showMessage(message_id, target_id, from_id, atob(text).wincode2unicode(), new Date().getTime(), true);
                         Tool.playAudio('/sounds/chat.mp3'); // TODO play sound
                         self.deliveryConfirm(from, target, message_id);

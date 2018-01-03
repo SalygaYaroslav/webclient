@@ -20,7 +20,7 @@ window.User = function (id) {
     let self = {
         classname: classname,
         /**
-         * получим поле
+         * РїРѕР»СѓС‡РёРј РїРѕР»Рµ
          * @param field
          * @returns {*|string}
          */
@@ -31,8 +31,8 @@ window.User = function (id) {
             return local.entity[field] || '';
         },
         /**
-         * данные в форму
-         * @param config конфиг данных
+         * РґР°РЅРЅС‹Рµ РІ С„РѕСЂРјСѓ
+         * @param config РєРѕРЅС„РёРі РґР°РЅРЅС‹С…
          * @returns {{}}
          */
         getDataToForm: function (config) {
@@ -115,7 +115,7 @@ window.User = function (id) {
             return data;
         },
         /**
-         * введем данные
+         * РІРІРµРґРµРј РґР°РЅРЅС‹Рµ
          * @param user
          * @returns {User}
          */
@@ -134,7 +134,7 @@ window.User = function (id) {
             return self;
         },
         /**
-         * удалим из хранилища
+         * СѓРґР°Р»РёРј РёР· С…СЂР°РЅРёР»РёС‰Р°
          */
         remove: function () {
             let entities = Dataset.storage.data.entities['users'];
@@ -147,7 +147,7 @@ window.User = function (id) {
             }
         },
         /**
-         * проверим, все ли данные загружены
+         * РїСЂРѕРІРµСЂРёРј, РІСЃРµ Р»Рё РґР°РЅРЅС‹Рµ Р·Р°РіСЂСѓР¶РµРЅС‹
          */
         needFull: function () {
             let result = Dataset.Tree.getFullUser(self);
@@ -162,21 +162,21 @@ window.User = function (id) {
             }
         },
         /**
-         * получим ид
+         * РїРѕР»СѓС‡РёРј РёРґ
          * @returns {string|string}
          */
         getId: function () {
             return local.entity.id || '';
         },
         /**
-         * получим логин
+         * РїРѕР»СѓС‡РёРј Р»РѕРіРёРЅ
          * @returns {string|string}
          */
         getLogin: function () {
             return local.entity.login || '';
         },
         /**
-         * получим имя
+         * РїРѕР»СѓС‡РёРј РёРјСЏ
          * @returns {*}
          */
         getName: function () {
@@ -193,7 +193,7 @@ window.User = function (id) {
             }
         },
         /**
-         * получим аватар
+         * РїРѕР»СѓС‡РёРј Р°РІР°С‚Р°СЂ
          * @returns {*}
          */
         getAvatar: function () {
@@ -213,7 +213,7 @@ window.User = function (id) {
             }
         },
         /**
-         * получим список организаций юзера
+         * РїРѕР»СѓС‡РёРј СЃРїРёСЃРѕРє РѕСЂРіР°РЅРёР·Р°С†РёР№ СЋР·РµСЂР°
          * @returns {Array}
          */
         getUserOrganization: function () {
@@ -228,7 +228,7 @@ window.User = function (id) {
             return org_array;
         },
         /**
-         * получим класс аватары
+         * РїРѕР»СѓС‡РёРј РєР»Р°СЃСЃ Р°РІР°С‚Р°СЂС‹
          * @returns {string}
          */
         getUserGenderClass: function () {
@@ -245,14 +245,14 @@ window.User = function (id) {
             return avatar;
         },
         /**
-         * проверка на права редактирования
+         * РїСЂРѕРІРµСЂРєР° РЅР° РїСЂР°РІР° СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёСЏ
          * @returns {boolean}
          */
         isEditable: function () {
             return local.entity.id == Authorization.getCurrentUser().getId();
         },
         /**
-         * сохранение сущности на сервере
+         * СЃРѕС…СЂР°РЅРµРЅРёРµ СЃСѓС‰РЅРѕСЃС‚Рё РЅР° СЃРµСЂРІРµСЂРµ
          * @param fields
          * @param callback
          */
@@ -280,7 +280,7 @@ window.User = function (id) {
             }
         },
         /**
-         * получим задачу для сохранения персональных файлов
+         * РїРѕР»СѓС‡РёРј Р·Р°РґР°С‡Сѓ РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹С… С„Р°Р№Р»РѕРІ
          * @returns {*}
          */
         getFileTask: function () {

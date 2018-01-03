@@ -18,8 +18,8 @@ var Authorization = (function () {
     /** public */
     return {
         /**
-         * загружаем приложение
-         * @param callback калбек функция
+         * Р·Р°РіСЂСѓР¶Р°РµРј РїСЂРёР»РѕР¶РµРЅРёРµ
+         * @param callback РєР°Р»Р±РµРє С„СѓРЅРєС†РёСЏ
          * @returns {*}
          */
         init: function (callback) {
@@ -35,9 +35,9 @@ var Authorization = (function () {
             }
         },
         /**
-         * загружаем приложение
-         * @param field field какое именно поле надо получить из авторизации
-         * @returns {*} если undefined, то вернет логин и пароль, иначе - поле из авторизации
+         * Р·Р°РіСЂСѓР¶Р°РµРј РїСЂРёР»РѕР¶РµРЅРёРµ
+         * @param field field РєР°РєРѕРµ РёРјРµРЅРЅРѕ РїРѕР»Рµ РЅР°РґРѕ РїРѕР»СѓС‡РёС‚СЊ РёР· Р°РІС‚РѕСЂРёР·Р°С†РёРё
+         * @returns {*} РµСЃР»Рё undefined, С‚Рѕ РІРµСЂРЅРµС‚ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ, РёРЅР°С‡Рµ - РїРѕР»Рµ РёР· Р°РІС‚РѕСЂРёР·Р°С†РёРё
          */
         getUserAuthData: function (field) {
             if (typeof field != 'undefined' && typeof local[field] != 'undefined') {
@@ -46,7 +46,7 @@ var Authorization = (function () {
             return {login: local.login, password: local.password};
         },
         /**
-         * добавим куки юзера
+         * РґРѕР±Р°РІРёРј РєСѓРєРё СЋР·РµСЂР°
          * @param login
          * @param password
          * @returns {boolean}
@@ -58,7 +58,7 @@ var Authorization = (function () {
             return true;
         },
         /**
-         * отправим данные на сервер
+         * РѕС‚РїСЂР°РІРёРј РґР°РЅРЅС‹Рµ РЅР° СЃРµСЂРІРµСЂ
          * @param username
          * @param password
          * @param success
@@ -93,7 +93,7 @@ var Authorization = (function () {
             }
         },
         /**
-         * получим данные конфига из хранилища
+         * РїРѕР»СѓС‡РёРј РґР°РЅРЅС‹Рµ РєРѕРЅС„РёРіР° РёР· С…СЂР°РЅРёР»РёС‰Р°
          * @param key
          * @returns {*}
          */
@@ -104,7 +104,7 @@ var Authorization = (function () {
             return null;
         },
         /**
-         * после авторизации обработаем данные
+         * РїРѕСЃР»Рµ Р°РІС‚РѕСЂРёР·Р°С†РёРё РѕР±СЂР°Р±РѕС‚Р°РµРј РґР°РЅРЅС‹Рµ
          * @param xmlobject
          * @returns {{}|*}
          */
@@ -165,7 +165,7 @@ var Authorization = (function () {
             return config.user_props;
         },
         /**
-         * получим данные
+         * РїРѕР»СѓС‡РёРј РґР°РЅРЅС‹Рµ
          * @param field
          * @returns {*}
          */
@@ -176,14 +176,14 @@ var Authorization = (function () {
             return local.config;
         },
         /**
-         * получим текущего юзера
+         * РїРѕР»СѓС‡РёРј С‚РµРєСѓС‰РµРіРѕ СЋР·РµСЂР°
          * @returns {User}
          */
         getCurrentUser: function () {
             return Dataset.get('user', local.config.user_props.id);
         },
         /**
-         * логаут
+         * Р»РѕРіР°СѓС‚
          */
         logout: function () {
             Cookies.set('webapp_user', {login: '', password: ''});
@@ -193,7 +193,7 @@ var Authorization = (function () {
             return local.timeZone || 0;
         },
         /**
-         * получим локальные данные, для отладки
+         * РїРѕР»СѓС‡РёРј Р»РѕРєР°Р»СЊРЅС‹Рµ РґР°РЅРЅС‹Рµ, РґР»СЏ РѕС‚Р»Р°РґРєРё
          * @returns {{login: string, password: string, config: {}, storage_config: {show_comment_image_preview: boolean, show_comment_email_as_text: boolean, show_comment_category_full: boolean}}}
          */
         getLocalData: function () {

@@ -15,13 +15,13 @@ const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
 // merge json
 const mergeJson = require('gulp-merge-json');
-//Удаляем папки с css
+//РЈРґР°Р»СЏРµРј РїР°РїРєРё СЃ css
 gulp.task('clean_css', function () {
     del.sync(trunk + '/modules/**/*.css');
     del.sync(trunk + '/modules/*/_css');
     del.sync(trunk + '/modules/scene/scenes/_css');
 });
-//Превратим scss в css
+//РџСЂРµРІСЂР°С‚РёРј scss РІ css
 gulp.task('scss', ['clean_css'], function () {
     return gulp.src(trunk + 'modules/*/scss/*.scss')
             .pipe(sass({outputStyle: 'compact'}))
@@ -54,13 +54,13 @@ gulp.task('lang', ['clean_lang'], function () {
             .pipe(mergeJson('en.json'))
             .pipe(gulp.dest(trunk + '_lang/'));
 });
-// следим за изменением scss
-// если перегружает систему - закомментим 
+// СЃР»РµРґРёРј Р·Р° РёР·РјРµРЅРµРЅРёРµРј scss
+// РµСЃР»Рё РїРµСЂРµРіСЂСѓР¶Р°РµС‚ СЃРёСЃС‚РµРјСѓ - Р·Р°РєРѕРјРјРµРЅС‚РёРј 
 gulp.task('watch_css', ['scss', 'scene_scss'], function () {
     gulp.watch(trunk + 'modules/**/*.scss', ['scss', 'scene_scss']);
 });
-// следим за изменением lang
-// если перегружает систему - закомментим 
+// СЃР»РµРґРёРј Р·Р° РёР·РјРµРЅРµРЅРёРµРј lang
+// РµСЃР»Рё РїРµСЂРµРіСЂСѓР¶Р°РµС‚ СЃРёСЃС‚РµРјСѓ - Р·Р°РєРѕРјРјРµРЅС‚РёРј 
 gulp.task('watch_lang', ['lang'], function () {
     gulp.watch(trunk + 'modules/*/lang/*.json', ['lang']);
 });

@@ -1,12 +1,12 @@
 /**
- * модуль инструментов
+ * РјРѕРґСѓР»СЊ РёРЅСЃС‚СЂСѓРјРµРЅС‚РѕРІ
  * @type {{stringToJson, stringToXml, xmlToJson, jsonToXmls, xmlAttrToJson, decode, getFileType, formatBytes, replaceTags, generateGuid, buildURIParams, playAudio, phone}}
  */
 var Tool = (function () {
     /** public */
     return {
         /**
-         * строка в объект
+         * СЃС‚СЂРѕРєР° РІ РѕР±СЉРµРєС‚
          * @param string
          * @param prefix
          */
@@ -17,7 +17,7 @@ var Tool = (function () {
             return x2js.xml_str2json(string);
         },
         /**
-         * строка в xml
+         * СЃС‚СЂРѕРєР° РІ xml
          * @param string
          * @param prefix
          */
@@ -28,7 +28,7 @@ var Tool = (function () {
             return x2js.parseXmlString(string);
         },
         /**
-         * xml в объект
+         * xml РІ РѕР±СЉРµРєС‚
          * @param xml
          */
         xmlToJson: function (xml) {
@@ -42,7 +42,7 @@ var Tool = (function () {
             return x2js.json2xml_str(json);
         },
         /**
-         * xml атрибуты в объект
+         * xml Р°С‚СЂРёР±СѓС‚С‹ РІ РѕР±СЉРµРєС‚
          * @param xml
          * @returns {{}}
          */
@@ -54,7 +54,7 @@ var Tool = (function () {
             return object;
         },
         /**
-         * декодинг
+         * РґРµРєРѕРґРёРЅРі
          * @param text
          * @returns {*}
          */
@@ -62,7 +62,7 @@ var Tool = (function () {
             return x2js.decode(text);
         },
         /**
-         * получить тип файла
+         * РїРѕР»СѓС‡РёС‚СЊ С‚РёРї С„Р°Р№Р»Р°
          * @param link
          * @returns {{type: string, extension: *}}
          */
@@ -101,7 +101,7 @@ var Tool = (function () {
             }
         },
         /**
-         * форматирование байт
+         * С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ Р±Р°Р№С‚
          * @param bytes
          * @param decimals
          * @returns {*}
@@ -117,7 +117,7 @@ var Tool = (function () {
             return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
         },
         /**
-         * удалить теги
+         * СѓРґР°Р»РёС‚СЊ С‚РµРіРё
          * @param html_text
          * @returns {*}
          */
@@ -225,7 +225,7 @@ var Tool = (function () {
                     {
                         mask: '7',
                         size: 11,
-                        country: 'Россия',
+                        country: 'Р РѕСЃСЃРёСЏ',
                         code: 'ru',
                         regexp: /(7)(\d{3})(\d{3})(\d{2})(\d{2})/,
                         replace: '$1($2)$3-$4-$5',
@@ -234,7 +234,7 @@ var Tool = (function () {
                     {
                         mask: '374',
                         size: 11,
-                        country: 'Армения',
+                        country: 'РђСЂРјРµРЅРёСЏ',
                         code: 'am',
                         regexp: /(374)(\d{2})(\d{3})(\d{3})/,
                         replace: '$1-$2-$3-$4',
@@ -243,7 +243,7 @@ var Tool = (function () {
                     {
                         mask: '994',
                         size: 12,
-                        country: 'Азейбаржан',
+                        country: 'РђР·РµР№Р±Р°СЂР¶Р°РЅ',
                         code: 'az',
                         regexp: /(994)(\d{2})(\d{3})(\d{2})(\d{2})/,
                         replace: '$1-$2-$3-$4-$5',
@@ -252,7 +252,7 @@ var Tool = (function () {
                     {
                         mask: '995',
                         size: 12,
-                        country: 'Грузия',
+                        country: 'Р“СЂСѓР·РёСЏ',
                         code: 'ge',
                         regexp: /(995)(\d{3})(\d{3})(\d{3})/,
                         replace: '$1($2)$3-$4',
@@ -261,7 +261,7 @@ var Tool = (function () {
                     {
                         mask: '998',
                         size: 12,
-                        country: 'Узбекистан',
+                        country: 'РЈР·Р±РµРєРёСЃС‚Р°РЅ',
                         code: 'uz',
                         regexp: /(998)(\d{2})(\d{3})(\d{4})/,
                         replace: '$1-$2-$3-$4',
@@ -270,7 +270,7 @@ var Tool = (function () {
                     {
                         mask: '375',
                         size: 12,
-                        country: 'Беларусь',
+                        country: 'Р‘РµР»Р°СЂСѓСЃСЊ',
                         code: 'by',
                         regexp: /(375)(\d{2})(\d{3})(\d{2})(\d{2})/,
                         replace: '$1($2)$3-$4-$5',
@@ -279,7 +279,7 @@ var Tool = (function () {
                     {
                         mask: '372',
                         size: 10,
-                        country: 'Эстония',
+                        country: 'Р­СЃС‚РѕРЅРёСЏ',
                         code: 'ee',
                         regexp: /(372)(\d{3})(\d{4})/,
                         replace: '$1-$2-$3',
@@ -288,7 +288,7 @@ var Tool = (function () {
                     {
                         mask: '371',
                         size: 11,
-                        country: 'Латвия',
+                        country: 'Р›Р°С‚РІРёСЏ',
                         code: 'lv',
                         regexp: /(371)(\d{3})(\d{3})(\d{2})/,
                         replace: '$1-$2-$3-$4',
@@ -297,7 +297,7 @@ var Tool = (function () {
                     {
                         mask: '370',
                         size: 11,
-                        country: 'Литва',
+                        country: 'Р›РёС‚РІР°',
                         code: 'lt',
                         regexp: /(370)(\d{2})(\d{3})(\d{3})/,
                         replace: '$1($2)$3-$4',
@@ -306,7 +306,7 @@ var Tool = (function () {
                     {
                         mask: '373',
                         size: 11,
-                        country: 'Молдова',
+                        country: 'РњРѕР»РґРѕРІР°',
                         code: 'md',
                         regexp: /(373)(\d{4})(\d{4})/,
                         replace: '$1-$2-$3',
@@ -315,7 +315,7 @@ var Tool = (function () {
                     {
                         mask: '996',
                         size: 12,
-                        country: 'Киргизия',
+                        country: 'РљРёСЂРіРёР·РёСЏ',
                         code: 'kg',
                         regexp: /(996)(\d{3})(\d{3})(\d{3})/,
                         replace: '$1($2)$3-$4',
@@ -324,7 +324,7 @@ var Tool = (function () {
                     {
                         mask: '993',
                         size: 11,
-                        country: 'Туркмения',
+                        country: 'РўСѓСЂРєРјРµРЅРёСЏ',
                         code: 'tm',
                         regexp: /(993)(\d{1})(\d{3})(\d{4})/,
                         replace: '$1-$2-$3-$4',
@@ -333,7 +333,7 @@ var Tool = (function () {
                     {
                         mask: '380',
                         size: 12,
-                        country: 'Украина',
+                        country: 'РЈРєСЂР°РёРЅР°',
                         code: 'ua',
                         regexp: /(380)(\d{2})(\d{3})(\d{2})(\d{2})/,
                         replace: '$1($2)$3-$4-$5',

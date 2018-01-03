@@ -5,11 +5,11 @@
 Dataset.Tree = (function () {
     /** piblic */
     /** TODO
-     * упростить setTree
+     * СѓРїСЂРѕСЃС‚РёС‚СЊ setTree
      * **/
     return {
         /**
-         * строим дерево из данных
+         * СЃС‚СЂРѕРёРј РґРµСЂРµРІРѕ РёР· РґР°РЅРЅС‹С…
          * @param xml
          */
         buildTree: function (xml) {
@@ -25,7 +25,7 @@ Dataset.Tree = (function () {
         },
         set: {
             /**
-             * организация в дереве
+             * РѕСЂРіР°РЅРёР·Р°С†РёСЏ РІ РґРµСЂРµРІРµ
              * @param org
              * @returns {boolean}
              */
@@ -39,7 +39,7 @@ Dataset.Tree = (function () {
                         u: {}
                     };
                 }
-                // постоянно парсим группы
+                // РїРѕСЃС‚РѕСЏРЅРЅРѕ РїР°СЂСЃРёРј РіСЂСѓРїРїС‹
                 if (org.groups) {
                     let groups = [];
                     if ($.type(org.groups.group) == 'object') {
@@ -53,7 +53,7 @@ Dataset.Tree = (function () {
                         }
                     }
                 }
-                // постоянно парсим юзеров
+                // РїРѕСЃС‚РѕСЏРЅРЅРѕ РїР°СЂСЃРёРј СЋР·РµСЂРѕРІ
                 if (org.clients) {
                     let users = ($.type(org.clients.user) == 'object') ? [org.clients.user] : org.clients.user;
                     for (let i = 0; i < users.length; i++) {
@@ -72,10 +72,10 @@ Dataset.Tree = (function () {
             },
             /**
              *
-             * проекты в дерево
-             * @param {object} project данные проекта
+             * РїСЂРѕРµРєС‚С‹ РІ РґРµСЂРµРІРѕ
+             * @param {object} project РґР°РЅРЅС‹Рµ РїСЂРѕРµРєС‚Р°
              * @param {object} news
-             * @param {boolean} full полная ли загрузка
+             * @param {boolean} full РїРѕР»РЅР°СЏ Р»Рё Р·Р°РіСЂСѓР·РєР°
              * @returns {boolean}
              */
             project: function (project, news, full) {
@@ -95,8 +95,8 @@ Dataset.Tree = (function () {
                 return true;
             },
             /**
-             * категория в дерево
-             * @param {object} cat данные категории
+             * РєР°С‚РµРіРѕСЂРёСЏ РІ РґРµСЂРµРІРѕ
+             * @param {object} cat РґР°РЅРЅС‹Рµ РєР°С‚РµРіРѕСЂРёРё
              * @returns {Boolean}
              */
             category: function (cat) {
@@ -118,10 +118,10 @@ Dataset.Tree = (function () {
             },
             /**
              *
-             * задачи в дерево
-             * @param {object} task данные задачи
+             * Р·Р°РґР°С‡Рё РІ РґРµСЂРµРІРѕ
+             * @param {object} task РґР°РЅРЅС‹Рµ Р·Р°РґР°С‡Рё
              * @param news
-             * @param {boolean} full полная ли задача
+             * @param {boolean} full РїРѕР»РЅР°СЏ Р»Рё Р·Р°РґР°С‡Р°
              * @returns {boolean}
              */
             task: function (task, news, full) {
@@ -149,10 +149,10 @@ Dataset.Tree = (function () {
             }
         },
         /**
-         * задаем, что проект в дереве полон
-         * @param {string} org_id id организации
-         * @param {string} proj_id id проекта
-         * @param {boolean} full полон или нет
+         * Р·Р°РґР°РµРј, С‡С‚Рѕ РїСЂРѕРµРєС‚ РІ РґРµСЂРµРІРµ РїРѕР»РѕРЅ
+         * @param {string} org_id id РѕСЂРіР°РЅРёР·Р°С†РёРё
+         * @param {string} proj_id id РїСЂРѕРµРєС‚Р°
+         * @param {boolean} full РїРѕР»РѕРЅ РёР»Рё РЅРµС‚
          */
         setTreeProjectAsFull: function (org_id, proj_id, full) {
             let tree = Dataset.storage.data.tree;
@@ -163,7 +163,7 @@ Dataset.Tree = (function () {
             }
         },
         /**
-         * ид организаций
+         * РёРґ РѕСЂРіР°РЅРёР·Р°С†РёР№
          * @returns {Array}
          */
         getOrganizationIds: function () {
@@ -171,7 +171,7 @@ Dataset.Tree = (function () {
             return Object.keys(tree);
         },
         /**
-         * ид проектов
+         * РёРґ РїСЂРѕРµРєС‚РѕРІ
          * @param org_id
          * @returns {Array}
          */
@@ -180,7 +180,7 @@ Dataset.Tree = (function () {
             return Object.keys(tree[org_id].p);
         },
         /**
-         * ид пользователей
+         * РёРґ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
          * @param org_id
          * @returns {Array}
          */
@@ -189,7 +189,7 @@ Dataset.Tree = (function () {
             return Object.keys(tree[org_id].u);
         },
         /**
-         * ид категорий
+         * РёРґ РєР°С‚РµРіРѕСЂРёР№
          * @param org_id
          * @returns {Array}
          */
@@ -198,7 +198,7 @@ Dataset.Tree = (function () {
             return Object.keys(tree[org_id].c);
         },
         /**
-         * ид групп
+         * РёРґ РіСЂСѓРїРї
          * @param org_id
          * @returns {Array}
          */
@@ -207,7 +207,7 @@ Dataset.Tree = (function () {
             return Object.keys(tree[org_id].g);
         },
         /**
-         * ид задач
+         * РёРґ Р·Р°РґР°С‡
          * @param org_id
          * @param project_id
          * @param callback
@@ -230,7 +230,7 @@ Dataset.Tree = (function () {
             }
         },
         /**
-         * ид задач синхронно
+         * РёРґ Р·Р°РґР°С‡ СЃРёРЅС…СЂРѕРЅРЅРѕ
          * @param org_id
          * @param project_id
          * @returns {*}
@@ -246,7 +246,7 @@ Dataset.Tree = (function () {
             return Object.keys(tree[org_id].p[project_id].t);
         },
         /**
-         * загрузим все задачи проекта
+         * Р·Р°РіСЂСѓР·РёРј РІСЃРµ Р·Р°РґР°С‡Рё РїСЂРѕРµРєС‚Р°
          * @param org_id
          * @param project_id
          * @param callback
@@ -267,7 +267,7 @@ Dataset.Tree = (function () {
             });
         },
         /**
-         * удалим проект
+         * СѓРґР°Р»РёРј РїСЂРѕРµРєС‚
          * @param org_id
          * @param project_id
          * @returns {boolean}
@@ -281,7 +281,7 @@ Dataset.Tree = (function () {
             return false;
         },
         /**
-         * удалим задачу
+         * СѓРґР°Р»РёРј Р·Р°РґР°С‡Сѓ
          * @param org_id
          * @param project_id
          * @param task_id
@@ -297,7 +297,7 @@ Dataset.Tree = (function () {
             return false;
         },
         /**
-         * очистим группы организации
+         * РѕС‡РёСЃС‚РёРј РіСЂСѓРїРїС‹ РѕСЂРіР°РЅРёР·Р°С†РёРё
          * @param org_id
          * @returns {boolean}
          */
@@ -315,7 +315,7 @@ Dataset.Tree = (function () {
             return false;
         },
         /**
-         * удалим категорию
+         * СѓРґР°Р»РёРј РєР°С‚РµРіРѕСЂРёСЋ
          * @param org_id
          * @param category_id
          * @returns {boolean}
@@ -329,7 +329,7 @@ Dataset.Tree = (function () {
             return false;
         },
         /**
-         * получим юзера по логину
+         * РїРѕР»СѓС‡РёРј СЋР·РµСЂР° РїРѕ Р»РѕРіРёРЅСѓ
          * @param login
          * @returns {*}
          */
@@ -348,7 +348,7 @@ Dataset.Tree = (function () {
             }
         },
         /**
-         * получим всех юзеров
+         * РїРѕР»СѓС‡РёРј РІСЃРµС… СЋР·РµСЂРѕРІ
          * @returns {Array}
          */
         getAllUsers: function () {

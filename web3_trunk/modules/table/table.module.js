@@ -1,5 +1,5 @@
 /**
- * модуль для табличных данных
+ * РјРѕРґСѓР»СЊ РґР»СЏ С‚Р°Р±Р»РёС‡РЅС‹С… РґР°РЅРЅС‹С…
 
  * @param id
  * @param config
@@ -16,7 +16,7 @@ var Table = function (id, config, data) {
     };
     let self = {
         /**
-         * построение
+         * РїРѕСЃС‚СЂРѕРµРЅРёРµ
          */
         build: function () {
             let data = {
@@ -45,7 +45,7 @@ var Table = function (id, config, data) {
             local.template = $(Template.render('table', 'simple', data));
         },
         /**
-         * вывод контекта
+         * РІС‹РІРѕРґ РєРѕРЅС‚РµРєС‚Р°
          * @returns {*}
          */
         html: function () {

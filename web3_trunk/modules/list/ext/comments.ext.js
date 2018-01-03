@@ -1,5 +1,5 @@
 /**
- * список комментов
+ * СЃРїРёСЃРѕРє РєРѕРјРјРµРЅС‚РѕРІ
  * @param task_id
  * @param format_comment
  * @returns {{load: load, getListComments: getListComments}}
@@ -33,7 +33,7 @@ List.Comments = function (task_id, format_comment) {
         return comment;
     };
     /**
-     * загрузка с сервера
+     * Р·Р°РіСЂСѓР·РєР° СЃ СЃРµСЂРІРµСЂР°
      * @param callback
      * @returns {*}
      */
@@ -51,7 +51,7 @@ List.Comments = function (task_id, format_comment) {
                 /** push comment */
                 comments.push(comment);
             });
-            /** проверим, можно ли еще загрузить */
+            /** РїСЂРѕРІРµСЂРёРј, РјРѕР¶РЅРѕ Р»Рё РµС‰Рµ Р·Р°РіСЂСѓР·РёС‚СЊ */
             let load_more = $('tasks > parsed', xml).text();
             if (/\*$/.test(load_more.toString()) == false) {
                 local.has_more_items = false;
@@ -69,7 +69,7 @@ List.Comments = function (task_id, format_comment) {
         return vote;
     };
     /**
-     * загрузка лайков
+     * Р·Р°РіСЂСѓР·РєР° Р»Р°Р№РєРѕРІ
      */
     let loadLikes = function () {
         let data = Request.getTaskLikes(local.task_id);
@@ -88,7 +88,7 @@ List.Comments = function (task_id, format_comment) {
     /** public */
     return {
         /**
-         * подгрузка комментов
+         * РїРѕРґРіСЂСѓР·РєР° РєРѕРјРјРµРЅС‚РѕРІ
          * @param before
          * @param callback
          * @returns {boolean}
@@ -140,7 +140,7 @@ List.Comments = function (task_id, format_comment) {
             }
         },
         /**
-         * получим список коментов
+         * РїРѕР»СѓС‡РёРј СЃРїРёСЃРѕРє РєРѕРјРµРЅС‚РѕРІ
          * @returns {Array}
          */
         getListComments: function () {

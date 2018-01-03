@@ -1,5 +1,5 @@
 /**
- * экран загрузки
+ * СЌРєСЂР°РЅ Р·Р°РіСЂСѓР·РєРё
  * @type {{show, hide}}
  */
 Interface.Load = (function () {
@@ -10,7 +10,7 @@ Interface.Load = (function () {
     /** public */
     return {
         /**
-         * покажем
+         * РїРѕРєР°Р¶РµРј
          * @param text
          */
         show: function (text, block) {
@@ -29,7 +29,7 @@ Interface.Load = (function () {
             $('.loadscreen-additional', local.load).html(text || '');
         },
         /**
-         * спрчем
+         * СЃРїСЂС‡РµРј
          */
         hide: function () {
             local.load.remove();

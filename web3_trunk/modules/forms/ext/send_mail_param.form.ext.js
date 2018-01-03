@@ -19,7 +19,7 @@ Forms.SendMailParams = function (task) {
     };
     let self = {
         /**
-         * построим
+         * РїРѕСЃС‚СЂРѕРёРј
          */
         build: function () {
             let lang = Lang.get();
@@ -105,7 +105,7 @@ Forms.SendMailParams = function (task) {
             return local.template;
         },
         /**
-         * проп=рисовка форимы
+         * РїСЂРѕРї=СЂРёСЃРѕРІРєР° С„РѕСЂРёРјС‹
          * @param gateway
          * @param local_params
          * @returns {Mixed|jQuery|HTMLElement}
@@ -146,14 +146,14 @@ Forms.SendMailParams = function (task) {
             return form;
         },
         /**
-         * получим контент
+         * РїРѕР»СѓС‡РёРј РєРѕРЅС‚РµРЅС‚
          * @returns {null}
          */
         html: function () {
             return local.template;
         },
         /**
-         * вернем
+         * РІРµСЂРЅРµРј
          * @param callback
          */
         send: function (target, callback) {
@@ -172,7 +172,7 @@ Forms.SendMailParams = function (task) {
             }
         },
         /**
-         * данные из формы
+         * РґР°РЅРЅС‹Рµ РёР· С„РѕСЂРјС‹
          * @returns {{}}
          */
         getData: function () {
@@ -199,7 +199,7 @@ Forms.SendMailParams = function (task) {
             return object;
         },
         /**
-         * перезагрузим
+         * РїРµСЂРµР·Р°РіСЂСѓР·РёРј
          */
         reload: function () {
 

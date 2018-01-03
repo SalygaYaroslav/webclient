@@ -1,5 +1,5 @@
 /**
- * сцена контакты
+ * СЃС†РµРЅР° РєРѕРЅС‚Р°РєС‚С‹
  * @type {Function}
  */
 Scene.crm = (function (template) {
@@ -17,7 +17,7 @@ Scene.crm = (function (template) {
     /** public */
     return {
         /**
-         * инициализация
+         * РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ
          * @returns {Scene.contacts}
          */
         init: function () {
@@ -25,7 +25,7 @@ Scene.crm = (function (template) {
             return this;
         },
         /**
-         * прорисовка
+         * РїСЂРѕСЂРёСЃРѕРІРєР°
          */
         render: function () {
             local.template.empty().append(Template.render('scene', 'crm/scene'));
@@ -37,7 +37,7 @@ Scene.crm = (function (template) {
             this.changeParams(Router.getParams());
         },
         /**
-         * перезагрузка
+         * РїРµСЂРµР·Р°РіСЂСѓР·РєР°
          */
         reload: function () {
             local.table_list.css('left', '25%');
@@ -48,16 +48,16 @@ Scene.crm = (function (template) {
             this.drawCrms();
         },
         /**
-         * прорисовка списка
+         * РїСЂРѕСЂРёСЃРѕРІРєР° СЃРїРёСЃРєР°
          */
         drawCrms: function (callback) {
-            // очистим блок
+            // РѕС‡РёСЃС‚РёРј Р±Р»РѕРє
             local.crm_list.empty();
             local.table_list.empty().hide();
             let org = OrganizationBlock.getCurrentOrganization();
             let complete = function (local_crm) {
                 let list = local_crm.list();
-                // удалим элемнт данных о том, что мы смотрим другой уровень
+                // СѓРґР°Р»РёРј СЌР»РµРјРЅС‚ РґР°РЅРЅС‹С… Рѕ С‚РѕРј, С‡С‚Рѕ РјС‹ СЃРјРѕС‚СЂРёРј РґСЂСѓРіРѕР№ СѓСЂРѕРІРµРЅСЊ
                 local.scene.removeClass('table-lvl').removeClass('info-lvl');
                 for (let i = 0; i < list.length; i++) {
                     let crm = list[i];
@@ -81,7 +81,7 @@ Scene.crm = (function (template) {
             }
         },
         /**
-         * добавим триггеры
+         * РґРѕР±Р°РІРёРј С‚СЂРёРіРіРµСЂС‹
          */
         addListener: function () {
             local.crm_list.undelegate('.crm-squire', 'click').delegate('.crm-squire', 'click', function () {
@@ -89,7 +89,7 @@ Scene.crm = (function (template) {
             });
         },
         /**
-         * выбор группы
+         * РІС‹Р±РѕСЂ РіСЂСѓРїРїС‹
          * @param id
          * @param callback
          */
@@ -127,7 +127,7 @@ Scene.crm = (function (template) {
                         }
                     },
                     params: {
-                        title: 'Структура таблицы',
+                        title: 'РЎС‚СЂСѓРєС‚СѓСЂР° С‚Р°Р±Р»РёС†С‹',
                         content: function (block) {
                             self.drawTableParams(block);
                         }
@@ -185,22 +185,22 @@ Scene.crm = (function (template) {
             }
         },
         /**
-         * снять бинды со сцены
+         * СЃРЅСЏС‚СЊ Р±РёРЅРґС‹ СЃРѕ СЃС†РµРЅС‹
          * @param callback
          */
         unbindScene: function (callback) {
             callback();
         },
         /**
-         * смена параметров
+         * СЃРјРµРЅР° РїР°СЂР°РјРµС‚СЂРѕРІ
          * @param params
          */
         changeParams: function (params) {
             let buttons = {
                 'add_table': {
                     id: 'add_table',
-                    title: 'Новая таблица',
-                    icon: 'Добавить',
+                    title: 'РќРѕРІР°СЏ С‚Р°Р±Р»РёС†Р°',
+                    icon: 'Р”РѕР±Р°РІРёС‚СЊ',
                     rights: function () {
                         return OrganizationBlock.getCurrentOrganization().isEditable();
                     }(),
@@ -209,8 +209,8 @@ Scene.crm = (function (template) {
                 },
                 'remove_table': {
                     id: 'remove_table',
-                    title: 'Удалить таблицу',
-                    icon: 'Удалить',
+                    title: 'РЈРґР°Р»РёС‚СЊ С‚Р°Р±Р»РёС†Сѓ',
+                    icon: 'РЈРґР°Р»РёС‚СЊ',
                     rights: function () {
                         return OrganizationBlock.getCurrentOrganization().isEditable();
                     }(),
@@ -220,8 +220,8 @@ Scene.crm = (function (template) {
                 },
                 'new_field': {
                     id: 'new_field',
-                    title: 'Новая запись',
-                    icon: 'Добавить',
+                    title: 'РќРѕРІР°СЏ Р·Р°РїРёСЃСЊ',
+                    icon: 'Р”РѕР±Р°РІРёС‚СЊ',
                     rights: false,
                     callback: function () {
                         local.table.editRecord();
@@ -229,8 +229,8 @@ Scene.crm = (function (template) {
                 },
                 'remove_field': {
                     id: 'remove_field',
-                    title: 'Удалить записи',
-                    icon: 'Удалить',
+                    title: 'РЈРґР°Р»РёС‚СЊ Р·Р°РїРёСЃРё',
+                    icon: 'РЈРґР°Р»РёС‚СЊ',
                     rights: false,
                     callback: function () {
                         local.table.removeRecords();
@@ -238,8 +238,8 @@ Scene.crm = (function (template) {
                 },
                 'edit_field': {
                     id: 'edit_field',
-                    title: 'Редактировать запись',
-                    icon: 'Редактировать',
+                    title: 'Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ Р·Р°РїРёСЃСЊ',
+                    icon: 'Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ',
                     rights: false,
                     callback: function () {
                         let current = local.table.getCurrentRecord();
@@ -248,8 +248,8 @@ Scene.crm = (function (template) {
                 },
                 'clear_search': {
                     id: 'clear_search',
-                    title: 'Очистить поиск',
-                    icon: 'Очистить-поиск',
+                    title: 'РћС‡РёСЃС‚РёС‚СЊ РїРѕРёСЃРє',
+                    icon: 'РћС‡РёСЃС‚РёС‚СЊ-РїРѕРёСЃРє',
                     rights: false,
                     callback: function () {
                         local.table.clearSearch();

@@ -12,7 +12,7 @@ var Prostoy = (function () {
     /** public */
     return {
         /**
-         * добавим js
+         * РґРѕР±Р°РІРёРј js
          * @param array
          * @param success
          * @param error
@@ -29,7 +29,7 @@ var Prostoy = (function () {
             }, error);
         },
         /**
-         * грузим js
+         * РіСЂСѓР·РёРј js
          * @param src
          * @param onload
          * @param onerror
@@ -47,7 +47,7 @@ var Prostoy = (function () {
             document.head.appendChild(script);
         },
         /**
-         * добавим css
+         * РґРѕР±Р°РІРёРј css
          * @param array
          * @param callback
          * @returns {*}
@@ -63,7 +63,7 @@ var Prostoy = (function () {
             });
         },
         /**
-         * грузим css
+         * РіСЂСѓР·РёРј css
          * @param href
          * @param onload
          */
@@ -78,12 +78,12 @@ var Prostoy = (function () {
             head.appendChild(link);
         },
         /**
-         * начинаем работу приложения
-         * @param {function} callback - калбек
+         * РЅР°С‡РёРЅР°РµРј СЂР°Р±РѕС‚Сѓ РїСЂРёР»РѕР¶РµРЅРёСЏ
+         * @param {function} callback - РєР°Р»Р±РµРє
          */
         load: function (callback) {
             let self = this;
-            // применим конфиг для загрузки
+            // РїСЂРёРјРµРЅРёРј РєРѕРЅС„РёРі РґР»СЏ Р·Р°РіСЂСѓР·РєРё
             self.appendConfiguration(configs.on_load, function () {
                 /** append spy to change hash */
                 $(window).on('hashchange', function () {
@@ -91,47 +91,47 @@ var Prostoy = (function () {
                 });
                 callback();
                 Lang.loadConfig(function () {
-                    // стартуем авторизацию
+                    // СЃС‚Р°СЂС‚СѓРµРј Р°РІС‚РѕСЂРёР·Р°С†РёСЋ
                     Authorization.init(function () {
-                        // применим конфиг для работы
+                        // РїСЂРёРјРµРЅРёРј РєРѕРЅС„РёРі РґР»СЏ СЂР°Р±РѕС‚С‹
                         self.appendConfiguration(configs.on_start, function () {
                             setTimeout(function () {
-                                // строим каркас приложения
+                                // СЃС‚СЂРѕРёРј РєР°СЂРєР°СЃ РїСЂРёР»РѕР¶РµРЅРёСЏ
                                 Interface.renderCarcase();
-                                // блок с кнопками
+                                // Р±Р»РѕРє СЃ РєРЅРѕРїРєР°РјРё
                                 BBlock.initialization();
                                 // TODO test indexDB
                                 Database.init(function () {
-                                    // инициализция хранилища
+                                    // РёРЅРёС†РёР°Р»РёР·С†РёСЏ С…СЂР°РЅРёР»РёС‰Р°
                                     Dataset.init(function (last_id) {
                                         window.setTimeout(function () {
-                                            // проверим, если это 1 синхронизация,
-                                            // то получим новости и построим блок организации.
-                                            // иначе - строим блок и получаем новости
+                                            // РїСЂРѕРІРµСЂРёРј, РµСЃР»Рё СЌС‚Рѕ 1 СЃРёРЅС…СЂРѕРЅРёР·Р°С†РёСЏ,
+                                            // С‚Рѕ РїРѕР»СѓС‡РёРј РЅРѕРІРѕСЃС‚Рё Рё РїРѕСЃС‚СЂРѕРёРј Р±Р»РѕРє РѕСЂРіР°РЅРёР·Р°С†РёРё.
+                                            // РёРЅР°С‡Рµ - СЃС‚СЂРѕРёРј Р±Р»РѕРє Рё РїРѕР»СѓС‡Р°РµРј РЅРѕРІРѕСЃС‚Рё
                                             if (last_id != '0') {
-                                                // строим блок
+                                                // СЃС‚СЂРѕРёРј Р±Р»РѕРє
                                                 Interface.renderOrganizationBlock();
-                                                // строим блок
+                                                // СЃС‚СЂРѕРёРј Р±Р»РѕРє
                                                 Interface.renderUserBlock();
-                                                // сразу запустим шпиона
+                                                // СЃСЂР°Р·Сѓ Р·Р°РїСѓСЃС‚РёРј С€РїРёРѕРЅР°
                                                 Router.spy();
-                                                // получим новости
+                                                // РїРѕР»СѓС‡РёРј РЅРѕРІРѕСЃС‚Рё
                                                 Dataset.checkNews();
-                                                // другие сервисы
+                                                // РґСЂСѓРіРёРµ СЃРµСЂРІРёСЃС‹
                                                 self.startOtherServices();
                                             } else {
-                                                Interface.Load.show('Инициализация приложения');
-                                                // полная синхронизация
+                                                Interface.Load.show('РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РїСЂРёР»РѕР¶РµРЅРёСЏ');
+                                                // РїРѕР»РЅР°СЏ СЃРёРЅС…СЂРѕРЅРёР·Р°С†РёСЏ
                                                 Dataset.checkNews(function () {
                                                     Dataset.loadTasks(function () {
                                                         Interface.Load.hide();
-                                                        // строим блок
+                                                        // СЃС‚СЂРѕРёРј Р±Р»РѕРє
                                                         Interface.renderOrganizationBlock();
-                                                        // строим блок
+                                                        // СЃС‚СЂРѕРёРј Р±Р»РѕРє
                                                         Interface.renderUserBlock();
-                                                        // сразу запустим шпиона
+                                                        // СЃСЂР°Р·Сѓ Р·Р°РїСѓСЃС‚РёРј С€РїРёРѕРЅР°
                                                         Router.spy();
-                                                        // другие сервисы
+                                                        // РґСЂСѓРіРёРµ СЃРµСЂРІРёСЃС‹
                                                         self.startOtherServices();
                                                     });
                                                 });
@@ -146,10 +146,10 @@ var Prostoy = (function () {
             });
         },
         /**
-         * применяем конфиг
-         * подготовим массив с данными для загрузки
-         * @param {object} configuration объект с конфигом
-         * @param {function} callback_ - калбек функция
+         * РїСЂРёРјРµРЅСЏРµРј РєРѕРЅС„РёРі
+         * РїРѕРґРіРѕС‚РѕРІРёРј РјР°СЃСЃРёРІ СЃ РґР°РЅРЅС‹РјРё РґР»СЏ Р·Р°РіСЂСѓР·РєРё
+         * @param {object} configuration РѕР±СЉРµРєС‚ СЃ РєРѕРЅС„РёРіРѕРј
+         * @param {function} callback_ - РєР°Р»Р±РµРє С„СѓРЅРєС†РёСЏ
          * @returns {function} appendJs
          */
         appendConfiguration: function (configuration, callback_) {
@@ -188,7 +188,7 @@ var Prostoy = (function () {
             });
         },
         /**
-         * добавим сцену
+         * РґРѕР±Р°РІРёРј СЃС†РµРЅСѓ
          * @param scene_name
          * @param success_
          * @param error_

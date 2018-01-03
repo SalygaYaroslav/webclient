@@ -78,7 +78,7 @@ Crm.Tool = function () {
                     case 'ftCheckbox':
                         for (let i = 0; i < data.length; i++) {
                             let b = data[i].toBoolean();
-                            let v = (b) ? 'Äà' : 'Íåò';
+                            let v = (b) ? 'Ð”Ð°' : 'ÐÐµÑ‚';
                             if (typeof coloring != 'undefined' && typeof coloring['v_' + data[i]] != 'undefined') {
                                 let color = coloring['v_' + data[i]].replace('$00', '#');
                                 let style = 'background-color:' + color;
@@ -260,20 +260,20 @@ Crm.Tool = function () {
         },
         getListType: function (type) {
             let values = {
-                "ftFloat": "Âåùåñòâåííîå ÷èñëî",
-                "ftCombobox": "Âûïàäàþùèé ñïèñîê",
-                "ftCalc": "Âû÷èñëÿåìîå",
-                "time": "Âðåìÿ",
-                "date": "Äàòà",
-                "datetime": "Äàòà è âðåìÿ",
-                "datetime_separated": "Äàòà è âðåìÿ ðàçäåëüíî",
-                "ftImage": "Èçîáðàæåíèå",
-                "ftString": "Ñòðîêà",
-                "ftText": "Òåêñò",
-                "ftFile": "Ôàéë",
-                "ftInt": "×èñëî",
-                "ftLookup": "Ñâÿçàííîå ïîëå",
-                "ftCheckbox": "Ëîãè÷åñêîå"
+                "ftFloat": "Ð’ÐµÑ‰ÐµÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾",
+                "ftCombobox": "Ð’Ñ‹Ð¿Ð°Ð´Ð°ÑŽÑ‰Ð¸Ð¹ ÑÐ¿Ð¸ÑÐ¾Ðº",
+                "ftCalc": "Ð’Ñ‹Ñ‡Ð¸ÑÐ»ÑÐµÐ¼Ð¾Ðµ",
+                "time": "Ð’Ñ€ÐµÐ¼Ñ",
+                "date": "Ð”Ð°Ñ‚Ð°",
+                "datetime": "Ð”Ð°Ñ‚Ð° Ð¸ Ð²Ñ€ÐµÐ¼Ñ",
+                "datetime_separated": "Ð”Ð°Ñ‚Ð° Ð¸ Ð²Ñ€ÐµÐ¼Ñ Ñ€Ð°Ð·Ð´ÐµÐ»ÑŒÐ½Ð¾",
+                "ftImage": "Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ",
+                "ftString": "Ð¡Ñ‚Ñ€Ð¾ÐºÐ°",
+                "ftText": "Ð¢ÐµÐºÑÑ‚",
+                "ftFile": "Ð¤Ð°Ð¹Ð»",
+                "ftInt": "Ð§Ð¸ÑÐ»Ð¾",
+                "ftLookup": "Ð¡Ð²ÑÐ·Ð°Ð½Ð½Ð¾Ðµ Ð¿Ð¾Ð»Ðµ",
+                "ftCheckbox": "Ð›Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ"
             };
             return values[type] || '';
         }

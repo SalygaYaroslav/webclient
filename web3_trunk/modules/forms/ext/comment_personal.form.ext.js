@@ -9,7 +9,7 @@ Forms.CommentPersonal = function (data, callback) {
     };
     let self = {
         /**
-         * построим
+         * РїРѕСЃС‚СЂРѕРёРј
          */
         build: function () {
             let lang = Lang.get()['forms']['personal'];
@@ -149,14 +149,14 @@ Forms.CommentPersonal = function (data, callback) {
             return parent;
         },
         /**
-         * получим контент
+         * РїРѕР»СѓС‡РёРј РєРѕРЅС‚РµРЅС‚
          * @returns {null}
          */
         html: function () {
             return local.template;
         },
         /**
-         * вернем
+         * РІРµСЂРЅРµРј
          * @param callback
          */
         send: function (callback) {
@@ -197,7 +197,7 @@ Forms.CommentPersonal = function (data, callback) {
             }
         },
         /**
-         * перезагрузим
+         * РїРµСЂРµР·Р°РіСЂСѓР·РёРј
          */
         reload: function () {
 

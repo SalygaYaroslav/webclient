@@ -1,5 +1,5 @@
 /**
- * измененин категории коммента
+ * РёР·РјРµРЅРµРЅРёРЅ РєР°С‚РµРіРѕСЂРёРё РєРѕРјРјРµРЅС‚Р°
  * @param comment
  * @param success
  * @returns {*|Boolean}
@@ -29,10 +29,10 @@ Request.commentCategoryEdit = function (comment, category_id, success) {
                 ['com_header_' + comment.getId()]: function () {
                     let date = moment().format('DD.MM.YYYY  HH:mm');
                     let old_header = comment.getComHeader(true);
-                    //если в com_header уже была запись о смене категории, удаляем ее
+                    //РµСЃР»Рё РІ com_header СѓР¶Рµ Р±С‹Р»Р° Р·Р°РїРёСЃСЊ Рѕ СЃРјРµРЅРµ РєР°С‚РµРіРѕСЂРёРё, СѓРґР°Р»СЏРµРј РµРµ
                     if (old_header) {
                         old_header = old_header.replace(new RegExp('<category_changed.+/>', 'g'), '');
-                        //добавляем новую запись о смене категории
+                        //РґРѕР±Р°РІР»СЏРµРј РЅРѕРІСѓСЋ Р·Р°РїРёСЃСЊ Рѕ СЃРјРµРЅРµ РєР°С‚РµРіРѕСЂРёРё
                         old_header = old_header.replace(new RegExp('</comment_header>', 'g'), '<category_changed author="' + Authorization.getCurrentUser().getId() + '" date="' + date + '"/></comment_header>');
                     } else {
                         old_header = '<comment_header><category_changed author="' + Authorization.getCurrentUser().getId() + '" date="' + date + '"/></comment_header>'

@@ -1,5 +1,5 @@
 /**
- * модуль шаблонов
+ * РјРѕРґСѓР»СЊ С€Р°Р±Р»РѕРЅРѕРІ
  * @type {{getFromCache, render}}
  */
 var Template = (function () {
@@ -8,7 +8,7 @@ var Template = (function () {
     /** public */
     return {
         /**
-         * получим данные из кеша или добавим их в кеш
+         * РїРѕР»СѓС‡РёРј РґР°РЅРЅС‹Рµ РёР· РєРµС€Р° РёР»Рё РґРѕР±Р°РІРёРј РёС… РІ РєРµС€
          * @param url
          * @returns {*}
          */
@@ -16,8 +16,8 @@ var Template = (function () {
             if (typeof cache[url] != 'undefined') {
                 return cache[url];
             } else {
-                // нет в кеше, грузим и кешируем
-                // добавляем версию для очистки кеша
+                // РЅРµС‚ РІ РєРµС€Рµ, РіСЂСѓР·РёРј Рё РєРµС€РёСЂСѓРµРј
+                // РґРѕР±Р°РІР»СЏРµРј РІРµСЂСЃРёСЋ РґР»СЏ РѕС‡РёСЃС‚РєРё РєРµС€Р°
                 return cache[url] = $.ajax({
                     url: url + '?' + __web__.version,
                     contentType: 'text/html;charset=utf-8',
@@ -26,36 +26,36 @@ var Template = (function () {
             }
         },
         /**
-         * получим шаблон и применим его
-         * @param module название модуля
-         * @param name название файла без .html
-         * @param data данные
+         * РїРѕР»СѓС‡РёРј С€Р°Р±Р»РѕРЅ Рё РїСЂРёРјРµРЅРёРј РµРіРѕ
+         * @param module РЅР°Р·РІР°РЅРёРµ РјРѕРґСѓР»СЏ
+         * @param name РЅР°Р·РІР°РЅРёРµ С„Р°Р№Р»Р° Р±РµР· .html
+         * @param data РґР°РЅРЅС‹Рµ
          * @returns {*}
          */
         render: function (module, name, data) {
-            // проверка параметров
+            // РїСЂРѕРІРµСЂРєР° РїР°СЂР°РјРµС‚СЂРѕРІ
             if (typeof module == 'undefined' || typeof name == 'undefined') {
                 return '';
             }
             if (typeof data == 'undefined') {
                 data = {};
             }
-            // грузим шаблон
+            // РіСЂСѓР·РёРј С€Р°Р±Р»РѕРЅ
             let url = '/modules/' + module + '/template/' + name + '.html';
-            // проверяем кеш
+            // РїСЂРѕРІРµСЂСЏРµРј РєРµС€
             let str = this.getFromCache(url);
-            // передаем в плагин
+            // РїРµСЂРµРґР°РµРј РІ РїР»Р°РіРёРЅ
             return Mustache.render(str, {
                 text: Lang.get(),
                 data: data || {}
             });
         },
         vue: function (module, name) {
-            // проверка параметров
+            // РїСЂРѕРІРµСЂРєР° РїР°СЂР°РјРµС‚СЂРѕРІ
             if (typeof module == 'undefined' || typeof name == 'undefined') {
                 return '';
             }
-            // проверяем кеш
+            // РїСЂРѕРІРµСЂСЏРµРј РєРµС€
             return this.getFromCache('/modules/' + module + '/template/' + name + '.html');
         }
     };

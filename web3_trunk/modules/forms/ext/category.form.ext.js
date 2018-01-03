@@ -6,7 +6,7 @@ Forms.Category = function (comment) {
     };
     let self = {
         /**
-         * построим
+         * РїРѕСЃС‚СЂРѕРёРј
          */
         build: function () {
             let lang = Lang.get()['forms']['category'];
@@ -80,7 +80,7 @@ Forms.Category = function (comment) {
             }).show();
         },
         /**
-         * прорисовка блока категории
+         * РїСЂРѕСЂРёСЃРѕРІРєР° Р±Р»РѕРєР° РєР°С‚РµРіРѕСЂРёРё
          * @param parent
          */
         renderCategory: function (parent) {
@@ -123,7 +123,7 @@ Forms.Category = function (comment) {
 
         },
         /**
-         * прорисовка блока истории
+         * РїСЂРѕСЂРёСЃРѕРІРєР° Р±Р»РѕРєР° РёСЃС‚РѕСЂРёРё
          * @param parent
          */
         renderHistory: function (parent) {
@@ -159,14 +159,14 @@ Forms.Category = function (comment) {
             parent.append(table.html());
         },
         /**
-         * получим контент
+         * РїРѕР»СѓС‡РёРј РєРѕРЅС‚РµРЅС‚
          * @returns {null}
          */
         html: function () {
             return local.template;
         },
         /**
-         * отправим на сервер
+         * РѕС‚РїСЂР°РІРёРј РЅР° СЃРµСЂРІРµСЂ
          * @param callback
          */
         send: function (callback) {
@@ -175,7 +175,7 @@ Forms.Category = function (comment) {
             });
         },
         /**
-         * перезагрузим
+         * РїРµСЂРµР·Р°РіСЂСѓР·РёРј
          */
         reload: function () {
 

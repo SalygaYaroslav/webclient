@@ -1,5 +1,5 @@
 /**
- * модуль блока организации
+ * РјРѕРґСѓР»СЊ Р±Р»РѕРєР° РѕСЂРіР°РЅРёР·Р°С†РёРё
  * @type {{init, render, changeOrg, changOrgTitle, checkIsNeedChangeScene, getCurrentOrganization}}
  */
 var OrganizationBlock = (function () {
@@ -7,7 +7,7 @@ var OrganizationBlock = (function () {
     let local = {
         current: 'other',
         list: {
-            'other': 'Личное'
+            'other': 'Р›РёС‡РЅРѕРµ'
         },
         array: [],
         main_block: null,
@@ -17,7 +17,7 @@ var OrganizationBlock = (function () {
     /** public */
     return {
         /**
-         * инициализация блока организации
+         * РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ Р±Р»РѕРєР° РѕСЂРіР°РЅРёР·Р°С†РёРё
          * @param block
          * @returns {boolean}
          */
@@ -51,22 +51,22 @@ var OrganizationBlock = (function () {
             // push other
             local.list['other'] = {
                 id: 'other',
-                name: 'Личное',
+                name: 'Р›РёС‡РЅРѕРµ',
                 avatar: 'personal'
             };
             local.array.push({
-                name: 'Личное',
+                name: 'Р›РёС‡РЅРѕРµ',
                 id: 'other',
                 avatar: 'personal'
             });
-            // получим данные из хранилища
+            // РїРѕР»СѓС‡РёРј РґР°РЅРЅС‹Рµ РёР· С…СЂР°РЅРёР»РёС‰Р°
             local.current = Dataset.getCustomStorage('organization') || 'other';
             this.render();
             this.changeOrg(local.current);
             return true;
         },
         /**
-         * рендерим селекты
+         * СЂРµРЅРґРµСЂРёРј СЃРµР»РµРєС‚С‹
          * @returns {*}
          */
         render: function () {
@@ -129,8 +129,8 @@ var OrganizationBlock = (function () {
             // return template.appendTo(local.main_block);
         },
         /**
-         * смена орг
-         * @param id ид орг
+         * СЃРјРµРЅР° РѕСЂРі
+         * @param id РёРґ РѕСЂРі
          * @returns {*|Boolean}
          */
         changeOrg: function (id) {
@@ -140,7 +140,7 @@ var OrganizationBlock = (function () {
             // local.list_block.find('.organization-item#' + id).addClass('hidden');
             // local.main_block.removeClass('show-list');
             // $('body').off('click.organization_select');
-            // // перестроим кноки
+            // // РїРµСЂРµСЃС‚СЂРѕРёРј РєРЅРѕРєРё
             // return this.checkIsNeedChangeScene();
         },
         changOrgTitle: function (id) {
@@ -149,17 +149,17 @@ var OrganizationBlock = (function () {
             //     + '<span class="organization-item-avatar ' + local.list[id].avatar + '"></span>'
             //     + '<span class="organization-item-name">' + local.list[id].name + '</span>'
             //     + '</div>');
-            // // сохраним
+            // // СЃРѕС…СЂР°РЅРёРј
             // Dataset.setCustomStorage('organization', local.current);
             // Interface.reloadNavigateButton(local.current == 'other');
         },
         /**
-         * проверка, личное\орг
+         * РїСЂРѕРІРµСЂРєР°, Р»РёС‡РЅРѕРµ\РѕСЂРі
          * @returns {boolean}
          */
         checkIsNeedChangeScene: function () {
             let scene_name = Scene.getSceneName();
-            // инфо\анкета
+            // РёРЅС„Рѕ\Р°РЅРєРµС‚Р°
             if (scene_name == 'profile' && local.current != 'other') {
                 Router.goToUrl('info');
                 return true;
@@ -168,7 +168,7 @@ var OrganizationBlock = (function () {
                 Router.goToUrl('profile');
                 return true;
             }
-            // друзья\пользователи
+            // РґСЂСѓР·СЊСЏ\РїРѕР»СЊР·РѕРІР°С‚РµР»Рё
             if (scene_name == 'friends' && local.current != 'other') {
                 Router.goToUrl('users');
                 return true;
@@ -182,7 +182,7 @@ var OrganizationBlock = (function () {
             }
         },
         /**
-         * вернем текущую организацию
+         * РІРµСЂРЅРµРј С‚РµРєСѓС‰СѓСЋ РѕСЂРіР°РЅРёР·Р°С†РёСЋ
          */
         getCurrentOrganization: function () {
             return Dataset.get('organization',local.current);

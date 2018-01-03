@@ -1,5 +1,5 @@
 /**
- * сцена контакты
+ * СЃС†РµРЅР° РєРѕРЅС‚Р°РєС‚С‹
  * @type {Function}
  */
 Scene.contacts = (function (template) {
@@ -19,7 +19,7 @@ Scene.contacts = (function (template) {
     /** public */
     return {
         /**
-         * инициализация
+         * РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ
          * @returns {Scene.contacts}
          */
         init: function () {
@@ -28,7 +28,7 @@ Scene.contacts = (function (template) {
             return this;
         },
         /**
-         * прорисовка
+         * РїСЂРѕСЂРёСЃРѕРІРєР°
          */
         render: function () {
             local.template.empty().append(Template.render('scene', 'contacts/scene'));
@@ -39,12 +39,12 @@ Scene.contacts = (function (template) {
             this.addListener();
         },
         /**
-         * прорисовка групп
+         * РїСЂРѕСЂРёСЃРѕРІРєР° РіСЂСѓРїРї
          */
         drawGroups: function () {
             let org = OrganizationBlock.getCurrentOrganization();
             let groups = local.group_array = org.getContactsGroup();
-            // удалим элемнт данных о том, что мы смотрим другой уровень
+            // СѓРґР°Р»РёРј СЌР»РµРјРЅС‚ РґР°РЅРЅС‹С… Рѕ С‚РѕРј, С‡С‚Рѕ РјС‹ СЃРјРѕС‚СЂРёРј РґСЂСѓРіРѕР№ СѓСЂРѕРІРµРЅСЊ
             local.scene.removeClass('contact-lvl').removeClass('info-lvl');
             // sort
             groups.sort(function (a, b) {
@@ -67,16 +67,16 @@ Scene.contacts = (function (template) {
             }
         },
         /**
-         * прорисовка контактов
+         * РїСЂРѕСЂРёСЃРѕРІРєР° РєРѕРЅС‚Р°РєС‚РѕРІ
          * @param group_id
          * @param callback
          */
         drawContacts: function (group_id, callback) {
-            // очистим список старых задач
+            // РѕС‡РёСЃС‚РёРј СЃРїРёСЃРѕРє СЃС‚Р°СЂС‹С… Р·Р°РґР°С‡
             local.contact_array = [];
-            // очистим блок
+            // РѕС‡РёСЃС‚РёРј Р±Р»РѕРє
             local.contacts_list.empty();
-            // удалим элемнт данных о том, что мы смотрим другой уровень
+            // СѓРґР°Р»РёРј СЌР»РµРјРЅС‚ РґР°РЅРЅС‹С… Рѕ С‚РѕРј, С‡С‚Рѕ РјС‹ СЃРјРѕС‚СЂРёРј РґСЂСѓРіРѕР№ СѓСЂРѕРІРµРЅСЊ
             local.scene.removeClass('info-lvl');
             local.scene.addClass('contact-lvl');
             let group = Dataset.get('project',group_id);
@@ -107,7 +107,7 @@ Scene.contacts = (function (template) {
             });
         },
         /**
-         * добавим триггеры
+         * РґРѕР±Р°РІРёРј С‚СЂРёРіРіРµСЂС‹
          */
         addListener: function () {
             local.groups_list.undelegate('.contact-group-squire', 'click').delegate('.contact-group-squire', 'click', function () {
@@ -118,7 +118,7 @@ Scene.contacts = (function (template) {
             });
         },
         /**
-         * выбор группы
+         * РІС‹Р±РѕСЂ РіСЂСѓРїРїС‹
          * @param id
          * @param callback
          */
@@ -141,7 +141,7 @@ Scene.contacts = (function (template) {
             }
         },
         /**
-         * выбор контакта
+         * РІС‹Р±РѕСЂ РєРѕРЅС‚Р°РєС‚Р°
          * @param id
          * @param callback
          */
@@ -154,7 +154,7 @@ Scene.contacts = (function (template) {
             }
         },
         /**
-         * снять выбор с контакта
+         * СЃРЅСЏС‚СЊ РІС‹Р±РѕСЂ СЃ РєРѕРЅС‚Р°РєС‚Р°
          * @param contact_id
          */
         unSelectContact: function (contact_id) {
@@ -162,7 +162,7 @@ Scene.contacts = (function (template) {
             local.selected_contact_id = null;
         },
         /**
-         * прорисуем табуляторы для контакта
+         * РїСЂРѕСЂРёСЃСѓРµРј С‚Р°Р±СѓР»СЏС‚РѕСЂС‹ РґР»СЏ РєРѕРЅС‚Р°РєС‚Р°
          * @param contact_id
          */
         drawContactTabs: function (contact_id) {
@@ -180,7 +180,7 @@ Scene.contacts = (function (template) {
             local.info_block.append(tabs.html());
         },
         /**
-         * прорисуем табуляторы для группы
+         * РїСЂРѕСЂРёСЃСѓРµРј С‚Р°Р±СѓР»СЏС‚РѕСЂС‹ РґР»СЏ РіСЂСѓРїРїС‹
          * @param group_id
          */
         drawGroupTabs: function (group_id) {
@@ -202,26 +202,26 @@ Scene.contacts = (function (template) {
             local.info_block.append(tabs.html());
         },
         /**
-         * перезагрузка
+         * РїРµСЂРµР·Р°РіСЂСѓР·РєР°
          */
         reload: function () {
-            // обнулим
+            // РѕР±РЅСѓР»РёРј
             local.selected_group_id = null;
             local.selected_contact_id = null;
-            // рисуем
+            // СЂРёСЃСѓРµРј
             Router.changeParams([]);
             this.render();
             this.drawGroups();
         },
         /**
-         * снять бинды со сцены
+         * СЃРЅСЏС‚СЊ Р±РёРЅРґС‹ СЃРѕ СЃС†РµРЅС‹
          * @param callback
          */
         unbindScene: function (callback) {
             callback();
         },
         /**
-         * смена параметров
+         * СЃРјРµРЅР° РїР°СЂР°РјРµС‚СЂРѕРІ
          * @param params
          */
         changeParams: function (params) {

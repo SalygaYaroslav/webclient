@@ -11,7 +11,7 @@ var Group = function (id) {
         entity: null
     };
     /**
-     * сделаем орг. по-умолчанию
+     * СЃРґРµР»Р°РµРј РѕСЂРі. РїРѕ-СѓРјРѕР»С‡Р°РЅРёСЋ
      * @param id
      */
     let setDefaultOrgGroup = function (id) {
@@ -42,7 +42,7 @@ var Group = function (id) {
     return {
         classname: classname,
         /**
-         * получим поле
+         * РїРѕР»СѓС‡РёРј РїРѕР»Рµ
          * @param field
          * @returns {*|string}
          */
@@ -50,7 +50,7 @@ var Group = function (id) {
             return local.entity[field] || '';
         },
         /**
-         * введем данные
+         * РІРІРµРґРµРј РґР°РЅРЅС‹Рµ
          * @param group
          * @returns {Group}
          */
@@ -67,7 +67,7 @@ var Group = function (id) {
             return this;
         },
         /**
-         * удалим из хранилища
+         * СѓРґР°Р»РёРј РёР· С…СЂР°РЅРёР»РёС‰Р°
          */
         remove: function () {
             let entities = Dataset.storage.data.entities['groups'];
@@ -76,21 +76,21 @@ var Group = function (id) {
             }
         },
         /**
-         * получим ид
+         * РїРѕР»СѓС‡РёРј РёРґ
          * @returns {string|string}
          */
         getId: function () {
             return local.entity.id || '';
         },
         /**
-         * получим имя
+         * РїРѕР»СѓС‡РёРј РёРјСЏ
          * @returns {string}
          */
         getName: function () {
             return local.entity.name || '';
         },
         /**
-         * получим список юзеров
+         * РїРѕР»СѓС‡РёРј СЃРїРёСЃРѕРє СЋР·РµСЂРѕРІ
          * @param asEntity
          * @returns {Array}
          */

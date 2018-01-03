@@ -5,7 +5,7 @@
 var Elements = (function () {
     return {
         /**
-         * поиск
+         * РїРѕРёСЃРє
          * @param id
          * @param keyup
          */
@@ -31,7 +31,7 @@ var Elements = (function () {
             return div.data({input: input, clear: clear});
         },
         /**
-         * текстовое поле
+         * С‚РµРєСЃС‚РѕРІРѕРµ РїРѕР»Рµ
          * @param id
          * @param placeholder
          */
@@ -44,7 +44,7 @@ var Elements = (function () {
             return div.data({input: input});
         },
         /**
-         * кнопка
+         * РєРЅРѕРїРєР°
          * @param id
          * @param text
          * @param additional_class
@@ -58,7 +58,7 @@ var Elements = (function () {
             return div.data({button: div});
         },
         /**
-         * чекбокс
+         * С‡РµРєР±РѕРєСЃ
          * @param id
          * @param text
          * @param state
@@ -74,7 +74,7 @@ var Elements = (function () {
             return div.data({checkbox: checkbox});
         },
         /**
-         * комбобокс
+         * РєРѕРјР±РѕР±РѕРєСЃ
          * @param id
          * @param array_of_elements
          * @param default_value
@@ -90,7 +90,7 @@ var Elements = (function () {
             return div.data({});
         },
         /**
-         * текстовое поле
+         * С‚РµРєСЃС‚РѕРІРѕРµ РїРѕР»Рµ
          * @param id
          * @param text
          * @param placeholder

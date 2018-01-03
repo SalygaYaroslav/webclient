@@ -22,7 +22,7 @@ var Task = function (id) {
     return {
         classname: classname,
         /**
-         * получим поле
+         * РїРѕР»СѓС‡РёРј РїРѕР»Рµ
          * @param field
          * @returns {*|string}
          */
@@ -30,7 +30,7 @@ var Task = function (id) {
             return local.entity[field] || '';
         },
         /**
-         * введем данные
+         * РІРІРµРґРµРј РґР°РЅРЅС‹Рµ
          * @param task
          * @returns {Task}
          */
@@ -55,7 +55,7 @@ var Task = function (id) {
             return self;
         },
         /**
-         * удалим из хранилища
+         * СѓРґР°Р»РёРј РёР· С…СЂР°РЅРёР»РёС‰Р°
          */
         remove: function () {
             let self = this;
@@ -69,21 +69,21 @@ var Task = function (id) {
             }
         },
         /**
-         * получим ид
+         * РїРѕР»СѓС‡РёРј РёРґ
          * @returns {string}
          */
         getId: function () {
             return (local.entity != null) ? local.entity.id : '';
         },
         /**
-         * получим родительский проект
+         * РїРѕР»СѓС‡РёРј СЂРѕРґРёС‚РµР»СЊСЃРєРёР№ РїСЂРѕРµРєС‚
          * @returns {Project}
          */
         getParentProject: function () {
             return Dataset.get('project',local.entity['projectid']);
         },
         /**
-         * получим имя
+         * РїРѕР»СѓС‡РёРј РёРјСЏ
          * @returns {string}
          */
         getName: function () {
@@ -114,7 +114,7 @@ var Task = function (id) {
             }
         },
         /**
-         * получим автора
+         * РїРѕР»СѓС‡РёРј Р°РІС‚РѕСЂР°
          * @returns {*}
          */
         getAuthor: function () {
@@ -130,7 +130,7 @@ var Task = function (id) {
             Dataset.save();
         },
         /**
-         * получим имя автора
+         * РїРѕР»СѓС‡РёРј РёРјСЏ Р°РІС‚РѕСЂР°
          * @returns {*}
          */
         getAuthorName: function () {
@@ -142,7 +142,7 @@ var Task = function (id) {
             }
         },
         /**
-         * проверим контакт ли это
+         * РїСЂРѕРІРµСЂРёРј РєРѕРЅС‚Р°РєС‚ Р»Рё СЌС‚Рѕ
          * @returns {boolean}
          */
         isContact: function () {
@@ -187,28 +187,28 @@ var Task = function (id) {
             let speakers = self.getEntityField('speakers');
             let writers = self.getEntityField('writers');
             let id = user.getId();
-            //проверяем есть ли у пользователя доступ к задаче
-            //если пользователь есть в task.particular_users
+            //РїСЂРѕРІРµСЂСЏРµРј РµСЃС‚СЊ Р»Рё Сѓ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РґРѕСЃС‚СѓРї Рє Р·Р°РґР°С‡Рµ
+            //РµСЃР»Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РµСЃС‚СЊ РІ task.particular_users
             if (particular_users && $.inArray(id, particular_users.split(',')) != -1) {
                 return true;
             }
-            //если пользователь есть в task.speakers(кто отписывался в задаче) и нет в task.writers(кому были персональные комменты в задаче)
+            //РµСЃР»Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РµСЃС‚СЊ РІ task.speakers(РєС‚Рѕ РѕС‚РїРёСЃС‹РІР°Р»СЃСЏ РІ Р·Р°РґР°С‡Рµ) Рё РЅРµС‚ РІ task.writers(РєРѕРјСѓ Р±С‹Р»Рё РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹Рµ РєРѕРјРјРµРЅС‚С‹ РІ Р·Р°РґР°С‡Рµ)
             if ((speakers && $.inArray(id, speakers.split(',')) != -1) && (!writers || $.inArray(id, writers.split(',')) == -1)) {
                 return true;
             }
-            //если у пользователя есть доступ к проекту
+            //РµСЃР»Рё Сѓ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РµСЃС‚СЊ РґРѕСЃС‚СѓРї Рє РїСЂРѕРµРєС‚Сѓ
             try {
                 let project = self.getParentProject();
                 if (project.getEntityField('admin_users').indexOf(id) != '-1') {
-                    return true; // в админах
+                    return true; // РІ Р°РґРјРёРЅР°С…
                 }
                 if (project.getEntityField('modify_users').indexOf(id) != '-1') {
-                    return true; // в пользовтелях с доступом на изменение
+                    return true; // РІ РїРѕР»СЊР·РѕРІС‚РµР»СЏС… СЃ РґРѕСЃС‚СѓРїРѕРј РЅР° РёР·РјРµРЅРµРЅРёРµ
                 }
                 if (project.getEntityField('read_users').indexOf(id) != '-1') {
-                    return true; // в пользовтелях с доступом на чтение
+                    return true; // РІ РїРѕР»СЊР·РѕРІС‚РµР»СЏС… СЃ РґРѕСЃС‚СѓРїРѕРј РЅР° С‡С‚РµРЅРёРµ
                 }
-                //если пользователь является админом организации
+                //РµСЃР»Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ СЏРІР»СЏРµС‚СЃСЏ Р°РґРјРёРЅРѕРј РѕСЂРіР°РЅРёР·Р°С†РёРё
                 let org = project.getParentOrganization();
                 if (org.isAdmin(id)) {
                     return true;
@@ -236,8 +236,8 @@ var Task = function (id) {
             );
         },
         /**
-         * данные в форму
-         * @param config конфиг данных
+         * РґР°РЅРЅС‹Рµ РІ С„РѕСЂРјСѓ
+         * @param config РєРѕРЅС„РёРі РґР°РЅРЅС‹С…
          * @returns {{}}
          */
         getDataToForm: function (config) {

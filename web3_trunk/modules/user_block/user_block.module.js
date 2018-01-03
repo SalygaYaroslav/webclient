@@ -1,5 +1,5 @@
 /**
- * блок юзера
+ * Р±Р»РѕРє СЋР·РµСЂР°
  * @type {{init, render}}
  */
 var UserBlock = (function () {
@@ -10,7 +10,7 @@ var UserBlock = (function () {
     /** public */
     return {
         /**
-         * инициализация блока организации
+         * РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ Р±Р»РѕРєР° РѕСЂРіР°РЅРёР·Р°С†РёРё
          * @param block
          * @returns {boolean}
          */
@@ -20,7 +20,7 @@ var UserBlock = (function () {
             return this;
         },
         /**
-         * рендерим селекты
+         * СЂРµРЅРґРµСЂРёРј СЃРµР»РµРєС‚С‹
          * @returns {*}
          */
         render: function () {
@@ -40,28 +40,28 @@ var UserBlock = (function () {
                     list: [
                         {
                             id: 'profile',
-                            icon: 'Анкета',
+                            icon: 'РђРЅРєРµС‚Р°',
                             title: lang.profile,
                             callback: function () {
                             }
                         },
                         {
                             id: 'personal_billing',
-                            icon: 'Личный-счет',
+                            icon: 'Р›РёС‡РЅС‹Р№-СЃС‡РµС‚',
                             title: lang.personal_billing,
                             callback: function () {
                             }
                         },
                         {
                             id: 'organization_billing',
-                            icon: 'Счет-организации',
+                            icon: 'РЎС‡РµС‚-РѕСЂРіР°РЅРёР·Р°С†РёРё',
                             title: lang.organization_billing,
                             callback: function () {
                             }
                         },
                         {
                             id: 'params',
-                            icon: 'Настройки',
+                            icon: 'РќР°СЃС‚СЂРѕР№РєРё',
                             title: lang.properties,
                             callback: function () {
                                 let params = new Authorization.Params();
@@ -70,7 +70,7 @@ var UserBlock = (function () {
                         },
                         {
                             id: 'storage',
-                            icon: 'Очистить-хранилище',
+                            icon: 'РћС‡РёСЃС‚РёС‚СЊ-С…СЂР°РЅРёР»РёС‰Рµ',
                             title: lang.clear_storage,
                             callback: function () {
                                 Dataset.flushStorage();
@@ -78,7 +78,7 @@ var UserBlock = (function () {
                         },
                         {
                             id: 'exit',
-                            icon: 'Закрыть8',
+                            icon: 'Р—Р°РєСЂС‹С‚СЊ8',
                             title: lang.exit,
                             callback: function () {
                                 Authorization.logout();
@@ -105,7 +105,7 @@ var UserBlock = (function () {
             });
         },
         /**
-         * калбеки
+         * РєР°Р»Р±РµРєРё
          */
         bind: function () {
             // local.main_block.on('click', function () {

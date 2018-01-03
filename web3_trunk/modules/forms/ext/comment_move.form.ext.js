@@ -10,7 +10,7 @@ Forms.CommentMove = function (comment) {
     };
     let self = {
         /**
-         * построим
+         * РїРѕСЃС‚СЂРѕРёРј
          */
         build: function () {
             let lang = Lang.get()['forms']['comment_move'];
@@ -78,7 +78,7 @@ Forms.CommentMove = function (comment) {
             }).show();
         },
         /**
-         * прорисовка блока задачи
+         * РїСЂРѕСЂРёСЃРѕРІРєР° Р±Р»РѕРєР° Р·Р°РґР°С‡Рё
          * @param parent
          */
         renderTask: function (parent) {
@@ -86,21 +86,21 @@ Forms.CommentMove = function (comment) {
             tree.appendTo(parent);
         },
         // /**
-        //  * прорисовка блока таблицы
+        //  * РїСЂРѕСЂРёСЃРѕРІРєР° Р±Р»РѕРєР° С‚Р°Р±Р»РёС†С‹
         //  * @param parent
         //  */
         // renderTable: function (parent) {
         //
         // },
         /**
-         * получим контент
+         * РїРѕР»СѓС‡РёРј РєРѕРЅС‚РµРЅС‚
          * @returns {null}
          */
         html: function () {
             return local.template;
         },
         /**
-         * отправим на сервер
+         * РѕС‚РїСЂР°РІРёРј РЅР° СЃРµСЂРІРµСЂ
          * @param callback
          */
         send: function (callback) {
@@ -117,7 +117,7 @@ Forms.CommentMove = function (comment) {
             }
         },
         /**
-         * перезагрузим
+         * РїРµСЂРµР·Р°РіСЂСѓР·РёРј
          */
         reload: function () {
 

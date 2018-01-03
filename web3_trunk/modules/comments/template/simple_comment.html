@@ -27,7 +27,7 @@
             {{#files}}
             <div class="attach-block">
                 {{^preview}}
-                <span class="icon-Ôàéë"></span>
+                <span class="icon-Ð¤Ð°Ð¹Ð»"></span>
                 {{/preview}}
                 <a href="{{link}}" class="{{type.type}} attach --webfile"
                    target="_blank" title="{{name}} {{humanize_size}}">
@@ -50,11 +50,11 @@
         {{/data.category.full}}
         {{/data.category}}{{^data.hide_like}}
         <div class="like" title="{{data.likes.like_title}}" rel="{{data.likes.like_ids}}">
-            <span class="icon-Íðàâèòñÿ"></span>
+            <span class="icon-ÐÑ€Ð°Ð²Ð¸Ñ‚ÑÑ"></span>
             {{data.likes.like}}
         </div>
         <div class="dislike" title="{{data.likes.dislike_title}}" rel="{{data.likes.dislike_ids}}">
-            <span class=" icon-Íå-íðàâèòñÿ"></span>
+            <span class=" icon-ÐÐµ-Ð½Ñ€Ð°Ð²Ð¸Ñ‚ÑÑ"></span>
             {{data.likes.dislike}}
         </div>
         {{/data.hide_like}}
@@ -62,16 +62,16 @@
 </div>
 <div class="comment-buttons">
     {{#data.is_email}}
-    <div class="button" id="resend"><span class="icon-Ïåðåñëàòü"></span>{{text.comment.button.resend}}</div>
+    <div class="button" id="resend"><span class="icon-ÐŸÐµÑ€ÐµÑÐ»Ð°Ñ‚ÑŒ"></span>{{text.comment.button.resend}}</div>
     {{/data.is_email}}
-    <div class="button" id="copy"><span class="icon-Êîïèðîâàòü"></span>{{text.comment.button.copy}}</div>
-    <div class="button" id="copy_link"><span class="icon-Ñêîïèðîâàòü-ññûëêó"></span>{{text.comment.button.copy_link}}
+    <div class="button" id="copy"><span class="icon-ÐšÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ"></span>{{text.comment.button.copy}}</div>
+    <div class="button" id="copy_link"><span class="icon-Ð¡ÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ-ÑÑÑ‹Ð»ÐºÑƒ"></span>{{text.comment.button.copy_link}}
     </div>
-    <div class="button" id="quote"><span class="icon-Öèòèðîâàòü"></span>{{text.comment.button.quote}}</div>
-    <div class="button" id="category"><span class="icon-Êàòåãîðèÿ"></span>{{text.comment.button.category}}</div>
-    <div class="button" id="favorite"><span class="rel icon-Èçáðàííîå" rel="{{data.is_favorite}}"></span>{{text.comment.button.favorite}}
+    <div class="button" id="quote"><span class="icon-Ð¦Ð¸Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ"></span>{{text.comment.button.quote}}</div>
+    <div class="button" id="category"><span class="icon-ÐšÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ñ"></span>{{text.comment.button.category}}</div>
+    <div class="button" id="favorite"><span class="rel icon-Ð˜Ð·Ð±Ñ€Ð°Ð½Ð½Ð¾Ðµ" rel="{{data.is_favorite}}"></span>{{text.comment.button.favorite}}
     </div>
-    <!--<div class="button" id="job_open"><span class="icon-Íîâîå-äåëî"></span>{{text.comment.button.job}}</div>-->
-    <div class="button" id="move"><span class="icon-Ïåðåíåñòè"></span>{{text.comment.button.move}}</div>
+    <!--<div class="button" id="job_open"><span class="icon-ÐÐ¾Ð²Ð¾Ðµ-Ð´ÐµÐ»Ð¾"></span>{{text.comment.button.job}}</div>-->
+    <div class="button" id="move"><span class="icon-ÐŸÐµÑ€ÐµÐ½ÐµÑÑ‚Ð¸"></span>{{text.comment.button.move}}</div>
 </div>
 </div>

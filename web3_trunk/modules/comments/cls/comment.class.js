@@ -1,8 +1,8 @@
 /**
- * сущность коммент
- * @param data - данные
- * @param likes - лайки
- * @param callbacks - калбек
+ * СЃСѓС‰РЅРѕСЃС‚СЊ РєРѕРјРјРµРЅС‚
+ * @param data - РґР°РЅРЅС‹Рµ
+ * @param likes - Р»Р°Р№РєРё
+ * @param callbacks - РєР°Р»Р±РµРє
  * @returns {*}
  * @constructor
  */
@@ -20,7 +20,7 @@ window.Comment = function (data, likes, callbacks) {
         }
     };
     /** constructor */
-    /** если xml пустая - вернем пустое */
+    /** РµСЃР»Рё xml РїСѓСЃС‚Р°СЏ - РІРµСЂРЅРµРј РїСѓСЃС‚РѕРµ */
     if (typeof data == 'undefined') {
         return {
             empty: true
@@ -39,7 +39,7 @@ Comment.prototype.getEntityField = function (field) {
     }
 };
 /**
- * получим ид
+ * РїРѕР»СѓС‡РёРј РёРґ
  * @returns {string}
  */
 Comment.prototype.getId = function () {
@@ -50,7 +50,7 @@ Comment.prototype.getId = function () {
     }
 };
 /**
- * получим родительскую задачу
+ * РїРѕР»СѓС‡РёРј СЂРѕРґРёС‚РµР»СЊСЃРєСѓСЋ Р·Р°РґР°С‡Сѓ
  * @returns {*}
  */
 Comment.prototype.getParentTask = function () {
@@ -61,7 +61,7 @@ Comment.prototype.getParentTask = function () {
     }
 };
 /**
- * получим аватар создателя
+ * РїРѕР»СѓС‡РёРј Р°РІР°С‚Р°СЂ СЃРѕР·РґР°С‚РµР»СЏ
  * @returns {string}
  */
 Comment.prototype.getAuthorAvatar = function () {
@@ -87,7 +87,7 @@ Comment.prototype.getAuthorAvatar = function () {
     }
 };
 /**
- * получим имя создателя
+ * РїРѕР»СѓС‡РёРј РёРјСЏ СЃРѕР·РґР°С‚РµР»СЏ
  * @returns {string}
  */
 Comment.prototype.getAuthorName = function () {
@@ -119,7 +119,7 @@ Comment.prototype.getAuthorName = function () {
     }
 };
 /**
- * получим дату создания
+ * РїРѕР»СѓС‡РёРј РґР°С‚Сѓ СЃРѕР·РґР°РЅРёСЏ
  * @returns {*}
  */
 Comment.prototype.getCreatedDate = function () {
@@ -141,8 +141,8 @@ Comment.prototype.getIsEmail = function () {
     return type;
 };
 /**
- * получим контект
- * @param original - вывести без обработки
+ * РїРѕР»СѓС‡РёРј РєРѕРЅС‚РµРєС‚
+ * @param original - РІС‹РІРµСЃС‚Рё Р±РµР· РѕР±СЂР°Р±РѕС‚РєРё
  * @returns {boolean}
  */
 Comment.prototype.getContent = function (original) {
@@ -168,7 +168,7 @@ Comment.prototype.getContent = function (original) {
     }
 };
 /**
- * проверка пересылки письма
+ * РїСЂРѕРІРµСЂРєР° РїРµСЂРµСЃС‹Р»РєРё РїРёСЃСЊРјР°
  * @returns {string}
  */
 Comment.prototype.checkResendMail = function () {
@@ -187,14 +187,14 @@ Comment.prototype.checkResendMail = function () {
     }
 };
 /**
- * получим тело коммента
+ * РїРѕР»СѓС‡РёРј С‚РµР»Рѕ РєРѕРјРјРµРЅС‚Р°
  * @returns {*|tabs.items.comment|{title, content, callback}|comment|{template, list, form, block}|string}
  */
 Comment.prototype.getBody = function () {
     return this.local.fields.comment || this.local.fields.message || '';
 };
 /**
- * получим контент текста для копирования
+ * РїРѕР»СѓС‡РёРј РєРѕРЅС‚РµРЅС‚ С‚РµРєСЃС‚Р° РґР»СЏ РєРѕРїРёСЂРѕРІР°РЅРёСЏ
  * @returns {*}
  */
 Comment.prototype.getContentToCopy = function () {
@@ -206,7 +206,7 @@ Comment.prototype.getContentToCopy = function () {
     }
 };
 /**
- * получим текст цитаты
+ * РїРѕР»СѓС‡РёРј С‚РµРєСЃС‚ С†РёС‚Р°С‚С‹
  * @returns {*}
  */
 Comment.prototype.getQuoteText = function () {
@@ -216,7 +216,7 @@ Comment.prototype.getQuoteText = function () {
     return content;
 };
 /**
- * получим текст для пересылки
+ * РїРѕР»СѓС‡РёРј С‚РµРєСЃС‚ РґР»СЏ РїРµСЂРµСЃС‹Р»РєРё
  * @returns {string}
  */
 Comment.prototype.getReplyText = function () {
@@ -230,7 +230,7 @@ Comment.prototype.getReplyText = function () {
     return text;
 };
 /**
- * получим тект для копирования
+ * РїРѕР»СѓС‡РёРј С‚РµРєС‚ РґР»СЏ РєРѕРїРёСЂРѕРІР°РЅРёСЏ
  * @returns {string}
  */
 Comment.prototype.getCopyText = function () {
@@ -250,21 +250,21 @@ Comment.prototype.getCopyText = function () {
     return text;
 };
 /**
- * получим ссылку для копирования
+ * РїРѕР»СѓС‡РёРј СЃСЃС‹Р»РєСѓ РґР»СЏ РєРѕРїРёСЂРѕРІР°РЅРёСЏ
  * @returns {string}
  */
 Comment.prototype.getCopyLink = function () {
     return 'prostoy://comment/' + this.getId();
 };
 /**
- * получим статус коммента
+ * РїРѕР»СѓС‡РёРј СЃС‚Р°С‚СѓСЃ РєРѕРјРјРµРЅС‚Р°
  * @returns {*}
  */
 Comment.prototype.getStatus = function () {
     return Comments.parseComHeader(this.local.fields.com_header);
 };
 /**
- * тема письма
+ * С‚РµРјР° РїРёСЃСЊРјР°
  * @returns {*}
  */
 Comment.prototype.getMailTheme = function () {
@@ -275,7 +275,7 @@ Comment.prototype.getMailTheme = function () {
     }
 };
 /**
- * получим массив файлов
+ * РїРѕР»СѓС‡РёРј РјР°СЃСЃРёРІ С„Р°Р№Р»РѕРІ
  * @returns {*}
  */
 Comment.prototype.getFileArray = function () {
@@ -321,14 +321,14 @@ Comment.prototype.getFileArray = function () {
     return files_array.length > 0 ? files_array : false;
 };
 /**
- * введем калбеки
+ * РІРІРµРґРµРј РєР°Р»Р±РµРєРё
  * @param callbacks
  */
 Comment.prototype.setCallbacks = function (callbacks) {
     this.local.callbacks = $.extend(this.local.callbacks, callbacks);
 };
 /**
- * получим объект лайков
+ * РїРѕР»СѓС‡РёРј РѕР±СЉРµРєС‚ Р»Р°Р№РєРѕРІ
  * @returns {{like: number, like_title: string, dislike: number, dislike_title: string}}
  */
 Comment.prototype.getLikes = function () {
@@ -366,7 +366,7 @@ Comment.prototype.getLikes = function () {
     }
 };
 /**
- * получим com_header
+ * РїРѕР»СѓС‡РёРј com_header
  * @param original
  * @returns {*|string}
  */
@@ -376,7 +376,7 @@ Comment.prototype.getComHeader = function (original) {
     }
 };
 /**
- * получим цвет категории
+ * РїРѕР»СѓС‡РёРј С†РІРµС‚ РєР°С‚РµРіРѕСЂРёРё
  * @returns {*}
  */
 Comment.prototype.getCategoryColor = function () {
@@ -396,7 +396,7 @@ Comment.prototype.getCategoryColor = function () {
     }
 };
 /**
- * изменим категорию на сервере
+ * РёР·РјРµРЅРёРј РєР°С‚РµРіРѕСЂРёСЋ РЅР° СЃРµСЂРІРµСЂРµ
  * @param id
  * @param callback
  */
@@ -418,7 +418,7 @@ Comment.prototype.changeCategory = function (id, callback) {
     }
 };
 /**
- * изменим категорию на сервере
+ * РёР·РјРµРЅРёРј РєР°С‚РµРіРѕСЂРёСЋ РЅР° СЃРµСЂРІРµСЂРµ
  * @param id
  * @param copy
  * @param callback
@@ -442,7 +442,7 @@ Comment.prototype.changeTask = function (id, copy, callback) {
     }
 };
 /**
- * получим избранное
+ * РїРѕР»СѓС‡РёРј РёР·Р±СЂР°РЅРЅРѕРµ
  * @returns {*}
  */
 Comment.prototype.getFavorite = function () {
@@ -453,7 +453,7 @@ Comment.prototype.getFavorite = function () {
     }
 };
 /**
- * прорисуем коммент
+ * РїСЂРѕСЂРёСЃСѓРµРј РєРѕРјРјРµРЅС‚
  */
 Comment.prototype.drawSimple = function () {
     let self = this;
@@ -620,7 +620,7 @@ Comment.prototype.drawSimple = function () {
     return this.local.template.data('comment', self);
 };
 /**
- * перерисуем коммент
+ * РїРµСЂРµСЂРёСЃСѓРµРј РєРѕРјРјРµРЅС‚
  */
 Comment.prototype.reload = function () {
     let self = this;
@@ -638,7 +638,7 @@ Comment.prototype.reload = function () {
     });
 };
 /**
- * удаление из списка
+ * СѓРґР°Р»РµРЅРёРµ РёР· СЃРїРёСЃРєР°
  */
 Comment.prototype.removeFromList = function () {
     if (this.local.template) {
@@ -646,21 +646,21 @@ Comment.prototype.removeFromList = function () {
     }
 };
 /**
- * получим ид операции
+ * РїРѕР»СѓС‡РёРј РёРґ РѕРїРµСЂР°С†РёРё
  * @returns {*}
  */
 Comment.prototype.getOperId = function () {
     return this.local.fields.oper_id;
 };
 /**
- * лайки
+ * Р»Р°Р№РєРё
  * @param likes
  */
 Comment.prototype.setLikes = function (likes) {
     this.local.likes = likes || {};
 };
 /**
- * получатели
+ * РїРѕР»СѓС‡Р°С‚РµР»Рё
  * @returns {*}
  */
 Comment.prototype.getRecipients = function () {

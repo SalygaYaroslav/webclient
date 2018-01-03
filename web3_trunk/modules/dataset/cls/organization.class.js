@@ -28,7 +28,7 @@ var Organization = function (id) {
     return {
         classname: classname,
         /**
-         * получим поле
+         * РїРѕР»СѓС‡РёРј РїРѕР»Рµ
          * @param field
          * @returns {*|string}
          */
@@ -39,7 +39,7 @@ var Organization = function (id) {
             return local.entity[field] || '';
         },
         /**
-         * введем данные
+         * РІРІРµРґРµРј РґР°РЅРЅС‹Рµ
          * @param organization
          * @returns {Organization}
          */
@@ -51,7 +51,7 @@ var Organization = function (id) {
             } else {
                 local = entities[id];
                 local.entity = $.extend({}, entities[id].entity, Tool.xmlToJson(organization));
-                /** проверка на изменения в доступах проектов**/
+                /** РїСЂРѕРІРµСЂРєР° РЅР° РёР·РјРµРЅРµРЅРёСЏ РІ РґРѕСЃС‚СѓРїР°С… РїСЂРѕРµРєС‚РѕРІ**/
                 // this.checkProjectsDifference();
             }
             if ($('groups', organization).length > 0) {
@@ -82,7 +82,7 @@ var Organization = function (id) {
             return this;
         },
         /**
-         * удалим из хранилища
+         * СѓРґР°Р»РёРј РёР· С…СЂР°РЅРёР»РёС‰Р°
          */
         remove: function () {
             try {
@@ -96,7 +96,7 @@ var Organization = function (id) {
             }
         },
         /**
-         * получим ид
+         * РїРѕР»СѓС‡РёРј РёРґ
          * @returns {string|string}
          */
         getId: function () {
@@ -106,14 +106,14 @@ var Organization = function (id) {
             return local.entity.id || '';
         },
         /**
-         * получим имя
+         * РїРѕР»СѓС‡РёРј РёРјСЏ
          * @returns {string|string}
          */
         getName: function () {
             return local.entity.title || Lang.get()['dataset']['org']['no_name'];
         },
         /**
-         * получим аватар
+         * РїРѕР»СѓС‡РёРј Р°РІР°С‚Р°СЂ
          * @returns {*}
          */
         getAvatar: function () {
@@ -124,7 +124,7 @@ var Organization = function (id) {
             }
         },
         /**
-         * получим проекты
+         * РїРѕР»СѓС‡РёРј РїСЂРѕРµРєС‚С‹
          * @returns {Array}
          */
         getProjects: function () {
@@ -139,7 +139,7 @@ var Organization = function (id) {
             return projects;
         },
         /**
-         * получим группы контактов
+         * РїРѕР»СѓС‡РёРј РіСЂСѓРїРїС‹ РєРѕРЅС‚Р°РєС‚РѕРІ
          * @returns {Array}
          */
         getContactsGroup: function () {
@@ -154,7 +154,7 @@ var Organization = function (id) {
             return groups;
         },
         /**
-         * получим группы пользователей
+         * РїРѕР»СѓС‡РёРј РіСЂСѓРїРїС‹ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
          * @param with_default
          * @param no_fired
          * @returns {Array}
@@ -183,7 +183,7 @@ var Organization = function (id) {
             return result;
         },
         /**
-         * проверим юзера в организации
+         * РїСЂРѕРІРµСЂРёРј СЋР·РµСЂР° РІ РѕСЂРіР°РЅРёР·Р°С†РёРё
          * @param user_id
          * @returns {boolean}
          */
@@ -192,7 +192,7 @@ var Organization = function (id) {
             return ($.inArray(user_id, users_array) != '-1');
         },
         /**
-         * получим список юзеров организации
+         * РїРѕР»СѓС‡РёРј СЃРїРёСЃРѕРє СЋР·РµСЂРѕРІ РѕСЂРіР°РЅРёР·Р°С†РёРё
          * @returns {Array}
          */
         getUsers: function () {
@@ -204,14 +204,14 @@ var Organization = function (id) {
             return users_array;
         },
         /**
-         * получим статус
+         * РїРѕР»СѓС‡РёРј СЃС‚Р°С‚СѓСЃ
          * @returns {*|string|number}
          */
         getStatus: function () {
             return local.entity.status;
         },
         /**
-         * получим статус аватар
+         * РїРѕР»СѓС‡РёРј СЃС‚Р°С‚СѓСЃ Р°РІР°С‚Р°СЂ
          * @returns {string}
          */
         getStatusAvatarClass: function () {
@@ -229,7 +229,7 @@ var Organization = function (id) {
             return status;
         },
         /**
-         * проверка на админа
+         * РїСЂРѕРІРµСЂРєР° РЅР° Р°РґРјРёРЅР°
          * @param id
          * @returns {boolean}
          */
@@ -261,7 +261,7 @@ var Organization = function (id) {
             return sign;
         },
         /**
-         * проверим различия списка проектов
+         * РїСЂРѕРІРµСЂРёРј СЂР°Р·Р»РёС‡РёСЏ СЃРїРёСЃРєР° РїСЂРѕРµРєС‚РѕРІ
          * @returns {{}}
          */
         checkProjectsDifference: function () {
@@ -295,7 +295,7 @@ var Organization = function (id) {
             return diff;
         },
         /**
-         * получим категории
+         * РїРѕР»СѓС‡РёРј РєР°С‚РµРіРѕСЂРёРё
          * @returns {Array}
          */
         getCategories: function () {
@@ -321,7 +321,7 @@ var Organization = function (id) {
             }
         },
         userInFired: function (user) {
-            //сначала смотрим есть ли айди группы уволенных
+            //СЃРЅР°С‡Р°Р»Р° СЃРјРѕС‚СЂРёРј РµСЃС‚СЊ Р»Рё Р°Р№РґРё РіСЂСѓРїРїС‹ СѓРІРѕР»РµРЅРЅС‹С…
             if (local.entity['dismissed_group_id'] && local.entity['dismissed_group_id'] != '' && local.entity['dismissed_group_id'] != '0') {
                 return Dataset.get('group',local.entity['dismissed_group_id']).userInGroup(user);
             }

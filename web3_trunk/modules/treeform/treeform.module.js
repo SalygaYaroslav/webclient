@@ -5,7 +5,7 @@ var TreeForm = (function () {
     let cache = {};
     let local = {
         /**
-         * получим данные из кеша или добавим их в кеш
+         * РїРѕР»СѓС‡РёРј РґР°РЅРЅС‹Рµ РёР· РєРµС€Р° РёР»Рё РґРѕР±Р°РІРёРј РёС… РІ РєРµС€
          * @param url
          * @returns {*}
          */
@@ -13,8 +13,8 @@ var TreeForm = (function () {
             if (typeof cache[url] != 'undefined') {
                 return cache[url];
             } else {
-                // нет в кеше, грузим и кешируем
-                // добавляем версию для очистки кеша
+                // РЅРµС‚ РІ РєРµС€Рµ, РіСЂСѓР·РёРј Рё РєРµС€РёСЂСѓРµРј
+                // РґРѕР±Р°РІР»СЏРµРј РІРµСЂСЃРёСЋ РґР»СЏ РѕС‡РёСЃС‚РєРё РєРµС€Р°
                 return cache[url] = $.ajax({
                     url: url + '?' + __web__.version,
                     contentType: 'text/html;charset=utf-8',
@@ -28,9 +28,9 @@ var TreeForm = (function () {
          * @returns {*}
          */
         loadConfig: function (name) {
-            // грузим конфиг
+            // РіСЂСѓР·РёРј РєРѕРЅС„РёРі
             let url = '/modules/treeform/configs/' + name + '.json';
-            // проверяем кеш
+            // РїСЂРѕРІРµСЂСЏРµРј РєРµС€
             let config = $.parseJSON(this.getFromCache(url));
             let split = name.split('/');
             return config[split[split.length - 1]];
@@ -42,7 +42,7 @@ var TreeForm = (function () {
      */
     return {
         /**
-         * получим форму
+         * РїРѕР»СѓС‡РёРј С„РѕСЂРјСѓ
          * @param name
          * @param data
          * @param access
@@ -53,7 +53,7 @@ var TreeForm = (function () {
             return new TreeForm.Form(data(config), access);
         },
         /**
-         * дочерний элемент к родителю
+         * РґРѕС‡РµСЂРЅРёР№ СЌР»РµРјРµРЅС‚ Рє СЂРѕРґРёС‚РµР»СЋ
          * @param parent
          * @param data
          */

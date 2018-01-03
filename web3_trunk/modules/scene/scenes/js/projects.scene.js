@@ -1,5 +1,5 @@
 /**
- * сцена проектов
+ * СЃС†РµРЅР° РїСЂРѕРµРєС‚РѕРІ
  * @type {Function}
  */
 Scene.projects = (function (template) {
@@ -30,14 +30,14 @@ Scene.projects = (function (template) {
     };
     return {
         /**
-         * инициализация
+         * РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ
          */
         init: function () {
             this.render();
             this.changeParams(Router.getParams());
         },
         /**
-         * прорисовка
+         * РїСЂРѕСЂРёСЃРѕРІРєР°
          */
         render: function () {
             local.template.empty().append(Template.render('scene', 'projects/scene'));
@@ -48,16 +48,16 @@ Scene.projects = (function (template) {
             this.addListener();
         },
         /**
-         * рисуем проекты
+         * СЂРёСЃСѓРµРј РїСЂРѕРµРєС‚С‹
          */
         drawProjects: function () {
-            // очистим блок
+            // РѕС‡РёСЃС‚РёРј Р±Р»РѕРє
             local.projects_list.empty();
             let org = OrganizationBlock.getCurrentOrganization();
             let projects_list = new List.Projects(org.getId());
             projects_list.sortByName();
             let projects = projects_list.list();
-            // удалим элемнт данных о том, что мы смотрим другой уровень
+            // СѓРґР°Р»РёРј СЌР»РµРјРЅС‚ РґР°РЅРЅС‹С… Рѕ С‚РѕРј, С‡С‚Рѕ РјС‹ СЃРјРѕС‚СЂРёРј РґСЂСѓРіРѕР№ СѓСЂРѕРІРµРЅСЊ
             local.scene.removeClass('task-lvl').removeClass('comment-lvl');
             for (let i = 0; i < projects.length; i++) {
                 let project = projects[i];
@@ -68,16 +68,16 @@ Scene.projects = (function (template) {
             }
         },
         /**
-         * рисуем задачи
+         * СЂРёСЃСѓРµРј Р·Р°РґР°С‡Рё
          * @param project_id
          * @param callback
          */
         drawTasks: function (project_id, callback) {
-            // очистим список старых задач
+            // РѕС‡РёСЃС‚РёРј СЃРїРёСЃРѕРє СЃС‚Р°СЂС‹С… Р·Р°РґР°С‡
             local.task_array = [];
-            // очистим блок
+            // РѕС‡РёСЃС‚РёРј Р±Р»РѕРє
             local.tasks_list.empty();
-            // удалим элемнт данных о том, что мы смотрим другой уровень
+            // СѓРґР°Р»РёРј СЌР»РµРјРЅС‚ РґР°РЅРЅС‹С… Рѕ С‚РѕРј, С‡С‚Рѕ РјС‹ СЃРјРѕС‚СЂРёРј РґСЂСѓРіРѕР№ СѓСЂРѕРІРµРЅСЊ
             local.scene.removeClass('comment-lvl');
             local.scene.addClass('task-lvl');
             new List.Tasks(project_id).load(function (tasks_list) {
@@ -96,7 +96,7 @@ Scene.projects = (function (template) {
             });
         },
         /**
-         * добавим калбеки
+         * РґРѕР±Р°РІРёРј РєР°Р»Р±РµРєРё
          */
         addListener: function () {
             local.projects_list.undelegate('.project-squire', 'click').delegate('.project-squire', 'click', function () {
@@ -108,7 +108,7 @@ Scene.projects = (function (template) {
             local.comments_list.undelegate().delegate();
         },
         /**
-         * выбор проекта
+         * РІС‹Р±РѕСЂ РїСЂРѕРµРєС‚Р°
          * @param id
          * @param callback
          */
@@ -131,7 +131,7 @@ Scene.projects = (function (template) {
             }
         },
         /**
-         * выбор задачи
+         * РІС‹Р±РѕСЂ Р·Р°РґР°С‡Рё
          * @param id
          * @param callback
          */
@@ -151,7 +151,7 @@ Scene.projects = (function (template) {
             }
         },
         /**
-         * снятие выбранной задачи
+         * СЃРЅСЏС‚РёРµ РІС‹Р±СЂР°РЅРЅРѕР№ Р·Р°РґР°С‡Рё
          * @param task_id
          */
         unSelectTask: function (task_id) {
@@ -170,7 +170,7 @@ Scene.projects = (function (template) {
             };
         },
         /**
-         * рисуем табулятор проекта
+         * СЂРёСЃСѓРµРј С‚Р°Р±СѓР»СЏС‚РѕСЂ РїСЂРѕРµРєС‚Р°
          * @param project_id
          */
         drawProjectTabs: function (project_id) {
@@ -196,7 +196,7 @@ Scene.projects = (function (template) {
             local.comments_list.append(tabs.html());
         },
         /**
-         * рисуем табулятор задачи
+         * СЂРёСЃСѓРµРј С‚Р°Р±СѓР»СЏС‚РѕСЂ Р·Р°РґР°С‡Рё
          * @param task_id
          */
         drawTaskTabs: function (task_id) {
@@ -228,14 +228,14 @@ Scene.projects = (function (template) {
                                 $('<div class="form-button"></div>').append(button_save).append(button_cancel).appendTo(block);
                             }
                             button_save.on('click', function () {
-                                Interface.Load.show('Обработка данных', block);
+                                Interface.Load.show('РћР±СЂР°Р±РѕС‚РєР° РґР°РЅРЅС‹С…', block);
                                 tree_form.getFormData(function (data) {
                                     task.saveEntityToServer(data, function () {
                                         Interface.Load.hide();
                                         $('.form-info', block).empty();
                                         tree_form = TreeForm.getTreeForm('user', task.getDataToForm, editable);
                                         $('.form-info', block).append(tree_form.render());
-                                        Notice.notify('Данные изменены');
+                                        Notice.notify('Р”Р°РЅРЅС‹Рµ РёР·РјРµРЅРµРЅС‹');
                                     });
                                 });
                             });
@@ -264,7 +264,7 @@ Scene.projects = (function (template) {
             local.comments_list.append(tabs.html());
         },
         /**
-         * рисуем комменты
+         * СЂРёСЃСѓРµРј РєРѕРјРјРµРЅС‚С‹
          * @param block
          * @param task_id
          */
@@ -273,7 +273,7 @@ Scene.projects = (function (template) {
             let task = Dataset.get('task',task_id);
             let template = local.comment.template = $(Template.render('scene', 'projects/list_comments', {
                 name: task.getName(),
-                author: task.getAuthorName() || '[Без назначения]'
+                author: task.getAuthorName() || '[Р‘РµР· РЅР°Р·РЅР°С‡РµРЅРёСЏ]'
             }));
             /** search */
             let search_block = $('.search', template);
@@ -443,19 +443,19 @@ Scene.projects = (function (template) {
             }
         },
         /**
-         * перезагрузка
+         * РїРµСЂРµР·Р°РіСЂСѓР·РєР°
          */
         reload: function () {
-            // обнулим
+            // РѕР±РЅСѓР»РёРј
             local.selected_project_id = null;
             local.selected_task_id = null;
-            // рисуем
+            // СЂРёСЃСѓРµРј
             Router.changeParams([]);
             this.render();
             this.drawProjects();
         },
         /**
-         * перерисовка списка задач
+         * РїРµСЂРµСЂРёСЃРѕРІРєР° СЃРїРёСЃРєР° Р·Р°РґР°С‡
          */
         reloadTaskList: function () {
             let self = this;
@@ -471,7 +471,7 @@ Scene.projects = (function (template) {
             });
         },
         /**
-         * снятие калбеков
+         * СЃРЅСЏС‚РёРµ РєР°Р»Р±РµРєРѕРІ
          * @param callback
          */
         unbindScene: function (callback) {
@@ -480,7 +480,7 @@ Scene.projects = (function (template) {
             callback();
         },
         /**
-         * смена параметров
+         * СЃРјРµРЅР° РїР°СЂР°РјРµС‚СЂРѕРІ
          * @param params
          */
         changeParams: function (params) {
@@ -531,7 +531,7 @@ Scene.projects = (function (template) {
                         $('.loading', local.comment.template).show();
                     }, function (comments) {
                         if (comments.length == 0) {
-                            $('.find-result', local.comment.template).append('<div class="no-result"><div class="no-result-text">Поиск не дал результов</div></div>')
+                            $('.find-result', local.comment.template).append('<div class="no-result"><div class="no-result-text">РџРѕРёСЃРє РЅРµ РґР°Р» СЂРµР·СѓР»СЊС‚РѕРІ</div></div>')
                         } else {
                             for (let i = 0; i < comments.length; i++) {
                                 let comment = comments[i];

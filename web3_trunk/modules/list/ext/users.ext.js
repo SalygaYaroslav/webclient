@@ -1,5 +1,5 @@
 /**
- * список всех пользователей
+ * СЃРїРёСЃРѕРє РІСЃРµС… РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
  * @param group_id
  * @returns {{list: list, sort: sort, sortByName: sortByName, convertToSelect: convertToSelect}}
  * @constructor
@@ -23,14 +23,14 @@ List.Users = function (group_id) {
     /** public */
     return {
         /**
-         * список
+         * СЃРїРёСЃРѕРє
          * @returns {Array}
          */
         list: function () {
             return local.list;
         },
         /**
-         * сортировка
+         * СЃРѕСЂС‚РёСЂРѕРІРєР°
          * @param order
          */
         sort: function (order) {
@@ -47,7 +47,7 @@ List.Users = function (group_id) {
             })
         },
         /**
-         * сортировка по имени
+         * СЃРѕСЂС‚РёСЂРѕРІРєР° РїРѕ РёРјРµРЅРё
          */
         sortByName: function () {
             local.list.sort(function (first, second) {
@@ -63,7 +63,7 @@ List.Users = function (group_id) {
             })
         },
         /**
-         * конвертируем в селект
+         * РєРѕРЅРІРµСЂС‚РёСЂСѓРµРј РІ СЃРµР»РµРєС‚
          * @param with_default
          * @param default_value
          * @returns {*|jQuery}
@@ -75,7 +75,7 @@ List.Users = function (group_id) {
             let div = $('<div>').addClass('lst-select --user');
             let select = $('<select>').appendTo(div);
             if (typeof with_default != 'undefined') {
-                $('<option>').val('0').html('[Без назначения]').attr('title', '[Не выбрано]').appendTo(select);
+                $('<option>').val('0').html('[Р‘РµР· РЅР°Р·РЅР°С‡РµРЅРёСЏ]').attr('title', '[РќРµ РІС‹Р±СЂР°РЅРѕ]').appendTo(select);
             }
             for (let i = 0; i < local.list.length; i++) {
                 let user = local.list[i];

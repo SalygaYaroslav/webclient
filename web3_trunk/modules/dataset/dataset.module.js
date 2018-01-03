@@ -50,8 +50,8 @@ window.Dataset = (function () {
         /** storage */
         storage: storage,
         /**
-         * инициализация
-         * @param callback калбек
+         * РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ
+         * @param callback РєР°Р»Р±РµРє
          * @returns {*}
          */
         init: function (callback) {
@@ -70,8 +70,8 @@ window.Dataset = (function () {
             return $.jStorage.set('webclient.storage:' + storage.key, storage.data);
         },
         /**
-         * проверим новости
-         * @param callback калбек
+         * РїСЂРѕРІРµСЂРёРј РЅРѕРІРѕСЃС‚Рё
+         * @param callback РєР°Р»Р±РµРє
          * @returns {boolean}
          */
         checkNews: function (callback) {
@@ -85,7 +85,7 @@ window.Dataset = (function () {
             self.getNews(callback);
         },
         /**
-         * получим новости
+         * РїРѕР»СѓС‡РёРј РЅРѕРІРѕСЃС‚Рё
          * @param callback
          */
         getNews: function (callback) {
@@ -113,7 +113,7 @@ window.Dataset = (function () {
             );
         },
         /**
-         * парсим данные по новостям
+         * РїР°СЂСЃРёРј РґР°РЅРЅС‹Рµ РїРѕ РЅРѕРІРѕСЃС‚СЏРј
          * @param news
          */
         parseNews: function (news) {
@@ -147,8 +147,8 @@ window.Dataset = (function () {
             }
             $('comvotes > comvote', xml).each(function (i, vote) {
                 let task_id = $('task_id', vote).text();
-                // если сейчас открыта лента комментов этой задачи, то
-                // обновляем ленту
+                // РµСЃР»Рё СЃРµР№С‡Р°СЃ РѕС‚РєСЂС‹С‚Р° Р»РµРЅС‚Р° РєРѕРјРјРµРЅС‚РѕРІ СЌС‚РѕР№ Р·Р°РґР°С‡Рё, С‚Рѕ
+                // РѕР±РЅРѕРІР»СЏРµРј Р»РµРЅС‚Сѓ
                 if (Router.getPage() == 'projects') {
                     let params = Router.getParams();
                     if (params.length > 1 && params[1] == task_id) {
@@ -174,7 +174,7 @@ window.Dataset = (function () {
                 update.last_oper = update.last_id;
                 update.last_id = $('news', xml).attr('last');
             }
-            // дерево
+            // РґРµСЂРµРІРѕ
             Dataset.Tree.buildTree(xml);
             this.save();
             if (sound) {
@@ -182,17 +182,17 @@ window.Dataset = (function () {
             }
         },
         /**
-         * очистка хранилища
+         * РѕС‡РёСЃС‚РєР° С…СЂР°РЅРёР»РёС‰Р°
          */
         flushStorage: function () {
             $.jStorage.flush();
             window.location.reload();
         },
         // /**
-        //  * проверка уведомлений
-        //  * @param tasks задачи
-        //  * @param comments комменты
-        //  * @param crmobjects црмобъекты
+        //  * РїСЂРѕРІРµСЂРєР° СѓРІРµРґРѕРјР»РµРЅРёР№
+        //  * @param tasks Р·Р°РґР°С‡Рё
+        //  * @param comments РєРѕРјРјРµРЅС‚С‹
+        //  * @param crmobjects С†СЂРјРѕР±СЉРµРєС‚С‹
         //  * @returns {boolean}
         //  */
         // checkNotification: function (tasks, comments, crmobjects) {
@@ -204,26 +204,26 @@ window.Dataset = (function () {
         //     return true;
         // }
         /**
-         * получаем модульное хранилище
-         * @param storage_name название модуля
+         * РїРѕР»СѓС‡Р°РµРј РјРѕРґСѓР»СЊРЅРѕРµ С…СЂР°РЅРёР»РёС‰Рµ
+         * @param storage_name РЅР°Р·РІР°РЅРёРµ РјРѕРґСѓР»СЏ
          */
         getCustomStorage: function (storage_name) {
             return $.jStorage.get('webclient.' + storage_name + ':' + storage.key);
         },
         /**
-         * вводим модульное хранилище
-         * @param storage_name название модуля
-         * @param storage_object объект модуля
+         * РІРІРѕРґРёРј РјРѕРґСѓР»СЊРЅРѕРµ С…СЂР°РЅРёР»РёС‰Рµ
+         * @param storage_name РЅР°Р·РІР°РЅРёРµ РјРѕРґСѓР»СЏ
+         * @param storage_object РѕР±СЉРµРєС‚ РјРѕРґСѓР»СЏ
          */
         setCustomStorage: function (storage_name, storage_object) {
             $.jStorage.set('webclient.' + storage_name + ':' + storage.key, storage_object);
         },
         /**
-         * получим сущность из хранилища
-         * если нет в хранилище - заберем с сервера
-         * если нет на сервере - вернем null
-         * @param type_ тип сущности
-         * @param id_ id сущности
+         * РїРѕР»СѓС‡РёРј СЃСѓС‰РЅРѕСЃС‚СЊ РёР· С…СЂР°РЅРёР»РёС‰Р°
+         * РµСЃР»Рё РЅРµС‚ РІ С…СЂР°РЅРёР»РёС‰Рµ - Р·Р°Р±РµСЂРµРј СЃ СЃРµСЂРІРµСЂР°
+         * РµСЃР»Рё РЅРµС‚ РЅР° СЃРµСЂРІРµСЂРµ - РІРµСЂРЅРµРј null
+         * @param type_ С‚РёРї СЃСѓС‰РЅРѕСЃС‚Рё
+         * @param id_ id СЃСѓС‰РЅРѕСЃС‚Рё
          * @returns {*}
          */
         getEntity: function (type_, id_) {
@@ -243,9 +243,9 @@ window.Dataset = (function () {
                         $(type_, xml).each(function (i, item) {
                             new window[type_.capitalize()]().set(item);
                         });
-                        // сохраним
+                        // СЃРѕС…СЂР°РЅРёРј
                         self.save();
-                        // заново вернем
+                        // Р·Р°РЅРѕРІРѕ РІРµСЂРЅРµРј
                         if (typeof storage.data.entities[type_ + 's'] != 'undefined' && typeof storage.data.entities[type_ + 's'][id_] != 'undefined') {
                             return storage.data.entities[type_ + 's'][id_];
                         } else {
@@ -258,10 +258,10 @@ window.Dataset = (function () {
             }
         },
         /**
-         * получим сущность с сервера
-         * @param {string} type тип сущности
-         * @param {int} id id сущности
-         * @param {function} callback калебэк
+         * РїРѕР»СѓС‡РёРј СЃСѓС‰РЅРѕСЃС‚СЊ СЃ СЃРµСЂРІРµСЂР°
+         * @param {string} type С‚РёРї СЃСѓС‰РЅРѕСЃС‚Рё
+         * @param {int} id id СЃСѓС‰РЅРѕСЃС‚Рё
+         * @param {function} callback РєР°Р»РµР±СЌРє
          * @returns {*}
          */
         getEntityFromServer: function (type, id, callback) {
@@ -308,7 +308,7 @@ window.Dataset = (function () {
                     total += xLen
                 }
             }
-            log.unshift("Текущий<br>размер БД<br> " + Tool.formatBytes(total));
+            log.unshift("РўРµРєСѓС‰РёР№<br>СЂР°Р·РјРµСЂ Р‘Р”<br> " + Tool.formatBytes(total));
             return log.join("\n");
         },
         get: function (type, id) {

@@ -148,13 +148,13 @@ Crm.Table = function (id, callbacks) {
             local.entity.setCustomArray(array);
         },
         getData: function (section) {
-            // очистим таймаут поиска, вдруг уже попробовали ввести
+            // РѕС‡РёСЃС‚РёРј С‚Р°Р№РјР°СѓС‚ РїРѕРёСЃРєР°, РІРґСЂСѓРі СѓР¶Рµ РїРѕРїСЂРѕР±РѕРІР°Р»Рё РІРІРµСЃС‚Рё
             if (local.searchTimeout) {
                 clearTimeout(local.searchTimeout);
             }
             local.load = true;
             let self = this;
-            Interface.Load.show('Загрузка данных', $('.crm-loading', local.vue.$el));
+            Interface.Load.show('Р—Р°РіСЂСѓР·РєР° РґР°РЅРЅС‹С…', $('.crm-loading', local.vue.$el));
             if (typeof local.callbacks['beforeData'] == 'function') {
                 local.callbacks['beforeData']();
             }

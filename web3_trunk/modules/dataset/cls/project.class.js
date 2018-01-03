@@ -18,7 +18,7 @@ var Project = function (id) {
     return {
         classname: classname,
         /**
-         * получим поле
+         * РїРѕР»СѓС‡РёРј РїРѕР»Рµ
          * @param field
          * @returns {*|string}
          */
@@ -29,7 +29,7 @@ var Project = function (id) {
             return local.entity[field] || '';
         },
         /**
-         * введем данные
+         * РІРІРµРґРµРј РґР°РЅРЅС‹Рµ
          * @param project
          * @returns {Project}
          */
@@ -60,7 +60,7 @@ var Project = function (id) {
             return this;
         },
         /**
-         * удалим из хранилища
+         * СѓРґР°Р»РёРј РёР· С…СЂР°РЅРёР»РёС‰Р°
          */
         remove: function () {
             let org_id = this.getParentOrganization().getId();
@@ -72,18 +72,18 @@ var Project = function (id) {
             Dataset.Tree.deleteProject(org_id, id);
         },
         /**
-         * получим ид
+         * РїРѕР»СѓС‡РёРј РёРґ
          * @returns {string|string}
          */
         getId: function () {
             return local.entity.id || '';
         },
         /**
-         * получим имя
+         * РїРѕР»СѓС‡РёРј РёРјСЏ
          * @returns {*}
          */
         getName: function () {
-            // проверим на домашний проект другого юзера
+            // РїСЂРѕРІРµСЂРёРј РЅР° РґРѕРјР°С€РЅРёР№ РїСЂРѕРµРєС‚ РґСЂСѓРіРѕРіРѕ СЋР·РµСЂР°
             let isHomeProj = this.isHomeProject();
             if (isHomeProj == false) {
                 return local.entity['vcName'] || '';
@@ -92,28 +92,28 @@ var Project = function (id) {
             }
         },
         /**
-         * получим аватар
+         * РїРѕР»СѓС‡РёРј Р°РІР°С‚Р°СЂ
          * @returns {string}
          */
         getAvatar: function () {
             return '';
         },
         /**
-         * проверим проект ли это
+         * РїСЂРѕРІРµСЂРёРј РїСЂРѕРµРєС‚ Р»Рё СЌС‚Рѕ
          * @returns {boolean}
          */
         isProject: function () {
             return local.entity['ptProjectType'] != '4';
         },
         /**
-         * проверим группа контактов ли это
+         * РїСЂРѕРІРµСЂРёРј РіСЂСѓРїРїР° РєРѕРЅС‚Р°РєС‚РѕРІ Р»Рё СЌС‚Рѕ
          * @returns {boolean}
          */
         isContactGroup: function () {
             return local.entity['ptProjectType'] == '4';
         },
         /**
-         * проверим домашний ли это проект
+         * РїСЂРѕРІРµСЂРёРј РґРѕРјР°С€РЅРёР№ Р»Рё СЌС‚Рѕ РїСЂРѕРµРєС‚
          * @returns {*}
          */
         isHomeProject: function () {
@@ -124,7 +124,7 @@ var Project = function (id) {
             }
         },
         /**
-         * получим родительскую организацию
+         * РїРѕР»СѓС‡РёРј СЂРѕРґРёС‚РµР»СЊСЃРєСѓСЋ РѕСЂРіР°РЅРёР·Р°С†РёСЋ
          */
         getParentOrganization: function () {
             try {
@@ -134,7 +134,7 @@ var Project = function (id) {
             }
         },
         /**
-         * получим задачи
+         * РїРѕР»СѓС‡РёРј Р·Р°РґР°С‡Рё
          * @param callback
          */
         getTasks: function (callback) {

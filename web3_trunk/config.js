@@ -1,7 +1,7 @@
 window.__web__ = {
     dev: true,
     version: '0.56',
-    application_name: 'Ïðîñòîé Áèçíåñ',
+    application_name: 'ÐŸÑ€Ð¾ÑÑ‚Ð¾Ð¹ Ð‘Ð¸Ð·Ð½ÐµÑ',
     width: 1200,
     height: $(window).height() > 680 ? 680 : $(window).height(),
     style: 'blue', //    current stylesheet

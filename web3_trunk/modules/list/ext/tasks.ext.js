@@ -1,5 +1,5 @@
 /**
- * список задач
+ * СЃРїРёСЃРѕРє Р·Р°РґР°С‡
  * @param project_id
  * @param sync
  * @returns {{list: list, load: load, sort: sort, sortByName: sortByName, convertToSelect: convertToSelect}}
@@ -22,14 +22,14 @@ List.Tasks = function (project_id, sync) {
     /** public */
     return {
         /**
-         * список
+         * СЃРїРёСЃРѕРє
          * @returns {Array}
          */
         list: function () {
             return local.list;
         },
         /**
-         * подгрузка задач
+         * РїРѕРґРіСЂСѓР·РєР° Р·Р°РґР°С‡
          * @param callback
          */
         load: function (callback) {
@@ -44,7 +44,7 @@ List.Tasks = function (project_id, sync) {
             }
         },
         /**
-         * сортировка
+         * СЃРѕСЂС‚РёСЂРѕРІРєР°
          * @param order
          */
         sort: function (order) {
@@ -61,7 +61,7 @@ List.Tasks = function (project_id, sync) {
             })
         },
         /**
-         * сортировка по имени
+         * СЃРѕСЂС‚РёСЂРѕРІРєР° РїРѕ РёРјРµРЅРё
          */
         sortByName: function () {
             local.list.sort(function (first, second) {
@@ -77,7 +77,7 @@ List.Tasks = function (project_id, sync) {
             })
         },
         /**
-         * конвертируем в селект
+         * РєРѕРЅРІРµСЂС‚РёСЂСѓРµРј РІ СЃРµР»РµРєС‚
          * @param default_value
          * @returns {*|jQuery}
          */

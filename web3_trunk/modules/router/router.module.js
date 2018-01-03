@@ -1,5 +1,5 @@
 /**
- * Роутинг
+ * Р РѕСѓС‚РёРЅРі
  * @type {{spy, changeTitle, initStorage, saveStorage, goToUrl, changeParams, getPage, getParams, deleteTask, addTask, openLink}}
  */
 var Router = (function () {
@@ -13,11 +13,11 @@ var Router = (function () {
     /** public */
     return {
         /**
-         * шпионим за сменой хеша
-         * если его поменяли - значит меняем сцену\параметры
+         * С€РїРёРѕРЅРёРј Р·Р° СЃРјРµРЅРѕР№ С…РµС€Р°
+         * РµСЃР»Рё РµРіРѕ РїРѕРјРµРЅСЏР»Рё - Р·РЅР°С‡РёС‚ РјРµРЅСЏРµРј СЃС†РµРЅСѓ\РїР°СЂР°РјРµС‚СЂС‹
          */
         spy: function () {
-            // инициализируем историю
+            // РёРЅРёС†РёР°Р»РёР·РёСЂСѓРµРј РёСЃС‚РѕСЂРёСЋ
             this.initStorage();
             let hash = window.location.hash.replace(/^#/, '');
             if (hash == '') {
@@ -41,72 +41,72 @@ var Router = (function () {
             }
         },
         /**
-         * смена тайтла браузера
+         * СЃРјРµРЅР° С‚Р°Р№С‚Р»Р° Р±СЂР°СѓР·РµСЂР°
          */
         changeTitle: function () {
             setTimeout(function () {
                 let title = '';
                 switch (last_page) {
                     case 'projects':
-                        title = 'ПБ > Проекты';
+                        title = 'РџР‘ > РџСЂРѕРµРєС‚С‹';
                         switch (last_param.length) {
                             case 1:
-                                title = 'ПБ > ' + Dataset.get('project',last_param[0]).getName();
+                                title = 'РџР‘ > ' + Dataset.get('project',last_param[0]).getName();
                                 break;
                             case 2:
-                                title = 'ПБ > ' + Dataset.get('task',last_param[1]).getName();
+                                title = 'РџР‘ > ' + Dataset.get('task',last_param[1]).getName();
                                 break;
                         }
                         break;
                     case 'users':
-                        title = 'ПБ > Пользователи';
+                        title = 'РџР‘ > РџРѕР»СЊР·РѕРІР°С‚РµР»Рё';
                         switch (last_param.length) {
                             case 1:
-                                title = 'ПБ > ' + Dataset.get('group',last_param[0]).getName();
+                                title = 'РџР‘ > ' + Dataset.get('group',last_param[0]).getName();
                                 break;
                             case 2:
-                                title = 'ПБ > ' + Dataset.get('user',last_param[1]).getName();
+                                title = 'РџР‘ > ' + Dataset.get('user',last_param[1]).getName();
                                 break;
                         }
                         break;
                     case 'contacts':
-                        title = 'ПБ > Контакты';
+                        title = 'РџР‘ > РљРѕРЅС‚Р°РєС‚С‹';
                         switch (last_param.length) {
                             case 1:
-                                title = 'ПБ > ' + Dataset.get('project',last_param[0]).getName();
+                                title = 'РџР‘ > ' + Dataset.get('project',last_param[0]).getName();
                                 break;
                             case 2:
-                                title = 'ПБ > ' + Dataset.get('task',last_param[1]).getName();
+                                title = 'РџР‘ > ' + Dataset.get('task',last_param[1]).getName();
                                 break;
                         }
                         break;
                     case 'calendar':
-                        title = 'ПБ > Календарь';
+                        title = 'РџР‘ > РљР°Р»РµРЅРґР°СЂСЊ';
                         break;
                     case 'crm':
-                        title = 'ПБ > CRM-таблицы';
+                        title = 'РџР‘ > CRM-С‚Р°Р±Р»РёС†С‹';
                         break;
                     case 'video':
-                        title = 'ПБ > Видеоконференции';
+                        title = 'РџР‘ > Р’РёРґРµРѕРєРѕРЅС„РµСЂРµРЅС†РёРё';
                         break;
                     case 'files':
-                        title = 'ПБ > Файлы';
+                        title = 'РџР‘ > Р¤Р°Р№Р»С‹';
                         break;
                     case 'info':
-                        title = 'ПБ > ' + OrganizationBlock.getCurrentOrganization().getName();
+                        title = 'РџР‘ > ' + OrganizationBlock.getCurrentOrganization().getName();
                         break;
                     case 'profile':
-                        title = 'ПБ > ' + Authorization.getCurrentUser().getName();
+                        title = 'РџР‘ > ' + Authorization.getCurrentUser().getName();
                         break;
                     default:
-                        title = 'Простой Бизнес';
+                        title = 'РџСЂРѕСЃС‚РѕР№ Р‘РёР·РЅРµСЃ';
                         break;
                 }
                 document.title = title;
             }, 1);
         },
         /**
-         * инициализация хранилища
+         * РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ С…СЂР°РЅРёР»РёС‰Р°
          */
         initStorage: function () {
             let data = Dataset.getCustomStorage('url');
@@ -115,20 +115,20 @@ var Router = (function () {
             }
         },
         /**
-         * сохраним хранилище
+         * СЃРѕС…СЂР°РЅРёРј С…СЂР°РЅРёР»РёС‰Рµ
          */
         saveStorage: function () {
             Dataset.setCustomStorage('url', storage);
         },
         /**
-         * смена хеша
+         * СЃРјРµРЅР° С…РµС€Р°
          * @param url
          */
         goToUrl: function (url) {
             window.location.hash = '#' + url;
         },
         /**
-         * смена параметров
+         * СЃРјРµРЅР° РїР°СЂР°РјРµС‚СЂРѕРІ
          * @param params
          */
         changeParams: function (params) {
@@ -141,21 +141,21 @@ var Router = (function () {
             }
         },
         /**
-         * получим текущую страницу
+         * РїРѕР»СѓС‡РёРј С‚РµРєСѓС‰СѓСЋ СЃС‚СЂР°РЅРёС†Сѓ
          * @returns {string}
          */
         getPage: function () {
             return last_page;
         },
         /**
-         * получим текущие параметры
+         * РїРѕР»СѓС‡РёРј С‚РµРєСѓС‰РёРµ РїР°СЂР°РјРµС‚СЂС‹
          * @returns {Array}
          */
         getParams: function () {
             return last_param;
         },
         /**
-         * калбек при удалении задачи
+         * РєР°Р»Р±РµРє РїСЂРё СѓРґР°Р»РµРЅРёРё Р·Р°РґР°С‡Рё
          * @param project_id
          * @param task_id
          */
@@ -170,7 +170,7 @@ var Router = (function () {
             }
         },
         /**
-         * калбек при добавлении задачи
+         * РєР°Р»Р±РµРє РїСЂРё РґРѕР±Р°РІР»РµРЅРёРё Р·Р°РґР°С‡Рё
          * @param project_id
          * @param task_id
          */
@@ -193,7 +193,7 @@ var Router = (function () {
             switch (true) {
                 case /^prostoy:\/\/comment\/([0-9]+)$/.test(link):
                     // comment
-                    Interface.Load.show('Переход к комментарию');
+                    Interface.Load.show('РџРµСЂРµС…РѕРґ Рє РєРѕРјРјРµРЅС‚Р°СЂРёСЋ');
                     matches = /^prostoy:\/\/comment\/([0-9]+)$/.exec(link);
                     Request.getCommentById(matches[1], function (comm_data) {
                         let comment = new Comment(comm_data.object().comment);

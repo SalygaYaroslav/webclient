@@ -10,8 +10,8 @@ Authorization.Form = (function () {
     /** public */
     return {
         /**
-         * форма авторизации
-         * @param callback_ калбек функция
+         * С„РѕСЂРјР° Р°РІС‚РѕСЂРёР·Р°С†РёРё
+         * @param callback_ РєР°Р»Р±РµРє С„СѓРЅРєС†РёСЏ
          */
         init: function (callback_) {
             let self = this;
@@ -110,8 +110,8 @@ Authorization.Form = (function () {
             });
         },
         /**
-         * если авторизация успешна
-         * @param data данные по авторизации
+         * РµСЃР»Рё Р°РІС‚РѕСЂРёР·Р°С†РёСЏ СѓСЃРїРµС€РЅР°
+         * @param data РґР°РЅРЅС‹Рµ РїРѕ Р°РІС‚РѕСЂРёР·Р°С†РёРё
          */
         success: function (data) {
             $('#authorization', private.body).addClass('success');

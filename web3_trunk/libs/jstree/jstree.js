@@ -6259,7 +6259,7 @@
                     h = e.height(),
                     dw = $(window).width() + $(window).scrollLeft(),
                     dh = $(window).height() + $(window).scrollTop();
-                // може да се спести е една проверка - дали няма някой от класовете вече нагоре
+                // РјРѕР¶Рµ РґР° СЃРµ СЃРїРµСЃС‚Рё Рµ РµРґРЅР° РїСЂРѕРІРµСЂРєР° - РґР°Р»Рё РЅСЏРјР° РЅСЏРєРѕР№ РѕС‚ РєР»Р°СЃРѕРІРµС‚Рµ РІРµС‡Рµ РЅР°РіРѕСЂРµ
                 if(right_to_left) {
                     o[x - (w + 10 + o.outerWidth()) < 0 ? "addClass" : "removeClass"]("vakata-context-left");
                 }
@@ -6379,7 +6379,7 @@
                     e.stopImmediatePropagation();
 
                     if($.contains(this, e.relatedTarget)) {
-                        // премахнато заради delegate mouseleave по-долу
+                        // РїСЂРµРјР°С…РЅР°С‚Рѕ Р·Р°СЂР°РґРё delegate mouseleave РїРѕ-РґРѕР»Сѓ
                         // $(this).find(".vakata-context-hover").removeClass("vakata-context-hover");
                         return;
                     }
@@ -6392,7 +6392,7 @@
                         .parentsUntil(".vakata-context", "li").addBack().addClass("vakata-context-hover");
                     $.vakata.context._show_submenu(this);
                 })
-                // тестово - дали не натоварва?
+                // С‚РµСЃС‚РѕРІРѕ - РґР°Р»Рё РЅРµ РЅР°С‚РѕРІР°СЂРІР°?
                 .on("mouseleave", "li", function (e) {
                     if($.contains(this, e.relatedTarget)) { return; }
                     $(this).find(".vakata-context-hover").addBack().removeClass("vakata-context-hover");

@@ -185,7 +185,7 @@ Crm.Row = function (parent_, xml) {
             if (typeof local['funnel'] == 'undefined') {
                 local['funnel'] = '';
             }
-            // костыль для старых таблиц с типом ftDateTime
+            // РєРѕСЃС‚С‹Р»СЊ РґР»СЏ СЃС‚Р°СЂС‹С… С‚Р°Р±Р»РёС† СЃ С‚РёРїРѕРј ftDateTime
             if (local['convert_type'].t == 'ftDateTime' && local['funnel'] == '') {
                 switch (local['type']) {
                     case 'ftDate':
@@ -334,7 +334,7 @@ Crm.Row = function (parent_, xml) {
                     break;
                 default:
                     console.error(local);
-                    //alert("ЧТО ТО НОВОЕ?!?!?!\n" + col.funnel);
+                    //alert("Р§РўРћ РўРћ РќРћР’РћР•?!?!?!\n" + col.funnel);
                     break;
             }
         },
@@ -629,7 +629,7 @@ Crm.Row = function (parent_, xml) {
                     html += '</select>';
                     break;
                 case 'ftCheckbox':
-                    html = '<select><option value="#empty"></option><option value="false">Нет</option><option value="true">Да</option></select>';
+                    html = '<select><option value="#empty"></option><option value="false">РќРµС‚</option><option value="true">Р”Р°</option></select>';
                     break;
                 default:
                     html = '';
@@ -652,7 +652,7 @@ Crm.Row = function (parent_, xml) {
                     break;
                 case 'ftCheckbox':
                     object.type = 'select';
-                    object.list = [{text: 'Нет', value: 'false'}, {text: 'Да', value: 'true'}];
+                    object.list = [{text: 'РќРµС‚', value: 'false'}, {text: 'Р”Р°', value: 'true'}];
                     object.empty = false;
                     break;
                 default:

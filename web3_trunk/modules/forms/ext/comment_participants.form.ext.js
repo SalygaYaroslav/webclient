@@ -17,7 +17,7 @@ Forms.CommentParticipants = function (data, callback) {
     };
     let self = {
         /**
-         * построим
+         * РїРѕСЃС‚СЂРѕРёРј
          */
         build: function () {
             let lang = Lang.get();
@@ -78,7 +78,7 @@ Forms.CommentParticipants = function (data, callback) {
             }).show();
         },
         /**
-         * прорисовка блока пользователей
+         * РїСЂРѕСЂРёСЃРѕРІРєР° Р±Р»РѕРєР° РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
          * @param parent
          */
         renderUsers: function (parent) {
@@ -93,7 +93,7 @@ Forms.CommentParticipants = function (data, callback) {
             tree.jstree(true).check_node(ids);
         },
         /**
-         * прорисовка блока контактов
+         * РїСЂРѕСЂРёСЃРѕРІРєР° Р±Р»РѕРєР° РєРѕРЅС‚Р°РєС‚РѕРІ
          * @param parent
          */
         renderContacts: function (parent) {
@@ -107,14 +107,14 @@ Forms.CommentParticipants = function (data, callback) {
             tree.jstree(true).check_node(ids);
         },
         /**
-         * получим контент
+         * РїРѕР»СѓС‡РёРј РєРѕРЅС‚РµРЅС‚
          * @returns {null}
          */
         html: function () {
             return local.template;
         },
         /**
-         * вернем
+         * РІРµСЂРЅРµРј
          * @param callback
          */
         send: function (callback) {
@@ -147,7 +147,7 @@ Forms.CommentParticipants = function (data, callback) {
             callback(local.participants);
         },
         /**
-         * перезагрузим
+         * РїРµСЂРµР·Р°РіСЂСѓР·РёРј
          */
         reload: function () {
 

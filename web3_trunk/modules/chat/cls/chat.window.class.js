@@ -93,7 +93,7 @@ Chat.Window = function () {
                 messages: [],
                 unread: 0,
                 typing: false,
-                history_label: 'Загрузить историю',
+                history_label: 'Р—Р°РіСЂСѓР·РёС‚СЊ РёСЃС‚РѕСЂРёСЋ',
                 history_date: moment().format('DD.MM.YYYY')
             }
         },

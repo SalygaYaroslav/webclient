@@ -1,9 +1,9 @@
 /**
- * запрос на авторизацию
- * асинхронный запрос
- * @param id последний id
- * @param success калбек
- * @param error калбек
+ * Р·Р°РїСЂРѕСЃ РЅР° Р°РІС‚РѕСЂРёР·Р°С†РёСЋ
+ * Р°СЃРёРЅС…СЂРѕРЅРЅС‹Р№ Р·Р°РїСЂРѕСЃ
+ * @param id РїРѕСЃР»РµРґРЅРёР№ id
+ * @param success РєР°Р»Р±РµРє
+ * @param error РєР°Р»Р±РµРє
  * @returns {*|Boolean}
  */
 Request.getNews = function (id, success) {
@@ -22,9 +22,9 @@ Request.getNews = function (id, success) {
     });
 };
 /**
- * запрос на получение данных по сущности
- * @param type тип сущности
- * @param id ид сущности
+ * Р·Р°РїСЂРѕСЃ РЅР° РїРѕР»СѓС‡РµРЅРёРµ РґР°РЅРЅС‹С… РїРѕ СЃСѓС‰РЅРѕСЃС‚Рё
+ * @param type С‚РёРї СЃСѓС‰РЅРѕСЃС‚Рё
+ * @param id РёРґ СЃСѓС‰РЅРѕСЃС‚Рё
  * @returns {*}
  */
 Request.getEntity = function (type, id) {

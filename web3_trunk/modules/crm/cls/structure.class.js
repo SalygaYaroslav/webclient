@@ -4,11 +4,11 @@ Crm.Structure = function (xml) {
         custom_array_to_view: null,
         last_search_string: '',
         data: {
-            id: null, // id таблицы
-            object_id: null, // id проекта родителя
+            id: null, // id С‚Р°Р±Р»РёС†С‹
+            object_id: null, // id РїСЂРѕРµРєС‚Р° СЂРѕРґРёС‚РµР»СЏ
             organization_id: null,
             gantt: false,
-            // данные
+            // РґР°РЅРЅС‹Рµ
             structure: {
                 rows: null,
                 positions: null,
@@ -19,32 +19,32 @@ Crm.Structure = function (xml) {
                 show_numeric: false
             },
             filters: {},
-            // пагинация
+            // РїР°РіРёРЅР°С†РёСЏ
             pagination: {
                 send: {
-                    page: 1, // текущая страница
-                    order: 'd', // направление
-                    field: 'id', // поле сортировки
-                    limit: 15, // лимит отображения
-                    total: 0 // всего записей
+                    page: 1, // С‚РµРєСѓС‰Р°СЏ СЃС‚СЂР°РЅРёС†Р°
+                    order: 'd', // РЅР°РїСЂР°РІР»РµРЅРёРµ
+                    field: 'id', // РїРѕР»Рµ СЃРѕСЂС‚РёСЂРѕРІРєРё
+                    limit: 15, // Р»РёРјРёС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ
+                    total: 0 // РІСЃРµРіРѕ Р·Р°РїРёСЃРµР№
                 },
                 limit_array: [15, 20, 50, 100],
                 limit_chart: 40
             },
             find: {},
-            // доступы
+            // РґРѕСЃС‚СѓРїС‹
             access: {
                 admin: null,
                 users: null,
                 columns: null,
                 disable_deletion: '0'
             },
-            // биллинг
+            // Р±РёР»Р»РёРЅРі
             bill: {
                 type: null,
                 access: null
             },
-            // параметры
+            // РїР°СЂР°РјРµС‚СЂС‹
             parameters: {
                 created: null,
                 modified: null,
@@ -76,7 +76,7 @@ Crm.Structure = function (xml) {
         additionalSettings: function () {
             try {
                 let xml = $('crm-settings', Tool.stringToXml(Tool.decode($(local.xml).children('settings').text())));
-                // пагинация
+                // РїР°РіРёРЅР°С†РёСЏ
                 local.data.pagination.send.limit = Crm.limitFieldsByPage();
                 if (typeof $('default-sort', xml).attr('order') != 'undefined') {
                     local.data.pagination.send.order = ($('default-sort', xml).attr('order') == 'desc') ? 'd' : 'a';
@@ -90,7 +90,7 @@ Crm.Structure = function (xml) {
                 if ($('row-numbering', xml).length > 0) {
                     local.data.structure.show_numeric = $('row-numbering', xml).text().toBoolean() || false;
                 }
-                // фильтры
+                // С„РёР»СЊС‚СЂС‹
                 if (typeof $('filters', xml) != 'undefined') {
                     $('filters', xml).find('filter').each(function () {
                         let $t = $(this);
@@ -100,7 +100,7 @@ Crm.Structure = function (xml) {
                         };
                     });
                 }
-                // диаграмма ганта?
+                // РґРёР°РіСЂР°РјРјР° РіР°РЅС‚Р°?
                 if ($('gantt_table', xml).length > 0) {
                     local.data.gantt = true;
                 }
@@ -112,7 +112,7 @@ Crm.Structure = function (xml) {
             let self = this;
             try {
                 let convert = Tool.decode($(local.xml).children('columns').text());
-                // заглушка для ПИДОРГОВ (c) орфография сохранена с веб2 :D
+                // Р·Р°РіР»СѓС€РєР° РґР»СЏ РџРР”РћР Р“РћР’ (c) РѕСЂС„РѕРіСЂР°С„РёСЏ СЃРѕС…СЂР°РЅРµРЅР° СЃ РІРµР±2 :D
                 convert = convert.replace(/funnel="<date format="(.*?)"\/>"/gi, function (a, b) {
                     return 'funnel="' + '<date format="' + b + '"/>'.encode() + '"';
                 });
@@ -126,11 +126,11 @@ Crm.Structure = function (xml) {
                     return 'funnel="' + '<settings>' + b + '<\settings>'.encode() + '"';
                 });
                 let xml = Tool.stringToXml('<colums>' + convert + '</colums>');
-                // обнулим лукап поля
+                // РѕР±РЅСѓР»РёРј Р»СѓРєР°Рї РїРѕР»СЏ
                 local.data.structure.lookup = {};
-                // структура
+                // СЃС‚СЂСѓРєС‚СѓСЂР°
                 let structures = {};
-                // обработка полей
+                // РѕР±СЂР°Р±РѕС‚РєР° РїРѕР»РµР№
                 $('column', xml).each(function (index, item) {
                     let row = new Crm.Row(self, item).set();
                     let id = row.getId();
@@ -219,7 +219,7 @@ Crm.Structure = function (xml) {
                         let table_id = convert_lookup.tid;
                         let out_ids = convert_lookup.outids;
                         for (let j = 0; j < out_ids.length; j++) {
-                            // сделаем проверку, пришло ли нам поле?
+                            // СЃРґРµР»Р°РµРј РїСЂРѕРІРµСЂРєСѓ, РїСЂРёС€Р»Рѕ Р»Рё РЅР°Рј РїРѕР»Рµ?
                             let tid_id = 't' + table_id + '.' + row.getId() + '.' + out_ids[j];
                             if (typeof local.data.structure.rows[tid_id] != 'undefined') {
                                 local.data.structure.rows[tid_id].convertParentLookup(row.getId());
@@ -251,7 +251,7 @@ Crm.Structure = function (xml) {
             let order_data = self.getOrder();
             let thead = [];
             if (local.data.structure.show_numeric) {
-                thead.push({id: 'n', value: '№'});
+                thead.push({id: 'n', value: 'в„–'});
             }
             let array = local.custom_array_to_view || local.data.structure.visual;
             for (let i = 0; i < array.length; i++) {
@@ -259,7 +259,7 @@ Crm.Structure = function (xml) {
                 if (id == 'id') {
                     thead.push({
                         id: 'id',
-                        value: 'Код',
+                        value: 'РљРѕРґ',
                         hidden: true,
                         sorted: true,
                         order: order_data.id == 'id' ? order_data.order : ''
@@ -324,7 +324,7 @@ Crm.Structure = function (xml) {
                             hidden: true,
                             id: 'id',
                             val: local.values[i]['id'],
-                            title: 'Код',
+                            title: 'РљРѕРґ',
                         });
                     } else {
                         let value = '';
@@ -363,7 +363,7 @@ Crm.Structure = function (xml) {
                         let row = self.getRow(row_id);
                         if (row.getType() == 'ftCalc') {
                             if (self.checkCircle(parent_row, row)) {
-                                return 'Кольцевая ссылка';
+                                return 'РљРѕР»СЊС†РµРІР°СЏ СЃСЃС‹Р»РєР°';
                             } else {
                                 formula_array[i] = self.getCalcValue(row, data);
                             }
@@ -376,7 +376,7 @@ Crm.Structure = function (xml) {
                 return parseFloat(eval(result_string).toFixed(after_points));
             } catch (e) {
                 console.log('calc error', e);
-                return 'ошибка вычисления';
+                return 'РѕС€РёР±РєР° РІС‹С‡РёСЃР»РµРЅРёСЏ';
             }
         },
         checkCircle: function (first_row, second_row) {
@@ -614,7 +614,7 @@ Crm.Structure = function (xml) {
                     options: {
                         id: 'record',
                         multi: false,
-                        title: (typeof record_id == 'undefined' ? lang['new'] : 'Запись № ' + record_id),
+                        title: (typeof record_id == 'undefined' ? lang['new'] : 'Р—Р°РїРёСЃСЊ в„– ' + record_id),
                         type: 'section'
                     },
                     value: {}

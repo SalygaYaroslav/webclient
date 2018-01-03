@@ -80,7 +80,7 @@ TreeForm.Form = function (data, access) {
             }
             Upload.startQueueUpload(local.upload_id, function (data_file) {
                 let progress = ((parseInt(data_file.progress) >= 99) ? 100 : parseInt(data_file.progress));
-                Interface.Load.additional('Загрузка файла: ' + progress + '%');
+                Interface.Load.additional('Р—Р°РіСЂСѓР·РєР° С„Р°Р№Р»Р°: ' + progress + '%');
             }, function () {
                 Interface.Load.additional('');
             }, function () {

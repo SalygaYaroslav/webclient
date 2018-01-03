@@ -2,3 +2,4 @@
 node_modules/
 web3_trunk/.svn/
 web3_trunk.zip
+package-lock.json

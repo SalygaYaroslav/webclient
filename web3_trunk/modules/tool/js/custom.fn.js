@@ -1,5 +1,5 @@
 /**
- * делаем заглавной буквой строку
+ * РґРµР»Р°РµРј Р·Р°РіР»Р°РІРЅРѕР№ Р±СѓРєРІРѕР№ СЃС‚СЂРѕРєСѓ
  * @returns {string}
  */
 String.prototype.capitalize = function () {
@@ -25,7 +25,7 @@ String.prototype.toBoolean = function () {
     }
 };
 /**
- * удаляем в массиве заданные элементы
+ * СѓРґР°Р»СЏРµРј РІ РјР°СЃСЃРёРІРµ Р·Р°РґР°РЅРЅС‹Рµ СЌР»РµРјРµРЅС‚С‹
  * @param deleteValue
  * @returns {Array}
  */
@@ -61,7 +61,7 @@ Array.prototype.clearEmpty = function () {
     return result;
 };
 /**
- * одинаковые элементы
+ * РѕРґРёРЅР°РєРѕРІС‹Рµ СЌР»РµРјРµРЅС‚С‹
  * @param second
  * @returns {Array}
  */
@@ -76,7 +76,7 @@ Array.prototype.duplicate = function (second) {
     return result;
 };
 /**
- * различия
+ * СЂР°Р·Р»РёС‡РёСЏ
  * @param array
  * @returns {Array.<*>}
  */
@@ -87,8 +87,8 @@ Array.prototype.difference = function (array) {
 };
 
 /**
- * Метод убирает из текста все тэги
- * @param allowed набор дозволенных тегов
+ * РњРµС‚РѕРґ СѓР±РёСЂР°РµС‚ РёР· С‚РµРєСЃС‚Р° РІСЃРµ С‚СЌРіРё
+ * @param allowed РЅР°Р±РѕСЂ РґРѕР·РІРѕР»РµРЅРЅС‹С… С‚РµРіРѕРІ
  */
 String.prototype.stripTags = function (allowed) {
     if (!allowed || allowed == "all")
@@ -105,9 +105,9 @@ String.prototype.stripTags = function (allowed) {
 };
 
 /**
- * Метод обрабатывает переданный текст таким образом, что
- * ссылки, которые были остаются, которые не были появляются
- * @param text текст для обработки
+ * РњРµС‚РѕРґ РѕР±СЂР°Р±Р°С‚С‹РІР°РµС‚ РїРµСЂРµРґР°РЅРЅС‹Р№ С‚РµРєСЃС‚ С‚Р°РєРёРј РѕР±СЂР°Р·РѕРј, С‡С‚Рѕ
+ * СЃСЃС‹Р»РєРё, РєРѕС‚РѕСЂС‹Рµ Р±С‹Р»Рё РѕСЃС‚Р°СЋС‚СЃСЏ, РєРѕС‚РѕСЂС‹Рµ РЅРµ Р±С‹Р»Рё РїРѕСЏРІР»СЏСЋС‚СЃСЏ
+ * @param text С‚РµРєСЃС‚ РґР»СЏ РѕР±СЂР°Р±РѕС‚РєРё
  */
 String.prototype.parseHTMLLinks = function () {
     if (!this)
@@ -117,11 +117,11 @@ String.prototype.parseHTMLLinks = function () {
     text = text.replace(new RegExp("<", 'g'), " <");
     text = text.replace(new RegExp(">", 'g'), "> ");
     text = text.replace('&nbsp;', ' ');
-    let tags = /["']{0}((https?|ftp|file):\/\/(www\.|ftp\.)?[-A-Zа-яА-ЯёЁ0-9+&@#\/%=~_|$?!:,.]*[A-Zа-яА-ЯёЁ0-9+&@#\/%=~_|$])[\s,.](?!<\/\s*a)/gi;
+    let tags = /["']{0}((https?|ftp|file):\/\/(www\.|ftp\.)?[-A-ZР°-СЏРђ-РЇС‘РЃ0-9+&@#\/%=~_|$?!:,.]*[A-ZР°-СЏРђ-РЇС‘РЃ0-9+&@#\/%=~_|$])[\s,.](?!<\/\s*a)/gi;
 
     if ($('<div>' + text + '</div>').find('a').length == 0) {
         text = text.replace(tags, '<a title="$1" class="easy-link --webfile" href="$1" target="_blank">$1</a> ');
-        //Еще парсим ссылки на простой
+        //Р•С‰Рµ РїР°СЂСЃРёРј СЃСЃС‹Р»РєРё РЅР° РїСЂРѕСЃС‚РѕР№
         let links = /(prostoy:\/\/(comment|user|contact|task|table)\/([\S]+))\s*/gi;
         text = text.replace(links, '<a href="javascript:;" title="$1" class="prostoyLink" >$1</a> ');
     }
@@ -151,7 +151,7 @@ jQuery.fn.extend({
 String.prototype.encode = function () {
     let str = this;
     if (str != null) {
-        //Важно! Иначе можно передать число и получить не его строковый вид, а пустую строку
+        //Р’Р°Р¶РЅРѕ! РРЅР°С‡Рµ РјРѕР¶РЅРѕ РїРµСЂРµРґР°С‚СЊ С‡РёСЃР»Рѕ Рё РїРѕР»СѓС‡РёС‚СЊ РЅРµ РµРіРѕ СЃС‚СЂРѕРєРѕРІС‹Р№ РІРёРґ, Р° РїСѓСЃС‚СѓСЋ СЃС‚СЂРѕРєСѓ
         str = str.toString();
         let code, encode = '';
         for (let k = 0; k < str.length; k++) {
@@ -161,22 +161,22 @@ String.prototype.encode = function () {
                 switch (code) {
                     case 180 :
                         eChr = '%AA';
-                        break; //Є
+                        break; //Р„
                     case 260 :
                         eChr = '%BA';
-                        break; //є
+                        break; //С”
                     case 183 :
                         eChr = '%AF';
-                        break; //Ї
+                        break; //Р‡
                     case 263 :
                         eChr = '%BF';
-                        break; //ї
+                        break; //С—
                     case 182 :
                         eChr = '%B2';
-                        break; //І
+                        break; //Р†
                     case 262 :
                         eChr = '%B3';
-                        break; //і
+                        break; //С–
                     case 7622 :
                         eChr = '%B9';
                         break;
@@ -187,13 +187,13 @@ String.prototype.encode = function () {
                         eChr = '%A8';
                         break;
                     case 7378 :
-                        eChr = '%95'; //точка, ненумерованный список из ворда
+                        eChr = '%95'; //С‚РѕС‡РєР°, РЅРµРЅСѓРјРµСЂРѕРІР°РЅРЅС‹Р№ СЃРїРёСЃРѕРє РёР· РІРѕСЂРґР°
                         break;
                     case 7363 :
-                        eChr = '%96'; //короткое тире из ворда
+                        eChr = '%96'; //РєРѕСЂРѕС‚РєРѕРµ С‚РёСЂРµ РёР· РІРѕСЂРґР°
                         break;
                     case 7364:
-                        eChr = '%97'; //длинное тире
+                        eChr = '%97'; //РґР»РёРЅРЅРѕРµ С‚РёСЂРµ
                         break;
                     default :
                         eChr = '%' + code.toString(16).toUpperCase();
@@ -214,8 +214,8 @@ String.prototype.transEngToRus = function () {
     let text = this;
     if (!text)
         text = "";
-    let first = "ЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮёйцукенгшщзхъфывапролджэячсмитьбю~QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>`qwertyuiop[]asdfghjkl;'zxcvbnm,.";
-    let second = "~QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>`qwertyuiop[]asdfghjkl;'zxcvbnm,.ЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮёйцукенгшщзхъфывапролджэячсмитьбю";
+    let first = "РЃР™Р¦РЈРљР•РќР“РЁР©Р—РҐРЄР¤Р«Р’РђРџР РћР›Р”Р–Р­РЇР§РЎРњРРўР¬Р‘Р®С‘Р№С†СѓРєРµРЅРіС€С‰Р·С…СЉС„С‹РІР°РїСЂРѕР»РґР¶СЌСЏС‡СЃРјРёС‚СЊР±СЋ~QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>`qwertyuiop[]asdfghjkl;'zxcvbnm,.";
+    let second = "~QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>`qwertyuiop[]asdfghjkl;'zxcvbnm,.РЃР™Р¦РЈРљР•РќР“РЁР©Р—РҐРЄР¤Р«Р’РђРџР РћР›Р”Р–Р­РЇР§РЎРњРРўР¬Р‘Р®С‘Р№С†СѓРєРµРЅРіС€С‰Р·С…СЉС„С‹РІР°РїСЂРѕР»РґР¶СЌСЏС‡СЃРјРёС‚СЊР±СЋ";
     let exit_text = "";
     for (let i = 0; i < text.length; i++) {
         let ch = text[i];

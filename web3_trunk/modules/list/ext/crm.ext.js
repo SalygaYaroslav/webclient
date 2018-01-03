@@ -1,5 +1,5 @@
 /**
- * список црм
+ * СЃРїРёСЃРѕРє С†СЂРј
  * @param org_id
  * @param default_only
  * @returns {{list: list, load: load, sort: sort, sortByName: sortByName, convertToSelect: convertToSelect}}
@@ -20,14 +20,14 @@ List.Crm = function (org_id, default_only) {
     /** public */
     return {
         /**
-         * список
+         * СЃРїРёСЃРѕРє
          * @returns {Array}
          */
         list: function () {
             return local.list;
         },
         /**
-         * подгрузка задач
+         * РїРѕРґРіСЂСѓР·РєР° Р·Р°РґР°С‡
          * @param callback
          */
         load: function (callback) {
@@ -42,7 +42,7 @@ List.Crm = function (org_id, default_only) {
             }
         },
         /**
-         * сортировка
+         * СЃРѕСЂС‚РёСЂРѕРІРєР°
          * @param order
          */
         sort: function (order) {
@@ -59,7 +59,7 @@ List.Crm = function (org_id, default_only) {
             })
         },
         /**
-         * сортировка по имени
+         * СЃРѕСЂС‚РёСЂРѕРІРєР° РїРѕ РёРјРµРЅРё
          */
         sortByName: function () {
             local.list.sort(function (first, second) {
@@ -75,7 +75,7 @@ List.Crm = function (org_id, default_only) {
             })
         },
         /**
-         * конвертируем в селект
+         * РєРѕРЅРІРµСЂС‚РёСЂСѓРµРј РІ СЃРµР»РµРєС‚
          * @param default_value
          * @returns {*|jQuery}
          */

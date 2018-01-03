@@ -1,5 +1,5 @@
 /**
- * модуль запросов
+ * РјРѕРґСѓР»СЊ Р·Р°РїСЂРѕСЃРѕРІ
  * @type {{server_list, async, sync, checkWorkStatus, isTimeout, addServer, switchServer, bodyToSend}}
  */
 var Request = (function () {
@@ -11,14 +11,14 @@ var Request = (function () {
     return {
         server_list: server_list,
         /**
-         * асинхронный запрос
+         * Р°СЃРёРЅС…СЂРѕРЅРЅС‹Р№ Р·Р°РїСЂРѕСЃ
          * @param {object} data {
          * * timeout: false,
-         * * script: '', - юрл
-         * * data: {}, - данные
-         * * callback: function () {}, - калбек при успехе
-         * * progress: function () {}, - калбек при прогрессе 
-         * * error: function () {} - калбек при ошибке
+         * * script: '', - СЋСЂР»
+         * * data: {}, - РґР°РЅРЅС‹Рµ
+         * * callback: function () {}, - РєР°Р»Р±РµРє РїСЂРё СѓСЃРїРµС…Рµ
+         * * progress: function () {}, - РєР°Р»Р±РµРє РїСЂРё РїСЂРѕРіСЂРµСЃСЃРµ 
+         * * error: function () {} - РєР°Р»Р±РµРє РїСЂРё РѕС€РёР±РєРµ
          * }
          * @returns {Boolean}
          */
@@ -72,9 +72,9 @@ var Request = (function () {
                         console.log(vkbeautify.xml(xmlhttp.responseText));
                         console.groupEnd();
                         if (typeof obj.callback == "function") {
-                            // обрежем все данные, кроме response т.к. оно нам не нужно
-                            // тут же конвертим XML в json плагин
-                            // атрибуты будут начинаться с _
+                            // РѕР±СЂРµР¶РµРј РІСЃРµ РґР°РЅРЅС‹Рµ, РєСЂРѕРјРµ response С‚.Рє. РѕРЅРѕ РЅР°Рј РЅРµ РЅСѓР¶РЅРѕ
+                            // С‚СѓС‚ Р¶Рµ РєРѕРЅРІРµСЂС‚РёРј XML РІ json РїР»Р°РіРёРЅ
+                            // Р°С‚СЂРёР±СѓС‚С‹ Р±СѓРґСѓС‚ РЅР°С‡РёРЅР°С‚СЊСЃСЏ СЃ _
                             let match = rData.match(/\<response .*\<\/response\>/gi);
                             if (match && match.length > 0) {
                                 let xmlobject = new XmlObject();
@@ -115,7 +115,7 @@ var Request = (function () {
             xmlhttp.send(xml);
         },
         /**
-         * синхронный запрос
+         * СЃРёРЅС…СЂРѕРЅРЅС‹Р№ Р·Р°РїСЂРѕСЃ
          * @param data
          * @returns {*}
          */
@@ -177,9 +177,9 @@ var Request = (function () {
                     console.groupCollapsed('<- ' + obj.script + ' xml');
                     console.log(vkbeautify.xml(xmlhttp.responseText));
                     console.groupEnd();
-                    // обрежем все данные, кроме response т.к. оно нам не нужно
-                    // тут же конвертим XML в json плагин
-                    // атрибуты будут начинаться с @
+                    // РѕР±СЂРµР¶РµРј РІСЃРµ РґР°РЅРЅС‹Рµ, РєСЂРѕРјРµ response С‚.Рє. РѕРЅРѕ РЅР°Рј РЅРµ РЅСѓР¶РЅРѕ
+                    // С‚СѓС‚ Р¶Рµ РєРѕРЅРІРµСЂС‚РёРј XML РІ json РїР»Р°РіРёРЅ
+                    // Р°С‚СЂРёР±СѓС‚С‹ Р±СѓРґСѓС‚ РЅР°С‡РёРЅР°С‚СЊСЃСЏ СЃ @
                     let match = rData.match(/\<response .*\<\/response\>/gi);
                     if (match && match.length > 0) {
                         let xmlobject = new XmlObject();
@@ -198,7 +198,7 @@ var Request = (function () {
             }
         },
         /**
-         * проверка на релогин и на таймаут
+         * РїСЂРѕРІРµСЂРєР° РЅР° СЂРµР»РѕРіРёРЅ Рё РЅР° С‚Р°Р№РјР°СѓС‚
          * @param xmlobject
          * @param error
          * @returns {boolean}
@@ -223,7 +223,7 @@ var Request = (function () {
             }
         },
         /**
-         * калбек если таймаут
+         * РєР°Р»Р±РµРє РµСЃР»Рё С‚Р°Р№РјР°СѓС‚
          * @param type
          * @param data
          */
@@ -232,7 +232,7 @@ var Request = (function () {
             this[type](data);
         },
         /**
-         * добавим сервер в список
+         * РґРѕР±Р°РІРёРј СЃРµСЂРІРµСЂ РІ СЃРїРёСЃРѕРє
          * @param server_name
          * @returns {number}
          */
@@ -246,7 +246,7 @@ var Request = (function () {
             }
         },
         /**
-         * смена сервера на другой в списке
+         * СЃРјРµРЅР° СЃРµСЂРІРµСЂР° РЅР° РґСЂСѓРіРѕР№ РІ СЃРїРёСЃРєРµ
          * @param server_name
          */
         switchServer: function (server_name) {
@@ -269,7 +269,7 @@ var Request = (function () {
             current_server = server_list[index] || base_server_url;
         },
         /**
-         * подготовка body для отправки
+         * РїРѕРґРіРѕС‚РѕРІРєР° body РґР»СЏ РѕС‚РїСЂР°РІРєРё
          * @param object
          */
         bodyToSend: function (object) {

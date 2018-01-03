@@ -10,7 +10,7 @@ window.Crm = (function () {
     /** private */
     let local = {};
     /**
-     * инициализация хранилища
+     * РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ С…СЂР°РЅРёР»РёС‰Р°
      */
     let initStorage = function () {
         let data = Dataset.getCustomStorage('crm');
@@ -22,7 +22,7 @@ window.Crm = (function () {
     /** public */
     return {
         /**
-         * сохраним хранилище
+         * СЃРѕС…СЂР°РЅРёРј С…СЂР°РЅРёР»РёС‰Рµ
          */
         saveStorage: function () {
             Dataset.setCustomStorage('crm', storage);

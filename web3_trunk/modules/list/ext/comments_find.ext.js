@@ -34,7 +34,7 @@ List.CommentsFind = function (params) {
         return comment;
     };
     /**
-     * загрузка с сервера
+     * Р·Р°РіСЂСѓР·РєР° СЃ СЃРµСЂРІРµСЂР°
      * @param callback
      * @returns {*}
      */
@@ -52,7 +52,7 @@ List.CommentsFind = function (params) {
                 /** push comment */
                 comments.push(comment);
             });
-            /** проверим, можно ли еще загрузить */
+            /** РїСЂРѕРІРµСЂРёРј, РјРѕР¶РЅРѕ Р»Рё РµС‰Рµ Р·Р°РіСЂСѓР·РёС‚СЊ */
             let load_more = $('tasks > parsed', xml).text();
             if (/\*$/.test(load_more.toString()) == false) {
                 local.has_more_items = false;
@@ -70,7 +70,7 @@ List.CommentsFind = function (params) {
         return vote;
     };
     /**
-     * загрузка лайков
+     * Р·Р°РіСЂСѓР·РєР° Р»Р°Р№РєРѕРІ
      */
     let loadLikes = function () {
         let data = Request.getTaskLikes(local.task_id);
@@ -89,7 +89,7 @@ List.CommentsFind = function (params) {
     /** public */
     return {
         /**
-         * подгрузка комментов
+         * РїРѕРґРіСЂСѓР·РєР° РєРѕРјРјРµРЅС‚РѕРІ
          * @param before
          * @param callback
          * @returns {boolean}
@@ -141,7 +141,7 @@ List.CommentsFind = function (params) {
             }
         },
         /**
-         * получим список коментов
+         * РїРѕР»СѓС‡РёРј СЃРїРёСЃРѕРє РєРѕРјРµРЅС‚РѕРІ
          * @returns {Array}
          */
         getListComments: function () {
